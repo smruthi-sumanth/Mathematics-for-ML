@@ -1,0 +1,29 @@
+In the previous video, you learned the learning rate. Learning rate is a big
+deal in machine learning and finding a good learning
+rate can be pretty hard. It can also be
+pretty influential to how well your model does. Let's say you have a learning
+rate that's too large, then you may miss the
+minimum and never be able to find it because your
+steps are just too big. What if the learning
+rate is too small? Well then you may
+take forever to actually reach the minimum
+or perhaps never reach it. What you want is a learning
+rate that is just right. However, finding a
+learning rate that is just right can
+be pretty hard. It's actually a research problem to find a good learning rate. There are a lot of really
+good methods that change the learning rate based on
+how the problem is doing, but there's no definite method to find a good learning rate. Now, here's another problem that gradient descent may have. Let's say that you have
+this function over here, so the minimum is
+actually this one. However, let's say
+that you start running your gradient descent
+algorithm over here, well, it's never going to take
+you to that minimum because it takes you towards
+a local minimum, to point and looks like
+a minimum, but it's not. How do you overcome
+this problem? There's actually no secure
+way to overcome it. But a way to get pretty
+good results is to run the gradient descent
+algorithm many times with many different
+starting points. Once you run it with this, chances are one of
+them will get you to the minimum or at least
+to a pretty good point.

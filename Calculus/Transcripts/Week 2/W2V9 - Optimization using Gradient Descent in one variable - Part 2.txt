@@ -1,0 +1,80 @@
+In the previous
+video, we learned an okay way to approximate
+the minimum of function. However, here we're going
+to try something smarter. Let's say you're
+over here and you want to get closer
+to the minimum, what would you tell
+this point to do? You would tell it to step to
+the right a small amount. What if the point is over here? Well, you would tell it
+to step to the left. Now, is there any
+information on the function that could help you make
+this decision quickly? Well, let's look
+at the derivative. Over here, the slope is negative and you're
+moving to the right, and over here the slope is positive and you're
+moving to the left. That's the information you need. You actually need to
+subtract the slope. Because if you are at a point where the
+slope is negative, you need to add a little bit to the coordinate of the point. Whereas if you're in a place
+where the slope is positive, then you need to subtract a little bit to the
+coordinate of the point. In short, if you want a new point that is
+closer to the minimum, then that should be the
+old point minus the slope. Why? Because if you're to
+the left of the new minimum, the slope is negative. You're subtracting
+a negative number and moving to the right. If you were to the
+right of the minimum, then you subtract
+a positive number, the slope, and move to the left. Now, if the new point is X_1
+and the old point is X_0, then the formula is X_1 equals X_0 minus f prime of
+X_0, which is the slope. However, there is
+a small caveat. Imagine that you're over here at a very steep
+part of the curve, because the function is steep, then the derivative
+is very large. You're making a
+really long jump. Now, long jumps can
+be pretty chaotic. The reason is because
+you may actually miss the minimum and go pretty
+far away and get lost. We want to take small steps and to be more
+secure in our path. How do we take into
+account a small step? Well, you simply modify the formula and put
+a small number, multiplying the slope,
+for example, 0.01. You can take any small
+number you'd like, and that's called the learning
+rate and is denoted Alpha. There's a whole science in
+picking good learning rates. Now, this formula
+has an added bonus. Imagine if you're over here far away from the local minimum, and in a steep
+part of the curve. You'll be taking a big step, obviously not big because
+you don't want to miss the point and go too
+far, but relatively big. However, if you're
+really close to the minimum in a part
+that's more flat, you want to take a small step. Now, this is included here in the formula because if you're in a steep
+part of the curve, the derivative is B, and
+you're taking a large step. However, if you're
+in a flat land, then the derivative is small and you're
+taking a small step. Imagine like in golf, if you're far away
+from the hole, you want to hit it really
+hard to get there closer. But if you're
+really close to it, you want to hit it with
+precision. Not a lot of strength. This method is called gradient
+descent and it's really, really useful in
+machine learning and that's why it's so popular. It only consist in iterating this procedure. You
+start with X_0. From X_0, you can get a
+point X_1 using the formula. Then you can get another
+point X_2 based on X_1 by just plugging X_1 in the
+formula now. You can continue. You can iterate in
+many times, 20 times, 100 times, thousands of times. This is a pretty fast algorithm. So it can be iterated
+thousands of times quickly and its
+results are amazing. It can get us really, really close to the minimums
+of functions. That's why it's so widely
+used in machine learning. Here is the algorithm in short. You start with a function f of x and the goal is to find
+the minimum of f of x. First you define a learning rate and you choose a starting point, and then you do
+the updating step, which is X_k equals X_k minus 1 minus Alpha times the
+derivative at X_k minus 1. Then you repeat this step until you're close enough
+to the true minimum. You can tell that
+you're close enough to the true minimum when your steps don't really
+change that much. Now let's try it on the example. Let's do a couple of iterations. Recall that the function is e
+to the x minus logarithm of x and the derivative of e
+to the x minus one over x. Let's pick a starting
+point of 0.05 and our learning rate of 0.005. The first iteration is we find the derivative and we move by learning rate
+times derivative. We get a new point, 0.1447, which is closer to the minimum. Then we take another iteration. We find the derivative and
+subtract learning rate times the derivative to get 0.1735. Then we can repeat many times until we get
+pretty close to the minimum. Notice something interesting, which is that in this algorithm, you never need it to solve e to the x minus 1 over x equals 0. You never need to solve
+for the derivative zero. You only do know the
+derivative and then apply it in the algorithm when you're
+taking the updating step. That's a huge improvement.

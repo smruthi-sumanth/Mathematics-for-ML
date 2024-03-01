@@ -1,0 +1,65 @@
+Let's take a look at the
+parallel problem again. Here are the three
+parallel lines and here is the line that tries to
+fit them really close. The equation is y
+equals mx plus b. Now we're going to relate that
+to this plot at the right. The plot on the right is the cost of the power
+lines. Let me show you how. Over here, we're
+calculating the areas of the squares and
+recall that the sum of these areas was the
+cost of that fiber line. Now let's say that this was a numerical value
+given by this segment. What's going to happen is
+that the plot on the right, is going to measure
+the square loss here in the vertical axis. The way it's going to
+do it is the following. This line is parametrized by the slope and the
+y-intercept m and b. Let's put m and b in the
+two axis here in the floor. Now, in the point mb, we're going to plot the
+height of the cost function. This point over
+here is going to be corresponding to the
+line on the left. Now, this is a pretty
+good line fit. It's going to have
+a small error. Let's look another point. Let's look at an awful line. This one doesn't fit
+the points really well because it has a
+really high loss and therefore is going
+to be at a point over here in the
+error function plot. The idea is the following. In the plot on the right, you're going to use gradient
+descent to get to the very bottom and to be able to
+minimize the cost function. As you do that, you're going
+to be changing m and b. As you change m and b, then the plot on the left, it's going to have
+a better line fit. That's how you solve linear regression using
+gradient descent. Now let's see another example, one related to advertising. Let's say that you work
+in an agency and you have a TV advertising budget. That relates to number of sales. Of course, if you
+increase the budget, the number of sales increases and if you decrease the budget, the number of sale decreases. You would like to be able
+to predict the number of sales given a certain
+advertisement budget. You start looking at your
+data and the goal would be to predict the sales in
+terms of the TV budget. The first tool you would try
+to use is linear regression. In other words, try to find
+a line y equals mx plus b, such that if you plug in x, the TV budget, then you get y, or at least something
+pretty close. The idea is that you have
+a lot of observations. Let me show you how to do gradient descent with
+a lot of observations. Let's go back to our plot and let's say the TV budget is in the horizontal axis and number of sales in
+the vertical axis. You have a bunch of points,
+let's say n of them. Here we have x_1, y_1, x_2, y_2 up to x_n, y_n. Let's calculate
+the cost function. Let's look only at the
+first point, x_1, y_1. What is the cost at that point? Well, is this length squared? Now what is this length? Well, the point on the line has the form x_1 and x_1 plus b. The reason is that the x-coordinate should be
+the same as in x_1, y_1. What is that distance? Well, it's simply y_1
+minus mx_1 plus b. Or we can also write it as mx_1 plus b minus y_1 because
+at the end of the day, we're going to be squaring it, so it doesn't really matter
+if it's negative or positive. When we square it, we get the loss at that point. Now, we're going to add all the losses of
+all the points. Let's actually take the average, so we divide it by n. There's
+an extra two there and the reason that two is there is that when we take
+the derivative, the two in the exponent
+cancels with this one, but it doesn't really matter. That could be a
+two there or not. Because if we multiply the function by two
+or divided by two, the minimum point is still going to be at
+the same m and b. Our total cost
+function is L of m and b given by this average
+of all the losses. Now all we're going to
+do is gradient descent. We started at point m_0, b_0. That gives us some random line that may or may
+not be a good fit. Then using that, we calculate the next iteration, m_1 b_1, which is m_0, b_0 minus the learning rate,
+times the loss. That gives us a
+slightly better line. Now we can iterate. We can now find m_2, b_2 using the same thing
+except plugging m_1 b_1, and then m_3, b_3, and do it many times. Let's say we do it
+capital N times until we get a pretty good fit. That's the formal version of the gradient
+descent algorithm.

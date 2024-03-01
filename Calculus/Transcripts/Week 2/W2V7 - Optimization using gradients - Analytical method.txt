@@ -1,0 +1,75 @@
+In this video, we're going to go back to the power
+line example from a previous lesson. However, this time, the example is
+in two dimensions instead of one. The reason I really like this example
+is because it introduces one of the most important machine learning models
+out there called linear regression. And then, you're going to see how to solve a linear
+regression problem using optimization. So in a previous lesson, you saw a power
+line problem in one dimension where you need to determine where to place
+your house in order to connect to three power lines with the least cost. In this lesson, we work with a similar
+problem, but in two dimensions. So now the power lines
+have coordinates and they're going to be located
+on an xy plane like this one. So, here are the three positions
+of the power lines and the problem is the following. You now want to find the optimal place for a fiber line connection that
+goes in a straight line in such a way that you reduce the total cost
+of connecting to the three power lines. And how do you connect to the power lines? You can connect to each power line by
+connecting a wire to touch the fiber line, but the wire needs to be
+parallel to the y-axis. And the cost for connection is the square of the length
+of the wires just like before. So here are the three connections and
+the three costs, so the costs are the area
+of the three square and the total cost is the sum of these areas. Now, the point is to find the perfect line
+that reduces this cost and minimize it. And that becomes a mathematical problem
+because if you look at the line, the line can have an equation such as y
+equals mx plus b, where m is the slope and b is the y intercept. And the goal is to find the optimal m and
+b to minimize the sum of squares. Now, before we had a function with x and
+y, now we have a function with and b, but it's the same thing. We're minimizing a function
+of two variables, the function is the sum of the areas and
+the two variables are m and b. So let's actually calculate
+the function that we want to minimize. So, focus your attention
+on the blue square. Now the blue power line is
+located on the coordinate 1,2 and it needs to connect to the fiber line. Where does it connect? In the 0.1 m plus b. Why is that the 0.1m plus b? Because if we let x equals 1,
+then mx plus b is equal to m plus b. So, the y coordinate of the point
+of connection is m plus b and the y coordinate of the power line is 2. Therefore, the distance is m plus b minus
+2 and the cost is m plus b minus 2 square. In a similar way, the cost for
+the yellow power line is 2m plus b minus 5 squared and for the green power
+line is 3m plus b minus 3 squared. And therefore, the total cost is
+the sum of these three numbers. Now let's expand this, the first one,
+m plus b minus 2 squared expands as this. The second one expands has this and
+the third one expands as this. And if we join similar terms,
+we get that E of m,b is 14m squared plus 3b squared plus 38 plus 12
+mb minus 42m minus 20b. And that is the cost function
+that we want to minimize, so we want to find the m and b that make
+this expression e of mb the minimum, but we know how to do this already. All we have to do is calculate the two
+partial derivatives ӘЕ over Әm and ӘЕ over ӘЕ set them both equal to 0 and
+then solve for m and b. So let's start with the quiz. Please help me find the partial
+derivative of E with respect to m. And the answer is 28m plus 12b minus 42. Now let's do another quiz, help me find the partial
+derivative of E with respect to b. And the answer is 6b plus 12 and minus 20. So now that you have these
+two partial derivatives, all you have to do is set them to be
+equal to 0 and solve for m and b. You know how to do this from
+the linear algebra class. So, let's actually work it out and
+once we work it out that m and b are going to be the optimal
+values to minimize E of m,b and they're going to give us the perfect line. So, how do we solve this? Well, let's start with
+the second equation and let's multiply it by 2 to get
+12b plus 24 minus 40 equals 0. Now let's subtract it from the first
+equation to get 4m minus 2 equals 0. This is equivalent to m equals two
+fourth which is 0.5 or one half. Now let's take that m equals one half and
+plug it back into the second equation to get 6b plus 12
+times 0.5 minus 20 equals 0 or 6b plus 6 minus 20 equals 0 or
+6b minus 14 equals 0. Which gives us the solution,
+B equals 14 over 6 or 7 over 3. If this seemed a little confusing, please check the linear algebra class
+where this explained in detail. So now we have the solution to the system, the solution to the system is m equals
+one half, and b equals 7over 3. Those are the two values that make
+those two partial derivatives 0. And if you plug them back to the equation,
+you get that E of one half, seven thirds is 4.167,
+that is the minimum value of the cost. And let's see how this looks in the graph. If you plot the line of
+equation one half x plus seven thirds you get this line over here, and notice that indeed this line
+gives some pretty small squares. So that's it,
+that's how you minimize the square loss. This problem is actually
+called linear regression. Linear regression is a very, very important problem in machine learning
+where you have a bunch of points and you try to find the closest line to them
+and that's exactly what we did here. Now, notice one problem here, when we solve this equation of
+two variables and two unknowns, that can be pretty hard, especially
+if you were to have many variables. Solving an m by m system of
+equations can be pretty expensive. Is there a faster way to do it? So the answer is yes, and
+you're going to see it next in the class. It's a method called grading
+descent which actually helps minimize functions in a pretty fast way. So stay tuned for the next few videos where you're
+going to learn grading descent.

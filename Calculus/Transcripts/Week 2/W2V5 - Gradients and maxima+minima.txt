@@ -1,0 +1,36 @@
+So in this video, I'm going to show
+you something very interesting. The gradient is pretty useful to minimize
+functions of two or more variables in the same way as the derivative was useful
+to minimize functions of one variable. So let's go back to
+a function of one variable. This , f of x equals x squared. And now let's look at the function
+we've been studying in two variables, which is f (x,
+y) equals x squared plus y squared. Now ,let's go back to
+the function of one variable. When you want to minimize this function,
+the minimum point is this point over here. And the way to find it is to find the
+point in which the slope is equal to 0. So we take the derivative,
+solve that derivative equal 0, and the solution is this
+minimum point over here at 0. So what happens with more variables? Well, something very similar. The minimum point is this point over here. And notice that the tangent plane
+is actually parallel to the floor, and that's going to happen in
+every local minimum and maximum, that the plane is parallel to the floor. Now, since we're not dealing with planes,
+but we're done with partial derivatives, let's actually draw the two
+partial derivatives. Notice that they are these
+two lines over here, and both have slopes of 0 because
+they're parallel to the floor. So in other words, the minimum of the
+function f on the right happens when both of the slopes of the tangent lines
+given by the partial derivatives are 0. And if you have a function of many,
+many more variables, say a function of 12 variables, then you're just going to
+need for 12 slopes to be 0. Those coresponding to all
+the partial derivatives. So now let's do a little bit of math. On the left, you want to solve the slope
+equal 0, so the derivative equal 0. That means you want to solve for
+f prime of x equals 0. Now, f prime of x for x squared is 2x, because that's
+the derivative of x squared. And when you solve for 2x = 0, you're
+basically getting the solution x = 0. And x = 0 is precisely
+this point over here. Now, what happens when we
+do this in more variables? Well, you want the two
+partial derivatives to be 0. That means data for dx and dy are both 0. Now, what's df over dx, that's 2x. And df over dy is 2y. So you want 2x = 0 and 2y = 0. That's the same as the point, x, y equals
+0, 0, which is this point over here. Now, this time, solving the system
+of equations, 2x = 0 and 2y = 0,
+was pretty easy to get the point x, y = 0. Sometimes you may have to be
+able a little bit of work, but basically, to find the minimums and
+maximums, all you have to do is set all the partial derivatives to 0 and
+solve that system of equations.

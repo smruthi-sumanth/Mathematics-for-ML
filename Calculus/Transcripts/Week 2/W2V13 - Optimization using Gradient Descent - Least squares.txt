@@ -1,0 +1,21 @@
+You may remember from earlier this week, that you solve a linear regression
+problem using power lines. But even with two variables and
+a simple problem, this turned out to be pretty cumbersome,
+in this video. I'm going to show you how to solve the
+exact same problem using gradient descent, and you're going to see how fast and
+easy it is. So the power lines example
+was the following. You wanted to try to find a best fiber
+line that reduces the cost of connecting to the power lines, and the problem boiled
+down to minimizing this function. So finding the optimal M and B, that will
+find the smallest value for E of MMB. And analytically you found that
+it was one half and seven thirds, and it gave a value of 4.167. However we can also do this,
+using gradient descent. The idea is to minimize the sum of
+squares cost, and this was the gradient. So all you need to do is
+find the optimal M and B. For this, you have to first started
+some initial starting point, and then the points MB such that
+the cost is minimum is over here. So what you do is you take tiny steps
+descending until you find the minimum, mathematically the steps
+are the following. First, you start with some point M0,
+B0, that's some random slope, and some random wine to step,
+and then, you iterate MK plus 1B. K plus one is the K plus one iteration. And that's the K iteration
+minus alpha times that gradient on top, evaluated at MK, BK.

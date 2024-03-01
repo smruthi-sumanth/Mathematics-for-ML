@@ -1,0 +1,24 @@
+In this video, I'm going to show you a nice way to condense all the partial derivatives into a vector known as the gradient. I'm going to show you what notation is used
+for the gradient. Now that you know what a
+partial derivative is, you pretty much know
+what a gradient is. Recall that if you have a
+function in two variables, you can slice it in two ways, treating y as a constant and
+treating x as a constant. Each one gives you a different
+partial derivatives. The first one gives you the partial derivative
+df over dx, which is 2x, and the second one gives you
+the partial derivative df over dy, which is 2y. So the gradient is simply the vector containing these
+two partial derivatives, so basically the vector 2x, 2y. In general, we call
+the vector using the nabla letter nabla f, and that's just
+the collection of all the partial derivatives with respect to all the
+variables in the function. In this case a vector
+of two entries because the function
+has two variables. But if the function
+has 17 variables, it would simply be a
+vector of 17 entries, each one corresponding to
+the partial derivative of the function with respect to each one of the variables. These gradient, in
+this case 2x, 2y, is a pretty good description of the tangent plane
+because it describes the slopes of the two lines
+that form that tangent plane. Now let's do a small exercise. Please find the
+gradient of f of x, y at the point 2, 3. Feel free to think about it. The answer is nabla f equals 2x, 2y, except for x and y, you replace 2, and 3. This is 2 times 2, and 2 times 3, which is the vector 4, 6. That is the gradient of
+the function f of x, y equals x squared plus y
+squared at the point 2, 3.

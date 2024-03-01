@@ -1,0 +1,92 @@
+Now that you've learned
+how derivatives work in more than one dimension, I'm going to show you how to
+use them in optimization, and the example we're
+going to use is the same one we used
+before of the sauna, except now the sauna
+has two dimensions. In Week 1, you saw a simple example where
+you are in a sauna and wanted to get to
+the coolest points since you're starting
+to feel hot. But in this simple example, you are in the bench
+in the sauna and you can only move
+in two directions, to the left and to the right. Now let's look at a
+more realistic scenario where you can move in any direction because
+you're standing anywhere in this room. It's a two-dimensional sauna. Now, let's consider
+that the sauna is this five-by-five room
+and you're standing here, but you can walk in pretty much any direction
+that you want. Again, you're starting to feel
+hot so you want to get to the coldest place in the room and the temperature
+looks like this. The red points are hot and
+the blue points are cold. For each position xy, where x and y are
+the two coordinates, the temperature is the value of the function at that point, which is represented
+by the height. The red points are high
+because they represent hot points and the
+blue points are low because they
+represent cold points, and the goal is to find
+that coldest place, that blue point over
+there at the right. First, let's try the
+same approach you did on Week 1 to
+get to the minimum. Let's say that
+you're standing over here and you're going to basically move around
+a little bit and see where does it get colder. Let's say you want to take
+a step in this direction, and in this direction, and in this direction, and from those you select
+which one was colder. Clearly, it's the
+blue direction, so let's move one step here. Now let's iterate. Let's continue doing
+that and moving in some random steps and
+checking out those steps which one took us
+to a colder place and continue doing this. It's believable that if
+you do this for a while, you will be able
+to take steps that take you to the coldest
+place in the room. How do you recognize the
+coldest place in the room? Well, just like before, it's a place where
+if you walk in any direction, you get hotter. There's no way to get colder by taking a step in any direction. Another way to look at it
+is if you were to take the tangent plane to the
+temperature function, this tangent plane is
+parallel to the floor because the two partial
+derivatives are both zero, and these are given by dT
+over dx and dT over dy, where T is the temperature
+function and x and y are the two
+coordinates in the sauna. Let's put some numbers here
+and see how things go. Let's say that the
+temperature is this function 85 minus 1 over 90 times x squared times x minus 6 times y squared
+times y minus 6. It's a little more
+complicated than the previous one we had of
+x squared plus y squared, but the math is very similar. Here is an exercise. Given this function,
+try to calculate the partial derivatives
+df over dx and df or dy. I encourage you to
+pause the video and take pen and paper and
+try to calculate them, and I will give you the answers. The answers are df over
+dx is minus 1 over 90 times x times 3x minus 12 times y squared times y minus 6. That's the one you obtain by letting y behave
+as a constant, and df over dy is minus 1
+over 90 times x squared times x minus 6 times
+y times 3y minus 12. Those two are the
+partial derivatives. Now to find that minimum point, remember that you
+have to set them both equal zero and then
+solve for x and y. Now this is going to
+give us a lot of points, and many of them
+won't be the minimum, only one of them will be. We have to go through this slightly tedious
+approach of looking at all the pairs xy for which these two partial
+derivatives are zero, but that can be done. Take a look at df over dx. It's a product of
+several things. For a product of several
+things to be zero, one of them at least
+has to be zero. The possibilities here
+are that x is equal to 0 or that 3x minus
+12 is equal to 0, in which case x is equal 4, or that y squared is equal to 0, in which case y is equal to 0, or that y minus 6 is equal to 0, in which case y equal 6. Similarly for df over dy, either x is equal to 0
+or x is equal to 6 or y is equal 0 or 3y
+minus 12 is equal to 0, in which case y equals 4. Let's put all these
+candidates together. For this candidate, if x is equal to 0
+or y is equal to 0, then you have one point
+where the gradient is zero, and the other points are
+all denoted over here. Notice that some points
+are outside of the sauna, so we don't care about those. Now, for x equals
+0 or y equals 0, those are all maximum
+because as you can see, all these points give
+85 as the temperature, so those are not the minimum. The only minimum is
+this one over here, x equals 4, y equals 4, which is the point
+we were looking for. For this point, the
+temperature is 73.6, so this is the minimum. As you can see, just like
+we did for one variable, you set the derivative
+equal to zero, that gives you a
+bunch of candidates and then you check
+them individually. Over here, we simply said
+both derivatives equal to zero and get a lot of candidates and then
+check them individually.

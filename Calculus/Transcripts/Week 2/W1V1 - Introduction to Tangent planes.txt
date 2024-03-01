@@ -1,0 +1,52 @@
+Welcome to Week 2. In Week 1, you learn everything about
+functions with one variable. Now you're going to
+learn everything about functions with two
+or more variables. For example things like a
+tangent line in one-dimension will generalize to a tangent
+plane in two dimensions. This can also be used in optimization in the
+exact same way, and it also applies to machine
+learning. In the same way. However, optimizing functions in two or more variables can get very complicated
+even for a computer. We're going to introduce methods
+that will speed this up. One method that we'll learn
+is called gradient descent. Then I will show you how to use gradient descent to
+optimize several functions. But for now, let's start with a very important concept,
+the tangent plane. In Week 1, you learned
+about derivatives of functions in one variable, for example this one, f of x equals x squared, which is a parabola. Visually you can identify
+the derivative at each point as the slope of the
+tangent line of the point, for example at the
+0.2 comma four, the slope of the
+tangent is four. The tangent is this
+one over here. Now what happens when we have a function of two variables? Well, let's think
+of a simple one. Let's think of f of x comma y equals x-squared
+plus y-squared. Now the function has two
+inputs and one output. Therefore, it needs to be
+plot in three-dimensions. We're going to
+plot it over here. X and y are the two horizontal
+axis and the floor. Z, or f of x, y is plot as the height. Now the tangents are not lines. They're placed like
+this plane over here. That is called the
+tangent plane. How do we get this
+tangent plane? Well, essentially it's
+the same as the one DKs, except we have to
+take two cases. We have to actually
+cut the space into planes and then calculate the
+tangents on these planes. Let's say we fix y equals four. That means we're cutting
+the space here and we have the red parabola. Now let's cut the space
+with x equals two. Now we have another
+red parabola. This parabola, we can
+find a tangent line. Once we have the two tangent
+lines, then we have a plane. Because any two lines that cross actually represent
+a unique plane. That one over there
+is the tangent plane. What were the
+calculations we did here? Well, when we fixed
+y equals four, then we cut the space with a slice and we also
+let y equals four. That's why this function f of x4 became x squared plus four
+squared because y is four. That function is easy to
+differentiate with respect to x, the derivative is two x, that's the slope of
+one of the lines. When we fixed x
+equals two is when we slide the space with
+the other direction. Now you get the
+function f of 2, y, which is two squared plus y squared by replacing
+x equals two. You can differentiate
+that with respect to y. You get to y. Now this calculation seems
+confusing, don't worry. We're going to elaborate them a little more over the
+next few videos.

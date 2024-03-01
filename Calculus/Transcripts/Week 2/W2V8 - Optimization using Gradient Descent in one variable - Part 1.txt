@@ -1,0 +1,46 @@
+So far you learn how to solve optimization problems using
+derivatives and gradients. However, when you try to get exact solutions to these
+problems analytically, you're going to
+start noticing that these problems can get really
+complicated really fast, especially in higher dimensions. In this lesson,
+I'm going to show you a method that is iterative and that is really powerful for minimizing or
+maximizing functions, especially in many variables, the method is called
+gradient descent. But let's start with
+gradient descent in one variable in order to work our way up the gradient
+descent in several variables. Let's look at the
+following function, f of x equals e to the
+x minus logarithm of x. This is the plot
+of the function, so it's nice and smooth. The question is, can we
+find the minimum here? The minimum is
+somewhere around here. We know how to do it
+from previous lessons. All we have to do is calculate f prime of x and set
+it equal to zero, and then solve for x. What is the
+derivative of f of x? It's e to the x minus 1 over x. The reason is because
+the derivative of e to the x is e to the x and the derivative of
+logarithm is 1 over x. All we have to do
+is solve for e to the x minus 1 over x equals 0. However, this is pretty
+challenging, let me show you. Solving for e to
+the x minus 1 over x equals 0 is equivalent
+to solving for e to the x equals 1 over x.
+I challenge you to try it. It's actually pretty
+hard to do analytically. The solution is 0.5671, etc. Which is a famous number, is known as the Omega constant. However, the fact that this
+is really hard to solve analytically should not stop
+us from trying something. The question is, is
+there any other way? Here is one method. Let's pick some random value, let's say somewhere around here. Now, let's give it a try and move to the
+left by a little bit, and move to the right
+by a little bit. Now we have two
+new points to try. Which of these two
+points is better? Well, since we're trying
+to minimize the function, let's go for the
+one on the right, which has a smaller
+value in the function. Now we are at this
+point, and let's repeat. So we move in both directions and check to
+see which point is smaller, and this one wins. Let's try it one more time. We move in both directions, and now something
+interesting happens, which is that both points on the two sides have
+a higher value. Therefore, let's
+settle for this point. We say that this point it
+may not be the minimum, but it's close enough
+to the minimum. Now this method is not
+bad but we can actually improve it a lot to get
+really close to the minimum. Let me show you in
+the next video.

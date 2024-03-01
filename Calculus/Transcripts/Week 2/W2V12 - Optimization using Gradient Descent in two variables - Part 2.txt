@@ -1,0 +1,72 @@
+Again, in the previous video, you saw an okay way to take you closer to the
+coldest place in the sauna. However, there was a lot of random steps in that algorithm. We're going to do it
+more exactly and more mathematically just like we
+did before with one variable, we're going to define
+gradient sending two variables.
+It's very similar. You start with an
+initial position, except now the
+initial position has two coordinates, x_0 and y_0. Before you used to
+draw the tangent or the derivative but now
+we're in two variables, so we have two tangents, this one over here. Notice that it's pretty steep. We're going to draw
+that magnitude in the floor in the direction that the derivative
+is increasing. Because it's steep,
+it's a big vector. Now we're going to
+do the same thing with the other component
+of the gradient. We get a smaller vector
+on the floor because this second gradient is much flatter than the previous one. Now, let's take the sum
+of these two vectors or the vector with
+the two coordinates, and that is the gradient. Now the gradient has an
+interesting peculiarity, is the direction of
+gradient ascent. If you want to take a
+small step and get to the hottest place you can on a small step you want to take in the direction
+of the gradient. But we don't want to get hotter, we want to get colder
+so we take it in the direction of the
+negative gradient. The direction of the
+negative gradient is the direction that
+if you take one step, takes you to the
+coldest possible place, that you can get two
+in one tiny step. We're going to take that step in the direction of the
+negative gradient. It's going to be a
+small step so we multiply it by the
+learning rate again. We get x_0y_0 minus learning rate times gradient
+and that's our new point, x_1, y_1, and that's
+a better point. Notice that this is exactly the same as gradient descent
+in one variable, except instead of
+the derivative, we simply take the gradient. Now let's see how this works
+for the previous example, this is the formula
+for the temperature. It's 85 -1/90 x squared times x minus 6 times y
+squared times y minus 6. Let's run a couple of steps of the gradient
+descent algorithm. Let's start with the 0.50, 0.6. Now we have to
+calculate the gradient, which is the partial derivative
+with respect to x and the partial derivative
+with respect to y put together in a vector. We've already calculated
+these derivatives previously so here they are. All we need to do to
+find the gradient is to put them
+together in a vector. Now, let's plug x
+equals 0.5 and y equals 0.6 into this vector to get the gradient over
+here at this point. Now, simply take a step. You move in the direction of the gradient times
+the learning rate with a learning rate of 0.05. That gives you a new point
+is not 0.50, 0.6 anymore. Now it's 0.5057 and 0.6047. You move in that direction. Now you're just a little bit
+closer to the minimum point. Now let's run this
+algorithm again. We calculate the gradient and we move in the direction
+of that gradient. We add a new point. You simply repeat
+this many times. If you repeat this many times, then you are going to get really close to the minimum
+really fast. In short, the gradient
+ascent algorithm is very similar to the one we
+did in one variable. Now we have a function f of xy. The goal is to find the minimum. The first step is to define
+a learning rate Alpha, and to choose a starting
+point x_0, y_0. Step two is to update the
+kth position by taking the k minus first
+position and subtracting the learning rate times the gradient and the k
+minus first position. Then step three says repeat step two until you're close enough to
+the true minimum. As usual, you know when
+the true minimum is happening because it's when you move really slowly or maybe
+not move basically at all. Now, just like gradient descent in one variable grade decent, two or more variables still
+has the same drawbacks. For example you want to get
+to this global minimum, but you may accidentally get into these local
+minimums over here. The way to overcome this, at least with high probability, is to start at very
+different places. Notice that here we start at three different places
+and each one of them took us to a different local minimum with one actually reaching
+the global minimum. But just like with one variable, there's no way to tell for sure if you've got
+global minimum. But if you run in many times, probably what you got as the optimal solution
+is pretty good.

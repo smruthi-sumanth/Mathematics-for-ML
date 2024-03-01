@@ -1,0 +1,55 @@
+Before we get to partial derivatives
+I wanted to have the following mental picture. Imagine that you have this function of
+two variables plotted in 3D space and that you cut it with a plane like this,
+what do you get? You get something like this? And in the cut you can see this red
+parabola with a tangent over there, that's the partial derivative. Now you can also cut it in another
+direction, you can cut it like this and then you get also a red parabola and that
+red parabola is a function of one variable. So you can draw tangents like
+the black tangent over there. So let me elaborate a little
+more if we take our function in the variables X and
+Y which is plot in 3D. And let's say we fix a value of Y in
+this case its 4, but it can be anything. So we treat y as a constant, all of
+a sudden if you treat y as a constant, this is no longer a function of two
+variables is now function of only one variable represented by this
+red parabola over here. Now let's take some point in that red
+parabola and let's draw a tangent like it's drawn here, that black line,
+what is the slope of this line? The slope of this line is
+the partial derivative. So how do we calculate
+a partial derivative? Well, it's very simple, let's take
+the formula for the function f (x, y) equals x squared plus y squared,
+since we fixedy and it doesn't really matter
+what value we fixed it too. We are treating y as a constant. So when you differentiate this function
+now this function is only a function of x. So when you take the derivative with
+respect to x which we're going to call di fover di ym where di is this symbol
+over here, that's partial derivative. Then it's going to be 2x which
+is the derivative of x squared with respect to x plus zero because
+0 is the derivative of a constant. Remember that y squared is now a constant
+so its derivative with respect to x is 0. So therefore the slope of
+this line over here is 2x, so you can take two partial derivatives
+with respect to x and with respect to y. So what happens when we
+treat y as a constant? Well, the partial derivative is 2x and
+if we were to treat x as a constant, then the partial derivative is 2y because
+the derivative of x squared 0 and the derivative and y squared is 2y. In other words,
+if you have a function f(x, y) you can take two partial derivatives. There's two ways to denote it,
+one is f sub x and the other one is di f over die x. And you can also take the partial
+derivative respect to y and that's fy or di f over di y. So these two are the two partial
+derivatives you can take of this function and as you can imagine if I have
+a function not of two variables, but let's say 10 variables,
+then I can take 10 partial derivatives, one with respect to each of the variables. Now those calculations weren't super
+clear, let me do them in detail here. So let's say you have the function f of
+(x, y) equals x squared plus y squared. And the task is to find the partial
+derivative of x with respect to x and y. So let's do di f over di x first,
+we're going to try to find this two and as I said before, that's the partial
+derivative notation over here. So when you want to find the partial
+derivative of f with respect to x, there are two steps. The first step is to treat all the
+variables as constants, so in this case, y is the other variable so
+we're going to treat y as a constant. And step two says differentiate
+the function using the normal rules of differentiation. So let's start,
+this y squared over here is a constant. So it might as well be a 1,
+we can think of this as f(x, y) equals x squared plus 1 because the derivative
+of 1 is 0 because it's a constant. So di f over di x is
+simply 2x because that's the derivative of x squared and
+what's di f over di y? Well, now x is the one that
+behaves as a constant. So we can think of this as 1 plus
+y squared, or 7 plus y squared, or anything you want. And the derivative of 1 plus y
+squared with respect to y, is 2y. So those are the partial derivatives.
