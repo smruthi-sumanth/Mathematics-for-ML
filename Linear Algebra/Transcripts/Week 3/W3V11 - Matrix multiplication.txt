@@ -1,0 +1,48 @@
+Previously, you've learned how to
+multiply matrices and vectors. In this video, you learned how to
+multiply matrices and matrices. The product formula is very intuitive, but what I really enjoy is how it
+looks like for linear transformations. In short, matrix multiplication
+corresponds to combining two linear transformations into a third one. Follow me and I'll show you how. So, imagine that you have
+a matrix with entries 3 1 1 2, the one you've already seen. So, let's quickly take a look at
+the linear transformation here. The vector 1 0 goes to 3 1,
+which gets plotted here, and the vector 0 1 goes to the vector
+1 2 which gets plotted here. And then the fundamental basis on the left
+gets sent to this basis on the right. So let's do another one, but
+let's start with the basis on the right. So, let's see what linear transformation
+corresponds to the matrix 2 -1 0 2. So let's see how it acts
+on the two basis vectors, which now are the vector 3 1 3 1 goes 2 5. Therefore this vector over here goes
+to the point 2 5 on the right, and the other vector is (1, 2). This matrix times 1 2
+becomes the vector (0, 4). So we plot 0 4. And then this parallelogram
+on the left turns into this parallelogram on the right. So that is a way to see
+that linear transformation. And now let's put them together. So we have the first linear transformation
+corresponding to the matrix 3 1 1 2, and the second one corresponding
+to the matrix 2 -1 0 2. Now, if we forget about the middle one,
+then there's a linear transformation between the first and the third, and
+that has to correspond to some matrix. The question is, what matrix corresponds
+to that linear transformation? So, let's simplify a bit and
+only look at the basis vectors. So by looking only at the left and
+the right with C, that the vector (1, 0) on the left
+gets sent to 5 2 on the right. Therefore as we saw before,
+the first column of the matrix is 5 2. And the other basis vectors vector (0,
+1) gets sent to the vector (0, 4). Therefore the second column
+of the matrix is 0 4. So, the combination of the two linear
+transformation gives us the linear transformation corresponding
+to the matrix 5 0 2 4. Now, is there any way we can obtain
+the matrix from the first to the third, from the other two matrices? And the answer is yes we can. And that's what matrix multiplication is. This operation over here is a matrix
+of the left times matrix in the right equals the third matrix. Now, notice something that
+the matrix got flipped. This corresponded to the first linear
+transformation, the one on the left, and this corresponded to the second one. That's something very
+important to keep in mind. And the reason is because the linear
+transformations act on the vector on the left. So you multiply matrix times vector. Therefore, you first multiply
+the matrix 3 1 1 2, and then multiply the matrix 2 -1 0 2. So they go in the opposite direction. Now, is there a fast way to see matrix
+multiplication without having to draw linear transformations? The answer is yes. And you've pretty much seen it already
+because there's a lot of dot products. Basically, look at the matrix on the left
+as two rows of the matrix on the right as two columns. And take every possible combination of
+dot products between row and columns. So, for example, the first row and the first column go in the top left
+corner, and the first row of the first and the second column on the right
+go in the top right corner. Now let's calculate these dot
+products like we already know. The first one is 5, the second one is 0,
+the third one is 2, and the fourth one is 4. So the matrix 5 0 2 4 is the product
+of these other two matrices. So in summary, you can look at a matrix
+product this way as multiplying two matrix, but you can also see it as
+combining two linear transformations into a third linear transformation.

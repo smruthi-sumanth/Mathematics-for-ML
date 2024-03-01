@@ -1,0 +1,42 @@
+A matrix can have a very special matrix
+associated with it called the inverse. When I think of the inverse of a matrix,
+I think of the inverse of a number, namely the number that when multiplied to,
+it gives us one. For example, the inverse of the number
+two is the number one-half and the inverse of minus
+five is minus one-fifth. The inverse matrix is
+precisely that matrix for which the product of the matrices
+is the identity matrix. In a linear transformation, the inverse matrix is the one that
+undoes the job of the original matrix, namely the one that returns the plane
+to where it was at the beginning. And here's how an inverse matrix works. Imagine that you have a linear
+transformation corresponding to the usual matrix with entries 3, 1, 1 and 2, and that turns the square
+into this parallelogram over here. Now there exist some transformation that
+would turn this parallelogram back into the original square. And don't worry about the entries of
+the matrix, we'll find them later. Just know that there is one and that would
+mean that the composition of the two transformations is the one
+corresponding to the identity matrix, the one that does nothing to the plane. It leaves it by itself. So if the inverse matrix is the one with
+entries a, b, c and d, that means that when we multiply the original matrix
+by the inverse, we get the identity. Now just like with numbers,
+we're going to call the inverse, the original matrix elevated
+to the power of -1. In the same way that you say two
+to the minus one is one-half, then this matrix to the -1
+is the inverse matrix. And this happens to have these entries and
+you can verify that if you were to multiply the original matrix by this one,
+you get the identity matrix. Now how do we find the entries
+in this inverse matrix? The answer is by solving
+a system of linear equations. So notice that if we take
+the entries in this matrix on the left to be equal to
+this counterpart on the right, then we really have
+the following four dot products. Each one of these dot products
+gives us some linear equation. Now you have a system of four linear
+equations with four unknowns, a, b, c and d. We can use our usual methods of
+elimination to solve it to get a = 2/5, b = -1/5, c = -1/5 and D = 3/5. So now here's a quiz. Find the inverse of the following matrix. If you find the task is impossible,
+feel free to click on I couldn't find it. So by solving the corresponding system of
+linear equations, we get the following. We get that the answers are a = 1/4, b = -1/4, c = -1/8, and d = 5/8. Now here's another quiz,
+find the inverse of the following matrix. And if you find that
+the task is impossible, feel free to click on
+I'm reaching a dead end. And it turns out that
+the inverse doesn't exist. We need to solve the following system
+of linear equations a + c = 1, 2b + 2d = 0, 2a + 2c = 0 and b + d = 1. Now this is clearly a contradictions since
+the first equation says a + c = 1 and the third equation says 2a + 2c = 0, but
+if a + c = 1, then 2a + 2c has to be 2. It cannot be 0. So therefore this matrix
+doesn't have an inverse.

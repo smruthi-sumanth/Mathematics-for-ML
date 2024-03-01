@@ -1,0 +1,60 @@
+As you can imagine, the angle between two vectors
+is very important. There are some nice
+relations between the angle and the dot product, which I'll show
+you in this video. To begin, take a look at
+these two perpendicular, also called orthogonal
+vectors with entries minus 1, 3 and 6, 2. Now take the dot product and
+notice that the dot product is 6 times minus
+1 plus 2 times 3, which is 0. This always happens. In fact, two vectors
+are orthogonal if and only if the dot
+product is zero. Now for a recap of
+what you've seen, the dot product between
+a vector and itself is precisely the norm squared or the length of
+the vector squared. The dot product between
+two perpendicular or orthogonal vectors
+is always zero. What about the dot
+product between two random vectors, u and v? Is there a nice
+way to write this? It turns out that there is. Let's look at it from a
+slightly different way. You saw the dot product of a vector and itself is the norm squared over the product
+of the norm and itself. The dot product
+between a vector and a longer vector in the same
+direction is very similar. It's simply the product
+of the two norms, norm of u times norm of v. Now what are the vectors
+have an angle in between. It's almost the same
+except you have to perpendicular project one
+vector onto the other one, is precisely the shade that one vector leaves
+on the other one. This vector is u prime, then the dot product to
+u and v is the product of the magnitude of u prime and the magnitude of
+v. The interesting things that it
+doesn't matter if you project u to v
+or v to u, you still get the
+same dot product. An easier way to
+see this is this, the angle between the
+vectors is Theta, then the dot product
+of u and v is the magnitude of u
+times the magnitude of v times the
+cosine of the angle. Using what you know
+about the dot product, you cannot tell if the
+dot product between two vectors is positive,
+negative, or zero. For example take a look
+at the vector 6, 2. A vector perpendicular to it, such as minus 1, 3 has dot product of 0
+with the vector 6, 2. A vector to the right
+if it's such as 2, 4 for example, has a dot product of
+20, which is positive. A vector to the left of
+it, such as minus 4, 1 has a dot product of negative
+22, which is negative. Now, why is the dot product
+with 2, 4 positive? Well, the reason is because the projection of
+this vector onto 6, 2 has positive length, and why is the dot-product
+with negative 4, 1 negative? The reason is because the
+projection onto the vector 6, 2 is negative because
+you have to go in the opposite direction
+of the vector 6, 2. Therefore, the sign of the
+dot product of a vector corresponds to being
+on one side or the other one off that
+perpendicular vector. In other words, this
+happens in general. The vector is u, then the
+vector that haven't dot product of 0 with u are all the
+perpendicular vectors to u. The vectors that have a positive dot product with u are all the vectors
+in this region, and the vector that have a
+negative dot product with u are the vectors in
+this region over here.

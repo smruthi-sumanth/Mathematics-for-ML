@@ -1,0 +1,10 @@
+Another very useful and simple operation you can do on
+vectors is multiply them by a scalar. For example, if the vector is (1,2) and
+you'd like to multiply by the scalar, lambda =3, then the result
+is the element-wise product. That means you multiply each of
+the elements of the vector by 3 to obtain the vector (3,6). Graphically, it means you stretch
+the vector (1,2) by a factor of 3. What if the scalar is negative? No problem, what happens here is that the
+vector gets again stretched by the factor but also reflected about the origin. So for example, if the vector is again (1,
+2) and the scalar is -2, then the product of the scalar
+times the vector is (-2, -4), which also corresponds to
+the entry-wise product as expected.

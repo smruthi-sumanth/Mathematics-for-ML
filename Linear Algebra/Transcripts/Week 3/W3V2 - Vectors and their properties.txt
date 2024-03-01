@@ -1,0 +1,40 @@
+In the previous weeks, you've learned
+matrices as array of numbers. A vector is a simpler way of number
+one that only has one column. It turns out that vectors can be
+seen as arrows in the plane or in a higher dimensional space. Two very important components
+of vectors are their magnitude, namely their size and their direction. This is what you learn next. A vector is simply a couple of numbers. It could be two numbers,
+three numbers anything. The number of coordinates in the vector
+is the dimension of the space in which it lives. For example, the vector with
+coordinates 4,3 lives in the plane and is precisely our the points at the point
+with horizontal coordinate 4 and vertical coordinate 3. You can have vectors space of higher
+dimensions for example in 3D. The vector with coordinates
+4,3,1 lives in this space. And is the arrow pointing at
+the point with coordinates 4,3 and 1 with respect to the access X, Y and Z. Vector has two very important points. The magnitude or size and
+the direction which I will show you next. The magnitude, the size of the vectors
+can be defined in several ways. But the great news is that all of
+them emulate the distances you use in real life. The first way to measure distance. Imagine that you live in a city
+with lots of buildings and blocks formed by streets that
+are either horizontal or vertical. You need to go from home to the store,
+but you can only go on the streets. Therefore the distance between points,
+say there are four blocks horizontally and three blocks vertically between your
+house and the store is the sum 4+3. This is called the taxicab distance. And no matter what route you take, you will always end up at
+a distance of seven blocks. The other way you can go to
+the stories to forget your car and actually hop into a helicopter. The helicopter doesn't need to
+follow the streets or corners, and it can simply fly directly. The best you can do with the helicopter is
+the square root of 3 squared +4 squared. Which is precisely 5. This is because of the pythagorean
+theorem that states that the length of the hypothesis in a right triangle
+is the square root of the sum of the squares off both sides. Now, why these distances? Because both give us ways to find the size
+of the vector with coordinates a,b. The first one, the L1e norm is to find out
+the taxicab distance between the origin and the point a,b. Which is precisely some of
+the absolute values of b and b. Why absolute values? Because a and
+Bb can be positive or negative, but the distance to walk
+is always positive. The second measure of the size of
+vector is the L2 norm defined by the helicopter distance between
+the origin and the point a,b. As you've seen this is the square root of
+the sum of the squares of the coordinates. By default, when you specify with norm
+to use, we are using the L2 norm. The reason is that it's a more natural
+one because precisely it is the length of the arrow. The direction of a vector can also
+be deduced from its coordinates. For example, for this vector coordinates 4,3,
+if the angle of the horizontal axis is theta, then the tangent of
+theta is precisely three quarters. That means that theta is the arc tan or
+tangent inverse of three quarters, which is 0.6 foreign radiance. Or if you prefer 36.87 degrees.

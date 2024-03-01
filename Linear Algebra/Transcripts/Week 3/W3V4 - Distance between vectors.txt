@@ -1,0 +1,13 @@
+The difference between
+two vectors is helpful to tell how far apart two
+vectors are from each other. For example, how different is vector 15 from the vector 62? One way to tell is by the L1 distance or the L1
+norm of the difference. This is the sum of
+the absolute values of the components,
+which is eight. Another way to tell is by the L2 distance or the L2
+norm of the difference, which in this case is 5.83. A final way that you haven't seen yet is
+the cosine distance. This is simply the cosine of the angle between
+the two vectors. In machine learning,
+it' s very useful to know distances between vectors because many times
+you want to calculate different similarities
+between data points, and these measures
+are very useful.

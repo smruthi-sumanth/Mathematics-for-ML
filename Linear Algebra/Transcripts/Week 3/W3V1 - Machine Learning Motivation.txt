@@ -1,0 +1,36 @@
+Welcome to week three. The main topics for
+this week are vectors and matrix, and some of their properties such as
+the size and direction of a vector. You will also learn many
+operations you can apply on them. See in a way, vectors and
+matrices are a lot like numbers. Numbers can be added,
+multiplied, divided and many of these operations can be
+propagated into vectors and matrices. For example, one can think of the sum of
+two vectors, the product of two vectors, or the product of two matrices, or
+the product of a vector and a matrix. Furthermore, just just like you can find
+the multiplicative inverse of a number, for example,
+the inverse of two is one half. You can also find the multiplicative
+inverse of a matrix that is under some conditions that you'll see,
+but actually you've seen before. You'll see throughout
+the week that matrices and vectors are essential in
+any kind of data set. Another very important concept you learned
+this week is the concept of a linear transformation. Linear transformations are very,
+very special way to visualize matrices graphically, and one that can make
+many concepts much more clear. But before getting into that, here
+are some applications to machine learning. Undoubtedly one of the coolest
+applications from neural networks in generative learning, where the computer
+doesn't just answer questions. It actually produces
+things such as images. The images of human faces produced
+by neural networks in particular, a special set of them called generative
+adversarial neural networks are so realistic looking that
+they may trick you and I into thinking they're
+pictures of actual humans. The images here are perfect demonstration
+of such AI generated human faces. And generative models can
+also take text as input and produce images that accurately
+represent the text they were given. It turns out the text-to-images
+are very active area of research and machine learning and has made great
+progress in the last few years. Computers are able to understand text well
+enough to produce some impressive image results. In your career as a machine
+learning practitioner, you'll be building these types
+of ML models and for that, it is very important that you know,
+their core which is manipulating matrices, vectors and their operations very well,
+which is the topic of this week. So let's get started.

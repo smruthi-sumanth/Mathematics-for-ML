@@ -1,0 +1,22 @@
+In the previous video, you learn how to turn a matrix
+into a linear transformation. But going the other way
+around is just as easy. Here I'll show you how to start
+with linear transformation, and then find the corresponding matrix. So let's say we have
+some incognito matrix and we know it sends this fundamental square
+or basis into this one over here. And the goal is to find
+the entries of the matrix. So let's look at where it
+sent each of the points. The point 0, 0 gets sent to 0,
+0 which always happens. The point 1 0 gets sent to 3,
+-1 which is the bottom corner. The point 0 1 gets sent 2, -3 and
+the point 1 1 gets sent to 5 2. So it turns out we don't
+need that much information. We only need these two points over here. I'm going to use arrows to denote this
+point since vectors tend to be denoted by an arrow growing from the origin
+all the way to the point. So the vector with coordinates 1 0 gets
+sent to the vector at coordinates 3, -1. And the one with coordinates 0 1 gets
+sent to the one with coordinates 2 3. Now I invite you to take a piece
+of paper and do the math and, convince yourself that that's
+how matrix multiplication works. But the matrix that sends
+the vector 1 0 and 0 1 to 3, -1 and 2 3 is precisely the one
+that has columns 3, -1 and 2, 3. And so that is how you turn a linear
+transformation into its corresponding matrix. You only look at where the two
+fundamental vectors 1 0 and 0 1 go, and those are your columns of the matrix.

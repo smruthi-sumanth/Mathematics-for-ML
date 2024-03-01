@@ -1,0 +1,118 @@
+Now onto a machine learning application. Recall from week one that neural networks,
+one of the most successful and powerful machine learning models out
+there with numerous applications, is based largely on matrices and
+matrix products. Let me show you a concrete example of
+a simple neural network which actually works with the dot product. >> First, let's start with a small quiz. Imagine that you have a spam dataset,
+and in the spam dataset you pinpoint two words that are quite deterministic for
+spam, which are the words lottery and win. These seem to appear more on spam emails, but of course their appearance doesn't
+guarantee that the email is spam. So you've counted the number of
+appearances in the emails that are spam and not spam, and got this table. Now the goal is the following. You want to build a spam filter,
+the best possible spam filter. That is called a classifier,
+which is a neural machine that will try to guess if an email is spam or
+not based on the contents of this table. And this particular classifier is
+going to work in the following way. You assign a score to the word lottery,
+and a score to the word win, then you calculate the score
+of a sentence by adding the scores of the words with repetition. For example, if the score for the words
+lottery and win are three and two, then the sentence, win win the lottery
+gets a total score of seven points. Two for each appearance of win, three for
+the appearance of lottery, and none for the appearance of the word, the. Now the rule to guess if an email
+is spam or not is the following. If the number of points of the sentence
+is bigger than some amount called a threshold, then the email is
+classified as spam, otherwise it's not. Watch out,
+this doesn't mean the email is spam, simply means that the classifier thinks
+it's spam and sends it to the spam box. Now the goal of the quizzes to
+find the best possible classifier, that means one that fits the results
+of the table as well as possible. In other words, you want to find
+the best score for the word lottery and for the word win, and for the threshold,
+in such a way that the results of the classifier are as close as possible
+to the spam column of the table. I'll give you a hint, it's actually
+possible to find three numbers so that the classifier makes the correct
+guess for every single email in the table, give it a try. And here's the answer,
+actually many answers work but out of the options of the quiz,
+the only one that worked was this one. The words lottery, win,
+both have a score of one point and the threshold is 1.5 points. Notice that when you calculate
+the scores of the sentences, they end up being the sum of
+the number of times each word appears. And when you check the numbers larger or
+equal to the threshold of 1.5, the column of the answers is exactly the same column
+that records if the email spam or not. So this is the perfect spam filter for
+that particular dataset. That means the classifier
+did a pretty good job, in the dataset that it was given. Now, this is called natural language
+processing because the input was language, it was words, and
+it used these words to make a prediction. This classifier can also be
+seen graphically as follows. Let's plot the dataset in a plane
+in which the horizontal axis, the number of times the word lottery
+appears, and the vertical axis, the number of times the word win appears. So the dataset looks like this. Notice that it is quite peculiar as
+a line can separate spam from non spam. Also, this line happens to have
+the equation given by the scores and the threshold, which is 1 times win
+plus 1 times lottery is equal to 1.5. The line also gives rise to two regions,
+the positive and the negative regions. The positive region is the one for which
+the score in the sentence is larger than the threshold, and
+the negative region is that one for the score of the sentence is
+smaller than the threshold. This is precisely classifier,
+a linear classifier and it's actually the simplest neural network,
+it's a neural network with one layer. Also know that the model does make sense, the more appearances of
+the words lottery and win, the higher the score in the sentence,
+and the more likely the email is spam. A one layer neural network can be
+seen as a matrix product followed by a threshold check. Here it is, on the left there's
+the dataset and in the middle there is the model, those two numbers 1,1 are the
+scores of the words lottery and win. Now let's look at one of the rows,
+say the second one, it's a sentence with two appearances of the world lottery,
+and one appearance of the word win. Now, in order to find the score of that
+sentence, one can simply takes the dot product of the sentence row and the model
+column, to get two plus one equals three. Now, after the dot product, you can
+apply the check with the threshold. This one returns a yes if the result is
+more than 1.5 and a no know if it isn't, in this case three is bigger than 1.5,
+so the prediction is spam, that means the classified thinks
+the email is spam and that is correct. Let's do another one, say the fifth row. This one only has one
+appearance of the word win and no appearance of the word lottery. The dot product is equal to one which
+after check results in a prediction of no, because the classifier doesn't think
+the email is spam, and it's correct again. Now, notice that if you
+had a lot more words, you would simply have a much
+wider matrix on the left, and a much longer model vector on
+the right, but this still works. Now, an easier way to do all these
+predictions at the same time, is to actually take the product
+of the matrix, and the vector. So if we take the product of
+the matrix and this vector, we get the vector of scores, and
+all we have to do is apply the check to all the elements in this
+vector to get our predictions. And as I mentioned before, if you had many
+words, you would just have a much wider matrix and a much longer model vector,
+but this would work exactly the same. But for
+now let's go back to the two column case. Here's another way to
+look at this classifier. The equation to check for spam, is that the score of the sentence is
+bigger than the threshold, which is 1.5. But that's the same thing as saying that
+the score minus 1.5 is larger than zero, in this case this minus
+1.5 is called the bias. So the way to include this into the matrix
+multiplication is to add an entire column with the number one
+in the data table, and a roll with the bias
+with a -1.5 in the model. And now, instead of checking if
+the results is larger than the threshold, 1.5 we only have to check if the modified
+score is positive or negative. That gives us the exact same classifier, sometimes you'll see classifiers with
+a bias and sometimes with a threshold. For more complicated neural networks,
+the bias tends to be more common. But let's not worry so much about the bias
+and continue with the threshold, and instead let's look at a simpler problem. This is called the AND operator, and
+the dataset is actually very similar, it's just four rows of the previous
+dataset with the same labels as before, except now it's not a spam or
+not spam problem. Now, the AND
+column simply says yes if both the x and the y columns contain one,
+and says no otherwise. That's just the very well known AND
+operator for two elements. Now, why do I bring the AND operator up? Because if you consider this as a small
+dataset, then you can model it with a neural network, in fact the exact
+same one you used for the spam detector. When you multiply the matrix by this model
+vector, you get these results over here, which when you check with
+the same threshold as before, you get predictions that look
+exactly like the AND dataset. So the AND dataset can be modeled as a
+perception, as a one layer neural network. And graphically here's a classifier, note
+that's the exact same line as before which separates the points except that,
+now there's only a subset of the points. The equation of the line is the same, one times x plus one times y
+minus 1.5 is equal to zero. Here's a graphical way to represent
+the previous AND perception. The inputs are x and y and
+the bias is minus 1.5. In this diagram,
+the number inside the node gets multiplied by the weight in the edge, and
+then they get added in the next node. Then the activation function is applied, the activation is precisely the check,
+is the one that returns a one or a yes, if what it comes is non negative, and a
+zero or no, if what it comes is negative. And using variables, this is
+the perception that appears in the lab. The input is x coming from the dataset, the weights of the model are the ws,
+and the bias is b. And inside the node, there appears the dot
+product that is added to the bias. The output of the node then gets
+past the activation function, and that generates the output
+of the perception

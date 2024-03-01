@@ -1,0 +1,32 @@
+In this video, you will learn a very
+nice and compact way to express systems of linear equations using matrices
+and vectors, called the dot product. The dot product is a very important
+operation in linear algebra. In fact, you've already
+learned the dot product, but here you will learn it formally. This is how it works. So imagine that you have the following
+problem, you buy some fruit, let's say 2 apples,
+4 bananas and 1 cherry. And each apple costs $3, each banana
+costs $5, and each cherry cost $2. And the question is,
+how much does everything costs? So that's an easy problem, but
+the point is the way to express it. The way to express the number of fruits is
+using a vector which is simply a column of numbers 2, 4 and 1, that's
+the amount of foods we bought of each. And the prices can also be expressed
+as the vector with entries 3, 5 and 2, that's the price of each of the fruits. In order to find the price
+of all the fruits, you can find the price of
+each fruit individually, mainly 2 apples multiplied by 3,
+which is the price of each apple, to get 2*3 = $6, that's the amount
+of money you spend on apples. Then you can do the same thing for
+bananas and get 4*5 = 20, and the same thing for cherries, so 1*2 = 2. So 6 is the amount of money you spend on
+apples, 20 on bananas, and 2 on cherries. And the total price of
+fruit is 6 + 20 + 2 = 28. Now, what you just did
+was the dot product, because you can abbreviate it like this,
+and that means 2.3 + 4.5 +1.2 = 28. We can actually express it like this, it's
+more common to have the first vector as a row and the second vector as a column,
+and then forget about the fruits and get the dot product. So dot product of the vectors 241 and 352 is the sum of each
+corresponding pair of entries. And that's it, the dot product is very,
+very often used in linear algebra and next you'll see some of its uses. There's a nice connection
+between dot product and norm. Let's go back to the vector at
+coordinates 4, 3 whose norm was 5, and notice one thing and it's that 4 square + 3 square is actually
+the dot product of the vector and itself. So it's 4*4 + 3*3 = 25. And this is always the case. The L2 norm is always the square root of
+the dot product between the vector and itself. And sometimes you'll see it
+written in this notation, with an angle bracket on the left and
+an angle bracket on the right

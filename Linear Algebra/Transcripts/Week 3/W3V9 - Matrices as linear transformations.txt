@@ -1,0 +1,50 @@
+In the previous videos you have seen
+matrices as arrays of numbers that represent systems of linear equations. But there is another very powerful and
+very useful representation of matrix and it is as linear transformations. A linear transformation is a way to send
+each point in the plane into another point in the plane in a very structured way. Here, I show you how. In this video you'll see an illustration
+of how matrix is a linear transformation in two dimensions, but I invite you
+to imagine it in more dimensions, such as a three dimensional space for
+example. Say you have this two by two
+matrix with entries 311 and 2. So here's the linear
+transformation it corresponds to. First consider two planes
+with access labeled a and b. The transformation will send every point
+on the plane in the left to a point in the plane in the right
+in the following way. Any point has two coordinates. Those two coordinates
+form a column vector. To get the vector in the right,
+we multiply the first vector by the matrix and whatever you
+get is the point in the right. So this will be easier with some examples. First, let's look at
+the point in the origin. The 0 0 that becomes the vector 0 0, which we multiplied by the matrix,
+we get the vector 0 0. So 00 goes to 00. This actually always happens
+with linear transformation. The origin gets sent to the origin. Now let's look at the point 1 0. So the matrix times the vector
+1 0 gives us a vector 3 1. So 1 0 goes to 3 1. Now let's look at 0 1. The matrix times 0 1 is equal to 1 2. So 0 1 goes to 1 2. And finally let's look at 1 1. Matrix times the vector 1 1 is
+the vector 4 3, so 1 1 goes to 4 3. And actually this defines
+the entire transformation. So let's look at this little square
+form that these four points. It goes to this parallelogram. The square on the left is called a basis. And so
+is the parallelogram on their right. And they're very,
+very important concepts in linear algebra. And you'll know why they're
+called basis in a little bit and a very special property that basis have
+is that they cover the entire plane. So actually, since this square
+actually tessalates the whole plane and the parallelogram tessalates
+the whole plane as well. Then the linear transformation is simply
+defined as a change of coordinates. So for example, if we want to
+find where the point minus 2, 3 goes well, the point minus 2,
+3 on the left is obtained by starting at the origin walking two blocks
+to the left and three blocks up. So to find where that point goes in the
+linear transformation we simply started the origin and
+walk two blocks to the left and three blocks up in these new coordinates. And we get the point minus 3, 4. And so the matrix times vector minus 2,
+3 is the vector minus 3, 4. In the language of buying apples and
+bananas. I like to see transformations
+in the following way. Let's say that you go to the store on
+the first day you buy three apples and one banana. And on the second day you buy
+one apple and two bananas. So if the price of apples is a and
+the price of bananas in b. Then the resulting prices for days one and
+two are the entries of the vector corresponding to the product of
+these matrix with entries 3 1 1 2. And the vector a b. The linear transformation takes you from
+a point in the left where the axis are the price of an apple and the price
+of a banana to a point in the right, where the axis are the price
+you paid on the first day and the price you paid on the second day. So the apples are $1 and
+the banana are also $1. Then the first day you paid $4 and the second day you paid three does a
+linear transformation of the matrix sends the point with coordinates 1 1 to
+the point with coordinates 4 3. The change of coordinates then
+is the price of apples and bananas to the price of the first day and
+the second day.

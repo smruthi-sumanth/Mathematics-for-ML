@@ -1,0 +1,20 @@
+When I think of numbers and
+multiplication, I think of the number 1
+as a very special number. See 1 is special because when
+you multiply any number by 1 you get the same number you started with. The identity matrix satisfies this
+exact same role among the matrices. The identity matrix is
+the matrix that when multiplied by any other matrix it
+gives the same matrix and its corresponding linear
+transformation is very simple. It is the one that
+leaves the plane intact. Here's how it looks. >> The identity matrix
+has a very simple look. It has 1s in the diagonal and
+0's everywhere else. And why does it work? Because when you multiply it by any
+vector, say of entries a, b, c, d and e you can verify that the resulting
+vector is also the one with entries a, b, c, d and e. I encourage you to verify
+this with pen and paper. For example,
+the first entry is calculated as follows. The dot product between the first row and
+the vector, which you can check that it's a. And the identity matrix and
+linear transformation is very simple, as it sends each point
+precisely to itself. As you can see this metric
+sends the vector 0,0 to 0,0, the vector 1,0 to 1,0, etc. And that's why it's called
+the identity matrix.

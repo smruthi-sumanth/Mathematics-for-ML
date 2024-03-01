@@ -1,0 +1,39 @@
+In this video, you
+will learn how to multiply a matrix and a vector. This is also something you've
+already learned as it is precisely how a system of
+linear equations looks. Here's how it works. Recall from previous videos that
+the dot product between two vectors
+is the sum of the products of the
+corresponding entries. An equation with unknown
+variables such as for example 2a plus 4b plus c equals 28 can be written as the product of the row
+vector with entries 2, 4, 1, and a column vector
+with the unknown entries a, b, and c. So vectors
+can have variables on. This represents
+an equation where the unknowns in the column
+vector represent the price of each of the fruits and the
+number in the row vector represents the amount of
+each fruit that you bought. The $28 represents the dot
+product of the two vectors. Now, imagine that
+you have a system of three equations
+with three unknowns. Each one of these
+equations can be expressed as a dot product, for example, the first one, a plus b plus c equals 10, can be expressed as the dot
+product of the vector 1, 1, 1, which is the
+coefficients of a, b, and c, and the vector
+with the variables a, b, and c, and
+that's equal to 10. The equation a plus
+2b plus c equals 15, can be seen as a dot
+product of 1, 2, 1, and a, b, c, and that's 15. Finally, equation
+a plus b equals 2c can be seen as a dot
+product of vector 1, 1, 2, and the vector a, b, c, and that's equal to 12. Now it seems clumsy to represent this with three
+different dot product. Is there a nicer way? The answer is yes. First thing we do is
+put them like this. On the left, we
+have our system of three equations and three unknown variables
+and on the right, we have three dot products. Now, notice that the
+column vector is the same. So we can simply unite the three vectors
+and get a matrix. Now we get the product of
+a matrix and a vector. The product of a matrix
+and a vector is nothing more than 3 dot products
+stacked together. If you have more
+equations in your system, then you have a bigger matrix. But from now on, we're going to be expressing
+systems of equations as a product of a
+matrix times a vector.

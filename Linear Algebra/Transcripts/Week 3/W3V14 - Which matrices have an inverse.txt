@@ -1,0 +1,25 @@
+In the last video,
+you learn how to find matrice inverses and also that some matrices have no inverse. What is the rule then for
+a matrix to have an inverse or not? You will be happy to find that the rule
+is something you've already learned. See, matrices behave a lot like numbers. You just realize that some matrices have
+multiplicative inverses in the same way that some numbers have
+multiplicative inverses. For example,
+the inverse of 5 is one fifth, or 0.2. The inverse of 8 is 1 eighth, or 0.125. However, not all numbers have
+multiplicative inverses. For example, what is the Inverse of 0? The inverse of zero is not
+defined as there is no number, which when multiplied
+by zero gives us one. Now from the last video
+in the previous quizzes, you know that this is also
+the case with matrices. Some matrices have inverse is
+like this two over here, and some don't like this one over here. So what is special about
+these three matrices? Can you look at something special? Well, as you've seen before,
+the first two are non-singular and the third one is singular. Could it be that this is a requirement and you'll be happy to say this
+is exactly the requirement. Non-singular matrix
+always have an inverse. And that's why we also call
+them invertible matrix and singular matrix never have an inverse,
+which is what we call them non-invertible. And something interesting happens
+when you look at the determinant, the determinant is non-zero for a invertible matrices in the same way
+that non-zero numbers have an inverse. And the determinant is zero for
+non-invertible matrices in the same way that zero doesn't have
+a multiplicative inverse. So I like to remember that way. Non-zero determinants mean that
+the matrix has an inverse and a zero determinant,
+that the matrix does not have an inverse.
