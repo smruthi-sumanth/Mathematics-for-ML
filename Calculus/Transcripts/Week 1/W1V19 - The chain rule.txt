@@ -1,0 +1,79 @@
+Now that you know the
+sum rule, product rule, and scalar rule, you are
+ready for the chain rule. It's probably the most
+complicated in these rules, but if you look at it
+from a certain angle, it can be pretty simple. Imagine that you have
+a function h of t and to output of this function you want to apply
+another function, g of t. You have a
+composition of functions, and now you want to
+take the derivative of this composition
+of functions with respect to t. Let's say, you know dh over dt, the derivative of h
+with respect to t. You also know the derivative
+of g with respect to h. The derivative of the composition is simply
+the product of these two. Now why is it called
+the chain rule? Because you continue
+composing functions. Let's say you want to
+apply another function, f to the output of g and you want to take
+this derivative, well, you need to know the
+same there before, in addition to df over dg, and the product is the
+desired derivative. Of course, as you can imagine,
+you can continue composing more and more functions and
+you're just going to get more terms in the product.
+That's the chain rule. Now, with the Leibniz notation, the chain rule is pretty clear. But with the Lagrange notation, there is something to keep track of because it can
+be a little tricky. Here it is again
+for two functions. Now, what is dh over dt
+in Lagrange notation is simply h prime of t.
+What is the dg over dh? Well, it would be lovely
+if it was g prime of t, but it's not g prime of t. It's g prime of whatever you put into the function g.
+It's g prime of h of t, that's all we have
+to keep track of, its g prime times h prime, except that you have to put the correct input
+in the function. What happens with three
+variables? Well, the same thing. Dh over dt is h prime of t. Dg over dh is g prime
+of the input to g, which is h of t. Df over dg
+is f prime of the input to f, which is g of h of t.
+That is the chain rule. This is how I like
+to see chain rule. Imagine that you're
+driving your car again and you'll
+feel of interests, so you're going to
+go up a mountain, the base of the
+mountain is pretty hot, but the top is pretty cold. As you drive up, you notice that the temperature is changing with respect to height and the rate of
+change is dT over dh, where T keeps track of temperature and h
+keeps track of height. But also as time changes, you drive up the mountain. Therefore, the height changes
+with respect to time, and t keeps track of time. So the rate of change of height respect to time is dh over dt. Now notice that as time passes, you drive up and as you
+drive up it gets colder. Therefore, temperature also
+changes with respect to time and the rate of
+change is dT of the dt. When the chain rule says, is that you can find the third one from the
+first and the second. If you know d temperature over d height and d
+height over d time, then their product is d
+temperature over d time, is pretty much which
+chain rule says. But let's look at a plot
+to understand this deeper. We're going to plot
+in three-dimensions. One axis is going to be time, the other one height, and the other one temperature. In the bottom plane,
+there's the function h, which dictates how height change with respect
+to temperature. In this plane over
+here at the back, it's the function t
+that keeps track of how temperature keeps changing
+with respect to height. Now, as time changes a
+small amount Delta t, then height changes a
+small amount Delta h, and then temperature
+changes a small amount Delta T and the way to
+see it is like this. Let's say here at
+this point in time. The bottom plot tells you that this point in
+time corresponds to this height and the top
+plot tells you that this height corresponds
+to this temperature. If you make a small
+change forwards in time, then now you're at a
+different time spot. That yields a higher altitude. That higher altitude
+is changed by Delta h, a small amount of altitude. That Delta h creates
+a small change, Delta temperature, because now it gets colder
+because you drove up, and so Delta t implies Delta
+h implies Delta T. Now, these are very tiny numbers, Delta t, Delta h, and Delta T. This expression
+holds Delta T over Delta t is Delta h over Delta t times Delta T
+over Delta H. Again, these are numbers
+so I can cancel Delta h on top and bottom. But now as I let
+Delta t go to zero, Delta h also goes to zero
+and Delta T goes to zero, and so this number in the
+left becomes dT over dt. This one over here
+becomes dT over dh, and this one over here
+becomes dh over dt. That's pretty much
+the chain rule.

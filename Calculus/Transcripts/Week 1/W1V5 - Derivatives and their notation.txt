@@ -1,0 +1,25 @@
+Like any language, mathematics has
+its way of expressing concepts. In this video, I'm going to show you
+two ways to express the derivative. The first one is Leibniz's notation and
+the second one is Lagrange's notation. Let me show you how they work. So first recall that the slope was
+calculated as the change in distance over the change in time,
+that's delta x over delta t. And that the slope of a tangent
+at a point was called dx over dt. Now, what was this dx and this dt? Well, in order to calculate the slope,
+you first started with a big interval calculated delta x over delta t,
+that's the slope of that secant. And then made the interval smaller and
+smaller, always calculating delta x over delta t. Until the interval was so
+tiny that you get the tangent line, and this slope was called dx over dt. Now dx over dt represent infinitesimal
+changes in the x direction and in the t direction. So that's one way of writing
+the derivative as dx over dt. Now in general we're going to
+have X as the horizontal axis and Y as the vertical axis. So the derivative is going to
+be called dy over dx instead. So here's some notation, let's say
+that your function is called f(x), and that's y, so y is f(x). Now the derivative of f can be
+expressed in two ways, one is as f'(x). So recall the function is f and at the
+point x the slope of the line is f'(x), that is like Lagrange's notation. And the other one is the one you just saw,
+which is dy over dx, that can also be expressed
+as d over dx of f(x). In this case d over dx can be
+thought of as an operator, something that when you apply
+to f(x) you get something else, and this is Leibniz's notation. So sometimes in this course we're going to
+use Lagrange's notation, f'(x), and other times we're going to use dy over dx,
+which is Leibniz's notation. And we're normally just going to
+pick the one that's more convenient.

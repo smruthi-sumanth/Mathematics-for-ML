@@ -1,0 +1,60 @@
+By now you have lots of tools
+to work with derivatives. But the question is, what
+are they useful for, other than calculating rates of change and more specifically, why are they useful
+in machine learning? Well, the main application
+here in machine learning of derivatives is that they
+are used for optimization. Optimization is when
+you want to find the maximum or the minimum
+value of a function. This is very important
+in machine learning because in machine learning, you want to find the model
+that best fits your dataset, and in order to find this model what you do is you calculate an error function
+that tells you how far are you from an ideal model. When you are able to minimize this error function then
+you have the best model. Let me show you how. Consider
+the following example. Imagine that you're
+sitting in a bench in a sauna and you
+start feeling too hot so you're going
+to try to switch places to find the coldest
+spot on the bench. With you, you have
+a thermometer, and it reads 85 degrees Celsius so you're going
+to try to move around, and see where the
+temperature is colder. You try your luck by
+moving to the left, and then the thermometer
+reads 90 degrees Celsius. That's not good, it got hotter. You try moving in
+the other direction, and then the thermometer
+reads 80 degrees Celsius, which is much better. You continue moving in
+that direction since the coldest spot seems
+to be in that direction. You move always recording lower temperatures
+until you get to a point where in any direction that you
+move, it gets hotter. You conclude that, that must be the coldest
+spot in the sauna. Now let's look at this curve, and this curve represents the temperature at each
+point in the bench. This was your initial point. This is the first
+try when you were trying to get colder
+but instead got hotter. This is where you moved
+for the second try, and you continued moving, always finding a
+colder and colder spot until eventually you
+reach this point over here where no matter which direction you moved you
+would find a hotter place. You concluded that this must be the coldest
+place of the sauna. Now this has to do
+with derivatives. Let's look at the slope of the tangent at
+all these points. Notice that, for all
+the points where moving to the right
+led to a colder spot, the slopes are less than zero. For the points where moving
+to the left leads to a colder spot the slope
+is bigger than zero, and for the coldest place, the one where no
+matter where you move, you get hotter, the
+slope was zero. That's a very
+interesting property of maximum and minimum points. The slope at those
+points is always zero. Now, it's not always true that a point with slope zero
+is a maximum or a minimum. Take a look at this, it's a much more
+complicated sauna, and the coldest part is
+somewhere to the right of two, but there's a bunch of points where the
+derivative is zero. Unfortunately you
+have to try them all and see which one is the
+actual coldest spot. These are all candidates, but at least you reduce it
+to a small number of points. These candidates for the
+minimum are the points of zero slope and those are
+called local minima, and the absolute minimum is
+called the global minimum. When you want to optimize a function whether maximizing or minimizing it and the function is differentiable
+at every point, then you know one thing, it's that the candidates
+for maximum and minimum are those points for which the
+derivative is zero.

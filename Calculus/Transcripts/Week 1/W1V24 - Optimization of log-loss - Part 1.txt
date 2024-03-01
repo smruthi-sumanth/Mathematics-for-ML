@@ -1,0 +1,116 @@
+In the previous video, you saw an optimization example that
+led to the square loss. Now there's another
+really important function in machine learning
+called the log loss. In this video, I'm
+going to show you that also with an example. The way I like to see log loss is the same
+way I like to see most of machine learning and
+statistics using coin flips. Let's play a game. I'm
+going to toss a coin 10 times and we're going
+to look at the results. If the results are seven heads
+followed by three tails, then you win a lot of money. If they're not, then you
+don't win any money. The chances of winning
+are pretty slim. However, you can pick the coin you want to use and
+it can be a biased coin. Here's coin 1. It has a probability
+of landing in heads of 70 percent and for landing
+in tales of 30 percent. Coin 2 is a fair coin, so it has probabilities
+of landing in heads and tails of 50 percent. Coin 3 is also biased and
+is the opposite of coin 1. This one has a probability
+of landing in heads of 30 percent and
+tales of 70 percent. Here is a quiz. Which one of the
+three coins would you choose to maximize your
+chances of winning? Coin 1, coin 2, or coin 3? Remember that to
+win at this game, you have to land
+the coin in heads seven times and then in
+tails the next three times. In order to pick the best coin, let's calculate the
+probability of winning at the game with each
+of the three coins. For coin 1, the probability
+of landing in heads is 0.7 and for tails is 0.3. To land in heads seven times is 0.7^7 because
+these probabilities gets multiplied as they
+are independent events. For the last three tails, then you multiply by 0.3^3. So 0.7^7 times 0.3^3 is 0.00222. That's quite a
+small probability, but let's calculate
+the other ones. For coin 2 is 0.5^7 for the
+seven heads times 0.5^3 for the three tails,
+and that's 0.00097. Finally, for coin 3 is 0.3^7 times 0.7^3, and that's 0.00008. Those are even worse. As you can see, coin
+1 is the best one. Is the one that helps us win the game with the
+highest probability. So that's the one you can pick. However, here's a question. Was coin 1 the best coin among all the possible coins you
+could possibly create? Well, for that,
+we need calculus. Let's pick a coin and say that the probability of
+landing in heads is p and the probability of
+landing in tails is one minus p because they're
+supposed to add to one. What we have to do is find
+the optimal value of p, the one that helps us maximize the
+probability of winning. First, what is the
+probability of winning? Well, to land the coin
+in heads seven times, the probability is p^7, and to land it in tails three
+times is one minus p cubed. Let's say g of p is the
+probability of winning, and that's p^7 times 1
+minus p to the three, and we need to use
+calculus to maximize g of p. How do we maximize g of p? Well, we can take the derivative and
+set it equal to zero. Here is the derivative
+of g with respect to p. We're going to calculate the derivative of
+p^7 times 1 minus p cubed. First, we use the
+product rule to split the p^7 and the
+one minus p cubed. We get derivative of p^7 times 1 minus p cubed plus p^7 times derivative
+of 1 minus p cubed. Now we're going to calculate each one of these separately. For the first one, remember that the derivative p^7 is 7p^6. For the second one, you can
+use the chain rule over here. Derivative of 1 minus p cubed is 3 times 1 minus p squared, but then you need to take the
+derivative of the inside, and the derivative
+of 1 minus p with respect to p is minus 1. Now we can do some
+algebra to reorganize it like this and factor
+it like this, and that needs to
+be equal to zero. There is a product of three
+things needs to be zero. For a product of three
+things to be zero, one of them has to
+be zero, at least. If the first factor is zero, p^6, that means p must be zero. For the second
+factor to be zero, then 1 minus p must be zero, which means p is equal to 1. For the third factor to be zero, we need p to be equal to 0.7. These are the three candidates
+for the optimal point. Now, does the first
+one makes sense? Well, if p equals 0, then the coin will
+always land in tails and you will have no
+chance of landing in heads seven times.
+That one is discarded. For the same reason, the second one is
+discarded as well, because if p equals 1, then the coin always
+lands in heads and it has no chance of falling
+in tails three times. Therefore, the answer
+is p equals 0.7. Indeed, coin 1 was the best possible
+coin one could pick. That was a lot of work. Is there an easier way to do it? Well, next I'm
+going to show you a much easier way to do it. It's actually a bit
+counter-intuitive because we have to take a step that makes it look harder and then it's
+going to look easier. The step is take the
+logarithm of g of p. Because, if g of p is maximum, then so it's the
+logarithm of g of p. So maximizing the
+logarithm of g of p is the same thing
+as maximizing g of p. Now what is the
+logarithm of g of p? Well, it's the logarithm of
+p^7 times 1 minus p cubed. Now logarithm has a
+really nice property, which is that the logarithm of a product is the sum
+of the logarithms. So this is logarithm of p^7 plus logarithm of
+1 minus p cubed. It also has another really
+nice property which is a logarithm of p^7
+is 7 logarithm of p, and logarithm of 1 minus p cubed is 3 logarithm of 1 minus p. Let's call that G of p. This
+is a simplified version. This is the logarithm
+of the probability. We want to maximize G
+of p. How do we do it? Well, now we take
+the derivative. This derivative is actually
+really nice because remember that the derivative of logarithm of p is 1 over p. When we calculate the derivative of each
+one of the summons, we get 7 times 1 over p plus 3 times 1 over 1 minus
+p times minus 1, that negative 1 comes from the chain rule because it's the derivative of 1 minus p with respect to p. We can join the denominators to get 7 times 1 minus p minus 3p divided
+by p times 1 minus p, and that's what's supposed
+to be equal to 0. When we can solve
+for that equal to 0, we get the candidates
+for optimal p. Now notice that we've already ruled out the chances
+of p being zero or one. Therefore, the denominator
+is never zero. Setting this equal
+to 0 is the same as setting the top equals 0. So 7 times 1 minus p minus
+3p has to be equal to 0. We can solve for p to get
+that p is equal to 0.7. We get the same
+solution as before, except in a much simpler way. Now, this trick of
+taking a logarithm is a pretty popular trick
+in machine learning. Logarithms of
+probabilities are very, very, very common
+and very useful. As a matter of fact, what
+we really want is the negative of g of p. That is called the log loss and it's a very useful loss function
+in machine learning. You're going to see it a lot
+in classification problems. The reason that we
+actually take negative g of p instead of g of p is that logarithm of p is actually a negative number when p is
+in between zero and one. We want negative g of p
+to be a positive number, and instead of maximizing it, like we did here, we
+minimize negative g of p.

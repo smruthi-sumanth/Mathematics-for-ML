@@ -1,0 +1,36 @@
+Now that you know
+what a derivative is, let me show you a very
+interesting property of it. Let's go back to the table. But just as this
+little piece between 19 seconds and 20 seconds, notice that the
+distance at 19 is 265 and the distance
+of 20 is 265. The distance is the
+same at both points. It hits that perhaps the car didn't move
+in that interval. Maybe it moved and
+then came back, but let's assume that
+it didn't move at all. This is how the interval
+between 19 and 20 looks. The line between these points is a horizontal line and a horizontal line
+has a slope of zero. Here's the calculation. The slope is the change in
+x over the change in t. The change in x is the distance at 20
+minus distance at 19. That is 265 minus 265. Now the change in t is 1 second. The slope is 0/1 because
+there is no rise in distance. Distance doesn't change. Therefore the slope is
+zero meters per second. Now let's look at a
+trajectory of the car. We're going to plot
+it on the right. First the cargo forward, then it stops, then
+it goes backwards, and then it stops,
+goes forward again, and then backwards again
+and then forwards again. Here is a quiz question for you. Given this trajectory, where was the velocity
+of the car zero? If you said that at
+any of the points where the tangent is horizontal, therefore, the
+tangent has Slope 0. You were correct. Those are the points where the
+car was stopped. In total, they are five points. Now let me ask you
+another quiz question. At what time was the car farthest from its
+starting point? The answer is over here, because this is when
+the distance was 50 and that's the
+highest distance that you can find in this graph. Now notice something
+interesting. The point where the distance
+was the farthest is coincidentally one of the points where the car was stopped. This is no coincidence
+because if the car is moving, then it could just go further. The point where the
+car is the farthest is a point where the
+car is not moving. That means if you want to find the maximum or the
+minimum in a function, it occurs at one of the points where the derivative is zero. Or in other words, where the
+tangent line is horizontal.

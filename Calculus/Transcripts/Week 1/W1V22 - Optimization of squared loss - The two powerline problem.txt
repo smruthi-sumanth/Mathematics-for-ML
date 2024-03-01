@@ -1,0 +1,52 @@
+So now let's say you have two power lines,
+a blue one and an orange one. And for reference, here is the origin. So the blue power line is
+a meters away from the origin. The orange power line is b
+meters away from the origin, and your house is x meters
+away from the origin. And the point is to find out
+where to locate the house, to minimize the cost of connecting
+to the two power lines. So, the distance from the house to
+the blue power line is x minus a. And the distance from the house
+to the orange power line is going to be b minus x. So, the cost of connecting to
+the blue power line is going to be the distance squared,
+that's x minus a square. And the cost of connecting to the orange
+power line is going to be that distante square, which is b minus x squared. Now, notice that b minus x squared
+is the same as x minus b squared, because the square of a negative number
+is the square of the positive number two. So therefore we're going to consider
+this distance as x minus a, x minus b, x minus c, etc. And even if they're negative, that doesn't matter because
+the squares are the right thing. So now, what is the total cost of
+connecting to both power lines? Well, is the sum of these two costs,
+x minus a squared, plus x minus b squared. And if x is over here, then the point of
+the problem is to find the distance x, that will minimize this cost function. So spoiler alert, the solution is to put
+it in the very middle of the two power lines to reduce the cost, and
+you're going to see that very soon. But first, let's try to visualize the
+problem to better understand why the house should go in the middle. So, let's actually visualize
+the cost as the area of a square, because the area of the square
+is x minus a squared. That's the cost of connecting
+to the blue power line. And the cost of connecting to
+the orange power line is represented by the area of this squared over here,
+which is x minus b square. And the sum of the two areas, or the total area is the total cost
+of connecting to both power lines. That is the function that we
+are supposed to minimize. So now let's look at some cases,
+see if the house is somewhere here, the sum of the areas is not that big. If we put it too much to the left,
+then the orange square is too big. And if we put it too much to the right,
+then the blue square is too big. So it makes sense that somewhere in
+the middle should be the perfect spot. But let's use mathematics
+to find the perfect spot. So, the cost function is x minus
+a squared, plus x minus b squared. This is a quadratic and
+quadratics look like this, either they point upwards or
+they point downwards. This one in particular points upwards, because the coefficient
+of x squared is positive. In other words, it's two x squared,
+plus something else, plus something else. Now, in this parabola,
+we have to find the minimum point. Which is the point where
+the derivative is zero, the point where the slope
+of the tangent is zero. So this tangent is horizontal, and
+we can find that using some calculations. So let's take the derivative
+of the cost function. That's d by dx of x minus a squared
+plus x minus b squared, and set that equal to zero. Because when that is equal to zero,
+that is the minimum point. So, by using the chain rule, you can see that the derivative of x
+minus a squared is 2 times x minus a. And the derivative of x minus b
+squared is 2 times x minus b, and so that sum is equal to zero. You can divide by two to get x minus a,
+plus x minus b equals zero. And now reorganize to get 2x
+minus a minus b equals zero, and that's equivalent to x equal a plus b. So, x is equal to a plus b over 2. So the optimal solution is
+to put the house in the very middle of the two power lines
+in order to minimize the cost. So now, let's do it with more power lines.

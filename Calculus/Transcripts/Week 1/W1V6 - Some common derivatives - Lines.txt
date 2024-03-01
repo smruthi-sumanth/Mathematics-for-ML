@@ -1,0 +1,48 @@
+Our goal is to be
+able to calculate the derivatives of most of
+the functions that we know. Let's start with
+the simple ones. What are the simple ones? Constant functions, linear
+functions, quadratics, polynomial functions, exponential and
+logarithmic functions, and the trigonometric functions. You're going to be glad
+to know that these have very nice and
+simple derivatives. Let's start with lines. The simplest line is
+actually a constant, so a horizontal line. This function is such that
+the height at every point, for example, x_0 and
+x_1 is always the same, some constant c. The
+c could be -173.5, any number as long as
+is always the same. Now let's look, for example, at the derivative at x_0. This tangent line has the same
+slope as the entire line. What is the slope? Well, the slope is
+Delta y over Delta x. Now the change in y is always zero because y is always c, so it's always c minus c. Therefore the numerator
+here is zero, and the denominator is not zero if we take x_0
+different than x_1. So therefore, the
+slope is always zero. We conclude that
+a horizontal line or a constant always has
+a derivative of zero. Now let's consider
+some generic line that is not horizontal. It can have the equation
+f of x equals a_x plus b, where a is the slope and
+b is the y-intercept. What is the derivative
+for this function? Well, this derivative
+is very simple. Let's take a point,
+for example, this one. We're going to
+calculate it by taking any other point and
+looking at Delta x, looking at Delta
+y and calculating the slope Delta y over Delta x. Now this is rise over run, so it's going to be a,
+which is the slope. Notice that as the second point is closer to the first one, well, the tangent stays
+on the same slope for the same reason as what happened with
+the constant line. When you have a line,
+the tangent that every point has the same
+slope as the entire line. This line has a slope of eight. Therefore, the equation
+f of x equals a_x plus b of a line has a derivative
+f prime of x of a. If you want to see
+the math happening, well, let's look at the points. This point has equation x, ax plus b. Those are
+the coordinates. This point has coordinates
+x plus Delta x, a x plus Delta x b plus b. Therefore, when we
+take the slope, it's Delta y over Delta x. That's the difference between this number and this
+number, the Delta y. That's a_x plus Delta x
+plus b minus a_x plus b. The denominator is Delta x. So a lot of things
+cancel out here. This a _x cancels
+out with this a_x. This b cancels out with this b, and then we have a times
+Delta x over Delta x, the two delta x's cancel
+out and the slope is a. Therefore, the
+derivative of the line with equation a x plus
+b is the slope a.

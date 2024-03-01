@@ -1,0 +1,55 @@
+In the previous
+video, you learned the exponential function e^x, where e is the Euler number and you learned the
+property that it has, which is that the
+derivative of e^x is e^x. In this video,
+you're going to use that and the inverse
+function rule in order to calculate the derivative of the logarithmic function and you're going to see that
+it's actually very simple. But before we get
+the derivatives, let's look at
+what's a logarithm. Imagine that you want
+to find a number such that e to that number equals 3. That number is precisely
+the logarithm of 3. That actually works
+for any number x. If I want to find
+the number such that e raised to
+that number is x, that number is logarithm of x. We also call them
+natural logarithm. You may see in other places, logarithms in other
+bases such as 2 or 10, but in this course,
+it's always going to be base e or the natural logarithm. Now, the fact that e
+to logarithm of x is x means that the function f of
+x equals e^x has an inverse, which is logarithm of y. F inverse of y is
+the logarithm of y because e to the
+logarithm of x is x and logarithm of e^y is y. Now let's plot them. On the left we have
+the plot of e^x and on the right we have the
+plot of logarithm of y. As usual, the left plot has a horizontal axis x and the right plot has a
+horizontal axis y. Let's look at some points
+in the plot left and their corresponding points in
+the plot in the right. These correspond to
+each other because recall the fact that these
+functions are inverses means that if we reflect one about the line with
+equation y equals x, we get the other one
+because logarithm of x is the inverse of e^x. Now, let's take a look
+at the derivatives. We're going to use the result
+for inverses in order to calculate the derivative
+of logarithm of x and you're going to see that
+it's actually very simple. Let's take one
+point, for example, on the left we have 2, 7.39. Recall that 7.39 is e squared. That means that on the
+plot on the right, we're going to have
+the point 7.39, 2, which is e squared, 2. The slope of this tangent is the one we're going
+to find and we're going to use this one over here. Recall that the slope on the right is 1 over the slope on the left, that's
+what we're going to use. The slope on the left is
+f prime of x equals e^x, that's the derivative, because recall that
+the derivative of e^x is e^x, therefore, because x is 2, the slope here is f prime of 2, which is e^2 or e squared. That's precisely 7.39. The height at 2 is 7.39 and the slope of the tangent
+at 2 is also 7.39. Now, what's the slope on
+the graph in the right? Well, because it's the
+reciprocal of e squared, then it's 1 over e squared. This tangent, the
+line on the right, the slope is 1 over e squared. Notice that e squared is y, therefore g prime of
+y is simply 1 over y. Therefore, the derivative
+of logarithm is 1 over y. Let's do this mathematically, using the result frame
+versus d over dy of f inverse of y is
+1 over f prime of x. Now x is f inverse of y, so let's actually
+write it like this. If you take the logarithm
+function and you take the derivative
+with respect to y, then you get 1 over f
+prime of f inverse of y. Now, f prime is e^x and f inverse of y
+is logarithm of y, so you get 1 over y. In other words,
+the derivative of logarithm of y is 1 over y.

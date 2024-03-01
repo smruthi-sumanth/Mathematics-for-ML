@@ -1,0 +1,59 @@
+In the previous videos, you learned
+about some common functions and their derivatives. However, it's not always the case that you
+can find the derivative of a function at every point. For these functions where you cannot find
+the derivative at every point are called non differentiable functions. So in this video, I'm going to show you
+several non differentiable functions and how they can be identified visually. So far, you've learned that to find the
+derivative of a function at a point, you draw a tangent line to the point on that
+line and find the slope to the tangent. So for example, at this point over here,
+you would say that a function is differential by the point if
+the derivative exists for that point, that means if you can draw a unique
+tangent to the curve at that point. So for this curve for any point you pick, you can draw a tangent and
+it's well defined. And we also say that for a function to
+be differential at an entire interval, then the derivative has to exist for
+every single point in that interval. However, some functions
+don't satisfy this property. We call them non differentiable functions. Let's take a look at one. For example,
+the function absolute value of x. What's the absolute value of x? Well, it's kind of the positive part of x. So absolute value of 7 is 7, but
+the absolute value of -7 is 7, can be defined like this. It's x for x bigger than or
+equal to 0, and -x for x less than 0. So this function is differentiable
+almost everywhere, except for this point in the origin. Because if you try to draw a tangent,
+well, it's not very well defined. All of this would work and
+it's not a well defined tangent. So we say that at x = 0,
+the derivative does not exist. And this always happens when
+a function has a corner or a cusp, if that's the case, the function is
+not differentiable at that point. That means if you're drawing
+it with a pencil and at some point you have to stop and
+draw a corner, then you have a function that's
+not differentiable at that point. So here is a quiz. If I give you this function, can you tell me at which point is
+this function not differentiable? So at which point does
+the derivative not exist? And so if you said that the derivative
+does not exist at x equals 1, then you were correct, because here
+we can draw multiple lines and neither one of them is well defined
+as the derivative at that point. So we say that the entire function
+is not differentiable because a derivative does not exist for
+every single point in the domain. Now, consider this function. The function is defined as 2 for
+anything smaller than- 1 and for anything bigger than -1 is this diagonal
+here defined by y equals x + 1. So at which point in this function
+does the derivative not exist? This is a step function or
+a piecewise function. It has a jump discontinuity
+at x equals -1. Over here,
+as I mentioned is defined as y = 2. And over here is y = x + 1. So we say that at the point -1
+there is a jump discontinuity. If you try to draw this function with a
+pencil, what's going to happen is that you have to at some point lift the pencil and
+start drawing it somewhere else. So the function is not continuous and
+a function that is not continuous, that has a jump like this is not
+differentiable because the derivative cannot be defined at this point. What line could you draw
+here that was the tangent? That is not well defined. So in general, any function that has a discontinuity
+is not differentiable at that point. And now let's do one more. This one is a little more subtle. Let's say we have the function
+f of x = x to the one-third. It looks to be differential
+at every point. But what happens at the origin? The tangent is parallel
+to the vertical axis. It's a vertical tangent and that is
+not good, at x = 0, this has a tangent line that runs straight up to the y-axis
+and that means it's not differentiable. Why? Well, because a vertical line
+doesn't have a well defined slope, it would be some number over 0, because
+the rise is any number, but the run is 0. So it's not well defined. One could say it's infinity or
+say it's undefined. But the fact is that a function with
+a vertical tangent is not differentiable. So as a small recap, there are three
+types of non differentiable functions. Anything with a cusp or a corner,
+anything with a jump discontinuity, and anything with a vertical tangent. So corners, cusps are bad,
+jump discontinuities are bad, and vertical tangents are bad because these
+are all non differentiable functions.

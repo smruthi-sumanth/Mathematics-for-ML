@@ -1,0 +1,51 @@
+So now the problem gets harder because
+there are three power lines and the third one is at
+a distance c from the origin. So again, the problem is where to
+locate the house to minimize the cost. So recall that the distances to
+the power lines are x- a for the first house, b- x for the second
+house and c- x for the third house. And again,
+we don't have to worry if it's x- b or b- x in the houses to the right
+to the left of power line. Because when we square these numbers,
+we always get positive numbers. If it's b- x or x- b,
+it's still going to be x- b square. So let's actually draw these as areas. So, this is x- a squared area
+of this square over here. That's the cost of connecting
+to the first power line. This one is the cost of connecting to
+the second power line, x- b squared. And this one is the cost of
+connecting to the third power line, it's much more expensive because it's
+much farther than the x- c squared. And again, the goal is to minimize the
+cost of connecting to the power lines and that's the same as minimizing the area. So I wanted to take a wild guess and
+tell me, what do you think is the cost
+function of this whole problem? That's in the next quiz. If you said it's (x- a) squared +
+(x + b) squared + (x- c) squared, then you are right because
+that is the cost function and that's the total area
+of the three squares. So the question is where should we
+put the house to minimize the cost? So now I'd like you to take a guess. What do you think is the solution? What do you think is the optimal
+x that will minimize this cost? And so if you said that
+the solution is a + b + c over 3. So put the house in the average of
+the three coordinates of the power lines, then you were right. And now let me tell you why. So I like to see this
+geometrically in the following way, let's put a parabola
+over the blue power line. And what does this problem mean? Well this is exactly
+the function x- a squared. If you look at where the house is
+the height in that parabola is the price of connecting to that power line because
+it's precisely the parabola x- a squared. Here we put the parabola x - b squared
+on top of the orange power line and x- c squared on top of
+the green power line and the some of the streets
+is parabola over here. If you summed the heights of the three
+parabolas, you get the black parabola. And the point is to find that
+minimum point in the black parabola, the point where the slope
+of the tangent is zero. And as you can see it hints to be
+the average of the three coordinates. But let's do some math just like before
+in order to solve for that perfect x. And again it's going to be the point
+where the slope of the tangent is zero. So just some similar math time before, now we take the derivative of
+the cost function set equal to zero. The derivative is this and
+we can divide by 2 and still get 0. And we organize this as 3x- a- b- c = 0. So 3x is equal to a + b+ c. And therefore X is equal to
+the average of a, b and c. And so if you look at it
+from the area perspective, what you're trying to do is minimize
+the total area of the squares. If you put your house way to the left,
+you have some big areas. If you put your house somewhere in
+the middle, you get some small areas and if you put it to the right,
+you get again some big areas. Now, this can be generalized. You can imagine that if you were to
+have n power lines, for example, in coordinates a1, a2 up to an. Then the solution would be to
+put the house in the average of the coordinates of all the power lines. And this is actually the square
+loss of very important loss function in machine learning. And that's going to pop out
+again later in this course.

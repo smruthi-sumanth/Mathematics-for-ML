@@ -1,0 +1,45 @@
+Now that you know lines,
+let's take a look at a slightly more complicated
+function, quadratics. The simplest quadratic
+is this parabola with equation y
+equals x squared. Let's look at the derivatives. Notice that to the
+left of the y-axis, these are negative
+and to the right of the y-axis, these are positive. The formula for the derivative
+is Delta f over Delta x, as Delta x goes to 0. Now, Delta f is the change
+in y or the change in f, which is x plus Delta x
+squared minus x squared. Before we do this formally, let's take a look at an example. What happens when x equals 1, then y is x squared,
+which is also 1? Let's take a look
+at some secants, calculate their
+slope, and with that, we calculate the slope
+of the tangent line. Let's start with a Delta x of 1. That means an interval of
+length 1 horizontally. What is Delta f
+when Delta x is 1? Well, it's the difference
+between 4 and 1. 4 is 1 plus 1 squared
+and 1 is 1 squared. This is 3 and what's the slope? Well, it's going to be 3
+over 1 because Delta f is 3, Delta x is 1, and so 3 over 1 is 3, so the slope is 3. Now let's make the interval
+smaller and see what happens. If we made this interval of
+length 1 over 2 horizontally, then Delta x is 1 over 2. What is Delta y or Delta f? Well, it's going to be 1 plus 0.5 squared minus 1 squared, which is 2.25 minus 1, which is 1.25 and the slope
+is 1.25 over one-half, and that is a value of 2.5. Now let's make an
+interval even smaller. Let's make it a length
+one-quarter horizontally. What is Delta f now? Well, Delta f is 1 plus 0.25
+squared minus 1 squared, which is 0.56 and the
+slope is 0.56 divided by one-quarter and that is 2.25. Now let's continue making
+this interval smaller to see where the slope goes. It went from 3 to 2.5 to 2.25. Where do you think
+it's going to go? Let's look at an interval
+of length 1 over 8. The slope is going to be 2.125
+and an interval of 1/16. The slope is 2.065.
+Let's go extreme. Let's do an integral
+of 1 over 1,000. The slope is going to be 2.001. It looks like the slope is going towards 2 and that's
+actually the answer. The slope of the
+tangent at 1 is 2. Notice that 2 is 2 times
+one and that's actually the formula because the
+derivative of x squared is 2x. Let's actually
+calculate it formally. What's Delta f over Delta x? Well, Delta f, just like above, it's x plus Delta
+x squared minus x squared divided by Delta x. Let's expand that and let's
+cancel some things out. The x squared goes with
+the minus x squared, the Delta x goes
+with the delta x, and you get 2x plus Delta x. Now, what's the value
+of 2x plus Delta x as Delta x goes to 0? Well, the 2x stays put
+and this Delta x is 0. Therefore, the derivative df
+over dx is going to be 2x. When f of x equals x squared, then the derivative is
+f prime of x equals 2x.

@@ -1,0 +1,38 @@
+Now that you know,
+line some quadratics, let's go to cubics. The simplest cubic is the
+function y equals x cubed, seen over here, and here are some of the
+slopes of the tangents. Again, the formula is
+very similar from before. It's x plus Delta x
+cubed minus x cubed divided by Delta x. Then as delta x goes to zero, then this value becomes the slope of the tangent
+line or the derivative. Let's do a small example
+where x is equal to 0.5. When x is 0.5, then y is 1/8, because 1/2 cubed is 1/8. Let's take some intervals and calculate the slope
+of the secant lines. If Delta x is 1, then we have the point 3/2, which is 1/2 plus 1 and 27/8. Why 27/8? Because 1/2 plus 1
+cubed is 27 or 8. We subtract 1/2 cubed
+and we get 3.25. The slope of this
+secant line is going to be 3.25 divide 1,
+so that's 3.25. Now, let's decrease
+the interval to length 1/2 and do the
+same calculation. X plus Delta x cubed
+is 1/2 plus 1/2 cubed, which is 1 minus 1/2 cubed, which is 1/8, so we
+have 7/8 which is 0.86. The slope is 0.86
+divided by 1/2, which is precisely 1.75. Now, let's go even smaller. Let's go for 1/4. I'll do the
+calculations quickly, but I'd invite you to do them on pen and paper if you'd like. Delta f here is 0.3 and
+the slope is 1.188. For 1/8, then Delta f is 0.12 and the slope is 0.12 divided by
+1/8, which is 0.95. For 1/16, we have
+a slope of 0.85. For 1/1000, we have
+a slope of 0.752. As you see, this values
+tend to converge to 0.75. That's actually the value
+f prime of 0.5 is 0.75. That's actually 3
+times 0.5 squared because the derivative of x
+cubed is actually 3x squared. But let's actually calculate it formally to see
+that this is the case. Delta f over Delta x
+is going to be x plus Delta x cubed minus x
+cubed as the change in y direction in the vertical direction
+divided by Delta x, which is changed the
+horizontal direction. Now expanding a cube is a little harder than
+expanding a square, but this is what you get. If you cancel out the x cubed, if you divide top and
+bottom by Delta x, then you get 3x Delta x plus 3x squared plus Delta x squared. Now, as Delta x goes to zero, what happens with 3x Delta x plus 3x squared plus
+Delta x squared? Well, anything that has
+a Delta x becomes zero. The only thing that stays put is the 3x squared and
+that's the derivative. If fx equals x cubed, then f prime of x equals 3x squared and that's the
+derivative of this cubic.

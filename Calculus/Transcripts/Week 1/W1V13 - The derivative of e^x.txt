@@ -1,0 +1,30 @@
+In the previous video, you learned something
+very interesting, the Euler's number e.
+One very important property of the number
+e is that if you take the function y equals e^x, this is called the
+exponential function, and this function is
+its own derivative. In other words, if
+you take a point x, then the point in the
+graph is the point x, e^x reference at
+that height is e^x. Well, if you take the
+tangent at that point, the slope of that
+tangent is actually e^x. So e^x is equal
+to its own slope. Now let's verify this numerically by taking
+some measurements. Here is y equals e^x again. We're going to
+calculate the slope of the secant lines in the same way that you've done it before. Let's take for example
+the number x equals 2. The point in the graph is 2, 7.39 because 7.39 is e square. Now let's take
+some intervals and calculate the slopes
+of this sequence. For example, if we move
+to the right one unit, then Delta x is 1, and Delta f is just going
+to be e^3 minus e^2. That's exactly 12.7. The slope is 12.7 divided
+by 1, which is 12.7. Now let's reduce the
+interval to length one-half. The Delta f is now 4.79 because it's e^2 plus 0.5 minus e^2. Delta x is one-half. The slope is 4.79 divided
+by a half, which is 9.59. If we do it for 1/4
+then Delta f is 2.1 and the slope is 8.39. We do it for an 1/8, then the slope is
+going to be 7.87. For 1/16 it's 7.62. For 1/1000, it's
+going to be 7.39. As you can see, these numbers approach a particular number. The number that it
+approaches is actually e squared, 7.39. He would verify numerically
+that the slope of the tangent line at the point to e squared is
+precisely e squared. This is what happens
+at every point. The tangent at the point x, e^x has slope e^x. That's a fascinating property
+of the function e^x.

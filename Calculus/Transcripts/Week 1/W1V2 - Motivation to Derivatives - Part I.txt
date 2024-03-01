@@ -1,0 +1,100 @@
+When I think of a derivative the first thing that comes
+to my mind is velocity. Let's say for example,
+that you're in a car and you go 100
+kilometers in one hour. That means your
+average velocity was 100 kilometers per hour. However, maybe you started fast, then you went slow,
+then you stopped, then you went really fast, then maybe went reverse at some point so this
+velocity is not constant. The question is, at
+a given instant, what is the velocity
+at that instant? That's called the
+instantaneous velocity. That is precisely
+what a derivative is. A derivative is the
+instantaneous rate of change of a function. In this case, the function is distance and its
+derivative is velocity. Let's add some numbers
+to this example to understand the concept of
+the derivative more clearly. Imagine here that you are
+in the car traveling on a straight road and you have a speedometer that
+tells you the velocity. Now remember from
+physics that speed equals distance traveled
+divided by the time elapsed. Unfortunately, the
+speedometer breaks. But now you have an app that tells you the distance
+you have traveled, and you also happen to have
+a calculator in your hand. You'd drive for one
+minute and you're able to generate
+a table of values showing the distance
+you traveled every five seconds
+for one minute. Now here is the first quiz. The question is, is the car
+moving at constant speed? The hint is take a look at the distance values
+in the table. The car is not moving
+at constant speed. You can see that between
+10 and 15 seconds, which is a five-second interval, the car traveled 80 meters, but between 15 and 20 seconds, which is also a
+five-second interval, the car traveled 63 meters. This tells us that
+from 10-15 seconds, the car was traveling at
+a faster average velocity than it was between
+15 and 20 seconds. We can also conclude
+that the speed of the car is not constant across
+the one-minute interval. Great. You've determined that the car is not moving
+at constant speed. Now here is the second quiz. Can you use this information to tell your velocity at
+time 12.5 seconds? The hint is that velocity equals distance traveled
+divided by time taken. Again, the quiz is,
+can you or can you not use this information
+to determine the exact velocity at 12.5
+seconds? The answer is no. You cannot find the
+velocity at time 12.5 seconds with the
+data given on this table, you can find the
+average velocity in the interval from 10-15, but you don't know what happened within that interval at 12.5, maybe you were going faster, maybe you are going slower
+than the average velocity. However, there is one
+thing you can find. You can find the
+average velocity in the interval
+from 10-15 seconds. That is the next quiz. What was the average
+velocity of the car in the interval from 10-15 seconds? Let's draw a graph
+for the points in the table to observe
+what's going on. Let's zoom specifically
+to the points 10, 122 and 15, 202 to find the slope at a point because the slope is going to be the
+average velocity. Here is the graph and
+here is the interval. The average velocity
+between the time interval 10-15 seconds is
+also the slope of the line that joins the
+two points in the graph. Now velocity is calculated with the formula, distance over time. This is synonymous to the
+formula for calculating slope, which is rise over run. This is the rise and
+this is the run. In this case, the
+rise is the change in distance and the run
+is the change in time. This is because distance is on the vertical axis and time
+in the horizontal axis. The distance traveled at
+15 seconds is 202 meters, and the distance traveled at
+10 seconds is 122 meters. The length of the
+time interval is five and the length of the
+distance interval is 80. Using the formula for
+slope or velocity, we get 80 divided by 5
+equals 16 meters per second. The slope of the line that
+passes these two points is 16, which also translates to
+the velocity of the car between those two points
+is 16 meters per second. Now while the average velocity
+between 10-15 seconds was a good estimate for the velocity at t equals 12.5 seconds, could we do better? Yes, we can if we had more
+data about the distances of time close to t
+equals 12.5 seconds. Let's say that we take more refined measurements,
+one every second. Here you have a lot more data about the distances you
+traveled every second and a specific distance you
+covered from time t equals 10 all the
+way to t equals 20. The data is shown in
+this table over here. Here is another quiz. Can you find a better
+estimate of the velocity of the car at time t equals 12.5
+seconds using this data. Once again, we are
+not able to find the exact velocity of
+the car at 12.5 seconds. However, we have a way of making an even better guess than the previous one for
+what this velocity is by taking the average
+velocity between the interval of time between
+12 seconds and 13 seconds. How do we calculate this? Well, if the slope is the change in distance over the
+change in time, that's the velocity
+of the interval, then this is the distance
+at 13 minus the distance of 12 divided by the time
+at 13 minus the time at 12. Distance at 13 is 170, distance at 12 is 155 and the time difference between
+13 and 12 is one second. We get a slope of 15
+meters per second. That's the velocity
+for that interval. That is a much
+better estimate for the instant velocity
+at t equals 12.5. Now notice that we still don't have the estimate of
+the velocity at 12.5. What would you do to
+find this estimate? Well, you can just take finer and finer intervals
+and the finer the intervals, the better the estimate is. That leads to the derivative
+which is coming next.

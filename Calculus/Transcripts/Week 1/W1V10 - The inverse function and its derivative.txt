@@ -1,0 +1,114 @@
+Now you learned the derivative of several functions here's an important concept
+that's going to help you find the derivative
+of more functions. It's the concept of
+the inverse function. Now, what is an
+inverse function? Well, if your function
+does a certain thing, then the inverse
+function is the one that undoes that thing. So for example, if
+the function f, sends the number 3
+to the number 5, then the inverse function
+sends the number 5 back to the number 3. Now you're going to learn that if you know the
+derivative of function f, then the derivative of the
+inverse function is actually very easy to calculate because they are
+very well connected. The mental image I have of an inverse function
+is the following. Let's say that you
+have a person and the function f does
+something to the person. It puts a hat on them. What would the function g have
+to do if it's the inverse? Well, it would just
+remove the hat so that you get the
+original person back. In other words, the inverse does the opposite
+of what f does. It undoes what f does. In a more mathematical example, let's say you have
+the variable x and f puts on a hat on
+it, so it squares it. Let's see. What
+would g have to do? Well, undo the square, so remove the hat, g is a function
+that takes as input x squared and returns x. Before we get to see
+what f and g are, let's take a look
+at some notation, g of x and f of x are inverses. We write this as g of x equals f inverse of x with an
+exponent of minus 1. But this is not 1 over f of x. This is purely notation. If you take x and apply
+f and then apply g, you get back the x
+you started with. Basically, g undoes what f does. What are f and g on the
+example on the left? Well, f is easy, it's simply x squared and g is the function
+that undoes the square, so it's basically
+square root of x. The reason is that if you take x and square it and then
+take the square root, you get back x. This is only for x
+positive numbers and also we're only taking the positive square
+root, not the negative. But in short, if
+f does something, g has to undo it to get
+your first input back. Now the derivatives of
+inverses are really nice. Let's take a look at the
+plot of x squared and now the plot of g of y
+equals square root of y. Notice that in this plot the units are different in
+the left and the right. Also in the plotting the left, the horizontal axis is x, and in the plotting the right,
+the horizontal axis is y. But in short, if a point
+with coordinates a,b appears on the left
+then the point with coordinates b,a
+appears on the right. So for example, on the left, we have the point 1/2,1/4, on the right we have
+the point 1/4,1/2. This is because 1/4
+is the square of 1/2 and 1/2 is the
+square root of 1/4. The point basically f
+one-half is equal to one-quarter and g of
+1/4 is equal to 1/2. The point 1,1 also
+appears on both because f of 1 is 1
+as 1 squared is 1, and g of 1 is 1 because
+the square root of 1 is 1. The point 3/2, 9/4 also appears on the left, and the point 9/4, 3/2
+appears on the right. Similarly, point square root of 3,3 appears on the
+left and the point 3, square root of 3
+appears on the right. Now I want you to take
+a careful look at the tangents of these points in the left plot and in the right plot and let's
+question yourself. Do you think there's
+a connection between the slopes
+of the tangent on the left and the slopes of
+the tangents of the right? Well, consider that the
+plot on the right is the reflection of the plot on the left over the
+diagonal y equals x. There's going to be a
+really nice connection between these slopes. Let's take, for
+example, a secant. Before we draw a tangent,
+let's draw a secant. Let's take the point
+1,1 which is in both plots and let's
+take the point 1.5, 2.25 on the left because
+2.25 is the square of 1.5, and the point 2.25, 1.5 on the right. Let's calculate the slope
+of this secant line. On the left, it's Delta
+f divided by Delta x. The change in the
+vertical coordinate divided by the change in
+the horizontal coordinate. On the right, this is going
+to be Delta g over Delta y, where Delta g is the change in the vertical coordinate and Delta y is the change in
+the horizontal coordinate. However, these plots are a
+reflection of the other. Therefore, any horizontal
+distance on the left is equal to the vertical distance on the right and vice versa. In other words, this Delta g
+is the same as this Delta x and this Delta y is the same
+as this Delta f. Therefore, the slope Delta g over
+Delta y is the same as Delta x over Delta f. Now, notice that as
+Delta x goes to 0, f prime of x is Delta
+f over Delta x. Equally as Delta y goes to 0, then g prime of y is
+Delta g over Delta y. Putting this together, we get that g prime of y is
+1 over f prime of x. This looks complicated,
+but it only says that if f and g are
+inverse functions, then the derivative of g is
+1 over the derivative of f. Let's look at a simple example. This time we have two plots of x squared and
+square root of y, where the actual units are going to be the
+same on the left, and on the right; each
+square is one by one. Let's look at the tangents. At the point 1,1 we have that f of 1 is 1
+and g of 1 is 1. The point 1,1 appears
+on both plots. Now, take a look at the
+tangent on the left. Since f prime of x is 2x because it's the
+derivative of x squared, then f prime of 1 is 2, which means that this orange
+line has a slope of 2. Now let's take a look at
+the slope on the right, the tangent g prime of y
+is what we want to find. We want to find the
+slope of that tangent. Well, since g prime of 1
+is 1 over f prime of 1, then this is 1/2,
+which is a half. Therefore, a half is the slope of the
+tangent on the right. It makes sense, right? If the slope of the
+tangent on the left, the orange one is 2, then the slope of the
+tangent on the right is 1/2 the reciprocal of 2. Now let's do another
+example, the point 2,4. On the left, we have the
+point 2,4 and on the right, we have the point
+4,2 because f of 2 is 4 and g of 4 is 2. Now, the slope on
+the left, well, since the derivative
+f prime of x is 2x, then f prime of 2 is 4, which is 2 times 2. What do you think this
+slope is going to be? It's probably going to
+be 1/4 because it's 1 divided by the
+slope on the left. And indeed it is, because g prime of 4
+is 1 over f prime of 2, and that's 1/4. In other words, if f and
+g are inverse functions, then the derivative of g is
+1 over the derivative of x.

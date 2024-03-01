@@ -1,0 +1,90 @@
+Welcome to week one. In this week, you're going to learn the intuition
+behind the concept of the derivative. What's the derivative? Well, my favorite example of
+a derivative is velocity. So the first example you're going to
+learn is a speedometer example. Then you're going to see
+several very important and very basic functions in mathematics, such
+as a constant function, linear functions, quadratic polynomial, exponential
+functions and logarithmic functions. And you're going to learn
+the derivative of those functions. Now, in order to find derivatives
+of more complicated functions, we're going to use several rules such
+as the sum rule, the product rule, the chain rule and
+multiplication by scalars. But here's a question
+why are derivatives and calculus so important in machine learning? And one of these reasons is that
+derivatives are used to optimize functions in particular to maximize them and
+minimize them. That means finding the maximum value or
+the minimum value of a function. And this is very important
+in the machine learning. The reason is that when you want to find
+the model that fits your data in the best possible way you do this by calculating
+a loss function and minimizing it. So we're going to see several
+examples of minimizing functions. The first example is going to
+use an example of temperature. And then we're going to see other
+examples that actually will introduce you to two of the most important
+loss functions in machine learning. The square loss and the log loss. >> So
+let's begin by considering this problem. You have the following houses. Each one has a different
+number of bedrooms. The first one has one bedroom and
+the second one has two bedrooms. Now, the first house costs $150,000 and the second $1, and in this problem
+you would like to be able to predict the price of a house using
+the number of bedrooms it has. So luckily you have a lot more
+data about the pricing of house, given the number of bedrooms
+as is shown on this table. See in this table,
+you have houses with 1 2 3 5 6 7 8 and 10 bedrooms with their prices. And then there is this nine bedroom
+house that is still missing its price. So you decide to build a machine
+learning model to help you predict the price of
+the house with nine bedrooms. Now, to make this easier,
+let's plot the data. In the following graph, the horizontal
+axis represents the number of bedrooms and the vertical axis, the price of the house. And you can see that the houses
+are here represented by dots. Now the idea is that the machine
+learning model takes in all the input data of the house prices and
+begins a process called model training. You can think of this face model
+training as the most important part of running a car. The engine. Model training is what's under the hood
+of any experiment and in this case, in fact it's a smart engine. Always looking for ways to optimize in
+order to produce the best possible result. So when I say model, in this case, what I mean is simply a line that goes
+as close as possible to all the points. And this line would represent
+the predicted price. So when model training begins
+starts with any random line. And the idea is that it tweaks
+the results in order to optimize the best possible prediction for
+the existing data points. And once training is done, the model is
+able to give you a good prediction for the house with nine bedrooms. So in this case the house with
+nine bedrooms is predicted to have a price of $950,000. This problem is called
+a linear regression problem. Now how does training work under the hood? Well you'll find out soon enough. But let's actually
+consider another example. Let's say that you travel
+to a distant planet and you're lucky enough to
+meet some alien life. And you're able to interact with them. So the first alien says the following,
+aack, aack, aack. And let's say that you have enough
+information to know that this alien is in a happy mood. Then let's say that another
+alien says beep, beep. And you know that this alien is sad. Let's have more data points. An alien says aack, beep,
+aack and that alien is happy. And then it says aack beep beep beep and
+it's sad. So the idea is that you don't necessarily
+want to learn the alien language because it may be too hard, but you want to be
+able to tell if an alien is happy or sad. So let's look at the data set. So these are the four
+sentences aack aack aack, beep beep, aack beep aack and
+aack beep beep beep. For each one of them you're
+going to collect a number of times the word aack appears and
+the word beep appears and now you're also going to
+collect the mood of the alien. So this is going to be
+a classification problem. Why? Because given any sentence, the idea
+is to classify it as happy or sad. And because you're classifying it a sad,
+happy or sad, this is called
+a sentiment analysis model. But everything works nicer with a plot. So let's make a plot of
+each of the sentences. In the horizontal axis you have the number
+of times the word aack appears and in the vertical axis you have
+the number of times beep appears. And what's a model this time? Well again, it's going to be a line,
+let's say this line, well this line doesn't do very well. The idea of the model is
+to be able to classify or to split apart the happy points and
+the sad points. So for example, here's a better model and as you train the model, let's say,
+it gets to an ideal point here, and this ideal point here splits
+the plane into two regions. The sad region here shown in green and
+the happy region here shown in orange. And the idea is that if a new sentence
+comes in, depending on which area it is the model will predict if
+the sentence is happy or sad. The model may make mistakes, but
+for the most part it will do well, at least based on how it
+did on this data set. So again, how does the model do this? Well, it turns out that there's a lot of
+mathematics driving the process of your model, the training process. Some of the math concepts involved
+are gradients, derivatives, optimization, loss and cost functions,
+gradient descent and many, many more. So in this course, you're going to
+learn about model training, optimization and
+how it works at the core with mathematics. And in our senior example,
+we use several models, we use linear regression classification
+examples to motivate the problem. But the techniques and concepts you're
+going to learn here can be applied to a wide range of other machine learning
+algorithms such as for example, neural networks

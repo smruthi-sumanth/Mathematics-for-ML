@@ -1,0 +1,60 @@
+Let's take a look
+at another family of functions, the
+trigonometric ones. Let's start with
+the sine function. Let's consider a few
+particular points. Minus Pi over 2, Pi over 2, 0, and minus Pi. Let's look at the
+slopes at this point. The slope at Pi over 2 is 0, the slope at minus
+Pi over 2 is 0, the slope at 0 is actually 1, and the slope at minus Pi, it's going to be minus 1, that's the one on the left. Now let's compare it with
+the function cosine. Now we're not going to
+look at the slopes, we're actually going
+to look at the values. At Pi over 2, the value of cos is 0, at minus Pi over 2 is 0. At 0 it's 1 and at
+minus Pi it's minus 1. Do you think that's a
+coincidence? Actually, it's not. It's always the case that
+if f of x is sine of x, then the derivative f prime
+of x is the cosine of x. Why would this happen? We'll take a look
+at it in a minute, but it's a really,
+really nice property. Now, the same thing happens
+in the opposite way, except with the minus sign. If this is cosine, let's take a look
+at some slopes. At 0 minus Pi, Pi over 2 and minus Pi over 2. At 0, the slope is 0, at minus Pi the
+slope is 0 again. At Pi over 2 it's minus 1, and at minus Pi over 2 it is 1 Now let's look at sine of x, but the values now. At 0 you get 0, at minus Pi you get 0. At Pi over 2 you get 1 and at minus Pi over 2
+you get a minus 1. It's almost the
+same, we just have to flip it with a sign. If f of x is cos x, then derivative is
+negative sine of x. Again, we'll see
+why in a minute, but this is something
+to remember. The derivative of
+sine is cosine and the derivative of cosine
+is negative sine. There's a nice geometric
+reason why this works and take a look. Let's take a circle of
+radius 1 and let's draw any radial line
+and x is the angle between the horizontal
+axis and the line. The projection
+over the x-axis is cosine effects and
+the projection over the y-axis is sine of x. Now let's move the
+angle x slightly by a quantity of Delta x. Now the projection on the
+horizontal axis is going to be cosine of x plus Delta x, and the projection over the vertical axis is going to
+be sine of x plus Delta x. Now let's focus on
+this orange triangle over here and let's actually
+blow it up a little bit. This triangle has
+one base equal to negative Delta cosine of x, and the other side
+is Delta sine of x. Now we can call the
+top angle Phi and the hypotenuse h. If you
+recall from trigonometry, there is a rule that states
+that given a right triangle, the cosine of one of
+the angles is equal to the adjacent side divided
+by the hypotenuse. The adjacent side
+here is Delta sine x, while the hypotenuse
+is h. Now given that Delta sine x equals h cos Phi. Similarly, there's
+a rule that states that the sine is equal to the opposite
+divided by the hypotenuse. In this triangle,
+the opposite side is negative Delta cos x, while the hypotenuse is again h. Therefore negative Delta
+cos h is h sine of Theta. Now what happens as delta
+gets smaller and smaller? Well, the hypotenuse of
+this triangle almost coincides with the
+arch of the circle and approaches Delta of x. The angle Phi approaches x
+and with this new values, we get that Delta sine
+x equals Delta x cos x, and negative cos x
+equals Delta x sine x. Also Delta sine x divided by Delta x goes to the
+derivative of sine x, and Delta cos x divided by Delta x is the
+derivative of cosine of x. This actually confirms the
+intuition you built before. Sine prime of x is cos x and cos prime of x
+is negative sine x.

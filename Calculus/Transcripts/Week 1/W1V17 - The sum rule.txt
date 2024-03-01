@@ -1,0 +1,37 @@
+So now that you know the scalar
+multiplication rule, the sum rule is just as simple. Imagine that you have a function f and it's expressed as the sum
+of two functions g and h. So what is the derivative of f? Well, it's simply the derivative
+of g plus the derivative of h. I'd like to imagine the sum
+rule in the following way. Imagine that there's a boat and
+there's a kid inside the boat. And the boat moves and
+the child also runs inside the boat. So the boat moves a distance let's say of
+10, and the child moves a distance of 2. And we're going to keep
+track with variables XB for the distance that the boat moves and
+XC for the distance that the child moves. So if they're moving
+in the same direction, what is the distance that the child
+moves with respect to the earth? Well, that distance is
+12 because it's 10 + 2. It's the distance that the boat moves plus
+the distance that the child moves inside the boat. Now, that's with distances. But what happens with velocities? So let's do a quiz. Let's say that the speed of the boat
+is 0.6 meters per second and the speed of the child inside
+the boat is 0.05 meter per second. And they're both traveling
+in the same direction. So here is a question, what is the speed
+of the child with respect to the earth? So if you answered 0.65 meters per
+second then you are correct because velocities can be added if they
+are taken in the same direction. And that's pretty much the sum rule. It says, if distances can be added
+then velocities can also be added, means that it functions can be added
+then their derivatives can be added. So let's look at it with the plot. Here is a plot of time in the horizontal
+axis and distance in the vertical axis. And this is how the child
+moves inside the boat. This is how the boat moves. And this is the sum of the two which
+is how the child moves with respect to the earth. So let's look at some slopes. Here is some point in time and we're
+going to take some small interval delta t. And we're going to calculate the average
+velocity over that interval for the child, for the boat, and for the sun. So for this we take the horizontal
+step to be delta t and the vertical step to be the distance. So these distances are going to be XC for
+child, XB for boat, and X total for the sum. Now we know that X total is
+XB + XC because these two distances add two X total. So if we divide everything
+by the same delta t, we obtain that the velocities add. So V total is equal to VB for
+the boat plus VC for the child. And now all you need to do is let delta t
+go to zero and you get the derivatives. So if you have three functions f1,
+f2 and f1 + f2, the derivative of f1 at
+a point is f1 one prime of x. The derivative of f2 at that
+same point x is f2 prime of x. And what's the derivative of the sum? Well, since f is f1 + f2, then f prime is f1 prime plus f2 prime. And the slope over here is going
+to be the sum of the slopes. And that's the sum rule.

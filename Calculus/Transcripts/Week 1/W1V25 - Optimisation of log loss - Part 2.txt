@@ -1,0 +1,35 @@
+In the previous video, you found the optimal coin
+to win at again. But if you look closely, what we did was exactly
+machine learning. It was finding the best
+model for a dataset. What was the dataset?
+The 10 coin flips, which are seven heads
+followed by three tails, and the model was the coin. The model is a coin that lands in heads with probability
+P and in tails with probability one minus
+p. What you did was finding the model that most likely fits the
+dataset on the left. How do you find that model? You minimize the log
+loss and obtained that the optimal p is 0.7. Now the question is, why did that log loss have a logarithm? Why couldn't we simply solve the derivative
+of a big product? Well, one reason is that
+derivative products are hard, whereas derivative sums is easy. Of course, if it's a
+product of two things, you can use the product rule. But what do you do for three
+things or four things, or many things like this? You have to iterate the product rule and
+it gets really messy. The derivative of
+this function over here is actually this formula. That's something that is
+too hard to work out. If there's an easier way, we should always take it, if we take the logarithm, then we get this
+derivative over here; 6 over p plus 2 over
+1 minus p et cetera. That's much cleaner. We do get some denominators, and that's because of
+the logarithm because the derivative of the
+logarithm of p is 1 over p. But denominators are
+a small price to pay to not have to work out the
+formula on the left. But that's not the only
+reason we use logarithms. Another reason why we use
+logarithms is because the product of tiny
+things is tiny. Imagine if you have a
+probability that is the product of 1,000
+probabilities. That's the product of 1,000
+numbers, between 0 and 1. That number could
+be really small and maybe a computer is not able
+to handle a number so small. On the other hand, if
+it's the logarithm, the logarithm of a
+very small number is a very large negative number and computers can
+handle those numbers. In short, anytime in machine learning that you have a very complicated product, think of using the logarithm. It may simplify it a lot, especially if you're
+taking derivatives.

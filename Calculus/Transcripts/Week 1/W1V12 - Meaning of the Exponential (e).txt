@@ -1,0 +1,129 @@
+Let's set our eyes in a very important function,
+the exponential function. For this, we need to
+define Euler's number. Euler's number is quite a
+special number of mathematics. It appears in many branches and it can be defined
+in many ways. One of them is by the numerical
+value 2.71828182, etc. The decimal never terminates because a number is irrational, which means it
+cannot be expressed as a ratio between two integers. Another way to define it is using the expression
+1 plus 1 over n to the n. Let's look at this expression for several
+values of n. For 1, it's 1 plus 1 over 1 to
+the one which is two. For 10 is 1 plus a tenth
+to the 10, which is 2.594. For 100 is 2.705. For 1,000 is 2.717. As you notice, the
+more we increase n, the more these converges
+to a certain number. The actual number that this
+gets closer and closer is e, 2.71828182, etc. That's how we're going to define the number e and e has a
+very particular property. If you consider the function
+f of x equals e to the x, that function is
+its own derivative. The derivative of f
+of x is also f of x. That particular property
+makes sure that e appears in many places in science,
+statistics, probability, etc. Now, the way I like to define
+e is using interest rates. Let's look at the
+following problem. Let's say that you're
+trying to find the best bank where
+to put your money. Bank 1 says the following. Bank 1 says, I'm not going to give you any money for a year. But after a year, I will give you as interest,
+100 percent of your money. That means all your
+money once a year. Means if you put in
+$5 today in a year, they give you another $5. That's pretty good, but
+you continue looking. Let's go to bank number 2. Bank number 2 says, well, I'm going to give you 50 percent of your money every six months. If you put in $10
+today, in six months, you're going to have $15 because bank 2 gives you half of
+your money twice a year. Bank 3 is slightly different. This one says, I'm
+going to give you 1/3 of your money
+three times a year, so 33 percent every four months. In summary, bank 1 gives you
+all your money once a year, bank 2 gives you half
+for money twice a year, and bank 3 gives you a third of your money three times a year. The question is,
+which bank is better? Let's take five seconds
+for you to figure out. If you need more
+time, feel free to pause the video and
+think about it. This is a very
+important problem. The answer is that bank 3 is
+the best bank of the three. Why? Well, let's
+say you have $1. So bank 1 after a year
+gives you another one, so you end up with $2. Now, the question is, what are you going to
+end up with in bank 2 and what are you going
+to end up with in bank 3? In other words, what's the
+percentage that you end up getting in a year in
+bank 2 and bank 3. Let's take a look. Bank 1, you have $1 now. In a year, you're going
+to have your dollar plus the extra dollar that bank 1 gives you of
+interests, that's $2. We can express the two
+as 1 plus 1 to the 1. That's going to be
+important later. In bank 2, now, you have
+$1 and in six months, you have $1 plus a half. In one year, you're going to have $8
+plus a half of that. In six months, you end up with
+1 plus 1/2, which is 1.5. In one year, you
+end up with 2.25, which is 1 plus 1/2 squared is because you're adding
+half of your money, which means you're
+multiplying it by 1 plus 1 half every time and 2.25 is bigger than two because
+your dollar got doubled. But this amount
+of money that you earned actually earned
+more money later. This is called accrued
+interests into money that gains interests and then that
+interests gains interests. That's why you did better
+with bank 2 than with bank 1. Now, let's take a
+look at bank 3. In bank 3, you start
+with $1 right now. In four months, you have $1
+plus 1/3, which is 1.33. In eight months,
+you have your 1 and 1/3 plus a 1/3 of that. That's 1.77. In one year you have 1.77 plus 1/3 of
+that, which is 2.37. Again, you did well
+because this interest over here accrued interests
+and accrued more interest. This interest over here
+accrued more interests. Your money is making more money. At the beginning of
+the year, you had $1, then you have 1 plus 1/3, then you had 1 plus 1/3 squared, and then you had
+1 plus 1/3 cube, and that becomes 237. In short, in bank 1 after
+one year, you have $2. In bank 2 after one
+year, you have 2.25. In bank 3 after one
+year, you have 2.37. That's why the money
+is better in bank 3. This money actually
+multiplies a lot. Take a look at what happens
+in bank 1 after four years, you're going to end up with $16. In bank 2 after four years, you're going to end
+up with more money. You're going to end
+up with $25.63. In bank 3, you're going to end up with quite a lot of money. You're going to end
+up with $31.57. Definitely bank 3 is much
+better than bank 1 and bank 2. Again, let's recall
+that after one year, in bank 1 you get
+1 plus 1 to the 1, bank 2, you get 1 plus 1/2 to 2 and in bank 3 get 1
+plus 1/3 to the 3. This is super important. Now, could you imagine a
+better bank than these three? Well, of course, the more subdivisions
+you have, the better. Let's look at bank 12. Bank 12 gives you 1/12 of
+your money every month. You start with $1
+now, in a month, you have 1 plus
+1/12, in two months, 1 plus 1/12 squared and
+so on until in 12 months, you have 1 plus 1/12 to
+the 12th and that's $2.61. You did much better. In general, bank n, would have
+n subdivisions. It subdivides the year into
+n intervals and every time, it gives you one
+nth of your money. You start with one
+on the first day. After first interval, 1 plus 1 over n. After the
+second interval, 1 plus 1 over n squared. If this is not super
+clear, let me elaborate. 1 plus 1 over n is the money you have and you add an nth of that. You have 1 plus 1
+over n plus 1 over n, 1 plus 1 over n and that is the money you have plus
+the interests you accrue. That factors is 1
+plus 1 over n square. After three intervals, you
+have 1 plus 1 over n cubed. After k intervals, you have 1 plus 1 over
+n to the k. Eventually, after the end of the year, you have 1 plus 1 over n to
+the n. N can be really large, so you could potentially accrue money every second or
+every millisecond. In summary, bank n
+does the following, it gives you 1 plus 1 over n to the n at
+the end of the year because it returns one nth of your money and times a year. Now imagine that you go
+around looking for banks. There's bank 1, there's
+bank 2, there's 3. Bank 4 gives you a quarter of your money
+four times a year. Bank 5 gives you a fifth
+of your money five times a year and so on until
+the end of the universe. Here's bank 12 that gives you 1/12 of your money every month. Here's bank 365, that gives you 1/365 of your money every day. What's at the very
+end of the years? What is this bank? Well, this bank, let's call
+it bank infinity. What bank infinity does is it pretty much gives
+you instant interests. One infinity of your money
+infinity times a year. Let's see how much
+money bank infinity would give you at
+the end of the year. Bank 1 ends up with
+1 plus 1 to the 1. Bank 2 with 1 plus 1/2 to the 2. Bank 3 is 1 plus 1/3 to the 3 and 12 is 1 plus
+1/12 to the 12. Bank 365 is 1 plus
+1/365 to the 365, which already is 2.7145. Bank infinity gives you, well, this is not a good
+mathematical expression, 1 plus 1 over infinity
+to the infinity. But it's basically the number that all these numbers
+converge to 2.25, 2.37, 2.613, 2.7145, etc. Gets closer and closer
+to a particular number. That number is 2.7182812
+or the number e. So e is the amount of money that you get at the end of the
+year in bank infinity because bank infinity gives you an infinitesimal if your
+money every single instant. That is one way to
+look at the number e.

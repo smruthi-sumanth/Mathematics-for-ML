@@ -1,0 +1,58 @@
+Now that you've
+learned the sum rule, you're ready for
+the product rule. Which is almost the
+same thing except just a little bit
+more complicated. Imagine that I have a
+function f and that's a product of functions g
+and h. The question is, what is the derivative of f with respect to the
+derivatives of g and h? Well, for this, I
+like to imagine a derivative as hitting the
+function with the hammer. I want to hit f for the hammer and that means I need to
+hit g and h with a hammer. But that's too much work, so I have to do it by parts. First, I have to hit g with
+a hammer and leave h alone, and then I have to hit h with
+a hammer and leave g alone. In other words,
+here's what happens. F prime is like hitting
+f with a hammer. If I hit only g
+with a hammer and leave h alone and I have g prime h. If I hit h with a
+hammer and leave me alone, I have gh prime. The derivative of f is
+f prime equals gh prime plus g prime h.That
+is the product rule. The way I like to
+imagine the product rule is by building a house. Imagine that you're
+building a house and you have two groups of workers, one working on the front wall and one working
+on the side wall. They work at different paces, so at a given time they will have different
+lengths of wall built. G of t represents the length of the
+sidewall as a function of time and h of t represents the length on the front
+wall as a function of time. What is the resulting
+area of the house? Well, it's the product
+of g of t and h of t. Let's call that f of t. F of t is the function of the area of a
+house with respect to time. Now we want to find the
+derivative of f and we know the derivatives of g
+and h. In other words, we want the rate of change of the area with respect to time. Let's look at a
+house from the top. Now what happens when
+the workers built a little bit of
+sidewall Delta g and a little bit of
+sidewall Delta h. That also builds a little bit
+over here at the top. Now let's look at
+what these areas are. This area over here
+is going to be g of t times h of t. This
+small area here, g of t times Delta h
+of t. This one here is Delta g of t times h
+of t. This tiny one is Delta g of t times Delta h of t. Now the rate of change
+of the area with respect to time after some small time Delta t is going
+to be Delta f of t divided by Delta t.
+What is Delta f of t? Well, the change in area is
+this blue area over here, which is precisely the sum of
+the three blue rectangles. On top we have Delta g of th of t plus g of t Delta h of t plus Delta g of t Delta h of
+t. On the bottom we have Delta t. We can rewrite
+this in the following way. Delta gt over Delta t times h of t plus Delta ht over
+Delta t times g of t plus Delta g of t Delta h of t divided by Delta t. Now to take
+the derivative, we need to let
+Delta t go to zero. What happens with Delta
+f of t over Delta t? That becomes the
+derivative of f prime of t. Each one of these becomes
+something interesting. This one becomes g prime of th of t. This one becomes g of th prime of t. This one
+over here becomes zero, because it's too
+tiny for us to care. It really doesn't make a big difference because the limit of that is zero when
+Delta t goes to zero. Therefore, we have
+the product rule. F prime of t is g
+prime of t times h of t plus g of th prime of t.

@@ -1,0 +1,51 @@
+So far, you've learned derivatives of some
+simple functions. In order to find the derivatives of more complicated functions, what you have to use this
+certain rules in order to piggyback from the simple ones into more complicated
+calculations. The rules you're
+going to learn next, are multiplication by scalar, sum rule, product rule, and the chain rule for
+compositions of functions. So the first rule is
+multiplication by scalar. Let's say you have a
+function f and it's four times a function g. If you want to take
+the derivative of f, that means is just going to
+be four times the derivative of g. That works for
+every value of four. If it's actually a constant
+c can be any constant. Then if f is equal to c times g, then f prime is equal
+to c times g prime. Let's take a look at
+why this happens. Consider the function
+y equals x squared drawn over here and let's
+take twice that function, so 2 x squared, therefore, the function
+gets multiplied by two. Let's look at some points. On the left you
+have the point 1, 1 and the point 2, 4 because 2 squared is 4. The slope of the
+secant line, well, it's rise over run
+where the run is one, which is 2 minus 1, and the rise is three
+because that's 4 minus 1. This slope is 3 over
+1, which is three. Now let's look at the
+corresponding points in the function in the right, which as we said, it's doubled
+the function in the left. The point corresponding
+to 1, 1 is 1, 2 and the point
+corresponding to 2, 4 is 2, 8 and let's
+calculate the slope. Well, the run is the same as the run
+in the previous one, which is 2 minus 1 equals 1. But the rise is double the previous one because
+on the plot on the right, everything gets doubled in
+the vertical direction. The 4 minus 1 equals
+3 on the left, which is the right, becomes an 8 minus 2
+equals 6 on the right and so the slope multiplies
+by 2 because the numerator multiples by 2 and the denominator
+stayed the same. Therefore, if the
+function multiplies by 2, all these slopes get
+multiplied by 2. Now, if you take the limit, if you let the point on the right move towards
+the point in the left, you still have that all
+the slopes multiply by 2. Therefore, the derivative or
+the slope of the tangent, which over here is two as we saw before, now becomes four. In other words, if we take a function and multiply it by 2, the derivative gets
+multiplied by 2. This happens for every value. For example if we have
+a function like this, and we multiply it by c, which means the height on the right is c times
+the height on the left. That every point, then
+the derivative gets multiplied by c. If we
+have a point over here, x, y with slope f prime of
+x for the tangent line. On the right, the point corresponding to
+that is going to be xcy and the slope is going
+to be c times f prime of x. Because if you think about it, the plot on the right
+is obtained from the plot left by basically
+putting your hands on top and bottom and
+stretching it by a factor of c. That is the multiplication
+by scalar rule.

@@ -1,0 +1,31 @@
+In the previous video, you
+learned how to calculate the average velocity
+of an interval, but what is the instantaneous
+velocity at a point? Let's look at the point t equals 12.5 that you were
+looking at before. Calculating the instantaneous
+velocity here may be hard, but estimating it is possible. For example, let's take another
+point to the right of t equals 12.5 and calculate the average velocity
+over that interval. That is the slope of
+this line over here, which is exactly Delta x, the change in distance
+divided by Delta t, the change in time. But that is not
+the instantaneous velocity at t equals 12.5. However, you can
+get closer to it by making this interval
+smaller, for example, take now this point over here
+closer to t equals 12.5 and the average velocity
+of that interval is the new Delta x over
+the new Delta t, which is a slope
+of these new line. Now let's put the
+point even closer to 12.5 and even closer. Now imagine putting it so close that you can't even tell the distance
+between the two. You get the limit which
+is dx over dt and that is precisely the tangent line to
+the curve at t equals 12.5. This measure of how
+fast the distance is changing with respect
+to time is called the instantaneous rate
+of change and it is the slope of that tangent line. More generally, the
+instantaneous rate of change is a measure of how fast the relation between two variables is
+changing at any point. In other words, imagine that
+you move a tiny distance, dx in a tiny
+interval of time dt. This is the instantaneous
+rate of change. It's also called the derivative. The derivative of a
+function at a point is precisely the slope of the tangent at that
+particular point.

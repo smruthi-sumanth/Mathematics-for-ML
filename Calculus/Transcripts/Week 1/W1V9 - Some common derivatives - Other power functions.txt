@@ -1,0 +1,52 @@
+Now that you know lines
+and some polynomials, let's look at a
+complicated one, 1/x. This is a hyperbola
+that looks like this. Let's take a look at some
+of the tangent lines. The function looks
+more complicated, but actually the
+calculation is quite simple for the
+calculation when we do x plus Delta x inverse
+minus x inverse divided by Delta x. Let's look at the point x
+equals 1 and y equals 1. Let's take some interval
+just like before. If the interval is of
+length 1 horizontally, Delta x equals 1, then what is Delta f? Well, Delta f is going to be the change in the
+vertical direction, so x plus Delta x inverse minus
+x inverse for x equals 1. That means it's 1/2 minus 1. That's minus 0.5. The slope is minus
+0.5 divided by 1, which means that the
+slope here is minus 0.5. Now let's decrease the
+length of the interval. Let's make it so
+that Delta x is 1/2. If Delta x is 1/2, then what's delta f? Well, is 1 plus 1/2
+inverse minus 1 inverse, which is 2/3 minus 1, which is minus 1/3. Delta x is simply
+going to be 1/2. The slope is 0.33 divide by 0.5, which is minus
+0.67 or minus 2/3. Now let's do some
+more and again, I'll go a little faster
+to the calculations. For 1/4, the slope is minus 0.8, for 1/8 is minus 0.89, for 1/16 is minus 0.94, and for 1/1000 it's minus 0.999. As you can see, this
+converges to minus 1. The derivative here is minus 1. This is negative 1
+times 1 squared, which is actually the value. Because when f of x
+equals x inverse, then the derivative is
+minus 1x to the minus 2. Let's actually do the
+calculation to confirm this. Delta f over Delta is going to be x plus Delta x
+inverse minus x inverse divided by Delta x. Let's actually write this
+as one over x plus Delta x minus 1 over x over Delta x. Let's expand the one on
+the top as x minus Delta x plus x divided by x
+plus Delta x times x. Some things cancel out, this plus x and this
+minus x cancel out. We can multiply and
+divide by Delta x and we get minus 1 over x
+squared plus Delta x. Now as Delta x goes to 0, well, the one on top stays put, the x^2 stays put, but this goes to 0. Therefore, we have 1
+minus 1 over x squared. If f of x equals x inverse, then f prime of x equals minus
+1 times x to the minus 2. Let's take a look at what
+we've learned so far. The derivative of x squared, x cubed and x inverse, we've already calculated
+the first one is 2x^1, the second one is 3x squared, and the third one is
+minus 1x to the minus 2. Now, can you spot a pattern? These three actually follow
+a really nice pattern. That works for any
+power function. Take a look at the exponent. The exponent goes here in the derivative as a
+multiplication factor. Then you subtract one from the exponent and you
+get the new exponent. So x squared becomes
+2x to the minus 1, x cubed becomes 3x
+squared, and x inverse, so x to the minus 1 becomes
+minus 1x to the minus 2. What do you think
+happens with x^n? Well, with x to the n, the exponent of n
+comes down and it becomes nx to the new
+exponent is n minus 1, so nx^n minus 1. If you have any power function, for example, x^100, the
+derivative is 100x^99. If it's x to the minus 100, the derivative is minus
+100x to the minus 101.

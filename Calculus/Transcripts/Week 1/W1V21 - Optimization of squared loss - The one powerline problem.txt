@@ -1,0 +1,21 @@
+In this video, you're going to see
+a slightly more complicated example of optimizing a function. The example consists on locating a house
+in the perfect place, in order to minimize the cost of connecting
+this house to several power lines. Now, why is this example important? Because the function you're minimizing is
+very similar to the squared error, and the squared error is one of the most
+important functions in machine learning. It is used to train linear regression
+problems, and certain neural networks. So here is the problem. You have a number of power lines in
+your area and you need to build a house somewhere, and you need to connect to
+all of them for the best power supply. Now, connecting to these power grids is
+expensive, because the further you are, the longer and
+wider the cable that you need. So, for example, let's say you
+want to connect to this power line and the distance between your house and
+the power line is X meters. So the cost of connecting to this
+power line is going to be X2, so that distance squared. And the goal is to minimize the cost
+of connecting to all three power lines. So the question is, where should you build
+your house in order to minimize this cost. So let's start with a very simple problem,
+let's say that there's only one power line and you want to get the power
+with the least amount of cost, where would you put the house? So if you set right by the power line,
+then you are right. Because if the distance from
+the power line is zero units, then the cost of connecting to the power
+line is going to be 0 squared which is 0. So that's an easy problem, right? Let's try it with more power lines.
