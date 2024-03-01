@@ -1,0 +1,51 @@
+In the previous videos, you learn one particular form of a matrix called
+row echelon form. This gives you lots
+of information about the matrix and it can be obtained with simple
+row operations. In this video, you will
+see this more in detail. Recall from previous videos
+that the row echelon forms of these three matrices are
+the ones in the right. However, previously, we used the systems of
+equations to find them. Now you can simply use the row
+operations you've learned. Follow me along to
+see how to do this. In order to calculate
+the row echelon form for this matrix with entries 5, 1, 4 and minus 3, here's
+what you would do. The idea is to get rid of
+that four in the bottom left. First divide each row by the leftmost
+non-zero coefficient to get the matrix
+with entries 1, 0.2, 1 and minus 0.75. Now, in order to remove
+that bottom-left one, keep the first row the same, but subtract the first row
+from the second row to obtain the row with entries
+zero and minus 0.95. We have succeeded at
+getting a zero in the bottom left corner,
+which is what we wanted. Now as a final step, divide the second row by the leftmost
+non-zero coefficient in order to get a one on
+the bottom right corner. Now the matrix is in
+row echelon form. What if you do this
+for a singular matrix? Well, if you try it for
+this matrix with entries 5, 1, 10, and 2, let's
+see what happens. The first step is
+to divide each row by the leftmost coefficients, so you get the matrix
+with entries 1, 0.2, 1, and 0.2. Now in order to disappear
+that bottom left one, what you can do is
+take the bottom row, subtract the top row, and what you get is 0, 0. Now that's the new bottom row. Now let's see what happens
+when you try to divide the second row by the leftmost
+non-zero coefficient. Well, that's impossible because you'd be dividing 0 by
+0, which is undefined. That's no problem.
+What you do is you let this one be the row
+echelon form instead. Finally, for the very singular
+matrix entries 0, 0, 0, there's not a lot you can
+do because you cannot divide each row by the leftmost coefficients,
+those are zero. Instead, you just say this
+is the row echelon form. In summary, here
+are the matrices and here are the
+row echelon forms. Here is a very interesting
+connection with rank. Look at the first one. It has two ones in the diagonal, and it happen to have Rank 2. The next one has 1,
+1 in the diagonal, and it happen to have Rank 1. The third one has zero ones in the diagonal and it
+happen to have Rank 0. That's actually the connection. The rank of a matrix
+is the number of ones in the diagonal
+of the row echelon form. That's an easy way to
+calculate the rank. Notice furthermore, that the
+first one is non-singular, the second one is singular and
+the third one is singular. A matrix is NON-singular
+if and only if the row echelon form has
+only ones and no zeros.

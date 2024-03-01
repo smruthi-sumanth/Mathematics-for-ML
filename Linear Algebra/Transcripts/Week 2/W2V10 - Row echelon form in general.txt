@@ -1,0 +1,70 @@
+Now that you've seen
+row echelon form for two-by-two matrices. Let me show you what it
+is for bigger matrices. Recall this system of equations and recall that the
+process you took to solve it was this
+intermediate step over here, where the first equation
+has variables a, b, and c, the second one only
+has variable b and c, and the third one
+only has variable c. The exact same
+row operations can be done in the matrix
+corresponding to the system in order to get
+the matrix on the right, which now has ones in the diagonal and zeros
+underneath the diagonal. This is the row echelon
+form of the matrix. Now, this is the way a
+row echelon form matrix looks like in general, here are two different examples. In here, the stars
+represent numbers that could be zero or
+non-zero, it doesn't matter. The matrix may or may not
+have rows full of zeros. However, if it does, they need to go at the bottom. Furthermore, notice
+that every row that is non-zero has a leftmost
+non-zero entry. These are called the pivots. Every row has a particular pivot and there's a rule about
+pivots which said that every pivot has
+to be strictly to the right of the pivots
+of the row above. In other words, if you stand at a pivot and you look at
+all the pivots above, they all need to be
+strictly to its left. Now the row echelon
+form, as you saw before, is very useful to tell
+you the rank of a matrix. It's actually the
+number of pivots. The matrix on the
+left has Rank 5 and the matrix on the
+right has Rank 3. Now here's a very
+important note in terms of notation that we're
+going to use in this class. On the left, you see a
+row echelon form matrix. Now you could do some cosmetics and divide the
+first row by three, the second one by one, or they mean the same, and
+the third one by minus four to get a matrix
+that looks like this. Obviously the stars are
+now different values, but the important thing is that the pivots are now one and
+they're in the same location because dividing by
+a number one turn a zero into a non-zero or
+a non-zero into a zero. In most textbooks, the form
+is the one on the left. In general, pivots different
+than one are allowed. However, for this class, we're going to use
+the form in the right. We're going to take that
+extra step of dividing by the leading entry in the pivot in order to get
+the pivots to be one. This makes no mathematical
+difference in terms of rank. It's the same rank and it's more consistent
+with the way we are solving our system of equations by dividing by
+the leading coefficient. But this is definitely
+something to keep in mind. Here are some other examples of row echelon forms of matrices. The matrix over here
+that you've seen before can be reduced to this one by simply subtracting the first row from the
+second row and third row. Notice that the one on the
+right is in row echelon form. Now what if the
+matrix is singular? Let's try to find the
+row echelon form of this singular matrix over here,
+which you've seen before. First subtract the
+first row from the second and third ones to
+get this matrix over here. Now take the second row, multiply it by two, and subtract it
+from the third one. You get this matrix over here. That is the row echelon
+form of that matrix. Now let's find the
+row echelon form for another singular matrix
+that you've seen before. For this matrix, what you can
+do is take the first row, multiply it by two, and subtract it from the
+second row to get this matrix. Now, you can again take the first row and multiply
+it by three and subtract it from this third row
+to get this one over here. Now check this out. Just like for
+two-by-two matrices, the rank of the
+matrix is the number of pivot ones in the
+row echelon form. Here we have the
+row echelon forms that we've just calculated. If you look at the pivot ones, there's three here, because
+the matrix has Rank 3, two here, because the matrix has Rank 2 and 1 here and zero here. That's exactly the ranks of
+the corresponding matrices.
