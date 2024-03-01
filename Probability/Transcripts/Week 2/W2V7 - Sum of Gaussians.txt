@@ -1,0 +1,41 @@
+In this video, I'm going
+to show you an interesting application of what you've learned so far about
+mean expectations, variance, and
+standard deviations, which is adding two
+Gaussian distributions. Imagine you're
+studying the total response time of
+a computer system which consists of two
+components, the processing time, which represents
+the time taken by the system to process
+a given task, and the network latency, which is a delay
+in communication between the computer system and other network devices like database servers
+or external APIs. Let's call this variables R, T, and L. The total response time is the sum of processing
+time and network latency. In other words, R = T+L. Imagine you can model
+the processing time in milliseconds with a Gaussian distribution with mean 10 and standard
+deviation 2. The total latency, you can also measure it in milliseconds, also a Gaussian with mean 5
+and standard deviation 1, and suppose also that these two variables are
+independent of each other. Here are the
+corresponding densities for the processing time
+and for the latency. Now sample each variable 10,000 times and draw the
+resulting histograms. They both fit the
+curves pretty well. Now with these samples, you can now generate 10,000 samples off the response
+time. Let's do it. When you generate them, this is how the histogram looks. The histogram for the sums of each processing time
+and each latency, and notice that R
+is still Gaussian. Now the question is, what are the parameters of
+these Gaussian? Well, let's begin with Mu. Mu is easy because it's
+the expected value of R and that's the
+expected value of T+L. But since expectation is linear, then that's expected value of T plus expected value of L, or Mu_T+Mu _L, if you remember correctly, the expected values
+were 10 and 5, so this one is 15. Now let's look at the Sigma
+for these new variable, which is the square root of
+the variance of R. Again, this will be the square root
+of the variance of T+L. Now, this is not the
+general assault, but since T and L
+are independent, it turns out that
+the variance of the sum is the sum
+of the variances. So this is variance of T plus variance of r. In other words, Sigma_R is Sigma_T^2+Sigma_L^2, and that's 4+1
+which is 2.236105. So the resulting R is Gaussian, where the mean is 10+5, the sum of the two means and the standard distribution is 5; the square root of the sum of squares of standard
+distributions. Now in general, if you have
+a linear combination of variables where X and Y are both Gaussian with
+parameters Mu_X, Sigma_X, and Mu_Y Sigma_Y, and both of them
+are independent, then the resulting variable follows a Gaussian distribution with mean aMu_X+bMu_Y, and variance a^2
+Sigma_X^2+b^2Sigma_Y^2.

@@ -1,0 +1,29 @@
+Now, checking for normality in data
+is frequently done in data science. Many models, such as linear regression,
+logistic regression, and Gaussian Naïve Bayes, assume that the
+variables follow a Gaussian distribution. Some other tests used in data
+science also assume this hypothesis. But how can we tell if the data
+follows a normal distribution or not? Well, sometimes a quick inspection of
+something as simple as a histogram can let us know that data is in Gaussian. For example, the left one
+doesn't look very Gaussian, and the right one looks a little gaussian. But how do we get a more exact
+answer if the data is Gaussian or not when it looks bell shaped
+like the one in the right? Well, for that we use quantile
+quantile plots, or QQ plots. These are a great tool to visually
+inspect if your data is Gaussian. This present a graphical comparison
+between quantiles in your data and quantiles from a normal distribution. In the most classical form, your data is
+first standardized by subtracting the mean and dividing by the standard deviation. Then you compare the quantiles
+of your data, and finally, it computes the same quantiles for
+a standard normal distribution. And it creates a scattered plot where the
+x value are the theoretical quantiles and the y value are the sample quantiles. Note that in each point, the scatter
+plots correspond to one of the quantiles. If your data was actually
+normally distributed, then the points should be
+close to this orange line. This QQ plot corresponds to
+the newspaper budget data, so it's suspected that the data
+wasn't going to be Gaussian. This is especially obvious if you look at
+the two marked areas where the scatter plot really splits from the orange line. Also, the fact that there's more
+concentration of points on the area to the left than the one to the right
+is a sign that the data is skewed. Now, let's see what happens when you look
+into the sales column on the data set. This histogram looks pretty bell shaped,
+and the QQ plot with this data confirms it. This time the quantiles are pretty
+much aligned around the orange line, which suggests a Gaussian distribution for
+the data.

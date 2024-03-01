@@ -1,0 +1,42 @@
+You've learned several ways to
+describe your data numerically. But for a data scientist, it's tremendously important to be
+able to visualize the data correctly. In this video, I'm going to show you
+several ways for visualizing data. So let's begin by considering a data set. We're considering an advertising sales
+data set and the newspaper ad budget. So if you took course two
+from this specialization, you're already familiar with it. This dataset showed the newspaper TV and
+radio budgets and the sales revenues generated. For simplicity, let's consider only twelve
+samples from the newspaper ad budget. From this small sample,
+you may want to infer the median. Remember, the median is the point
+that splits your data in half. So first you will need to sort
+the observed values in increasing order. And then since you have twelve
+data points, then you can evenly split the data set into these two
+halves with six samples each. And the median is simply the average
+of the two values in the middle. That is 27.8. We call that the 50% quantile or
+the second quartile. And those names will make
+more sense in a minute. So what about the point that leaves one
+quarter of the data to the left and three quarters to the right, or
+in other words, the average of these two? Well, that's 18.35 and that's the 25%
+quantile or the first quartile. We call it Q1. So it's kind of like the median, but
+it doesn't cut it into half, but into one quarter three quarters. And we can call it little Q of 0.25 or
+big q of one for first quartile. And in general, you can do this for
+any percentage. The k% quantile is the value that
+leaves k% of your data to the left and 100 minus k% of the data to the right. And we just denote it as
+little q of k divided by 100. And some common quantiles are the 25% one,
+the 50% one, and the 75% one. The 25% one, as you saw,
+is the first quartile, Q1. The 50% quantile is the median,
+which is Q2, and the 75% quantile is the third quartile,
+which is Q3. So let's say your data
+set has n points and N sub k correspond to
+the first k percent of data. So for example,
+n20 here is the first 20% of data and n100 minus n20 is
+the last 80% of the data. Then we have that 20 divided
+by 100 is N sub 20 over N. And that's the probability
+that the variable you're measuring x is below
+the k percent quantile. In this case is q 0.2 because that's 20%. And what we're doing is suppose that
+your data follows some distribution and that has a PDF which looks
+like the blue curve. So then the area under that curve for
+the k percent quantile, in this case the 20% quantile
+should be k over 100. And so if you're computing
+quantiles from distributions, you can say that the k percent
+quantile is simply the value, such that the probability of the variable
+being below Q is simply k over 100.

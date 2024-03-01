@@ -1,0 +1,87 @@
+So imagine a game where
+you can do two things. First you flip a coin, and
+if it lands on heads, you win $1, and otherwise you win nothing. And then after you flip the coin,
+you roll a die, and you win the amount that you rolled. So here's a question, what is the expected
+amount that you win for this game? Well, for the coin toss,
+the expected value, we're going to call this variable X sub
+coin, is one half, as you saw before. Because with a half probability you win
+one, with half probability you win zero. So each time you play,
+you're winning on average half a dollar. And for the second game, it's 3.5, because
+that's the average of all these numbers. We're going to call X dice
+the result of the second game. And E of X, which is the result
+of both games at the same time, is going to be the sum of the expectations
+of the coin game and the dice game. So it's going to be $0.5 + $3.5,
+which is $4. And in general, if you have two variables
+and you add them, the expectation of the sum of the variables is equal
+to the sum of the expectations. Now, the sum of the expectations may
+be something that seems very trivial, but actually it can get us to
+some pretty nontrivial results. Let's look at the following game. You have a bunch of names corresponding
+to all the people in the world. So since there's 8 billion people,
+you have 8 billion names in a bag. And imagine that these are unique names. Everybody has name and last name and
+just enough identifiers that each little piece of paper corresponds to one person
+and only one person in the world. Now, I'm going to travel around
+the world and grab out of this bag one little piece of paper and
+give it to each person in the world. What is the expected number
+of correct assignments? Now I want you to take a guess here. What is the expected number of people that
+are going to get their own name if we play this game with all
+the people in the world? And believe it or not, the answer is 1. So there's going to be very
+likely 1 person, Bo Bleepityblop, who's going to be given their own name. Now, why is this the case? Let me show you in the next video. So let's play the game, but for only
+three people, Aisha, Beto, and Cameron. So we have the three people, and
+the three names on the bag, and we're going to start giving
+them to the three of them. So let's say we give this person
+Beto's name, and we were wrong, because that was Cameron. And we give this person Aisha's name, so
+we were correct, because that's Aisha. And then we give this person
+Cameron's name, and we were wrong. So this time,
+we got one right and two wrongs. Now let's play this game many times,
+and six possible things can happen, and they're mentioned here. These are the six different ways that I
+can give these three people the three names in the bag, and
+each one has the same probability. So let's count how many
+times we are correct. So if we do the first assignment,
+we're correct three times. If we do the second assignment,
+we're correct one time, for the third, we're correct one time. For the next two, we're not correct
+at all, and for the last one, we're correct one time. And this is because for the first
+one we got the three names correct. For the second, we got Aisha, for the
+third we got Cameron, for the sixth one, we got Beto correctly, and for
+the others we got them all wrong. So we need to find
+the average of these numbers, that is the expected number of people
+we're going to get correct at this game. Now the sum, 3 +1 +1 +1 is 6,
+and 6 divided by 6, which is the total number of times we
+play the game, is 1, so the average is 1. So for three people, the expected number
+of correct assignments is going to be 1. Now we can do the same thing for
+8 billion people. Of course, this is going to be a pretty
+difficult average to calculate, because there's going to be a lot
+of possibilities for that game. Is there anything simpler that we can do? So it turns out that yes,
+there is something simpler we can do for this calculation, and let me show you. It's going to be a little
+counterintuitive, but it works really well, and it's going to
+be using the sum of expectations. So let's call Matches the random variable
+that counts the number of matches in this game. And we want to find that
+the expected number of matches is 1. Now let's split it into several things. Let's call A the number of correct
+assignments that only matter to Aisha. So the number of times that
+Aisha is given her own name. Now, because she can be given
+the three possible names, then what is E of A, the expectation of A? Well, each name is given to her
+with probability one-third. Therefore, each time we play this game, on average she gets her name
+correct one-third of the time. Therefore E of A is one-third. We can do the same thing with Beto. And the expected value of the number of
+assignments that get his name correct is one-third. And with Cameron, we do the same thing. The expected number of assignments that
+get their name correctly is one-third. And because the number of matches is
+equal to the number of matches with Aisha plus the number of matches with Beto
+plus the number of matches with Cameron, then their expected
+values also add together. So therefore, expected number of matches
+is a third plus a third plus a third, which is 1. And that's another way to see that
+the expected number of matches is going to be 1. Now, that technique is simpler, because now we can use it with
+every person in the world. We have 8 billion people, we're going to
+play this game with all of them. And as I told you before, the expected
+number of matches is going to be 1, but why? Well, let's say that we have all
+the people, called person 1 all the way to person n, where n is 8 billion, or
+the number of people in the world. And the number of matches is going
+to be the number of matches for person 1 plus the number of matches for
+person 2, etc, plus the number of matches for
+person 8 billion. And now the expected number of matches
+is equal to be then sum of all those expectations. Now, the expectation for
+each one of these is 1 over n. Because, let's say, if you are one person, the probability that you get
+your correct name is 1 over n. So the expected number of times you
+get your name correctly is 1 over n. And when we add these together,
+we're adding 1 over n n times. So 1 over 8 billion, 8 billion times,
+and this number is 1. Because, in general,
+you have that the expected value of a sum of n variables is the sum
+of their expected values. So as you can see, this property that
+the expected value is at is pretty simple, but it can also be pretty powerful.

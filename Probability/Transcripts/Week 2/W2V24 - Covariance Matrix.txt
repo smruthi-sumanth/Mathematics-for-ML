@@ -1,0 +1,31 @@
+>> So far, we looked at several examples. We've calculated the variance of
+the covariance of joint distributions. We looked at the discrete joint
+distributions with age of children and height, grades and naps and we got
+the following variances and covariances. We also saw three different
+games with the same variances, the same expectations and
+covariance of 1 minus 1 and zero. And finally we looked at
+the data set of waiting time and customer ratings and we noticed
+that it has a negative covariance because the higher the waiting time,
+the lower the ratings. So now what we want to do is we want to
+put all these things together and imagine that we have a very large
+data set with say five variables. How would the covariances work here? Well, we have the variance of
+each one of them separately and the covariances of each of the pairs. So we would have ten pairs over here and
+that's going to be the covariance matrix. So the covariance matrix simply
+has the variances in the diagonal. That's the variance of x here,
+the variance of y and the covariances on the antidiagonal. Capturing this in matrix form,
+we'll look as follows. So for example, the covariance matrix of
+this data set is this matrix over here. Covariance matrix is very, very useful in
+statistics and also in machine learning. So let's look at the covariance matrix for
+the age versus height one. It's going to be this matrix over here. Now let's look at the one for
+the game examples. They are these two for games 1 and 2. And finally,
+let's say we had three variables. So for a data set with three variables
+we're going to have a 3 by 3 covariance matrix where in the main diagonal
+we're going to have the variances. And in the other coordinates we're
+going to have the corresponding covariances. So for example in the coordinate XY we're
+going to have the covariance of XY. In the coordinates X set we have
+the covariance of X set, etc. And again if we have five variables
+then we're going to have a 5 by 5 covariance matrix where in the main
+diagonal we have all the variances. And in the other places
+we have the corresponding covariance of the row variable and
+the column variable. This matrix is going to be called sigma,
+the covariance matrix.

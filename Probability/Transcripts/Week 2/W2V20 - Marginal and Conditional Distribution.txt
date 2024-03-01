@@ -1,0 +1,77 @@
+So now that you know joint distributions, let me introduce you to two
+very important concepts, the concept of the marginal distribution
+and the conditional distribution. Let's go back to the age and
+height example. Imagine that I have a full distribution of
+ages and heights of the populations, but all of a sudden I don't
+care about age anymore, I just want the distribution of heights. What I have to do is
+aggregate over all the ages. And now I have what's called
+a marginal distribution. Another thing I can do is take slices. For example, I have the full
+distribution of age and height. And let's say I now only care about the
+height distribution of people of age 30, for example. So what I do is I take a slice and that
+is called the conditional distribution. Let me show you more. So recall this data set
+of children with ages and height from which we generated
+a joint distribution, as shown here. Now, what if all of a sudden we
+didn't care about age anymore and we only cared about height? So we wanted to summarize the behavior of
+the distribution across only the height variable. In order to do this, we need to find what's called
+the marginal distribution of height. It's really just the distribution of
+one variable while completely ignoring the other one. These are useful for summarizing
+the behavior of one variable at a time. So to find the marginal distribution for
+the heights, we simply add over each height
+value all the probabilities. So in other words,
+we are adding each column and that value corresponds
+to each of the heights. So for example, for
+45 it's 1/10, for 46, it's 2/10, so 47, it's 2/10, for 48 is zero,
+because the column is all zero. For 49 is 3/10, and for
+50 is 1/10 plus 1/10, which is 2/10. And the formula is over here Py (yj), where yj is the sum of all Pxy(xiyj). That's the same as saying that we're
+taking the sum over each column. So here's a small quiz. Let's find the formula for Py(50). And the formula is the sum
+over all this column. So it's basically the sum
+over I of Pxy(xi,50). And it's actually two divided by ten,
+because that's the sum of that column. Now, let's say we care about age,
+so we forget about the height and we want to find the distribution of age. The formula is very similar,
+we're adding over every row and we obtain 3/10, 2/10,
+4/10 which is 3/10 plus 1/10. And the formula is Px(xi) equals
+the summation over all j, that's the element in the row of
+the corresponding probability of xi,yj. So for example, what is Px(7)? Well, it's going to be 3/10 because
+it's the sum of that entire row. Now, this probability distribution right
+here is the marginal distribution for age, and this one is the marginal
+distribution for height. Now, let's expand the data
+set to 50 children. And this is the corresponding
+scattered plot. Notice that there is shading in
+the plots because there may be more than one child here. So more children are 10 and
+50 inches tall, hence the darkest spot, compared to the one over here,
+with age eleven and 62 inches tall. Overlaying the plot, with a heat grid,
+we can clearly see sections where there are more counts of children for
+a specific data point. The marginal age will be obtained by
+summing across the vertical axis, and those for height will be obtained by
+summing across the horizontal axis. So earlier we saw an example where X
+was the number roll on the first die and Y the number roll on the second one. And we have this joint probability where
+it's a table full of one 1/36 like this. When we want to generate
+the marginal one over X, we simply add over every row and
+we get 1/6 and the margin over Y. Same thing, we get a bunch of 1/6. And that's what we started with, right? Because originally we said that
+the probability of each value is 1/6 for the first and for the second dice. But now let's look at a slightly more
+complicated one, the one where X was the number roll on the first dice and
+Y was the sum of the two dice. For this one,
+we have this distribution over here. Now, let's say that we want
+to aggregate over the rows, because now we want the distribution for
+the sum of the two dice. So we add over the rows and
+we get the values 1/36, 2/36, et cetera, et cetera,
+all the way to 1/36 again. And the histogram is like this, because many more pairs add to seven
+than they add to, say, two or three. So the formula is this one over here. And let's see,
+what do you think is Py(10)? Well, when we add over the 10th row,
+we get 3/36. So the probability that the sum
+of two dies is ten is 3/36. This is something we saw a while ago,
+but now we went to two variables and then back to one. And this is the histogram for
+only the distribution Y, which is obtained from that table. Let's go back to the call center example,
+where we had time on the horizontal axis and the customer rating
+on the vertical axis. And recall that we can find
+two marginal distributions. The one for waiting time, which is
+obtained by aggregating over every column, and the one for rating, which is
+obtained by aggregating over every row. Now, recall that with marginal
+distributions the goal is to reduce a highly dimensional distribution
+into one of less dimensions. In other words, here we have a two
+dimensional one, which has two variables and we want to bring it back
+to one dimension, that's one variable. So how do we reduce this in, for example,
+the time dimension for waiting time? Well, we sum up all the probabilities
+along the waiting time axis and we get a histogram similar to this, which actually gives us this
+probability distribution. So that's the slice that we
+take if we cut that graph with a plane parallel to the waiting time axis.

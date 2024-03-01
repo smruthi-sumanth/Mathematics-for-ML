@@ -1,0 +1,55 @@
+Now let's throw two fair six sided dice. Let X be the discrete random variable that
+indicates the number rolled on the first dice, and Y the one that indicates
+the number rolled on the second dice. So the possible outcomes for
+X and the possible outcomes for Y are all probability one-sixth,
+and there are the numbers 123456. Let's put the probability mass function
+of X and also of Y because they're the same thing over here,
+all the probabilities are one-sixth. So we have X as the number
+rolled on the first die and Y as the number rolled on the second dice. The individual PMFs for
+each variable are as follows. And notice that X and
+Y are independent variables. So for example, the probability that
+X is 2 and Y is 5 is over here and it's going to be the product of the two
+probabilities, one-sixth times one-sixth. And so it's 1 over 36. And that's going to happen for
+all the pairs, because as we said, they're all independent. And so the probability mass function
+is simply a table full of 1 over 36 all over the place. So in the formula, we have the following. The probability mass function
+of XY is P(X=x, Y=y), which for independent discrete random
+variables is the product of the two. This obviously is not going to be the case
+all the time, but when the variables are independent, this is pretty simple
+because the probability mass function for X and Y factors into the probability
+mass function of x times the probability mass function of y. Now let's look at a more
+complicated example. You again throw a fair six-sided dice. And now X is the discrete random variable
+that indicates the number rolled on the first dice. So for example, here X is equal to 4 and Y is going to be another
+discrete random variable. But this one's going to capture
+the sum of the two dice. So if the first one is 4 and
+the second one is 5, then Y is going to be 4+5 equals 9. So now let's look at this
+joint probability function. So the probability mass function of X is,
+again, the number roll in the first dice. And that one looks like this
+because we already saw it. It's one-sixth for the values 1,
+2, 3, 4, 5, and 6. What about the sum of both dice? Well, for
+this one we have the entire table with the values of both die and
+we have 2 for (1, 1). Then we have 3, 4, 5, 6, 7, 8, 9,10, 11, and finally 12 for the value (6, 6). We can put these ones in a histogram too. Let's put them over here. The sum of dice is on the horizontal axis
+and the count is on the vertical axis. So as you can see,
+the sum that appears more often is 7, and the ones that appear
+the least often are 2 and 12. Let's actually write the pair
+of dice here in the histogram. And so that's our histogram for Y. Now let's look at the table of counts for
+both X and Y. So on the horizontal axis we have x,
+which is the value of the first die. And on the vertical we have y, which
+is the sum of the values of both dice. And we're going to put
+all these numbers here. So first we start with 1,1, which is here because the first
+dice is 1 and the sum is 2. Then we have this one over here, 1, 2, which has the first dice,
+is 1 and the sum is t3. And we can continue putting them here. As you can see, everyone is plotted on the
+coordinates where the first coordinate is the value of the first dice and the second
+coordinate is the sum of the two dice. Now, the counts are all
+one because only one combination leads you to each
+one of these blue boxes. So we have 36 possible outcomes. And when we divide by the sum, then we get
+that the probabilities are all 1 over 36. And that is the joint distribution for
+X and Y. Now using this distribution,
+what is P(3,7)? For example,
+the probability of X=3 and Y=7. Well, if X=3,
+then it has to be on the third column. And if Y=7 then it has
+to be on the 7th row. It's really just the numbers 3 and 4. And the probability of this is 1 over 36
+because all of them are 1 over 36 or 0. What is the probability of 1,
+1, for example, that the first die is 1 and the sum is 1? Well, that's impossible because
+no dies can fall on a 0. And so that's shown over here,
+it falls on a square that has a 0 on it. So that probability is 0. So this is the joint probability
+distribution for the variables X and Y.

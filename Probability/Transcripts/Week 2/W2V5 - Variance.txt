@@ -1,0 +1,138 @@
+So it turns out that expected value,
+although it tells us a lot about the distribution,
+it doesn't tell us the whole story. For example, two distributions may
+have the same expected value, but one of them can be very narrow and
+the other one can be very wide. This is captured by something
+called the variance. Let me show you what the variance is. We're going to use an example of a game. So imagine another game. In this game, you flip a coin and it's
+a fair coin, and if it lands in heads, then you win 1 dollar, and if it lands
+in tails, then you lose 1 dollar. So you have to pay a dollar. What is the fair amount of money
+you would pay to play this game? So that's the next quiz. Well, if you said $0, you are correct. This is the expected value of your
+earnings if you play this game because half the time you win a dollar,
+half the time you lose a dollar. So on average, you make $0, and that's
+what you would pay to play this game. Now let's tweak the game a little bit. Imagine that now you win $100
+if the coin lands in heads and $100 if it lands in tails. What is the fair price to pay for
+this game? Well, again, it's 0,
+because half the time you make 100, and half the time you lose 100. So on average, you're making $0. So the two games are pretty
+much the same thing. Would you say that they're the same thing? I mean, they both have the same price and
+the same expected winnings, right? So how would you tell
+these two games apart? Well, it seems you're more likely
+to not play the second one because it's just riskier, right? The one on the left, if you win or
+lose, you're still okay, but if you were to lose $100,
+that's much riskier. So how would you tell these games apart? Well, not with the expected value, but
+with something called the variance. So let me show you what the variance is. So let's go back to game 1. Game 1 can be seen like this,
+with a half probability you gain $1, with a half probability you lose $1. So they get balanced over here. And the expected value of the variable X1,
+we're going to call X1 the variable corresponding to game 1,
+how much you win is going to be 0. Now let's move to game 2. Game 2, you have the same height,
+so half and a half for the probabilities, but
+now the winnings are 100 and -100. And if X2 is the expected amount
+of money you gain in game 2, then the expected value of
+X2 is going to be 0 again. So here are your two games. Game 1 with expected value 0,
+and game 2 with expected value 0. So what's the difference? Well, game 1 has a small spread,
+and game 2 has a big spread. So let's try to quantify that spread. Let's remember what the expected
+value of X1 and X2 is. The calculation that you did to figure out
+that the price is 0 is, you took the 1 for the earnings and the -1 for
+what you would lose and divide them by 2, because you took the average of all
+the outcomes with their probabilities. And you did the same thing for X2. You took 100 + -100 and divide them by 2. Now those two calculations give us 0,
+because the 1 cancels out the -1, and the 100 cancels out with the -100. But is there any way to not
+let them cancel out and actually have a bigger value for
+the bottom one? In other words, is there any way we
+can turn these numbers into positive? And one way that I know to turn things
+into positive is to square them. So if we square the 1 and the -1,
+and then we square the 100 and the -100, then we get the expected
+value of X1 squared and X2 squared. And those are no longer 0 and 0. For the top, we get a 1 because
+we have 1 + 1 divided by 2. And for the bottom, we get 10,000, because that's 100 squared
++ 100 squared divided by 2. So the key for telling game 1 and game 2 apart is E of X squared,
+that measures the spread. It's much bigger for
+game 2 than for game 1, and it shows that game 2 is much more spread
+or actually much riskier than game 1. So this quantity makes an appearance,
+E of X square. The expected value of the square
+of what you win is actually what we're going to use, well, almost. What we're going to use is called the
+variance, and this is almost a variance. Let me get to the variance soon. So before we get to the formula for
+the variance, let's look at another pair of games,
+still similar. Game 1, you win 1 dollar, you lose 1
+dollar with probability a half, and game 2 is very similar, but
+you win 6 dollars and you lose 4 dollars. So don't worry about
+the price you're paying, don't worry about the expected gain. Obviously the expected gain is bigger for
+game 2. But what would you say about the risk? How risky are these two
+games in comparison? And the hint is to think about the spread. So this is a risky quiz, but try to
+answer to the best of your knowledge. So these two games are equally risky. They have the same risk, because game
+2 is pretty much game 1 plus $5. So if you were to charge $5,
+you would have pretty much the same game. Let's actually calculate E of X squared. So for the top one, it's going to be 1, because it's -1 squared + 1
+squared divided by 2, and for the bottom one is going to be 4 squared
++ 6 squared divided by 2, which is 26. So why do they have a different E of
+X squared if they have the same risk? Well, let's take a look at them over here. So as you can see, the spread is
+the same for both of them, But this formula doesn't
+give us the same number. So what can we do to fix that? Well, let's actually start looking
+not at the numbers -1, 1, 4, and 6, but
+their distances from the middle. So from the middle point,
+the distances are 1 and 1. And on the game on the right,
+from the middle point, the distances are, again, 1 and 1, because E of X2 is 5. So let's actually just subtract
+5 from the game on the right, which is the same as paying $5 to play it. And now, the gain of 6 becomes
+a gain of 1, which is 6- 5. And the gain of 4 becomes a loss of 1,
+because it's 4- 5. So we don't take
+the expectation of X2 squared, we take the expectation of X2- 5 squared. And in general, if the mean is mu,
+what we want to do is, we want to center the game and
+put the average at 0. So that means we take X- Mu as
+our new variable, we square it, and then we take the expectation,
+and that is the variance. So it's almost, the expectation of
+the variable squared is the expectation of the variable when you center it,
+and then take the square. So if we had this game where
+you gain these quantities with the probabilities given by
+the height of the bars and the expected value is mu, then X can
+take all these values over here. Now, if I were to subtract
+mu to all of them, means I'm centering this distribution, so
+I'm putting the average at exactly at 0. I'm subtracting mu and
+now I get the variable X- Mu. Now the expected value of X- Mu is 0,
+because that's how I built it, I subtract mu from every point,
+Mu is the average. So my new average is 0. And now the variance is going to be the
+expected value of this variable square, so the expectation of the square
+of the distance from 0. And as you can imagine, a distribution
+that is very spread is going to have high values for X- Mu, because the points are
+going to be really far from the center, so the expected value of that
+distance square is going to be high. Whereas a distribution
+that's very centered in the middle is going to have small
+values for X- Mu squared, and therefore, it's going to
+have a small variance. Now let's actually simplify the variance. So let's do a little bit of algebra. It's the expected value of X- Mu squared. But I can expand what's inside
+the expected value as a square, and I get expected value of X
+squared- 2 Mu X + Mu squared. Now since I can add expectations, this
+is the same as the expected value of X squared, + the expected value of 2Mu X,
++ the expected value of Mu square. Now since the expected value of a constant
+times X is the constant times the expected value of X, then I can take that 2Mu
+outside, because 2Mu is simply a constant. And because the expected value
+of a constant is a constant, then the expected value of Mu
+squared is always Mu squared. Think of it as a random variable
+that always takes the same value. Well, obviously, the expected value of
+that random variable is that value, it never changes. Now let's do one more step. Recall that Mu is the expected value of X,
+so I'm just going to call Mu the expected
+value of X in these two places here. And now I can just multiply E(X)
+times E(X)and get E(X) squared. And I have -2 E(X) squared + E(X) squared,
+and I get E of X squared- E(X) squared. So in other words, the expected value of X squared minus
+the expected value of X, all square. And that is going to be the formula for
+the variance. You can think of it as the expected
+value of the square of X- Mu, or as E(X) squared,
+the expected value of the square of the variable,- the square of
+the expected value of the variable. That's the variance. Now remember your call center
+example from earlier videos. If you recall,
+you had a call center where the time for them to answer the phone was
+somewhere between 0 and 5 minutes. And if they don't pick up,
+the line automatically disconnects. Thus, out of the ones that answer, this is a probability distribution
+of the waiting time on the left. Now imagine another call center, the one
+on the right, where they always let you wait for at least two minutes, but
+then they answer between 2 and 5 minutes. Now let's look at the mean and
+the variance for these two distributions. So you have seen the mean already,
+and it's given by the triangles, the place where you can balance
+the distribution in the middle. And for the second one,
+the mean is obviously higher, because it's going to be more towards
+the right if it's between 2 and 5. It seems like you're going to be
+waiting more on average on the second call center than on the first one. And when you look at the spread, the first
+one has more of a spread than the second one, because for the first one,
+you're sort of between 0 and 5, whereas in the second one
+the values are more condensed. So when you calculate the variance,
+it's going to happen that the variance of the one in the left is going to be larger
+than the variance of the one in the right. And the calculation is
+the exact same thing, it's the expectation of X squared-
+the expectation of X squared. So what we do is, we take Mu to be the
+average, and we center the distribution. So we call it X- Mu, and then the square
+of that is going to be the variance. So as you can see, variance works both for
+continuous and discrete distributions, and it's roughly a measure of how spread
+the distribution is around its center.

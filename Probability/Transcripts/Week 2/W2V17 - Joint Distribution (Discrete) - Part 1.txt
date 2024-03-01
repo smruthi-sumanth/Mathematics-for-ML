@@ -1,0 +1,70 @@
+Previously you learned probability distributions
+for one variable, for example, the height
+of a population. But what if I want to
+look at two variables? For example, the height of the population and the
+age of the population, that's two distributions, and I may want to look at them together and see how these
+two features combined. For that, we need a joint distribution and that's what you're going
+to learn this video. Consider a simple dataset
+of 10 children, age 7-10. Always count the
+children for each age. There's three children of age 7, two of age 8, four of age 9, and one of each 10 for
+a total of 10 children. Let's plot this
+count data here on a graph and it gives
+us this histogram over here where this is the number of
+children of each age. Now if we divide by 10, we can turn these numbers
+into probabilities. The probability, for example, that a child is age 9
+in this dataset is 0.4. Now, for the same children who say we capture their
+height data as follows. These are their heights in inches and we're
+going to generate another table with the
+number of children of each height rounded
+to the nearest inch. We can put these in a
+histogram as well. Notice that there's no
+child of height 48, but to complete the axis, let's bring that value back. Again with a total
+of 10 children. Now let's divide the counts by 10 to get the probabilities. For example, the
+probability that a child is 47 inches is 0.2
+in this dataset. We have the dataset ordered
+by these two metrics, age, and height. Now, here's a question for you. What is the probability
+that a child is nine years old and 49 inches
+tall in this dataset Well, let's see from the probability
+mass function for age, how many children
+are nine years old? We have four of them. I'm looking at the
+graph, the height, only three of these four
+children are 49 inches tall so dividing this three
+by the total of 10 kids, we get 3 out of 10 on
+the probability is 3/10, and we're going to call age, h and height y. Those are two variables, and so the probability that
+a child is nine years old, and 49 inches tall, which is 3/10 can
+be written as p[x, y] 949 x, the age
+has to be nine, and y the height has to be 49. More generally, the
+joint probability of two discrete
+variables is denoted by P(XY) the name of
+the variables of x, y, which are the values that I
+want these variables to take, the 9 and the 49, and that's the
+probability that X, which is age is
+equal to little x, 9 in this case and that's why the variable for height is equal to little
+y, which is 49. But we can calculate
+these probabilities easier if we organize
+the data properly. Let's construct a joint
+counts for two variables, and we're going to have
+something like this. There's one child whose age is seven and height is
+45, we put them here. Then there's two
+children of age 7 and height 46, and they're here. Then we have zeros for
+the rest of the row because there's no more
+children to height 7, then some zeros here, and two children of
+age 8 and height 47 and then no more
+of age 8 and then there's three children of
+age 9 and height 49 and one of H9 and height
+50 and finally one of age 10 and height 50. This is the table of counts, which we can turn into a probability mass function when we divide everything by 10. Now we have the probabilities for each possible
+combination of data. All possible
+combinations of x and y are what's called a
+joint distribution. In this case, it's a
+discrete joint distribution because both ages and heights
+are discrete variables. Now let's solve
+some more questions with this joint distribution. For example, what is the
+probability that a child is eight years old and
+48 inches tall? Recall the formula for
+probability descriptor variables, and this is going to
+be 0 because there's zero children of age
+8 and height 48. Let's do one more. What's
+the probability that the age is seven and
+the height is 46? That was over here,
+which is 2/10. This is an example of a joint probability
+distribution function

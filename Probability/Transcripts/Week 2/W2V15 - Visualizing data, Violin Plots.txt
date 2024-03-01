@@ -1,0 +1,7 @@
+So finally, I want to show you
+one last visualization tool. These are called Violin Plots and
+are widely used in Data Science. What's so cool about violin plots? It contains the information of both
+the kernel density estimation and the box plots. Really, all you do is you put
+the kernel density estimation here at the side of the box plot. Let me be more specific. The violin plot looks like this. Here you have the KDE curve,
+the kernel density estimation. Here you have the mean. Here you have the quartiles and
+here you have the whiskers. So that is the violin plot. And as you can see, it's pretty useful.

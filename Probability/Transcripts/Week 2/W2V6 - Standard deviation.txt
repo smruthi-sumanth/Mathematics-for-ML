@@ -1,0 +1,41 @@
+So the variance is a pretty useful way
+to measure the spread of a distribution. However, it has one small drawback,
+the units. Imagine if your distribution has,
+for example, the height of people. So, these heights are measured
+in meters or feet, and the expected value is also
+measured in meters or feet. However, the variance is measured
+in meters squared or feet squared. And this is not useful. So what do we do? We take the square root,
+we call that the standard deviation. So the standard deviation is a pretty
+useful way to measure the spread of a distribution using the same
+units of the distribution. So, as we saw, the variance is the expected value of X
+minus the mean squared, which can also be written as the expectation of X squared
+minus the squared of the expectation of X. Now, here's a small problem. Say that X is measured in meters. Maybe it's height, or some length. Then expected value of X
+is measured in meters. So it would tell us, for example, the average of the height
+of the people we're measuring. So it's in the same units as
+the variable that we're measuring. However, look at the variance. The expectation of X squared
+is in meters squared, and the expectation of X all squared
+is also in meters squared. So the variance of X is
+measured in meters squared. And that's not so useful. Imagine if we're measuring people's
+heights and the variance tells you something in meters squared which
+measures area, so that's not so useful. What can we do? Well, a simple solution is to just take
+the square root of the variance of X and that is now measured in meters. So let's call that
+the standard deviation of X. The standard deviation is the square
+root of the variance of X. Now, in the normal distribution,
+the standard deviation is very useful. Let's take a look at this bell's shaped,
+and remember that when we defined it, it had two parameters mu. Which was the center of the bell,, or the
+mean, or the expected value, and sigma, which was the spread of the bell,
+or the standard deviation. And the formula was this one over here
+that we saw in the previous week. Well, a good visual cue
+to determine the value of sigma is where the bell
+starts changing concavity. And at that point, you are at
+mu plus sigma or mu minus sigma, depending on where you're standing and how much of the area is between
+mu plus sigma and mu minus sigma. Well, it turns out that 68% of
+the area is in between those two. And when you look at mu plus 2 sigma or
+mu minus 2 sigma, so the area between two standard deviations
+of the mean in both directions, there's actually 95% of the curve here. And if you look at three standard
+deviations, 99.7 of the curve is there. So, to be more exact, 68.2 lies in
+between one standard deviation. In these little two strips over here,
+between one and two standard deviations, there's 13.5%. And in the next ones, there's 2.35%. And in the tails, which extend infinitely,
+but they're still very, very tiny, there's a 0.15% of the area. And in statistics, it's very common
+to talk about being within 1 or 2 or 3 standard deviations of
+the mean when you're talking about a normal distribution.

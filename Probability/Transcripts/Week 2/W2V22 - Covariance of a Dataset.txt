@@ -1,0 +1,145 @@
+Let's go back to the example of two variables, age and height. Each distribution has
+its own expected value and its own variance. But there's something here
+that we haven't captured, which is the relation
+between the two. As you can imagine, age and height are somewhat related because the
+older someone is, the taller they are
+or similar things. How do we capture that? We captured with a
+very important concept called covariance. There's
+also another concept called correlation. This
+is what you're going to learn in this video.
+Sometimes we want to know how two random variables are
+related to each other. Having a good understanding
+of these relations helps us build accurate models
+and make better decisions. Consider the discrete
+random variable X, which is the age of a child, and let's consider three
+random discrete variables. Y_1 is the height of
+the child in inches, Y_2 are the grades in
+some particular test, and Y_3 is the number
+of naps per day. We're given some
+data as follows. The question is, how is
+X compared to any of the three y-variables and how do you compare
+these relations? To help us better
+visualize what's going on in each of these data sets, let's actually
+generate scatter plots for each where the
+horizontal axis is X and the vertical
+axis is Y_1, Y_2 or Y_3. The first plot is like this, the second one is like this and the third one is like this. I'm sure you can start
+seeing some pattern. How do you think these relate? Well, first let's
+look at some metric. For the age versus height one, we can look at
+both of the means, the mean of the age, which is 10.5 and the mean
+of the heights, which is 60. That's this point in the middle. The 10.5, 60 is the point where you
+would balance these points. For age versus grades, it's this point in
+the middle where mean of X is 10.5 again, and the mean of Y is five. For this one over here, age versus naps per day
+is 10.5 for the age and 3.7 naps per day as an average. Now we can also look
+at the variances. Let's look at the X variance, which means we forget
+about the Y-coordinate and calculate the
+three variances, which are 9.17 because it's
+the same data-set for ages. Now let's look at the Y-coordinates only and
+calculate the three variances, which are 39.56, 9.78 and 7.57. We have some information about each of the means and
+each of the variances. However, I'm sure you see
+something else going on. The age versus height one, is almost a diagonal that
+goes up to the right. The age versus naps is
+the opposite it goes to the bottom and the age versus grades is all over the place. That can be captured in something
+called the co-variance. The co-variance of the first
+plot is bigger than zero, the covariance of the
+second plot is almost zero, and the covariance of the
+third plot is less than zero. The covariance talks about
+the relation between the two. As you can imagine, the
+older the child is, the more height they have and that explains
+the first plot. Age and grades seem to
+not be very related. You can be older, young, and have
+high or low grades, but they're not related and age and naps per
+day are the opposite. The older you are as a kid, the less naps you're
+going to have per day. That's what covariance
+really summarizes. Now, how do we
+calculate covariance? Well, the first
+step is as usual, to center the graphs. Let's actually subtract the mean of X from the x coordinates
+and the mean of Y for the y coordinates in order to get this center point
+to be at the origin. Then let's also divide by the standard deviation of x
+and of y in order to have this really nice plots where the X variance and the Y
+variance are both one. Now that we have that, let's try to cook
+up a formula that captures this trend over here
+and this trend over here, and the lack of
+trends in the middle. What would this formula be? Well, let's look at
+the plot in the left. It seems that when you
+move to the right, the coordinates move up
+and the one in the middle, there seems to be no rule
+and on the one on the right, if you move to the right,
+the coordinates move down. Let's try to capture
+this as some numbers that could be
+positive or negative. Let's look at age versus height. When you move to the right by x, you move up by y and when
+you move to the left by x, you move down by a quantity y. The quantities always
+have the same sign. If I move to the right on some sign, positive or negative, then the points move up or down by the same
+sign, positive or negative. Let's look at the coordinates
+and the points in the left. Some of them have a
+positive x coordinate and also a positive y-coordinate
+and some of them have a negative x-coordinate and
+also a negative y-coordinate. In other words coordinates of x and y tend to be the same sign, maybe not for every point, but for the majority
+the coordinate of x and the coordinate of
+y are the same sign. The opposite things
+happen on the left graph. When you have a
+negative x coordinate, you have a positive y-coordinate and when you have a
+positive x coordinate, then you have a
+negative y-coordinate, so they tend to have
+a different sign. For the age versus grade ones, the one in the middle,
+nothing seems to happen. Sometimes the x coordinate is positive and the y
+one is positive, but sometimes the x one is negative and the y
+one is positive. It seems like a
+land with no rules. Anything can happen here. Now let's look at the
+product of coordinates, because on the left, the coordinates normally
+have the same sign, so the product of coordinates is normally
+a positive number. On the one on the right, the coordinates normally
+have a different sign, so their product is a
+negative number because positive times
+negative or negative times positive is negative. For the one in the middle, well, we can have both
+positive numbers and negative numbers because
+anything can happen. Now, what if I were to add all these products of
+coordinates for each number? Well, in the left I'm going
+to get something positive, in the right, I'm
+going to get something negative and in the middle, I may get something
+close to zero, maybe positive or negative, but probably close
+to zero because I'm adding things that also
+cancel with others. This sum is called
+the co-variance. We get to the important
+formula here, which is co-variance
+is going to tell us if one variable
+makes the other one grow or makes it decrease, or if it doesn't do anything
+to the other variable. But it's not exactly the
+sum of the products x, y, it's almost that. It's actually this number. First you have to center
+the data and then you take the average of
+all these products. Co-variance is going to
+be the one to tell us if the first variable makes the other one grow such
+as age and height, if the first variable does
+nothing to the other variable, which is age and grades or if the first variable makes the
+second variable decrease, like age and naps per day. Now led to some calculations. Here is the table
+of age and height, which we call it had a
+co-variance bigger than zero. This is the mean of ages
+and the mean of heights. What we're going to do is
+first center the data. Let's subtract the mean of age from all the
+ages and the mean of heights from all
+the heights and then multiply these two
+columns to get this. When we added and
+take the average, we get 170/10, which is 17. This covariance is 17
+because the data is positively correlated
+in the sense that when age grows,
+height grows. Now let's do age
+and naps per day. That's the one that was
+negatively correlated. It has covariance negative. Here's again, the Mu
+of x, the Mu of y. Here's age, here's naps, here's the centered age and
+the centered naps per day and the product of these two columns is
+this as you can see, all the numbers are negative, is a sum of -74.5. When we take the average, we divide by 10 because
+there's 10 kids. We get a covariance of -7.45. That is negative
+because as you know, the higher the age,
+the less naps per day. Finally, we can do the
+covariance formula for the age versus
+grades distribution. Here are all the numbers. The age, the grades, the centered age,
+the centered grades, the product of the two centered coordinates and that
+sum is going to be one. When we divide by 10, we get the covariance
+is 1/10 or 0.1, which is very close to zero. One of them doesn't have
+influence over the other one, or at least very
+little influence for the fact that the
+covariance is very small. A small summary. We have three pairs
+of variables. The ones that grow together have a positive covariance of
+17 age versus height, the ones that look
+independent from each other have a covariance of 0.1 are very small and
+the ones that seem to be negatively correlated
+have a covariance of -7.45, which is less than zero

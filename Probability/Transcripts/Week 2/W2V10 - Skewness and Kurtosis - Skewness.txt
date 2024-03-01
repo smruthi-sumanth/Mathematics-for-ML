@@ -1,0 +1,89 @@
+Now let's actually change
+the scenario a little bit. In one scenario, you're going to
+be playing the lottery, and in the other scenario, you're going to
+be the owner of a car insurance company. And bear with me for the numbers. So if you're playing the lottery then
+you buy a ticket that costs $1 and the jackpot is $100, so
+you can win $100, and you pay $1. So what can you win? Well, if you win the lottery means
+you paid $1 and you won 100. So you won $99, and
+you win it with 1% probability. The probability that you
+win this lottery is 1%. And with 99% probability,
+you don't win it, which means you lose $1 because you
+paid that dollar in your ticket. Now keep these numbers in mind. Now let's say that you sell car insurance. You are the car insurance company,
+and people buy car insurance from you. So let's say you only have one client,
+and that client buys car insurance, and it costs $1. And the client could crash or not crash. And if the client crashes,
+then the reparation is $100, which means you have to pay
+$100 to repair the car. And the probabilities
+are similar as before, because the probability that
+the client crashes the car is 1%. So with 99% probability,
+the client will not crash the car and you will win $1,
+because they paid $1 for the insurance. And with a 1% probability,
+you will gain the dollar and lose 100 because you had to pay for
+the crash reparation. So with 1% probability, you lose $99. If you look at these two games,
+they are the exact opposite, right? In the lottery,
+you win 99 with a 1% probability, and you lose 1 with a 99% probability. And in the car insurance,
+win 1 with the 99% probability, and you lose 99 with a 1% probability. So let's plot them. Over here in the lottery, here is the dollar you lose if you buy
+the ticket and don't win the lottery. And here is a 99 you win if you buy
+the ticket and win the lottery. And on the car example, here is the $1 you win when they buy
+insurance from you and they don't crash. And here's the 99 that you lose
+if somebody buys insurance and then they crash. So as you can see, this is the same game
+but reflected over the horizontal axis. So now let's start calculating things. As you can see, these two games or these
+two scenarios are tremendously different. And let's see if that
+difference can be detected by either the expected value or
+the variance. So let's first calculate
+the expected value. So when you calculate it,
+you can see that it's 0, because, here it is, expected value of X1. The first scenario is going to
+be called X1, the lottery. And the expected value is,
+well, -1 times 0.99, because you lose that dollar with
+probability 0.99, plus 99 times 0.01, because you win 99 with a probability
+of 0.01, and that's actually 0. And E of X2, the car insurance variable,
+is also 0, because you lose 99 with probability 0.01, and
+you win $1 with probability 0.99. So these two games have the same
+expected value, which is 0. That means that on average,
+if we play this lottery many times, you're going to be
+gaining an average of 0. And if you are the car insurance company
+and you sell a lot of insurance policies, on average, you're going to be making $0. So we did not succeed at telling these two
+scenarios apart using the expected value. So what about the variance? Well, what's the spread of this
+distribution versus the spread of this distribution? They seem to have the exact same
+spread because they're reflections of the other one. And you can determine this by actually
+calculating the variance of X1. Now the variance is just E of X
+squared because it's already centered. So it's -1 squared times 0.99 + 99
+squared times 0.01, and that's 99. And the variance of the other one is
+the same calculation, which is 99. So the variance of these
+two games is the same. The expected value of these
+two games is the same, but they're vastly different games. So how do we tell them apart? Well, remember that the variances
+E of X1 squared minus E of X1, all squared, and the same thing for X2. And E of X1 is 0, and E of X2 is 0,
+so these ones don't really matter. So in reality,
+we were looking at the second moment. So these two distributions have the same
+first moment and the same second moment. So how do we tell them apart if
+they have the same first moment and the same second moment? Well, what about the third moment? Why don't we calculate the third moment,
+E of X1 cubed? That's -1 cubed times 0.99
++ 99 cubed times 0.01, that's 9,702 for the left scenario,
+the one of the lottery. And for the one of the car insurance,
+it's the same calculation but with negatives on the wrong places. So it's -9,702. So that's it. We're going to use the third moment, the expected value of the cube of
+the variable to tell them apart. And what the cube takes into account
+is that for the first distribution, there's some values that are really,
+really far away to the right. Because at the end of the day, is that
+99 cube which is making the difference, the positive 99 cubed is the one that
+takes most of this calculation with it. And on the other one, there's this -99. That's the one that dictates
+pretty much this number of -9,702, because the other number is very small. And that means that some values
+are very far to the left. So in other words, the cube of
+the variable detects if you have numbers that are skewed towards
+the right or skewed towards the left. Let me show this to you in
+a more continuous example. The distribution on the left is going to
+have a very high third moment E of X1 cubed, because it's positively skewed. Positively skewed is the term we used when
+there's more values towards the right, very far than towards the left. So it's skewed towards the right. And the other distribution
+is negatively skewed, which means it has values
+very far towards the left. And that one has a large
+negative value for E of X cubed. So the magic value here that's helping
+us is the expectation of X cubed. That's almost called a skewness. We still need to standardize. So the skewness is the expected
+value of the centered and standardized distribution. So expected value of X minus
+mu divided by sigma, cubed. So we have three cases. When the distribution is positively
+skewed towards the right, then E of X minus mu divided by sigma,
+cubed, is bigger than 0. When it's not skewed,
+it means that it looks more symmetric, and the expected value of X minus mu
+over sigma, cubed, is going to be 0. And finally, when it's negatively
+skewed that it has a lot of values towards the left, then E of X minus mu
+divided by sigma, cubed, is less than 0. So the moral of the story is,
+when the first and second moments don't help you,
+go to the third one. And that tells you the skewness
+of the distribution.

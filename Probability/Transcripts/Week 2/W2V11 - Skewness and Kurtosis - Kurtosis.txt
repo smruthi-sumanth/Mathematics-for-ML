@@ -1,0 +1,66 @@
+So, now that you've learned
+expected value, variance, and skewness, let me show you two new games. Game 1 is the following,
+with a probability 1/2, you win $1, and
+with probability 1/2, you lose $1. That's like tossing a fair coin. So, that's the game we've
+seen already many times. Let's have a second game,
+where with probability almost a half, that's 100/202 you win $0.10cents. With probability 100/202, you lose $0.10. So, it's a less risky game, except that there's a tiny probability
+that you win and lose a lot more. So, with probability 1/202, you win $10. And with probability 1/202, you lose $10. So, in the game on the left,
+you win a dollar or you lose a dollar. In the game on the right, you could
+win $0.10 or lose $0.10 with much higher probability, but there's also
+a small chance that you win or lose $10. So, here's a tricky question
+which game is riskier? See, the game 2 seems a lot more
+conservative with the $0.10. But once you throw in the $10,
+it becomes a little riskier, but the probability that you win $10 is
+very small, or that you lose $10. So, let's calculate the variance. But before calculating the variance, let's
+actually calculate the expected value. In other words, let's take a look
+at the games as distributions. So, here's game 1,
+where you can win a dollar or lose a dollar with probability a half,
+we've seen that one many times. Game 2, you can win $0.10 and
+lose $0.10 with probability almost a half. And then there's a small chance that
+you make $10 or that you lose $10. Now, those two distributions
+are very different. So, do you think we'll be able to tell
+them apart with expected value or with standard deviation, or with skewness? Well, let's hope that one of them works
+because we need to be able to tell them apart with some metric, right? They are different games. First, let's calculate the expected value. And as you can see, the expected value is
+not much hope because it's 0 for both. They're both centered, right? So, for the left one is 0,
+and for the right, one is 0. And I invite you to actually calculate it. But if it's a symmetric
+distribution center around 0, then the expected value has to be 0. Now, let's look at the variance. What do you think happens
+with the variance? This one's going to tell
+us which one is riskier. Let's look at E of x 1 squared. So, this number is 1/2 times -1 squared
+plus 1/2 times 1 squared, which, as we've seen many times, is 1. But now let's look at E of x 2 squared. X2 is the amount of money
+you gain on the second game. Well, this one is 100/202 times
+-0.1 squared plus 100/202 times 0.1 squared plus 1/202 times -10
+squared plus 1/202 times 10 squared, because it's the sum of the probabilities
+times the squares of the values. When we do the math, we get this. And this actually adds up to 202/202,
+which is 1. So, believe it or not, these two
+games have the exact same variance. Neither one of them is
+riskier than the other one. Variance of x1 is 1, and
+variance of x2 is 1. So, when you take the square root,
+they have the same standard deviation, and that's not so convenient. We couldn't tell them apart using
+expected value or using variance. Do you think we have a hope with skewness? Well, remember that distributions
+that are symmetric around the midpoint have skewness of 0. So, both of these have a skewness of 0. They're not skewed towards the right or
+towards the left, they're both symmetric. So, skewness is also not going to help us. So, who can help us? The first moment didn't help us. The second moment didn't help us. The third moment didn't help us. I wonder. So to summarize,
+both have a skewness of 0, both have a variance of 1,
+both have a mean or expectation of 0. However, something interesting
+is happening here. How would you tell them apart? How would you describe to someone
+that these two are different? One way to describe it is to say, well, the one on the right has values
+that are really far away from 0. Maybe we can capture that. So, let's go back to moments. The first moment is 0, the second
+moment is 1, the third moment is 0. And the same thing happens for x2. So, what moment should we go for? What about the fourth moment? Maybe the fourth moment can help us. Let's take a look. What is E of x1 to the 4 on the left? Well, it's a 1/2 times -1 to the 4 plus
+a 1/2 times 1 to the 4, which is again 1. And what is E of x2 to the 4? Well, let's take this calculation and
+see what happens. That is 99.01. That is huge. Why is it huge? Because this -10 to the 4 and this 10 to
+the 4 are 10,000, and that's a big value. So, when the distribution has very large
+numbers very far away from the center, even if their probabilities are tiny,
+E of x to the 4 captures this. So, that is called kurtosis. And kurtosis is the fourth-moment E of no,
+actually it's not. It's almost that we still
+need to standardize. So, the kurtosis is the expected value of x-mu divided by sigma
+raised to the 4 power. And what does kurtosis
+say of a distribution? Well, in a case like this, where the tails
+are very skinny, the kurtosis is small. But in a case like this,
+where the tails are thicker, then we have a large kurtosis. So, thin tails, small kurtosis,
+thick tails, large kurtosis. Even if they have the same variance, the
+variance may still not be able to pick up. Because even if you have thick tails, you may have a very skinny
+distribution in the middle. But kurtosis is a much
+more sensitive measure for the thickness of the tails
+of the distribution. So, we've learned many ways to tell
+distributions apart expected value, Variance for standard deviation,
+skewness, and kurtosis. With these four tools, you'll be able to say a lot about
+your probability distributions.

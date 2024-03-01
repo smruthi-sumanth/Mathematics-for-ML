@@ -1,0 +1,123 @@
+Here's a question
+for you. If you have a any probability distribution
+discrete or continuous, and you are to draw a
+random sample from it, what do you expect this
+sample to be on average? This is called the
+expected value. That's what we're going
+to see in this video. Imagine you're going
+to play a game with a friend where you flip a coin and if it lands on heads, you win $10 and otherwise
+you win nothing. Let's assume that it's
+a perfectly fair coin of 50/50 chance. Now, your friend
+wants you to pay six dollars every time
+you play the game. Would you play the
+game at this price? Now what if your
+friend wants you to pay four dollars instead? Would you play the game then? What is the maximum
+amount of money you would pay to play this game? Well, how can you
+figure this out? What is the fair price
+to play for the game? You can think of this in
+terms of probabilities. You can think of
+what's likely to happen in the long-term. It's actually the
+same calculation you did for the previous
+video with the kids. For the long-term, you expect to get half of the times $10 and half of
+the times zero dollars. Imagine if you played
+this game 1,000 times, you're expecting roughly
+500 times you're going to win $10 and 500 times
+you're going to win zero. On average, you're
+expecting to make five dollars every time
+you play the game. We call that the expected value and we denoted by the letter E. E(x)=5 if you're expecting to win five dollars
+on average at this game. That means that five dollars is the fair price to pay
+for playing this game. You can look at it in
+a plot like this one. If you have half
+of a probability at $10 and another half
+probability at zero, where would you balance
+this distribution? You would balance
+it exactly at five. The expected value and the
+mean are the same thing and they're both the price that you would pay for
+playing this game. Now let's think of another game. Now you flip three
+coins and you win one dollar for each of the
+coins that lands in heads. What is the price that you
+would pay to play this game? Well, let's look at the entire distribution
+that you've seen before. You can arrange the
+possibilities by the number of heads and
+create a histogram like this, just like we did before. Except that now on the left, you make zero dollars
+for the next column, you make one dollar, for the next one you
+make two dollars, and for the last one
+you make three dollars. Where would you balance this? You would balance it right
+in the middle at the 1.5. Therefore, the expected
+value of this variable x, where the variable x
+is the amount of money you're making in this game is going to be 1.5 or
+in other words, on average, you're going to
+be making $1.5 at every game. Notice that you're never
+going to be making 1.5. You make 0, 1, 2 or 3, but on average,
+you're making 1.5. Now, you can think about
+this problem different. If you flip three coins and
+half of them are heads, then what's half of three? That's the 1.5. That's the expected value. Now let's look at
+another example. Imagine that you're rolling
+a dice and you would like to know what the expected
+value of the roll, so you have a fair die
+with six sides and a probability of 1/6 that it
+lands on each of the sides. How do you calculate
+the expected value? Well, you have six events that are equally likely
+so you can add them all together and then divide by the number of
+possibilities, which is six. The answer is 3.5. If you were to balance
+all these in a scale, then you would balance
+it exactly at 3.5. That's the expected value. If you were to play a game
+where you roll a dice and you make the
+amount of dollars that's on the dice
+that you rolled, then the fair price to pay
+for this game would be 3.5. Now, let's look at the expected value of a
+uniform random variable. Let's say that you're
+taking the bus every day, and you look at how much time
+the bus takes to arrive. Let's say the first time it took 15 minutes and so I'm going
+to plot this number here. You continue collecting
+data points because you take the bus every single day. You take it on the next day, and it took, let's
+say 32 minutes. You keep recording every day and you keep collecting
+data points. Now, you want to find the average of these
+numbers because you want to find the average time that you
+spend waiting for the bus. The average of those numbers is 27.833 and that's where you balance these
+points over here. Now you can continue
+collecting data points every single day that you take the bus and you get
+something like this, and you're expecting that
+if you're not really planning to take it
+at a particular time, and let's say it
+arrives every hour then roughly you're going to
+get a uniform distribution, and the average is going
+to be somewhere around 30. Why is it 30? Because
+the distribution for the time that you
+spent waiting for the bus is uniform
+because as you can see, the point can land pretty much anywhere in that
+interval equally. Where would you balance a uniform distribution
+between zero and one? You would balance it in
+the very middle at 0.5. For a uniform distribution
+between a and b, then you're balancing
+in the middle, which is the point a+b/2. Now let's do the same
+thing with the phone. Let's say you call and this is the amount of time
+that you wait, because the distribution of
+time is this one over here, which is higher at the
+point in the middle. If you continue
+making many calls and checking how long
+the calls take, then you notice that it's distributed with that
+blue distribution. What would the mean be? Well, again, it
+would be the point where you can balance
+that distribution. The mean of a distribution or the expected value of the
+distribution is the point where you can balance and
+that's what you would expect to wait if you make a call
+based on this distribution. Now, here's a common
+misconception. It's common to think
+that the mean is a place where the data is split in half. But that's not the case here. Notice that 50% data's here
+and the other 50% is here, and the mean is not the
+point in the middle. It's actually a
+little to the right. Why is this? Well,
+is because the data is more spread
+to the right. The mean is actually here, and there's more orange area
+than there is yellow area. That's okay. The reason is that even though we
+have more mass here, here it's more spread out. I like to imagine this
+with an extreme example. Let's say that I have
+an elephant really, really close to the
+balancing point and a mouse that is many
+kilometers away. Well, because the
+mouse is so far, even though it's much
+smaller and lighter, it's still balances the
+weight of the elephant. Even though the
+elephant has more mass, the mouse is much,
+much farther away.

@@ -1,0 +1,54 @@
+Let's formalize something
+we saw already. When you have a
+distribution with mean Mu, it's always nicer when the
+distribution has mean 0. One thing you can do is subtract Mu and get a
+new distribution with mean 0 and this one is simply
+X-Mu is the variable X-Mu, where Mu is simply
+a fixed number, which is the mean of
+the distribution. This is common practice
+when you have a variable X, actually maybe better
+to consider X-Mu. Why is it that the new variable
+X-Mu has expectation 0? Well, remember that
+expectation is linear, so you can take the
+expectation of X+Y is the expectation of X plus
+the expectation of Y. Therefore, the
+expectation of X-Mu, if we let Y=-Mu, is the expectation of X
+minus the expectation of Mu, but the expectation
+of Mu is simply Mu because Mu is a constant and so therefore this is
+0 because E(X) is precisely Mu so E(X)-Mu is 0. Now, here's another
+trick that's very useful when you have
+a distribution and let's say we already
+have mean equals 0 and if the standard
+deviation is Sigma, that measures the spread. Well, in the same way that
+we want the mean to be 0 we want the standard
+deviation to be 1. It's always nice when the
+standard deviation is 1. What do we do? Well, if the original
+random variable was X and has a standard
+deviation of Sigma, then X/Sigma has a
+standard deviation of 1 so we take this X, turn it into X/Sigma, and that has a standard
+deviation of 1. The math is the following. The variance of cX,
+where c is a constant, is the expected value of (cX)^2 minus the expected value
+of cX all squared. Because we can take away
+the constants outside, then the part of the
+right is cE(X)^2 and we can also take the
+c^2 from the first one, so we factor the c^2 and
+we get E(X)^2-E(X)^2. That's c^2 variable of x. I can take the constant
+out of the variance, but it comes out as a square. Now let's take a
+look at variance of X/Sigma on the right. That's 1/Sigma^2 variance of X, because precisely 1/Sigma
+is that constant c in the left and if we
+take the square root, we have that the
+standard deviation of X/Sigma is 1/Sigma times the standard deviation
+of X because we took the square root of
+everything on the right side. The 1/Sigma^2 becomes 1/Sigma and the variance becomes
+the standard deviation. This is Sigma/Sigma which is
+1 and that's why dividing by the standard deviation means our new variable has
+a standard deviation of 1. To summarize, this is how we
+standardize distribution. You have the distribution X with mean Mu and standard
+deviation Sigma. If you subtract Mu, you get a new one, X-Mu with mean 0 and standard
+deviation still Sigma. This is called centering
+and distribution. Now, since we want a
+standard deviation of 1, then we divide X-Mu
+by Sigma and now we have a mean of 0 and a
+standard deviation of 1. Then this is called scaling and this whole process is
+called standardizing. Anytime I say standardize the
+distribution, you do this, subtract the mean divide by standard deviation and you get a really nice distribution with mean 0 and standard deviation 1.

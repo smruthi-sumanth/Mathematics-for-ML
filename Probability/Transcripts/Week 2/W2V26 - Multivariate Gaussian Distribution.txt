@@ -1,0 +1,87 @@
+Previously, you learned the normal or Gaussian
+distribution. That wasn't one variable, but you can have the
+Gaussian distribution in more variables and it's called
+the multivariate Gaussian. It looks very nice, if you
+look at it in two variables, it actually looks like a bell. This one also appears
+in many places, and in particular, it appears
+a lot in machine learning. Let me show you.
+Recall the formula for a Gaussian distribution for one variable given
+the following PDF. That have parameters
+Mu the center of the bell and Sigma
+the spread of the bell. Now, there's a question, what if you had more
+than one variable? Say you have variables X_1, X_2 up to X_n. Let's say we have two
+variables, for example, H is the height of
+an adult in inches, and W is the weight of
+an adult in pounds. If you have a dataset of 1,000 points with the height and
+the weight of each person, then you can look at the marginals and
+notice that they are both normal or
+Gaussian distributions with some mean and some
+standard deviation. Now, what does the joined
+distribution look like? If the two variables
+were independent, then the joint PDF will be the product of the
+marginal PDFs, and rearranging the
+terms a little bit, you would get this
+expression over here. But now that is not one you see when you're planning the
+density of the dataset, both distributions
+are bell-shaped, but in the independent case, the distribution is
+completely symmetric. In the dependent case, you see that distribution
+is elongated along a line with
+positive slope. Seen from the top,
+it's like this. These are the level curves
+of the distribution. So the green curves are high up and the purple
+curves are down. This is like seeing a
+mountain from the top. What is causing the deformation of the joint distribution? Well, it turns out
+that is the covariance between the two variables. They are height and weight, and people tend to weigh
+more when they are taller, so that's where the positive
+correlation comes in. On the left, you would have
+two independent variables, and thus you have those circles. Let's do a bit of
+algebraic manipulations to see if we can rewrite
+this a little better. Since H and W are Gaussian, then the product of the
+densities looks like this, where the exponent is the sum
+of both Gaussian exponents. This sum of squares can
+actually be seen as the squared norm of
+this vector over here, which is the same
+as the dot product between the transpose
+vector and itself. Now, the vector h
+minus Mu_w minus Mu, can be rewritten as a
+subtraction the two vectors h, w and Mu_h w. In order to get each element of the vector to be multiplied
+by a different constant, you will need to put a
+diagonal matrix in-between. This is the diagonal matrix. This can be finally written as the dot-product of the
+difference transpose times the inverse of the
+diagonal matrix with the variances in each
+element of the diagonal, times the difference vector. This matrix over here is
+simply the covariance matrix. Notice that since the
+variables are independent, this has to be the diagonal. The vector Mu_h, Mu_w
+is the vector mean, which we will denote
+by a bold Mu. The product Sigma_H, Sigma_W is simply
+the square root of the determinant of
+the covariance matrix. Joining everything together, you get this expression over here. Remember that this
+is valid only if W and H are independent. Replacing with Mu and Sigma, you can rewrite this
+expression like this. What changes in the real case when the variables
+are dependent? Well, of course is
+no longer true that the joint distribution is a
+product of the marginals. However, both dependent
+and independent cases have bell-shaped surfaces. This general
+expression is actually valid in the dependent
+case as well, the only difference is the covariance matrix is
+no longer diagonal and now the off-diagonal amounts correspond to the covariances
+between variables. Since you're familiar
+with the formula of the univariate Gaussian, let's see what the formula for the multivariate Gaussian looks like by just opposing it
+to what you already know. F of x becomes this because now you're dealing
+with more variables. We're still going to
+have this constant 1, instead of dividing by
+the square root of 2Pi, we divide by 2Pi^n/2 taking into account the
+number of variables. Now for the univariate
+distribution, you have the standard
+deviation that shows the variation, but
+for the multiline, we're going to use
+the covariance matrix as it tells us the
+variation in the curve. More specifically, we work with the determinant of the
+covariance matrix, which captures the
+volume of the spread. The bigger the determinant, the bigger the spread. Next, let's look at
+the exponent terms. So x is a random vector, Mu captures the population mean of each variable in the space. The inverse of the covariance
+matrix as applies to standardize and re-scale the
+variances and covariances. Know that because
+you're dealing with multivariable distributions, all scalar values
+are replaced with vector and scalar variances are replaced with
+covariance matrices

@@ -1,0 +1,47 @@
+Now, let's go back to the
+advertisement example. All these samples
+seem to come from a continuous random variable. You know by now that you can describe your data
+distribution for continuous variables with the probability density
+function or PDF. The question is, can
+we gain any idea of what the PDF looks
+like from the data? Well, I'm sure you're already
+familiar with histograms. Since doing a histogram in just 12 values doesn't
+make much sense, let's plot the histogram
+for the whole dataset. Technically, a
+histogram satisfies all the conditions of
+a density function. It's positive and the area
+under the curve is one. However, it's not a great
+approximation for one. PDFs are usually
+a smooth function and also the discontinuities of the bars appear from
+the technique used to compute histograms and
+not from the data itself. In other words, the actual
+distribution where these come from may have a pretty
+smooth density function. But since we're
+taking a histogram, it looks like it
+has a lot of peaks. Is there any way we can approximate the PDF of our
+data from this histogram? It turns out there
+is and the method is called kernel
+density estimation. We start by making our
+observations in a graph. Then you want each point
+of a dataset to have an effect that spreads around
+the observation point. Because we want high
+density where there's a lot of points and low density
+where there's no points. Let's put a little mountain
+in each of the points. That means a small
+Gaussian curve on top of each data point. This is called the kernel. You could choose other
+functions than the Gaussian, but we're not going
+to get into that. Now, the standard deviation
+of the curve will determine how far the effect
+of each point spreads. It could be thin or
+it could be wide. Now, let's get back
+to the original plot. Lastly, all you have to
+do is multiply everything by one over n and sum
+all the blue curves. Notice that since the area
+under each curve is one, the avenue of the
+curves must give us an area under the curve of one. This is what estimation looks like after cleaning
+up the plot a bit. Doesn't look so great, but that's because you've
+tried to approximate the density from
+just 12 data points. But if you try for many points, then you're actually
+going to get a really nice smooth
+function that actually resembles a PDF well. This is a way to approximate
+the PDF based on the data.

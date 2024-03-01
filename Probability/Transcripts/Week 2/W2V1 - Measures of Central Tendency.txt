@@ -1,0 +1,138 @@
+Welcome to Week 2. In the first week, you learned about probability distributions. This week, you're going
+to learn about some ways for describing the data and these probability
+distributions. You're going to see
+how mean, median, and mode describe the
+center of the distribution and how variance describes the spread of the distributions. You will also be introduced to the concept of unexpected value. You're going to see that
+expected values can be used to describe some interesting
+properties of variance, as well as some
+advanced properties of probability distributions such
+as skewness and kurtosis. So far you've seen
+probability distribution of one random variable. But in Lesson 2 of this week, you're going to learn
+probability distributions of more than one
+random variable. Some concepts you'll learn
+are joint distribution, marginal distribution, conditional distributions,
+and covariance. These are very
+useful to describe probability distributions
+in multiple variables. Let's get started. Let's look
+again at the example where you had a bunch of kids
+with different ages. How would you figure out what is the average age of a
+kid in this group? Well, you have three
+kids of Age 0, two kids of Age 1, four kids of Age 2, and one kid at Age 3. Now if you don't have
+any mathematical tools, you can use a simple trick. You can look at
+this histogram as a distribution and you try
+to balance it on a scale. The point where it balances is actually the average
+age of a kid. Now because kids
+of different ages weigh different amounts less, replace them all with
+equally sized balls. Now you just have a bunch
+of balls and you can put them on a scale and
+find a tipping point. By trial and error, you can find that the scale is balanced somewhere here at
+a value of 1.3. Let's try to actually calculate
+this number, this 1.3. The easiest way to
+calculate it is just a sum all the kids ages and divide
+by the total number of kids. This way you get the
+average age of the kids and that is exactly point where you have to
+balance your scale. You have three kids of Age 0, two kids of Age 1, four kids of Age 2
+and one kid of Age 3. The sum of these numbers
+divided by 10 is 13/10, and that is 1.3. 1.3 is the average age and also the point where
+the scale would balance. Now notice that
+this last equation looks a lot like probabilities. If you take each number and
+divide it by 10 and add them, then you have numbers
+like 1/10, 2/10, 3/10. Let's say you have a
+3/10 probability that the age of the kid is zero
+2/10 that the age is 1, and 4/10 that's the age is 2, and 1/10 that's the age is 3. Adding those
+probabilities, you get 1.3 if you add them for
+each one of the kids. That's something very special about the average that
+we're going to see next. Now let's go back to the phone center example
+from the previous videos. When you had a sample of data, let's say you want
+to find the mean. You can imagine that each of
+these bars on the plot has its own weight and
+what you need to do is balance them on a scale, just I get balanced the
+balls in the previous video. For this case if balance is somewhere around where
+the triangle is, and that's exactly where
+the mean of your sample is. Now we can again go
+closer and closer to a continuous distribution like we did in the
+previous week. You can always talk about the distribution
+of the sample more precisely and you can
+always break down the intervals into smaller ones. For finding mean, this
+makes no difference. You still have to simply balance the left
+and the right side. When you're going to
+talk about the mean of a continuous distribution, you don't have to take averages, but you can see it as the point where you
+would balance the curve. If you think about it, that's
+a bit like the amount of time you would expect the
+call to take on average. We're going to see
+more of that later. You've seen the mean before, but let me show you
+an example where the mean may not work so well. In the 1980s, the starting salary for
+a geography graduate of the University of North
+Carolina was actually $250,000. Sounds like a very big salary. Especially considering that for the rest of the United States, the starting salary for a
+geography graduate was $22,000. Why do you think this happened? Well, it could have been
+another program was excellent, although I'm sure there were
+other excellent programs too. That may not be it. Could it be that
+the university had great connections but I'm sure other universities also have great connections.
+Maybe that's not it. Or perhaps it was the one
+student made a lot of money. That was indeed the case. Michael Jordan graduated from the Geography Program at the University of North
+Carolina in the 80s. He went out and made
+a lot of money. He brought the average
+up for everybody. It's not really that
+the average student was making a lot of
+money is that he was making so much money that it looked like they
+were all making money. But the average here
+is a little deceiving. Here's a plot that shows us
+why the average is deceiving. Imagine that this
+is the histogram of the salaries Salary is in the horizontal axis
+and the number of students with that salary
+in the vertical axis. If you were to balance it, it goes over here
+around $22,000. However, Michael Jordan is all the way here.
+Then what happens? He tips the scale and
+in order to balance it, we have to move it up. He brings the average
+up for everybody and the average is no
+longer measuring what the average
+student makes it got skewed by that one
+point on the right. How can we fix that? Well, let's consider
+a different metric. Let's actually put them
+all in order by salary. Now it's just a
+position that matters. Once we do that, we can pick the number in
+the very middle. The salary in the very
+middle is the median. Notice that that is
+no longer so high because now Michael
+Jordan doesn't contribute a lot of money, he just contributes one
+person to this list. That is the median. Now, if the median were
+to be in the middle because you have an
+even number of points, then you simply
+take the average of the two points in the middle. The moral here is, when the average is deceiving, go for the median
+and you may get a better idea of your data. There's one more way to
+describe the center of a distribution apart from the mean and the median
+and it's called the mode. Remember our call center example where the probability
+or the operator picks up the phone in a given time looks
+something like this, mode is simply the
+value at which the distribution has the
+highest probability, which makes it the
+most frequent one. For example, in this case, it's this number over here. You can see that
+it's the outcome with the highest probability. The same thing happens here in the more granular
+discrete distribution. It's the point where the
+tower is the highest. For a continuous distribution, the mode is simply the value
+that has the highest height. Now, the mode may not be unique. You may be in a
+distribution like this where the
+maximum value gets repeated many times and that's called a multimodal
+distribution. In places like the uniform
+distribution for example, everything is a mode. In summary, you have the mean, the median, and the mode. It's always good to look at
+the three of them in order to really see where the
+center of your data is. Now let's look at
+a real example, the binomial distribution. Here's an example of five trials with a probability of 1/2, like flipping five fair
+coins. What does this mean? Well, remember that we used a scale to balance distribution. In the scalar distribution, it's pretty simple to find the balance and it's
+perfectly symmetric. It's over here. The mean is at a value of 2.5. Now what about the median? Well, same thing as the average of two
+values in the middle, because we have an
+even number of values. It's also 2.5. What
+about the modes? Well, the highest points in
+distribution are 2 and 3. The modes are 2 and 3. Now let's look at an asymmetric
+normal distribution. Flip a coin five
+times and this time the probability of heads is 0.3. You're going to balance
+them to scale and find out that it's here at 1.5. That is the mean. As the blue line shows, median is we're half a data to the right and half
+the data to the left. That one is over here. Mode is again the outcome
+with the highest probability, so it's going to be one. Now let's look at a
+continuous example, the normal distribution.
+What's the mean? Well, the mean is the
+center because that's where you would balance the distribution as it's
+perfectly symmetrical. What about the median? Well, the median is also
+that point in the middle. The mode is also that
+point in the middle, which is the highest one. For a normal distribution,
+they all match

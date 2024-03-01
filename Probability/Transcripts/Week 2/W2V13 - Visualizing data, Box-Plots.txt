@@ -1,0 +1,38 @@
+Now, there's a cool visualization called
+the box plot or the box and whiskers plot, which is a standardized way of displaying
+the distribution of your data based on five statistics the minimum, the maximum,
+the median, the first quartile, and the third quartile. Let's see how it works using our
+newspaper advertisement example. So, to create a box plot,
+you need to calculate the three quartiles. That means, the 25% one,
+the 50% one, and the 75% one. So let's divide the data into
+four blocks of the same size. The first quartile, as you saw,
+is the midpoint between 18.3 and 18.4. The second one is the midpoint
+between 25.9 and 29.7. And the third one is the midpoint
+between 51.2 and 54.7. Those are the three quartiles. Now we're going to call
+the interquartile range ask Q3- Q1. That's where 50% of your data lies,
+and that's 34.6, that's that difference between those two. And we're going to look
+also at the minimum and maximum values of the data set. The minimum is 8.7 and the maximum is 75. And we're going to put
+all of that in one plot. So let's start with the box. It should go from the first
+to the third quartile, that's from 18.35 all the way to 52.95. Then we draw a line at the value
+of the median 27.8, that's Q2. Now it's time to draw the whiskers. For this you draw two lines
+going from the end of the box until Q1 -1.5 times
+the interquartile range, which is the height of that orange box and
+one going from Q3+ 1.5 times the interquartile range,
+which is Q3-Q1. However, the whiskers should
+never go beyond the max and the minimum values of the data set. So if that happens, like in this example,
+simply cut the whisker at those values. Now the box plot is very useful, because just by looking at the plot you
+can get plenty of insight on your data. In this case, you can easily see that the data is skewed
+because Q3-Q2 is way bigger than Q2-Q1. For this small case, we can see
+that there are no extreme points or outliers since both whiskers
+end at the max and min values. If there are any values that
+are outside of the whiskers, then we say that those are outliers,
+they're too far from the center. Now the length of the box and the whiskers allow you to analyze
+the dispersion of the data. Now let's take a look at the box plot
+obtained using all the data sets. For this,
+you need all the values of Q1, Q2, Q3, the interquartile range, and
+the minimum and the max. The minimum is 0.3 and the max is 114. With these values,
+you get these box plots. So these are the Q1, Q3, and Q2. Notice that the bottom whisker
+goes from Q1 to the smallest value of the data set 0.3,
+while the upper whisker actually ends in 93.626,
+which is 1.5 times the IQR. This leaves two data points outside of the
+whisker, which are considered outliers.

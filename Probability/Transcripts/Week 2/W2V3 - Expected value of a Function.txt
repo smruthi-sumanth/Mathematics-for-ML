@@ -1,0 +1,31 @@
+You have now learned how to find the expected value of
+a random variable. But what if you are looking
+for something different, perhaps the expected value of the square of
+this variable or the cubed or any other
+function. Let me show you how. Imagine that you have this probability
+distribution and you get the outcome x_1 with
+probability p(x_1), the outcome x_2 with
+probability p(x_2). The outcome x_3 with probability
+p(x_3) and the outcome x_4 with probability p(x_4). Now to find the expected value, you simply have to take
+each outcome and multiply it by the probability and
+add them all together. Now, if you wanted
+the expected value of some function of x, what you do is you take
+a function at each of the points and add them multiplied by each of
+the probabilities. Let me give you an example. Imagine a game
+that you play with a friend where you roll a dice and your friend doesn't
+give you the amount of money for the number
+that you roll, but the square of it. It's actually a
+pretty good game. You get $1 if you roll a 1, but 2^2, $4, if roll a 2 and all
+the way to 6^6, which is $36 if you roll a 6. What's the fair price
+to play for this game? Well, you simply
+take the average of the squares of
+1,2,3,4,5 and 6. That's going to be
+somewhere around here. What's this number? Well, it's 1+4+9+16+25+36/6,
+which is 91/6. That means it's the
+number over here. Notice that, that is
+the sum of the squares of the values you're
+getting divided by six, which is precisely
+the expected value of the variable X^2. You not only can take expected
+values of things like X, but you can also take
+the expected value of X^2 or e^x or sine x or any function regarding
+the random variable X

@@ -1,0 +1,75 @@
+Now you will learn what a joint distribution of
+two discrete variables is. Now what if the variables
+are continuous? It's very similar. It's called a joint distribution of continuous variables, and that's what you're
+going to see next. So far, all the joint distributions we've
+taken a look at have been discrete variables. For example, the age
+and height of a child where the height was rounded
+to the nearest inch, the number rolled on the first
+die or on the second dice, or the number rolled on the first die and the
+sum of both dice. All of them are discrete. However, what happens when X and Y are continuous
+random variables? This is what I'm going
+to show you next. Jointly continuous
+distributions. We recall in a previous lesson, we had the example of
+a phone call and we generated the
+probability distribution of the call waiting, similar to this one over here. Now you learned to find
+the probability between some interval for a
+continuous variable, and it was the area under
+the curve as shown. Now let's work with
+some new data. Let's say we have two
+variables, X and Y. X as before is the waiting time
+before a call is picked up by a customer service agent
+that we can assume it's any number between the
+range of 0-10 minutes. Y is the customer
+satisfaction rating that also we can assume is a continuous value between 0-10, so it's not going
+to be 1, 2, 3 only. It can be 1.24 or anything. Both variables are continuous. For example, X can be 2.4
+minutes, 1.5 minutes, and Y can be a rating
+of 0.0, 5.7, etc. Now, X is the variable of waiting time between
+zero and 10 minutes, and after 10 minutes,
+the call ends. It really has to be a number
+between zero and 10 minutes. We're going to look
+at a dataset of a thousand customers and we
+get the following histogram. Now Y is the variable of satisfaction rating
+of a customer, and we have 1,000 customers, and here's the histogram. A lot of customers
+gave it a zero, a lot of customers gave it a 10, and there are some
+values in between. Now, let's look at both
+of them at the same time. The X variable of waiting
+time between zero and 10, and the Y variable of
+satisfaction rating also between zero and 10 for a thousand customers. The graph is the following. Looking at the
+distribution of the data, we can see that a lot more of
+the data is in the corners. Here is a heatmap. Why is it in the corners? Well, a lot of customers had
+a very quick call. They got picked up very
+quickly and they're very satisfied.
+Those are over here. A lot of customers had a very long call of
+10 minutes or maybe the service agent didn't pick up and these customers
+were not very satisfied, so they gave a low rating. When you actually
+look at the density, it's this over here. These two areas are here,
+they're strong areas, low time and high rating, and high time and low rating. You can actually see this as
+a three-dimensional plot. If you imagine this
+plot in the right as a mountain scene
+from the top where the dark areas are high points and the light areas
+are low points, then this is the
+actual mountain. These areas of high
+density are over here. Those are the areas
+where we're most likely to find a customer. Going back to the scatter plot, let's actually
+calculate the mean for both the X and the Y variables. When we calculate the mean
+of X of the amount of time that is spent before
+the call being picked up, that's 4.903 minutes, and the expected
+value of Y which is the average of the rating
+of the customers is 5.280. This point is over here. That's the mean, that's the place where you
+would balance this dataset on your finger if you were
+to balance all these points. Now let's calculate the
+variance of each variable. Let's aggregate over every row to obtain the
+distribution for time, and we segregated
+every column to obtain the distribution for
+customer ratings. Now we have to
+calculate the variance of X and the variance of Y. In order to calculate
+the variance of X, we first calculate the
+expected value of X, which as we saw before
+is 4.903 minutes, and the expected value
+of X^2 which is 32.561. Now the variance is simply
+E(X)^2-E(X)^2 which is 32.561-4.903^2 which is 8.526. In a similar way, we're going
+to calculate variance of Y. Recall that E(Y) is 5.280. E(Y)^2, we can calculate
+it as 38.037 and the variance is E of the square of Y minus
+the square of E(Y), which is 38.037-5.280^2
+and that's 10.163. Our variances are
+going to be 10.163 for Y and 8.526 for X.

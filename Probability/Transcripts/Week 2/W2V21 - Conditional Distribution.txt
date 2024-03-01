@@ -1,0 +1,62 @@
+Now recall the simple dataset of ages and heights of
+children will regenerate a marginal distribution over the x variables age and
+the y variables of height. With a marginal distribution
+we're summarizing the behavior of
+this distribution across only one variable, say height, because we just
+forgot about age and we added all the values of
+ages for one height. But now what if we wanted
+something different? We want to observe
+one variable given that the value of the
+other one is known. For example, let's say that
+we only care about age 9. That's the only
+one we care about, and we want to find
+the distribution across the height variable. That's called the
+conditional distribution. This one is simpler. All you have to do
+is take a slice. If you fix X=9, that means I'm fixing
+age equals nine, then I'm only
+looking at this row. Of the whole table, I only care about that row and that is my probability distribution
+of height for kids of age 9. If I want to find for example, P(y) given x=9 of 49, then that's going be
+this value over here. However, there's a small caveat. Notice that in a
+probability distribution, everything has to add to one. The numbers in this row do not add to one because they add to 4/10, that's 3/10+1/10. What can I do? Well,
+I can normalize. I can divide everything
+by the row sum, and I get 3/4 and 1/4. So my probability that Y=49, given that X=9, is now 3/4. Now remember, we
+have this formula. The probability of A and
+B is P(A)* P(B) given A. If we look at A and
+B as X=9 and Y=49, then we have this
+formula over here. We can rewrite it like this. Where this P(X)=9
+was the row sum. So normalizing and
+dividing by the row sum is actually applying the
+conditional probability rule. In other words, we obtain that P(Y)=49,
+that's the height, given that X=9, given that the age is nine, is 3/10 / 4/10 which is 3/4. That's this 3/4 we
+obtained over here. The general formula is this one, P(y), given that X
+takes this value, small x(y) is the joint probability
+distribution P(xy) (x, y) divided by the marginal
+distribution PX(x). Remember this formula.
+This is the formula for a discrete
+conditional distribution. The top is the joint PDF, this is the conditional PDF
+that we're going to call, and this is the marginal
+distribution of X. Let's see another example. On this example over here, very simple example where X is the value of one dice and Y is the value
+of the other one, then if we want it
+to say, for example, if the first dice
+takes the value 4, what is the probability
+that the second one it takes the value 1? Well, is this formula over here, which really means take this row and forget about
+the rest of the table, but now normalize by dividing by 1/6 to turn the row
+from 1/36 is to 1/6, and you get 1/6, which
+is precisely what we expect the probability to be. Let's go back to the example of the phone calls with waiting
+time and customer rating. If I want to take for example, the marginal distribution over the customers that gave a particular customer
+rating of say, 3.5, all I have to do is
+take this slice over here. Now remember that the density
+function was like this. For example, if I want to find the probability
+distribution for a rating, given that the waiting
+time was say four minutes, what I have to do is take a
+slice at a waiting time of four minutes and look
+at the plot in there. In other words, you take a slice and this is
+the slice over here, and the curve that you obtain on this slice is the
+conditional distribution. Well, actually it's not because you have
+to normalize it, but when you normalize it, you actually get the
+conditional PDF of y given x=4. Recall that for a discrete
+conditional distribution, this was the formula where
+this is the joint PDF, this is the conditional PDF, and the marginal
+distribution of X. Well, the same thing happens for continuous conditional
+distribution, except now we change the probability mass functions to probability
+density functions. So we change the p's two f's
