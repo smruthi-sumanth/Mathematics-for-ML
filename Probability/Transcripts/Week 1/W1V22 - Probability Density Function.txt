@@ -1,0 +1,84 @@
+So when you learn discrete distributions, you learned that each
+event had a probability. For example, the probability that
+I throw a coin ten times and three of them land in
+heads is a certain number. When we talk about
+continuous distributions, we cannot talk about those
+probabilities in the same way. For example, if I make a phone call,
+the probability that the phone call lasts exactly two minutes to
+the dot at is zero. But I can still talk about intervals. I can talk about the probability that
+a phone call lasts between two minutes and three minutes, or between two minutes and
+two minutes to 30. These probabilities are encoded in
+something called the probability density function. Let me show you how. So, before we return to the plot
+from the previous video, let's take a look at another simple case. Let's say that the call
+center answers with equal probability at any time window
+between 0 and 5 minutes. So, as you can see here, if we divide
+this area in five different parts, then the probability that the length
+of the call lands in any of the five rectangles is exactly the same. So, given this information, what is the probability that the call
+is between 2 and 3 minutes long? Well, if you said 0.2 or
+20%, that is correct. It's also one fifth,
+because there are five equal parts and this area adds to one because
+it's a probability distribution. So the area of that little
+rectangle is one fifth. And that's the probability that the phone
+call lasts between 2 and 3 minutes. Now, let me ask you another question. We're going to split it now in ten
+small intervals of 30 seconds. What is the probability that the call
+lies between 2 and 2.5 minutes? Well, for the same reason it's 0.1,
+because it's one tenth. This time the intervals are shorter, so the probability that it lies
+between that interval is smaller. So what you can notice here is that the
+height of towers doesn't change at all, but their width was halved, and therefore,
+the probabilities have also been halved. This is because now we're not
+looking just at heights, but at actual areas, and
+the base is no longer one. So now we can't think of heights of towers
+instead, we need to think about areas. Now, let's return to the previous
+example of the call center, where the calls are not equally
+likely to be of the same length. Now, the call is more likely between 1 and
+2 minutes, or between 2 and 3, and not so likely to be between 4 and
+5 minutes. So what's the probability that a call
+lasts between 1 and 2 minutes? Well, it's this area over here,
+and the probability that it lasts between 1 and
+1 minute 30 is this area over here. Now, if I have the areas much,
+much more granular like this, what's the probability that's
+between 2 and 3 minutes? Well, it's going to be the sum of all
+the shaded areas between 2 and 3 minutes. So we're getting to
+the continuous distribution. What is the probability that the call
+lasts between 1 and 2 minutes? Well, now it's going to
+be this area over here. If we were interested in the probability
+that the call is exactly 2 minutes, then we'll be talking about
+the area of this segment over here, that is a line segment,
+and it has no area. So, that's why we say that
+that probability is 0. So now, we can only think of probabilities
+between different windows of time, no longer one particular time. So to recap, as we divide the intervals
+into smaller and smaller, also the areas get smaller and
+smaller until they get to zero. So that's why we have to look into
+intervals and not just heights. So as I told you before, this function is
+called a probability density function, or PDF for short, and
+it's usually denoted as a lowercase f. It is the equivalent of the lowercase
+p in the discrete distribution. The equivalent of the mass function is now
+it's called probability density function. And for added clarity you can
+add a subscript of the variable, it's representing that's the capital x. PDFs are a function defined only for
+continuous variables and it represents the rate at which you
+accumulate probability around each point. You can use the PDF to
+calculate probabilities. How do you do that? Simply by getting the area under
+the PDF curve between points A and B. Now, what does a function need to
+satisfy in order to be considered a PDF? Well, first it needs to be defined for
+all the numbers in the real line. That means that it can actually
+be zero for many values. For example, before zero or
+after the cutoff at the right. But it doesn't need to, it could be
+positive for all the numbers and the area still being 1 if it gets really,
+really, really tiny at the tails. And it also needs to be positive or
+0 for all values. This is reasonable because otherwise
+it would get placed in negative probabilities. And you know that probabilities
+cannot be negative. And finally,
+the area under the curve has to be 1. Again, this restriction comes
+from the probabilities. The area under the curve is simply the
+probability of all possible outcomes of the variable, and
+it always needs to add to 1. So here's a small summary. Let's take a look at discrete
+random variables, and remember, that they can only take a finite or
+at most accountable number of values. While continuous random variables are used
+to model experiments where the outcome can take any value in an interval. Because of this difference between
+discrete and continuous random variables, each kind will have their own way
+of describing the behavior and computing probabilities. To measure the probability of events in
+the case of a discrete random variable, you have a probability mass function, which is defined as the probability
+that x takes on a particular value. For the continuous random variable,
+you have the probability density function. And remember that for
+this type of variable, the probability that the variable takes
+on a particular value is always 0. So you need to look at areas on this side.

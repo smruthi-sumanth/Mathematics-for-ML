@@ -1,0 +1,83 @@
+Great work so far.
+In this lesson, we're going to talk about one of the most fascinating problems in probability, the
+birthday problem. Let's say you are with
+three random people and you're wondering
+what's the probability that two of you have
+the same birthday? It's probably very low. Now, what if you were
+with 200 random people? You would say it's
+very likely that some two of them have
+the same birthday. What about 30 people? What
+about 50 people? 100 people? Well, let me show you what happens and the results
+may surprise you. Here's the problem. You
+have 30 friends at a party. Excluding yourself,
+among those 30 friends, what do you think is more likely that there exists
+two people who have the same birthday or that no two of them have the same birthday? Let's assume that this
+year only has 365 days, so there's not going to be
+any February 29 birthdays just for the sake
+of this problem. The answer believe it or not, is that it's more
+likely that two people have the same
+birthday and in fact the probability of
+no two people having the same birthday
+is only around 0.3. Let me show you the math. That's non-intuitive because
+if you think of 30 people, it doesn't look that likely that two of them have
+the same birthday, but there's a 70
+percent probability that two of them have
+the same birthday. Let's see why. Here
+is the entire year. Let's imagine that
+there's 365 boxes here, even though there's less
+but let's pretend there are and let's look
+at the first friend. We're going to keep track of the probability that among the group that we're looking at, everybody has a
+different birthday. If it's one person, obviously, they will not have the same
+birthday as anyone else because the group only
+has one person so the probability is
+365/365, that's a one. Let me repeat that
+last thing I said. The probability is
+365/365, which is one. In other words, this
+person can have a birthday any day of the year and it's not going to overlap
+with anyone else. Now let's add a second person. What is the probability
+that the two of them have a
+different birthday? What's the probability
+that among these two there's no
+repeated birthdays? Well, the other one has to have pretty much a
+birthday on any day that's not the same
+day of the first one, so we multiply by 364/365. It's still pretty
+high because it's unlikely that if you
+take two people, they will have the
+same birthday. Now let's add one more person. We want that person not
+to have a birthday at the same time as any
+of the other two so they can have a
+birthday in any of the remaining 363
+days out of 365. The probability that these three have all
+different birthdays, now it's
+365*364*363/365^3 because every time we have
+a new event then we multiply it by
+this probability. If we add a fourth person, well, now they can have a birthday
+in any of the days that are not taking that's 362/365, and if we add a new person, they again can have
+a birthday in any of the days that are not taken, so we multiply by 361/365 and if they add one more person, then we multiply by 360/365, and one more we'll
+multiply by 359, and so on and so forth. If we have this group
+of nine people, then what is the
+probability that they all have birthdays
+on different days? It's the product of
+all these numbers, and that's actually 0.905. In other words, if I have
+a group of nine people, the probability that there's no overlapping birthdays
+is roughly 90%. It's very high because
+among nine people most likely there are
+not repeated birthdays. But now let's actually do the plot for this probability
+with more people. As we saw, among a
+group of one person, that probability there's no
+repeated birthdays is one. For two people, remember that it was 364/365, that's 0.997, and we kept multiplying this by other factors like 363/365, etc., so when we keep
+track of this product, then as you can seem the
+number starts decreasing. For 20 people, it's
+already 0.589. For 23 people, it's 0.493. For 23 people, it's
+already more likely to have a birthday in common
+than no birthdays in common. For 30 people, it's your 0.294. For 50 people,
+it's already 0.03. Among 50 people, it's very, very likely to have them have
+the same birthday. For 100 people, it's already very, very small, and for 366 people already it's zero because by then you
+have to have one repetition. The plot is on the right, where in the horizontal axis we have the number of people, and in the vertical
+axis the probability. Notice how quickly it drops. It stopped being bigger
+than 0.5 around here, which is exactly at 23 people. If you are ever in a
+party with 23 people, you can bet that there's
+a repeated birthday, and you would win more
+than half of the time. As you see, this was
+quite non-intuitive. However, we calculate the probabilities and
+that's what we got.

@@ -1,0 +1,79 @@
+In this video, we're going to look
+at the concept of independence. Independence happens when the occurrence
+of one event does not affect the probability of
+the occurrence of another event. For example, if I toss a coin twice, whatever happened on the first throw does
+not affect the outcome of the second one. On the other hand, if I'm playing chess, whatever happened on the 10th move
+affects what happens on the 11th move. So these are not independent, but
+the coin throws are independent. Understanding independent is very
+important in probability and in machine learning, because assuming that
+things are independent actually helps us simplify calculations and
+make predictions. So let's calculate one more probability. In a school, there are 100 kids, half of
+them so 50 of them like playing soccer, and the other half do
+not like playing soccer. The kids are randomly split
+into two equal rooms, each one of them of size 50. That's room 1 and room 2. So for this question, you're not
+required to make any calculations. The question is, based on your knowledge,
+what is your best estimate about the number of kids
+in room 1 who would like soccer? And remember, the kids were randomly
+split into two equally sized rooms. So the split will most
+likely look as follows. Roughly 25 kids in the first
+room will like soccer, and roughly 25 in the second room. Because they were randomly split,
+there was no reason to go to room 1 versus room 2,
+and so that is 25 each. Obviously, something different would have
+happened, but our best estimate is 25. Because if roughly half of the kids play
+soccer and they're split into two rooms half half, then roughly half of the kids
+in each one of the rooms play soccer. Now, imagine another school with 100 kids,
+but in this school only 40 of them like playing soccer, which means 60 of
+them don't like playing soccer. The kids are randomly split into two size,
+this time of different size, room 1 can fit 30 kids and
+room 2, 70 kids. So, same question as before. Based on your knowledge, what is your best estimate about how
+many kids in room 1, the smaller room, like to play soccer, or at least what
+would you expect this number to be? Well, since the split is 40-60 for
+soccer and not soccer, we expect that since we separated the kids
+randomly, then in each of the rooms, the split is going to be 40-60 again. So we expect 40% of the kids
+in room one two like soccer, and that's exactly 12 kids,
+because 40% of 30 is 12. More clearly, we have 40% of 100 kids
+playing soccer, that is 40 kids. And the probability of a kid
+playing soccer is 0.4. And then there's 60 kids
+who don't play soccer, so the probability of a kid not
+playing soccer is 60% or 0.6. Now, we can split them into two rooms. There's 30% of the kids in room 1. So the probability of room 1 is 0.3. And the question is what is
+the probability that a kid plays soccer and is in room 1? So we have P of soccer, which is 0.4, and P of R1, room 1, which is 0.3. And we're looking for
+this probability over here. So probability of soccer,
+intersection room 1. And as you can see, that the probability
+of soccer times the probability of room 1 which is over here,
+that's 0.4 x 0.3. In other words,
+remember that we took 40% off 30%. That means we're multiplying them and
+we get 12% or 0.12. What we're talking here is
+the intersection of two events. When you see the word and
+that's intersection. So the probability that a kids play
+soccer and is in room 1 is because those events are not related,
+are independent of each other, then it's the product of the two
+probabilities P(S) and P(R1). So we get to the product rule. The product rule simply says probability
+of a intersection B is probability of A times the probability of B. This is going to be very useful,
+but remember, the events have to be independent and we're going to
+see more details about this later. To continue illustrating the intersection
+of independent events and the probability of that, we're going
+to look at a coin example again. So let's consider tossing
+a fair coin five times. Here's a question for you. What is the probability that the coin
+lands in heads all five times? Well, note that each event is independent
+from all the other ones because one coin landing in heads does not
+affect any of the other ones. Therefore, the probability is
+the probability of the first one lands in heads, which we know it's one half times
+the same thing for all the other ones. So it's one half times one half times
+one half times one half times one half. And that is going to be 1/32 because it's 1/2 to the five and that is 1/32. So this product rule can be extended,
+it's not just two events. But if you have many independent events
+all independent from each other, then the probability that they all
+happen is the probability of all of them happening separately. So now let's look at some dice. Recall that when a dice is rolled,
+a probability of obtaining a six is 1/6. So now when two dice are rolled,
+what's the probability of obtaining 6,6? Well, we've calculated this before, but we
+can actually do it with the product rule. This was 1/36 because we have 1 here and
+36 cases. However, if we look at both
+events separately, they're independent events because one rolling of
+the dice does not affect the other one. And what's the probability that
+the first one lands in six? Well, it's one sixth. And for
+the second one it's again one sixth. So we multiply them and we get one sixth squared, which is 1/36. Now, what is the probability that
+if I roll ten different dice, all of them fare, I get 10 sixes? Well, as you can imagine, the probability
+is the probability of getting one sixth to the power of 10,
+because all these roles are independent, that's one sixth to 10, which is a very,
+very, very small number. So as you've learned in this video, the probability rule says that
+if you have independent events, the calculation of the probability of all
+of them happen at the same time is easy. It's just a product of all of them.

@@ -1,0 +1,77 @@
+Now you're ready to learn the simplest continuous
+distribution of all, which is the uniform
+distribution. I like to imagine it
+as a bus, for example, let's say that a bus passes every 10 minutes, but I
+don't know the schedule. So I just walk outside
+and wait for the bus. What do you think happens with all the values of the
+times I wait for the bus. Sometimes I take one minute, sometimes 5, 9, 7, 4.5, 3.52, etc. When you look at
+all these numbers, they're pretty homogeneous in the interval from 0-10 minutes. That's how a uniform
+distribution looks like. Let me elaborate. Imagine again at the example
+of a support call center. Previously, we've looked at
+some different histograms of probability of their
+answer at different times. Now let's name some
+of these examples and start with a
+uniform distribution. Imagine that the call center
+can answer in anytime from 0-15 minutes with
+equal probability. If they don't answer
+within 15 minutes, the call is disconnected. The last 200 times
+you call them, you made a note of how
+much time you had to wait. Notice that the points
+seem to be more or less equally distributed
+over the y-axis. That means that there is no particular wait
+time or window or wait times that seems to appear
+more times than the rest. In fact, this is what the
+histogram looks like. Well, it seems that
+one of the bars is slightly taller
+than the rest. Let's not forget that
+this is based on measurements so some
+deviation is expected. Call T, the time in
+minutes that you have to wait and
+any value between 0 and 15 should have roughly the same
+frequency of occurrence. Which means that the PDF must be constant on the
+interval 0-15, so no value is favored
+over the others. The question is, which
+is the constant? Well, remember that
+the area under the curve of the
+density must be 1, so that times 15, which is the length of
+the interval, must be 1. Therefore, the height
+is 1/15 or 0.06. We can draw it over here. In general, a continuous
+variable is set to follow a continuous distribution if all possible values have the same frequency
+of occurrence, it has two parameters
+which are associated to the interval where the
+variable can take values. A is the beginning
+of the interval and b will be the end of it. The probability density
+function will be then 1/b-a, which is 1 over the
+length of the interval, since the interval has length b-a as it goes from a to b, and it's 0 otherwise. It is that orange line
+that is always 0, except it's 1/b-a at the
+points between a and b. This animation shows what happens when we change
+the parameters, more specifically the
+starting and ending point. You can see that
+when the interval a, b is bigger than
+the PDF is smaller, the height of the
+PDF is smaller, and it quickly increases as
+the interval gets short. Now let's see what
+the CDF looks like. Let's take a simple example, the uniform distribution
+between 0 and 1. But you can see
+that this applies to the uniform distribution between a and b just by changing the parameters
+a little bit. First let's start by
+considering some x less than 0. In this case, the area
+under the PDF until that point from the left
+until that point x is 0. Therefore, for any value
+that is less than zero, the CDF is 0. Now, take any x between 0 and 1. The probability of the
+variable being smaller than a particular x is this area over here.
+This is a rectangle. You need to multiply
+the length of the base, which is x, by the
+height, which is 1. At that point, the CDF is x/1, which is the same as x. The same is valid for
+any x between 0 and 1. The CDF is this line
+here with slope 1. Finally, if you take
+any x bigger than 1, you've already gathered all
+the area under the PDF, so the probability stays as 1. This is how the CDF looks. Straight line, followed by a diagonal and then followed
+by a straight line. The one on the left is 0 and
+the one on the right is 1. For the general uniform
+distribution between a and b, you can see that the CDF is the ratio between
+the length of the segment ax and the length between the extreme
+values a and b. For values of x between a and b, for x less than a, you have 0 cumulative
+probability. Again, for x bigger than b, you've already gathered
+all the probability, so therefore, the CDF
+is 1 after that point

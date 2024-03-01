@@ -1,0 +1,23 @@
+Let's go back to the
+coin-flipping experiment. Remember that you used a variable x to denote the number of heads
+and that's a random variable. When you flip a coin, you can obtain heads or tails. The number of heads can be one was a probability of 0.5 or zero with a
+probability of 0.5, we're going to call
+that an experiment where we get a success if it lands on heads and a
+failure if it lands on tails. Now, we can make
+different experiments and also have success
+and failures. If we roll a dice and we consider success when
+it falls on one and failure when it falls on
+anything different that means our variable is
+the number of ones, then the probability
+of success is 1/6 and the probability
+of failure is 5/6. We can also have
+other experiments, for example, if a patient
+is sick or healthy, we can say that if
+x is the number of sick patients then a success
+is when the patient is sick, which is slightly contradictory
+but since we're counting the number of sick patients
+than in this case, x=1 is a success and the
+probability for a sick patient, let's say it's p and for
+the healthy patient is 1-p. These are all examples of the
+Bernoulli distribution are very important distribution in probability and statistics, which has one parameter
+and the parameter is p, the probability of success.

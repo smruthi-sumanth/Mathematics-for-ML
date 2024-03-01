@@ -1,0 +1,111 @@
+Welcome back. You've
+seen a lot of fascinating concepts
+of probability so far. In this lesson, we
+will take a look at the concept of
+conditional probability. Conditional probability is all about calculating
+the probability of an event happening given that another event
+has already happened. For example, let's say you are wondering about the probability
+that today is humid, that is some number. However, if you found out
+that yesterday was raining, the probability that
+today is humid changes, that is a conditional
+probability. In a previous lesson, we
+established the probability of obtaining two heads when you
+throw two coins as follows. Let me recap very quickly. The first head can
+be heads or tails, and for each option
+of these two, the second one can
+be heads or tails, so we have four
+possibilities: Head heads, head tails, tail heads
+and tails tails. The probability of
+heads heads, well, the sample space was of size 4 and the event was of size 1, so it was 1/4. Now let me ask you a question. What is the probability
+that both coins land on heads if you know that the
+first one landed in heads? Now you have more information. I came and told you that the
+first coin landed in heads. Now, what is the probability that both of them
+landed in heads? Well, if the first
+one landed in heads, then we live here. This is a new sample space. The bottom part
+doesn't count anymore because the first coin landed
+in heads and not tails. Now the denominator is
+not four, but it's two, because now there's
+two cases instead of four and we still have
+one favorable outcome, so the new answer is 1/2. This over here is called a conditional probability and we denote it with a vertical bar. The probability of heads heads, given that the first is heads. That given that is denoted
+by a vertical bar, and this is a
+conditional probability. This can be seen in
+a table as follows. If the first coin is on the left and the
+second coin is on top, then these are the
+four possibilities. Heads heads, heads tails, tails heads and tails tails. We're going to look
+at the probability of landing our heads twice, given that the
+first one is heads. We live in this first row. When we live in the first row, our sample space now has size
+2 and our event has size 1. Therefore, the probability is not 1/4 anymore, is now 1/2. Now, let me ask you
+another question. What is the probability
+of landing in heads twice given that the first
+coin landed in tails? Slightly different
+question, give it a try. Well, if the first coin landed in tails, now
+we're live here. This is our sample
+space and the top is not valid anymore. The denominator is now two, but the numerator is zero because now there's
+no heads heads, so the answer is
+0/2, which is zero. This makes sense, because if one of them landed in tails, there's no way that they're
+both going to land in heads. This condition really
+changed the probability from 1/4 all the way to zero. Again, we can see it as
+a table where we have the four cases and we want to calculate
+the probability of landing in heads twice, given that the
+first one is tails, means we live in the second
+row, not in the first one. Well in the bottom we have
+a sample space of size 2, but on the top we have nothing because
+there's no heads heads in the sample space and
+therefore the number is zero. As you can see, condition can change the
+probability of an event, and this is what we study
+with conditional probability. Let's recall the product
+rule for independent events. It said that the probability of A intersection B is P(A) *P(B). But this only happen when
+A and B were independent. That doesn't always happen. Let me give you an example
+of something where the events are not independent. Let me
+ask you a question. What is the probability
+if I roll two dice that the first one lands on six
+and that the sum is 10. Well, we have a space of 36 possibilities because
+it's pairs of numbers. The only favorable one is 6, 4, because if the first one
+is six and the sum is 10, the second one has to be four. The probability is 1/36
+total ones and that's 1/36. Now, let's look at in a
+slightly different way. Let's try to apply
+the product rule. We want the probability
+that the first one is six and that the sum is 10. We would like to have the probability that
+the first one is six. Well, that is over here, so that is 6/36. Now what I have to
+multiply this to obtain the probability that the first
+is six and the sum is 10? Well, I need the probability
+that the sum is 10, but among the ones for
+which the first is six. That is this event over here, this 6,4 divided by the six, where the first one is six, and that is 1/36, which is what we obtained
+here previously. To summarize, we have that the probability of
+A intersection B, notice that the first is
+six and that the sum is 10, is the probability of the
+first one that the first is six times the probability of the second one
+given the first one. We need that given
+the first one. Because we need to multiply by the probability
+that the sum is 10, given that the first is six. We get a slightly
+different formula. Probability of A intersection
+B is the probability of A times the probability
+of B given A. Now, when they're independent, then probability of B given A is the same as
+probability of B because A doesn't make any difference
+on the occurrence of B. When they're independent, it actually translates
+to B(A)*P(B). But in the general
+case, is P(A)*P(B|A). That is the general product
+rule that works every time. That means when the events are independent and when
+they're not independent. Now let's look at
+the dice example. Here's a question that
+you've seen before. What is the probability that
+the sum of two dice that I throw randomly is 10? Well, there's three cases divided by the total 36 of them. The answer is 3/36, which in lowest
+terms, it's 1/12. Now, let's put a condition. I'm telling you that I looked at the first one and
+the first one is a six. What is the probability
+that now the sum is 10, given that the first one is six? Well, let's calculate it. Because the first one is six, now we live on this bottom row. The top five rows don't
+matter anymore because our new sample space is
+just this bottom row. Among this bottom row, well, there's six cases and one
+of them is favorable, so the probability is now 1/6. The probability change
+from 1/12 to 1/6. Now let's look at
+another problem. What is the probability
+that the sum is 10. But now the condition is that
+the first one was a one. I looked and the
+first one was a one. Now, what is the probability
+that the sum of them is 10? Well, if the first one is a one, then now we live on this row
+over here, the first one. On this row, there's six
+elements and none of them satisfy that the sum is 10, because the ones
+where the sum is 10 are on the very bottom. Therefore, the probability
+is zero. It makes sense. If the first one is a one, there's no way I can
+add a 10 because the second one can
+at most be a six, so this probably
+changed to zero.

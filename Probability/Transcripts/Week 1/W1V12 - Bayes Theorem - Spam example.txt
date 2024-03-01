@@ -1,0 +1,50 @@
+Let me show you another
+example of Bayes theorem. This time we're trying to
+find if emails are spam. So let's say that we have a big
+data set of 100 emails, and 20 of them are actually spam. So we want to build a classifier. The easiest classifier that we can find
+is one that says that everything is spam with a 20% probability,
+because that's all we know so far. So that's a pretty simple classifier. We want to find something more elaborate,
+and so we're going to look at a feature. We're going to start noticing that
+the spam emails tend to have words like lottery. So we're going to try to put the word
+lottery into our spam detector. We're going to do the following,
+we're going to see how many emails among the spam ones contain the word lottery and
+we notice that there's 14 of them. Now we're going to look at how many of
+the emails that are not spam that we're actually calling ham, that's a way
+to call them, have the word lottery. So there's 10 of them. So now, what is the probability that an
+email containing the word lottery is spam? In other words,
+what's P of spam given lottery? Well, take a look at something. We only care about the emails
+that contain the word lottery, so all of these emails don't matter. We only care about these 24 emails
+that contain the word lottery. And remember that we want to find
+the probability of spam given lottery. That's going to be, well,
+among the 24 emails, how many of them are spam,
+divided by how many of them are in total? And 14 of them are spam,
+and there's 24 in total. So the probability in lowest terms
+is 7 divided by 12, or 0.583. This is exactly Bayes theorem. And if you were to apply the formula
+from the previous video, you would get exactly 0.583. But I really want to make this clear. What you're doing when
+you use Bayes theorem, is deleting all the emails
+that don't really matter, taking a look only at the ones that have
+the condition, which is the word lottery. And among those,
+the probability calculation is easy. You simply take the number of
+spam emails that contain lottery, divided by the total number of
+emails that contain lottery. But let's do it with some math. We want to find the probability
+of spam given lottery. Recall that Bayes theorem says this, where A means the email is spam,
+B means the email contains lottery. So in other words,
+this is the formula we want to find. So let's calculate all these numbers
+in this formula and plug them in and get the same number we found before. So what is the probability of spam? Well, we don't know the word lottery yet. And so all we know is that among
+100 emails there's 20 spam ones, and therefore, the probability of
+spam without knowing anything about the email is 20 over 100, or 0.2. This is called the prior. This is the original probability that
+you calculate without knowing anything, this is the most basic piece of
+knowledge you have in this problem. Now what is the probability of not spam? Well, it's one minus the probability
+of spam, so that's 80 over 100, or 0.8. Now what is the probability
+of lottery given spam? Well, we are only looking at the spam
+emails, there's 20 of them, and 14 of them contain the word lottery. So the probability of lottery given spam
+is 14 divided by 20, which is 0.7, or 70%. And now what is the probability
+of lottery given not spam? Well, there's 80 not spam emails,
+10 of them contain the word lottery, and therefore, the probability of
+lottery given not spam is 10 over 80, which is one-eighth, or 0.125. So now let's plug in these numbers. P of spam is 0.2,
+P of lottery given spam is 0.7, p of not spam is 0.8, and
+P of lottery given not spam is 0.125. And we're going to plug
+them into this formula. So we get P of spam given lottery is 0.2
+times 0.7, divided by 0.2 times 0.7, plus 0.8 times 0.125,
+which is exactly 0.583. So that coincides with what
+we got at the very beginning.

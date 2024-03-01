@@ -1,0 +1,41 @@
+So in the last video you
+learned about how to calculate the probability of
+the occurrence of an event. So in this video we're going to talk
+about the complement of an event and its probability. So this is the probability
+that the event does not occur. For example, if an event has
+a probability of occurring of 75%, then the complement event or the probability that the event
+does not occur is 25%. Let me elaborate. So let's go back to our school with ten
+kids, where three of them play soccer and seven don't. Here's a question for you. What is the probability that a child does
+not play soccer if they are picked at random? Well, to find the probability that
+a child does not play soccer, that's denoted as P of not soccer,
+then we do the same thing as before. We count the number of kids who don't play
+soccer and divide it by the total number, and that's going to be seven divided
+by ten, that is the answer 0.7. However, you may have noticed that that
+is related to the probability that the kid plays soccer, because
+the probability of not soccer is 0.7 and the probability of soccer was 0.3,
+and they add to 1. Turns out this always happens. And we can rewrite this as 1- 0.3 this
+is essentially the complement rule. The complements rule states that
+the probability of an event A not occurring is equal to 1 minus
+the probability of A occurring. So the probability of not soccer
+is 1 minus the probability of soccer that's going to
+be the complement rule. And we can formalize this rule as
+follows P of A prime is 1- P of A, where A prime represents
+the complement of the event A. That's when the event A does not happen. So, using this formula, we can calculate
+the probability of an event not happening in a more
+straightforward manner. Now, as a Venn diagram, you can see
+this in a similar way as before. Here you have the sample space. Here you have the event of
+playing soccer inside the circle. And the event of not playing soccer
+is everywhere outside that circle, which is 70% if the circle is 30. Now, using the experiment of flipping
+three coins, here's a question for you. What's the probability of
+not obtaining three heads? Well, by the complement rule, the
+probability that none of the coins land in heads that's P of not three heads is equal
+to 1 minus the probability of three heads. And as you saw in a previous video,
+this probability is 1/8. So we have 1 minus1/8,
+and that is simply 7/8. You can also see it as the 7 good cases,
+which are all minus the 3 heads divided by the 8,
+which is the total number of cases. Now let's apply the complement
+rule to the dice experiment. If you throw one die, what is the probability of obtaining
+anything different than 6? Well, we know there are 6 outcomes, and
+the probability of not 6 is equal to 1, this 1 is 6 over 6, minus 1 over 6,
+the probability of landing in a 6. So, The 6 is over here, here we remove
+one of them, which is landing in a 6. And the answer is 5 over 6.

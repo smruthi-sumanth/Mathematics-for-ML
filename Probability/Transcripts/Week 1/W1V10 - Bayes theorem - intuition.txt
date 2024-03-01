@@ -1,0 +1,65 @@
+So imagine the following scenario. There's a rare disease going on and
+you want to get tested for it. So you go to the doctor and the doctor
+says, I have a very effective test, which is correct most of the time. You take the test and then go home. And then the doctor calls and
+said you tested positive, so maybe it's time to panic. But before panicking,
+I always do some math. So the idea is to calculate
+the probability that you have the disease, given the fact that you tested positive. This is an example of Bayes theorem. Bayes theorem is one of the most
+important theorems in probability and is used all over the place,
+including in machine learning. It is used for spam recognition,
+speech detection, and many other things. So let's take a look at Bayes theorem
+in this example with some numbers. So let's put some numbers. Let's say there's a million
+people in the population, and let's say that the illness only
+affects one of every 10,000 people. Now, the test that the doctor
+gives you is 99% effective. What does that mean? That means two things that
+out of every 100 sick people, 99 get correctly diagnosed as sick, and
+one gets incorrectly diagnosed as healthy. And among every 100 healthy people,
+one gets misdiagnosed as sick and 99 get correctly diagnosed as healthy. Now, you went to the doctor and
+you tested sick. So now the question is,
+are you really sick or not? More specifically,
+what is the probability that you're sick, given that you tested sick? Let's try to find this
+probability before panicking. So here's a quiz to test your intuition. Where do you think that probability lies? So let's look at the million people
+to find out the probability. Among the 1 million people,
+only one out of every 10,000 is sick. So 999,900 are healthy and
+only 100 are sick. Now let's test every single person. So here on the left, we're going to
+have the ones that were diagnosed sick, and on the right,
+the ones that were diagnosed healthy. Now, since the test is 99% effective,
+then among them many, many healthy ones, it only made a mistake in 1% of them,
+and that's this 9999 here. So those were healthy people
+who were diagnosed as sick. This group over here was 99%
+of the healthy people that were correctly diagnosed as healthy. This group over here on
+the bottom now is the sick ones. And since the test again is 99% healthy,
+that means the test correctly diagnosed these
+99 out of 100 sequence, and it misdiagnosed this one person here
+as healthy while the person is sick. Now let's look at the people
+who are diagnosed sick. We have to figure out
+the probability that you're sick, given that you were diagnosed sick. So we're only looking at
+the left two rectangles. The probability that you're sick, given
+that you diagnose sick means you only live here because these are the people
+who were diagnosed sick. And what is the probability that
+you're sick among this group? Well, in this group,
+only 99 people are sick. And what's the total? 99+9999. So most of them are actually healthy. Can you see? Again, most of the people who were
+diagnosed sick are actually healthy. There's 9999 of them, and
+only 99 who were actually sick. So the probability that you're
+sick when you belong to this group is simply
+99 divided by 99+9999. That's 99 divided by 10,098, which is
+0.0098, which is actually less than 1%. So isn't that astonishing? You were diagnosed sick, but the probability that you're
+actually sick is less than 1%. The probability that you are sick and diagnosed sick is the number
+of people who were sick and diagnosed sick divided by the total
+number of people who were diagnosed sick. But a lot of people were diagnosed sick,
+because that 1% of the healthy people who were diagnosed
+sick is a lot bigger than the one out of every 10,000 who were
+actually sick and diagnosed sick. And what you saw here was just
+an example of Bayes theorem. We can look at it as a tree. Let's say here's, 1 million people. Here are the 100 sick ones. There's not too many. And the 999,900 healthy ones. Now, among the sick ones, some of them
+are diagnosed sick, that is 99% of them. And some of them are diagnosed healthy,
+which is 1% of them. Now, among the healthy ones,
+1% are diagnosed sick. That's misdiagnosed, and
+99% of them are diagnosed as healthy. So we have four groups the sick and
+diagnosed sick, that's 99 people. The sick and misdiagnosed as healthy,
+that's one person, the healthy and diagnosed sick,
+which is a misdiagnosis. There's 9999 of them. And the healthy and diagnosed healthy,
+which is the majority of the population. Now, since you went to the doctor and
+got diagnosed sick, then you are in one of these two groups. These are the diagnosed sick. So those are the groups that matter. And if you're in these groups,
+most of them are healthy and misdiagnosed. So the probability that
+you are actually sick is 99 divided by 10,098,
+which is less than 1%. So a little surprising, but
+that's Bayes theorem in action.

@@ -1,0 +1,61 @@
+Now let's look at some formulas. So remember that we're trying to find
+out the probability that you're sick, given that you tested sick. And here's all the information
+that we had before. So we're going to look at the people who
+were actually sick and diagnosed sick, because one, the probability that you're
+sick, given that you tested sick. So what's the probability that you're
+sick, given that you were diagnosed sick? Well, given the fact that there's
+a million people, one out of every 10,000 is sick, then the probability of being
+sick is 1 divided by 10,000, that's 0.01%. That's a very,
+very small sector of the population. And that's the key of this problem,
+that not many people are sick, more people are misdiagnosed
+than the people that are sick. So what's the probability
+of not being sick? Well, it's 100% minus this, so 99.99,
+that's the probability of being healthy. Now let's throw in the test. The test is 99% effective both for
+sick and for healthy people. So the probability that you are diagnosed
+sick, given that you're sick, is 99% because that's the probability
+of a correct diagnosis. And 100 minus that is the probability
+that you're diagnosed sick, given that you're not sick. That's the probability of a misdiagnosis,
+so that's 1%. Now we want to find the probability that
+you're sick, given that you diagnose sick. So we need to do some math. Let's use some variables. A is sick and B is diagnosed sick. So what we want is
+the property of A given B. Now, from the conditional
+probability formula P (A), given B times P (B) is P (A),
+intersection B. So if we divide by P (B), we get that P (A) given B is P
+(A) intersection B divided P (B). Let's remember what things are. P (A) given B is P of sick and diagnosed
+sick divided by P of diagnose sick. Let's remember this. Now we want to find P of sick and
+diagnose sick, and we also want to find
+P of diagnose sick. And we're going to use Bayes theorem. So how do we find these two expressions,
+the top one and the bottom one? Well, let's look at conditional
+probability again, probability of A and B is probability of A times
+probability of B given A. So the probability of sick and diagnosed sick is going to be
+the probability that you're sick times the conditional probability that you're
+diagnosed sick given that you're sick. That's simply the conditional
+probability formula. So that's what's going to go on the top. Now what's going to go on the bottom
+is a little more complicated, but not that much. Let's go back to the tree
+of possibilities. We have this one over here which is
+probability of sick and diagnosed sick. This one over here is
+the product of these two, that's exactly the conditional
+probability formula. So therefore,
+when we try to find P of diagnosed sick, we have to look at this group over here. Notice that the people that
+are diagnosed sick belong to two groups, the ones that were sick and
+correctly diagnosed sick or the ones that were healthy and
+misdiagnosed as sick. And this is the formula for the union, because the people that are diagnosed sick
+are the union of those that are sick and diagnosed sick and
+those that are healthy and diagnosed sick. And because these groups are disjoint
+because you can't be sick and not sick, then the probabilities are going to add. So the probability of being diagnosed
+sick is the sum of these two things and that goes in the denominator. And now all we have to do is apply
+the conditional rule one more time. Probability of sick and diagnose sick
+is probability of A intersection B. We can use this formula over here,
+which actually gives us exactly this thing over here, which is P of sick
+times P of diagnose sick given sick. Now we can do the exact same thing for
+P of not sick and diagnose sick. That's also an intersection, it's just
+a prime intersection B, and that's probability of not sick times, probability
+of diagnosed sick given not sick. So those things can go in the denominator
+and that's exactly Bayes theorem. Now when we plug in the numbers,
+what do we get? This is .01%, this is 99%, this over here is 99.99%, and this is 1%. So What do we get here? Well, it's going to be
+the following numbers. This over here is P (A),
+this is P (A) prime, this is P (B) given A, and
+this is P (B) given A prime. And those go over here in the formula. And now when we plug in the numbers, we get 0.0001 times 0.99 divided by 0.0001 times 0.99 + 0.9999 times 0.01. And that gives us exactly
+the number that we wanted. So that formula in the middle p (A) given
+B equals P (A) P (B) given A divided by P (A) P (B) given A plus P (A) prime P
+(B) given A prime, that is Bayes theorem. And that may look confusing, but
+don't worry, we'll see it again and it'll be very clear.

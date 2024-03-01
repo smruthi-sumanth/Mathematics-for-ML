@@ -1,0 +1,92 @@
+So now let me tell you about one of
+the most popular distributions out there. It's called the normal distribution,
+also named Gaussian distribution, after famous mathematician Carl Gauss. The normal distribution appears
+everywhere, in statistics, in science, in real life, and obviously in machine
+learning it appears all over the place. Let me show you. So now let me show you one of the most
+used distributions in ML, the Gaussian or normal distribution. But let me give you a little
+bit of intuition first. Remember in the previous videos you
+learned about the binomial distribution, which counted, for example,
+the number of heads in n coin tosses and the probability mass function looked
+like this, for example, for two throws. Now let's see what happens as n,
+the number of throws gets larger and larger and larger. Let's plot it for
+all numbers all the way to n equals 100. And you can notice that it
+looks like a bell curve. So a continuous bell
+shape fits pretty well. And that bell curve, that orange
+curve is what we called the normal or Gaussian distribution, named after
+the very famous Carl Friedrich Gauss. So this means that when n is very large,
+the binomial distribution can be approximated by a Gaussian
+distribution pretty well. Now let me tell you more about
+this Gaussian distribution. So let's say that the data looks
+like this, like a bell curve. We're going to try to
+fit it with some curve. And the curve e to the -x squared over
+2 seems to work pretty well because it seems to look like this,
+like a bell curve. However, we need to
+adjust it a little bit. Let's look at where
+the blue data is centered. It's centered at two. We're going to call it mu for the mean. And we're going to learn these mean
+more in detail in the next week. But for now, let's just think
+of it as the center of the data. The orange curve has this zero as
+the center because it's symmetric over the x-axis, so
+we need to move it to the right. And how do we move it to the right? Well, by subtracting two. So that moves it to the right and
+now they're equally centered. However, the orange one is a little
+too skinny for the blue one. It needs to be widened a bit. There's something called a standard
+deviation that we're going to learn next week. But that tells us how thick the curve is. And the orange one has
+a standard deviation of one and the blue one of, let's say, 3. So what we need to do is to
+thicken the orange curve. And the way we thicken this curve
+is by dividing the exponent by 3. That gives it the right thickness. Now, another problem we have is
+that the orange curve is different height than the blue one. This is actually too high. And more specifically,
+the area is not the same. The area under the blue curve is one
+because it's a probability distribution and the area under the orange
+curve is much higher. So what is it? Well, for these numbers,
+actually 3 times square root of 2 pi. So we need to divide by this number
+in order to get the right curve. And notice that now it fits it really,
+really well. So that's the formula for
+the Gaussian or normal distribution. So it has some parameters, as you saw the
+mean, so that's the center, the average of the data is mu, the standard deviation,
+which we're going to learn next week, but as I told you, it's a measure
+of the wideness of the curve. It's a number called sigma. And if you want the mean to be mu and
+the standard deviation to be sigma, those are the two parameters,
+then the equation of the Gaussian or the normal distribution is
+exactly this one over here. And mu is the place where
+the data is centered and sigma is a measure of the wideness,
+as I said before. Now let me give you a small recap because
+this is a very important distribution. So mu is the center and
+sigma is the spread and the curve is obviously symmetrical and the range is all the real numbers. So it actually is one example of
+a distribution which its probability density function is always positive,
+although it's very, very, very small for big and
+for negative big numbers. And the formula is this one over here, this part over here is
+simply a scaling constant. And here are some different
+normal distributions for different means and different sigmas. So if you have a random variable x with
+this probability density function, you can write it like this. X is distributed as N of mu sigma squared. N stands for normal and mu stands for
+the mean or the center of the bell. Notice that in this notation, the standard
+way to describe the distribution is using sigma squared rather than sigma,
+which is the square of the spread. As you will learn in the next lesson,
+this is called the variance. Don't worry too much about
+this change as both sigma and sigma square convey exactly
+the same information. Because sigma has to be positive, then there is a one-to-one relation
+between the two parameters. There is a really easy way to
+convert any normal distribution to the standard one and
+it's by doing some small operations. So let's say that x has a normal
+distribution with parameters, mu equals 2 and sigma equals 2.5. So the first thing we do is instead of x,
+consider x -2 and that moves it all the way to the center. And now let's divide by
+the standard deviation by sigma. So x -2 divided by 2.5 actually
+puts it off the right height and the right width and it makes it the
+standard normal with parameter zero, one. We're normally going to want parameter
+zero, one, zero is the mean and one is the standard deviation. And so we're not going to look at x, we're going to look at z equals
+x minus mu divided by sigma. Standardization is crucial in statistics
+because it helps us compare variables of different magnitudes. So if one variable, for example,
+moves in some range of values and another variable moves in a completely
+different range of values, then we can compare them by
+standardizing both of them. Now let's see what the CDF looks like. It looks like this. As usual, it starts at 0 on the very left,
+which is now the point at infinity and ends at 1 at the very right,
+which is the point at plus infinity. But here's a catch. This area is actually
+really hard to compute. It can't be computed analytically. So what do we do to compute these areas? Well, in the old days there were
+big tables of data that people used to look at. Now you can use the help of some software
+to do the approximate area under the curve for you. And what are some things that can be
+modeled using the normal distribution? Well, that's the great thing about it. So many things in nature are modeled
+by the normal distribution. Height is modeled by the normal
+distribution, weight, IQ, things like noise in
+a communication channel. And in general, variables can be models as
+a sum of many independent processes always follow normal distributions. And we're going to see
+that in more detail later. Also, many machine learning models assume
+variables follow a normal distribution. So beware of that when
+choosing appropriate models.

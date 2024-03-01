@@ -1,0 +1,63 @@
+So now that you know about
+discrete distributions, let me tell you about continuous ones. And there's a difference between the 2. In the discrete distributions,
+your events always form a list. For example, if I toss a coin 3 times, I could get had 0 times,
+1 time, 2 times or 3 times. I could also think of the number of
+people in a town, it can be 0,1,2,3, a million, etc, but
+I can always make a list of it. What is something that cannot be listed? An interval, for example, if my random
+variable is the amount of time that I wait on the phone, or the amount of time I
+wait for the bus, that cannot be listed. Because I could wait 1 minute, but
+I could also wait 1.01 minute, or 1.2237 or pi minutes,
+all these numbers cannot be listed. So, when your events are a list,
+you have a discrete distribution. And when your events are an interval,
+you have a continuous distribution. Let me elaborate more on that. So imagine you're a call
+with tech support and you're trying to find the probability
+that you will not wait too long. Let's say the call can take 1 minute,
+2 minutes or 3 minutes, for example. And we can try to plot the probabilities,
+say like this, where the heights of the bars are the probabilities that
+the call takes 1, 2 or 3 minutes. But they can also take something like
+1.01 minutes to respond, right, or 2.43. And you can quickly see that there's
+infinitely many values the call could take. And these values are everywhere
+between the ones you already have and also to the left and to the right. And if you remember from the last video, the sums of heights of all of
+them have to be equal to 1. But you can quickly see that by adding
+more and more and more of them, they have to get smaller and
+smaller and eventually become 0. So what did we do wrong here? Well, we did nothing wrong. The answer is that this distribution
+is fundamentally different, as it's not discrete,
+but it is continuous. So this approach will not really work. To try to understand this, think of how
+you would answer the following question, what is the probability that a call would
+take exactly one minute to the dot? And I encourage you to think about this. The answer is zero, because there
+are simply too many values for the amount of time a call can take. There's actually uncountably many of them,
+it's a whole interval. And we're forced to say that
+the probability that the call takes exactly 1 minute forever is 0. So we need to describe this problem
+in a slightly different way. So instead of asking what is
+the probability of the call taking a fixed amount of time,
+let's think of it in terms of windows. So we're thinking of what's the
+probability that the call lasts some time between a certain window,
+say between 0 and 1. And for that we can have a probability and we can put it as the height
+of this blue bar over here. Then we can think of as a probability that
+the call lasts between 1 and 2 minutes. And that's this other height, or
+between 2 and 3 minutes, or 3 and 4 minutes, and 4 and 5 minutes. And let's assume that the call
+never takes more than 5 minutes. And now we have a discrete
+probability distribution, where the blue area, so the sum of
+the heights of these bars add to 1. And notice that the majority of the calls
+take between 1 and 2 minutes, or between 2 and 3 minutes, not a lot of
+them go all the way to 5 minutes and that's what this probability
+distribution is telling us. Now imagine that we want to little more
+information, so we want to make these intervals a little more granular,
+so we make them 30 seconds instead. And now we have this distribution over
+here, where we now know the probability that the call is between 0 and
+half a minute, between half a minute and 1 minute, all the way to between 4
+minutes and a half and 5 minutes. And if we want to make
+them still more granular, we can make them of a quarter of a minute,
+15 seconds, basically. And now we have all this
+information between 0 and a quarter of a minute,
+between a quarter and a half minute, all the way to between 4.75 minutes and
+5 minutes. And we can continue splitting
+these intervals and getting discrete distributions. And if we were to do this infinitely
+many times, then what we get is this. This is how a continuous
+distribution looks like. Imagine just a bunch of very,
+very skinny bars, infinitely many of them,
+that become just a curve. Now, in the discrete distribution, we had that the sum of heights
+have to be equal to 1. The sum of heights was the same
+as saying the blue area. So in the continuous distribution,
+we have the same condition, the area under the curve is equal to 1. And that is a continuous
+probability distribution.

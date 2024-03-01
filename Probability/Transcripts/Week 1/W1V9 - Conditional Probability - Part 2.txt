@@ -1,0 +1,80 @@
+So let's apply this rule. In a school with 100 kids, again,
+let's say 50 of them play soccer, and the other 50 don't play soccer. Now we're going to split them
+into two rooms of size 50, and now they can go to any room they want but,
+here is more information. The first room has a TV that
+is showing the World Cup. And the second room has a TV that is
+showing a movie that is completely unrelated to soccer. And each room fits 50 kids. Now, out of your intuition, how many kids
+in room one do you expect to like soccer? And I'll remind you, the first room
+has a TV playing the World Cup and the second one doesn't. So how many kids in room one do
+you expect will like soccer? Well, all things being fair,
+we can imagine that all the kids who like soccer went to the room with the TV
+that's playing the World Cup. As illustrated, maybe this didn't happen,
+but we can assume that that happened. So these two events, soccer and
+room one are dependent, before they were independent,
+but now they are dependent. In the example that we did previously,
+the kids were split randomly. That made the events independent but
+here, this is not the case. They're dependent so
+the probabilities change. Now let's do a slightly different problem. Let's say we have a school of 100 kids,
+40 of them play soccer and the rest don't. And among the kids that play soccer,
+we've noticed that on any given day, 80% of them like to wear running shoes. So now help me estimate how many kids
+play soccer and wear running shoes. So 40 kids are shown here and let's say that 80% of them
+are wearing running shoes. So, let's split them into
+groups of 20% each and four of these sections
+are wearing running shoes. So that's 32, because 80% of 40 is 32. And 32 is our estimate for how many kids
+like soccer and are wearing running shoes. So let's look at the same
+problem from a different lens. The probability that a kid
+plays soccer is 40%. That means if we have 100 kids,
+40 of them play soccer, and that's P of soccer equals 0.4. Now, the probability of
+not soccer is 0.6 or 60%. That means that among these 100 kids,
+60 of them don't like soccer. Now among the kids that play soccer,
+80% of them are wearing running shoes. Therefore, the probability of
+running shoes given soccer is 0.8. Now we want the probability of soccer and
+running shoes. Well, for that,
+we need the probability of soccer. So that's this 40 over here
+times the probability of running shoes given soccer,
+which is this 80% over here. So 80% of 40 or 0.4 times 0.8, that's probability of soccer times
+probability of running shoes given soccer. And we get 0.4 times 0.8 and that's 0.32. That is the 32% that we expect that
+will play soccer and wear running shoes. So we say that the probability
+of S intersection R is 0.32. Now let's look at something else. Let's say that somebody tells
+me the following information. The probability that a kid wears running
+shoes when they don't like soccer is 50%. That means that among the kids
+that are not playing soccer, half of them wear running shoes. So what's the probability of
+not soccer and running shoes? Well, P of not soccer
+intersection running shoes, that means the kids who don't play
+soccer and are wearing running shoes is equal to P of not soccer,
+which is this 60% over here times P of running shoes given not soccer,
+which is this 50% over here. And so that's 0.6, 60% times 0.5, it's 50% of 60%, and that's 0.3. And that is the probability that
+a kid does not like soccer and is wearing running shoes. Another way to see things is
+with a tree of probability. So two things can happen, the kid can play
+soccer or not play soccer, play soccer with a probability of 40%, and doesn't
+play soccer with a probability of 60%. Now, among the ones that play soccer, wears running shoes with probability
+of 80%, that's P of error given S, and doesn't wear running shoes or
+probability of 20%. And among the ones that don't play soccer,
+wear running shoes or probability of 50% and doesn't wear
+running shoes or probability of 50%. So there's four scenarios when they
+play soccer and wear running shoes, play soccer and don't wear running shoes,
+doesn't play soccer and wears running shoes, doesn't play
+soccer and doesn't wear running shoes. And the probabilities
+are S intersection R, 32%, which is 80% of 40%, or the product 8% for probability of S intersection R prime,
+that's not R. That is the ones that play soccer and
+don't wear running shoes, that's 20% of 40%, or
+the product of 20% and 40%, which is 8%. For the ones that don't play soccer and
+wear running shoes, that's 30% because it's 50% of 60% or
+0.6 times 0.5. And the same thing for the ones that don't
+play soccer and don't wear running shoes. So these are all the possibilities. So now let's recap the cases that we've
+seen before since the very beginning. First, we split the kids
+into two rooms randomly, and that created two independent events. Independent events can be seen
+graphically when the two lines, the one that splits the kids
+from the room one and room two, when the kids that play
+soccer don't meet at a point. So these events are independent. Then we had the case when they were
+running shoes or not wear running shoes. And those events were dependent, because
+it's more likely that the kid wears running shoes if they are playing
+soccer than if they're not. So those events are dependent. And another case was when we sent
+them into two different rooms but one of them had a soccer game and
+the other one didn't. Those cases were very dependent too,
+because it's much more likely that the kid will go watch
+the soccer game if they like soccer. Now, this may not be exactly
+the same numbers we had before, but just to show you that this
+case is also dependent. And so when the lines cross, the cases
+are independent, like in the left, and when they don't cross,
+they're dependent, like in the right.

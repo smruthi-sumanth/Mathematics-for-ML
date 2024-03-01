@@ -1,0 +1,41 @@
+Now this is something
+I mentioned before, but let me formalize it. We have something
+called the prior, that is the original probability
+that you can calculate, not knowing anything else. Then something happens,
+and that's the event. The event gives you information
+about the probability. With that information,
+you can calculate something called the posterior. We had that the prior was P (A). An event can be called E, and the posterior is P(A/E). Now let me give
+you some examples. In the spam email, the prior was 20 percent. The prior was the number of spam emails divided by the
+total number of emails. The only thing I
+know about an email, if I know nothing else, is that it has a 20 percent
+probability of being spam because I know how many
+emails are spam in total. That is a very basic unit of information and I need
+to know a little more. We come up with a
+condition, an event. It says that the email
+contains the word lottery. Now the posterior changes. Now the probability
+that the email is spam, given that it contains
+the word lottery, is no longer the number of spam emails divided by the
+total number of emails, but it's now the number
+of spam emails with the word lottery divided by the total number of emails
+with the word lottery. That's a much
+better probability, that's a much more
+accurate probability. The posterior is always
+a better estimation than the prior because we have that event that gave
+us information. In the medical example, there was also a prior, an event and a posterior. The prior was the original
+probability of being sick. The event is the fact that
+it diagnosed positive. The posterior was
+the probability that you were sick given
+that you diagnose positive. Now let's look at
+another example. Let's say you're rolling two
+dice and you want to find the probability that the
+sum of the values is 10. We know that that's
+three divided by 36. Now, if the events says that
+the first dice is a six, then all of a sudden
+your posterior changes. Now it's one-sixth because you
+live in a different space. That is the posterior. In another example,
+the coin example, if you want to find the
+probability that both coins land in heads, then
+that's one-quarter. But the event says that the
+first coin lands in heads. Therefore in the posterior, you no longer have
+the second row and the new probability
+is one-half

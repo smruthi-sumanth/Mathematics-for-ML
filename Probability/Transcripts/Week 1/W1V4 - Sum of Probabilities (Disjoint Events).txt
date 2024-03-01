@@ -1,0 +1,69 @@
+In this video, you're
+going to learn about the sum of probabilities,
+which is quite simple. Consider the roll of a die. If you know the
+probability of getting a two and the probability
+of getting a three, and you want to know the
+probability of getting a two or a three, then all you do is you
+add these probabilities. However, there's a caveat. This doesn't work all the time. We need to know if the
+events are disjoint. Let me explain. Let's go back to the school but now
+we have more information. We have a school where kids
+can only play one sport. This is going to be
+important. The sport can be soccer or basketball. The probability that a
+kid play soccer is 0.3. The probability that a
+kid played basketball is 0.4. Here's a question. What do you think is
+the probability that a kid play soccer or basketball? Remember at this school kids
+can only play one sport, not two or more. If you want a hint,
+imagine that there's only 10 kids in the school and do the calculations
+like that. Let's remember that the kids
+can only play one sports. Let's say there's 10 kids. If there's 10 kids then 30% play soccer,
+that's three of them, and 40% played basketball, that's four of them, and that makes 70% of the kids. The probability that a kid
+plays soccer or basketball is the number of kids who
+play soccer or basketball, divided by the total
+number of kids. That is 3+4 /10 or 0.7. Notice that we added
+the probabilities. The probability of
+soccer was 0.3, the probability of
+basketball is 0.4, and the probability of
+soccer or basketball was 0.7, which is 0.3+0.4. Now this can be seen in the
+Venn diagram as follows. We're going to use the
+letter U for union, and if all the children are here and 30 of them play soccer, that's over here, and 40
+of them play basketball, then the union is the ones that play soccer or basketball so
+is the ones I play soccer, and the ones that
+played basketball, so is written like this, AUB. The probability of
+AUB is the sum of the probabilities P(A) and P(B). Now let's see how the concept
+of sum of probabilities reflect in a die example, let's say that you roll a
+fair six-sided dice once. What is the probability
+of obtaining an even number or a five? There are two events here. Event A is rolling
+an even number. That's three of them, and event B is rolling a five
+so that's one of them here. Because the
+probabilities get added, then we have 3/6+1/6 and so the probability
+of even number or five is probability
+of even number plus the probability of
+five, 3/6 +1/6. That is 4/6, which in
+lowest terms is 2/3. Now, here's another question. If I roll two dice, then what's the
+probability of obtaining a sum of seven or a sum of 10? Well, let's consider two events. The event A is that you
+get a sum of seven, and the event B is that
+you get a sum of 10. Out of the 36 possibilities, how many have a sum of seven? Well, there's the six over here. Under the same 36 possibilities, how many have a sum of 10? There's this three over here, 6,4 5,5 and 4,6. When you look at the union, so a sum of seven
+or a sum of 10, then we're looking at all these events that are
+colored red or yellow. Sum of seven, that is 6/36, and the sum of 10 is 3/36. When we add them,
+we obtain 9/36, which in lowest terms is 1/4. This one over here
+is the probability that the sum is seven, this one over here is the
+probability that the sum is 10 and we just added them. Now let's see yet
+another example. What's the probability
+of obtaining a difference of two or
+a difference of one? Well again, we have
+the two events. A is the event that
+difference is two, and B is the event that
+the difference is one. Which pairs have a
+difference of two? These pairs over here. 1, 3, 2,4, 3, 5 4, 6, 3, 1, 4, 2, 5, 3 and 6,4 because the difference
+can be in any direction, can be the first
+minus the second, or the second minus the first. Similarly, for the
+difference of one, we have all these
+pairs over here. Now when we look at the union, they are over here, it's this many so the probability of the
+difference is two, or the difference is one is
+equal to the sum of the two. This one over here plus
+this one over here. The first one, there's
+eight cases out of 36 so it's 8/36, the second one is 10 cases
+out of 36, so it's 10/36. When you add them, we get 18/36. That first one is the probability that
+the difference is two, the second one is that
+the difference is one. As you can see, 18 or 36 in lowest terms is one-half
+so it's actually 50%.

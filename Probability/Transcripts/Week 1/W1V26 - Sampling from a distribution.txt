@@ -1,0 +1,45 @@
+So imagine that you have a data set,
+for example, heights of people, but you need it to be larger, but you can't go
+and collect more data, it's too expensive. So what can you do? Well, you can create some synthetic data
+that looks a lot like the original one. And a way to do this is to construct
+a distribution out of this data, and then sample out of it. And by sampling I mean picking
+points that have the probabilities given by the original distribution. So this is a very important concept in
+probability and in machine learning, sampling probability distribution. Let me show you. Let's say you have a simple discrete
+distribution of our colors, with three possible outcomes green,
+blue and orange. And you get green with probability 0.3,
+blue with probability 0.5, and orange with probability 0.2. And now you want to run an experiment
+where you want to create a random sample of data that follows this distribution. So how do you sample data
+from this distribution? Well, as you know, the probabilities
+of the outcomes add to one, So you can stack them up together like this
+to get a continuous strip between 0 and 1. Now, computers can choose a random
+number from a given interval uniformly. So to simulate the distribution
+you need to follow three steps. First, generate a random
+number between 0 and 1. Second, find out which of the three
+intervals the generated number belongs to. And then third, assign the correct
+color based on the interval. That will help you pick a random
+color between green, blue and orange, with the probabilities that
+are given in this graph. Now, let's say that instead of green,
+blue and orange, you assign these outcomes some numbers,
+let's say 0, 1 and 2. The process will be exactly the same. So let's take a look at another
+way to solve this problem. Let's create another plot here where
+we simply rotate at the bars, and what we're going to do is we're
+going to push them to the right and draw that red line, which is actually
+the cumulative distribution function. And now all you have to do is you sample
+uniformly from the vertical interval. So these four points are sampled
+uniformly, and then you simply read out what the value is in the horizontal axis
+of the cumulative distribution function. And then you are picking the numbers
+according to the distribution on the left. We can also do this for a continuous one,
+and it's actually very beautiful. Check it out. When you have, let's say,
+the Gaussian distribution on the left, you want to pick randomly
+from this distribution. It's not easy because
+calculating areas is hard. But if you take a look at the CDF on
+the right and then you pick uniformly from that gray interval,
+the interval from 0 to 1, that's vertical. Let's say we pick some
+numbers here uniformly. And now all we do is we take a look at
+where this hits the distribution and where it hits the horizontal axis. So this points over here
+are actually distributed based on the normal
+distribution on the left. As you can see, this is the distribution
+that these points are taken from, and when you look at them on the left, that's the exact distribution
+that they're taken from. So the CDF, both for
+the discrete and the continuous case, is a very useful method when you want to
+sample from a particular distribution.

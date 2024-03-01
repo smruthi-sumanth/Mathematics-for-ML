@@ -1,0 +1,57 @@
+In lesson one, you learn how to
+calculate individual probabilities and how to do math with them. But imagine that you have all
+the possible scenarios that can happen. Put them on this horizontal axis and
+for each one of them, look at the probability that they happen. This forms a probability distribution and
+that's the topic for this lesson. So imagine now that you're
+tossing three coins and you're interested in the number of heads. This will be your random variable. How does each outcome of the experiment
+affect the random variable? Well, the first possibility
+is that you get no heads. The second one is that you
+get one out of three heads. But here you can see that you actually
+have three options to obtain one heads, either on the first,
+the second or the third coin. The same is true if you get
+two heads out of three or you can get tails either on the first,
+second or the third coin. And again, there's only one
+option to obtain all three heads. Now, let's reorder this a bit. You can see that you just have one
+way of getting three tails and one way of getting three heads. However, there are three ways in which you
+can obtain one heads and two tails, or two heads and one tails. Now you can divide this number by
+the total number of possible outcomes, which is 8. And what we get are probabilities for
+each of the outcomes. And from this image you can clearly see
+why it is much more likely to obtain 1 or 2 heads than 0 or 3. And it is because of how many different
+outcomes contribute to each of these options. And now we can look at this
+as just a normal histogram. Now let's look at another, slightly more
+complex example where you flip four coins. Your new variable is the number
+of heads in four coin tosses. And you can see that something
+similar has happened. There's only one option when you
+have all heads or all tails. However, there are four ways in which
+you can obtain one heads or one tails. And finally,
+this one's a bit more complex, but you have six possibilities where
+you see two heads and two tails. This gives you a total of 16 possible
+outcomes for how your coins can land. So you assign 1-16th to 1 and
+4 heads, 4 over 16 to 1 and 3 heads. And finally, 6 over 16 to seeing 2 heads. And those are your probabilities. And this is the histogram we obtain for
+4 coin tosses. Now let's look another variable,
+the number of heads in 5 coin tosses. And again, with all heads or tails,
+there's one option out of 32 total. With one header, one tail,
+there's actually 5 options out of 32. With 2 or 3 heads,
+there's actually 10 options. Now, it's easy to figure out that for
+all heads there's only 1 possibility, or for only 1 head there's as
+many possibilities as flips, because the head can
+be any of the 5 flips. But how would you calculate that
+there are 10 options for 2 heads? Luckily, there is some method for that. Stay with me in the next video
+to find out how it works. Each bar represents the probability
+that the variable x three takes each of the possible values 0, 1, 2, 3, 4, and 5. Now, for each x from 0 to 5,
+you have the probability that X3 is X. This is called the probability
+mass function of X3, and we use a lowercase p to represent it. All discrete random variables can be
+modeled by their probability mass function, also abbreviated as PMF. Since it contains all the necessary
+information to understand how the probability distributes among
+all the possible values of the variable. Now, what are the requirements for
+the PMF? First of all, since it's defined as
+the probability that the random variable takes at a particular value,
+then it always has to be positive. Now note that when you sum the PMF over
+all possible values, they all sum to 1. This makes sense, since you're considering
+the probability of all possible outcomes of the experiment. The second condition for the PMF is that
+the sum of all its values must be 1. By the way, X1, X2, and
+X3 are very similar. They're all counting the number of
+heads in a fixed number of coin tosses. It was 3 for X1, 4 for X2, and 5 for X3. Also, the way the probability distribute
+over all possible values follows a similar pattern. Could there be a single model to
+represent all these random variables? It turns out there is, and
+it's called the binomial distribution. You'll learn about that in the next video.

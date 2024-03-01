@@ -1,0 +1,119 @@
+Now that you've learned the
+probability mass function for discrete distributions and the probability density function for continuous distributions. Let me show you what the cumulative
+distribution function is. Let's look at the example
+of the phone call. In this example,
+you actually have to calculate areas underneath a curve in order to find the probability that
+a call is between, let's say, two and
+three minutes. This is not convenient. We don't want to be
+always calculating areas. The cumulative distribution
+function is one that shows the actual probability
+that the call is between zero and a
+certain number of minutes, so it's much more
+convenient to calculate. There's also a cumulative
+distribution function for discrete distributions. Let me show you more about
+it. Let's have a look at another concept that is the
+cumulative probability. Cumulative probability
+tells you what is the probability that an event happened before some
+reference point. For example, let's return to the call center and let's start thinking about the discrete simplification of the problem. The one where we looked at the probabilities being
+between zero and one minute, one and two, all the way to between four and five minutes. Then as usual, we'll slowly
+move to the continuous one. But for now, let's
+look at this one. Now, let's take a look on the right at what's called
+the cumulative probability. The probability that the call is between zero and one minute, and that's exactly the same as the one in the left because
+that first little rectangle is the probability that the call is between
+zero and one minute. Now, let's look at
+the probability that the call is between
+zero and two minutes. What do you think that is? Well, on the left,
+it's going to be the sum of these two areas. The reason is because
+being between zero and one minute
+is the same as being between zero and
+one or one and two. We're adding those two areas. On the right, we're
+going to get this. Remember, on the right, we're looking at the probability being between zero and one, then between zero and two. The next one is between
+zero and three. So between zero and three is the sum of these three areas. We plot them here. Then
+between zero and four, the sum of these areas. And then finally
+between zero and five, which is all the
+areas, and obviously, we know that this is one
+because the probability that the call between zero
+and five minutes is one. Now we can draw the
+cumulative probability for this discrete
+distribution to the left, and it's this red curve over
+here. Notice two things. It always starts at zero. For example, it is clear
+where zero should be. There are no calls that
+take negative time. In general, the cumulative
+distribution is zero up to the point where we
+expect no outcomes at all. Secondly, the value at
+the very right is one, because we know that all the calls will be
+five minutes or less. So the probability
+that the calls between zero and five minutes is one. These cumulative
+distribution function always starts at zero
+and ends at one. For continuous distributions, we have something very similar. You go over the PDF from
+the beginning until the end and you simply add up the
+pieces to create the CDF curve. Except in the continuous case, you're not adding together
+the heights of the bars, but you're plotting the sum
+of the area under the curve. It's the same as
+[inaudible] case. The point at the very left is zero because you
+haven't added any area. The point of the very right is one because that's where
+you've added all the area. Now this is a particular
+case where the curve starts and ends
+at finite points. But the blue curve in the left, the density function
+could go infinitely to the left or infinitely to
+the right, in which case, so does the other curve, and that means that it
+has a limit of zero to the left and a limit
+of one to the right. Finally, at some
+point x, this area, this black area over here, it's going to be this
+height over here. For example, the
+probability of the call is less than or equal
+to two minutes. Let's say it's one-half. Then on the right, we have that the height of the
+point x or the 0.2 is one-half because
+as the probability of the call is less than or
+equal to two minutes. In other words, these
+two curves give us the same information
+except written different. On the left, we
+have to calculate areas to find probabilities, and on the right, we simply
+have to look at heights. So far I've got a
+pretty good intuition about the cumulative
+distribution function. Let's look at some notation
+and some formalism. The CDF is a function that
+tells you how much probability a random variable accumulates
+up to a certain value. The CDF is actually
+the probability that your random variable x is smaller than or equal
+to some value x. This is defined for
+each and every value on the real line from minus
+infinity to plus infinity. This function is
+normally denoted with a capital F. Please
+be mindful not to use lowercase f because
+that's the one we served for the probability
+density functions of continuous distributions. Exactly as with PDFs. We add a subscript with the random variable
+for extra clarity. In this case, it's capital X. If your variable was called
+capital Y, for example, then you would call the cumulative
+distribution function F_Y. Notice that if your variable
+is discrete like the one on the left and the
+CDF will have jumps. Why does this happen?
+Well, consider this point over here and the CDF where the
+function blanks. This means that this
+particular point is not a possible outcome of the variable you're modeling, so it doesn't accumulate
+any probability. However, at the values
+that are possible outcome, you see a jump into CDF. The height of that jump is
+exactly the probability that the variable has taken on
+that particular value. For continuous variable,
+the CDF shape changes a lot and you get a continuous
+function. Why is this? Because each point doesn't have probability
+mass on its own, and once you don't
+have points with mass, then you don't see any jumps. So the CDF curve is smooth. Now what properties of
+the CDF need to satisfy? First is, by definition, it's a probability
+all values have to be between zero and one. Also, the left point of
+the CDF needs to be zero. In some cases, it's
+a fixed number, in some cases, it's
+n minus infinity. But nonetheless,
+it has to be zero. The right endpoint where all the probability
+has been accumulated, the CDF has to be one. Finally, the CDF can
+never decrease since it's accumulating
+probabilities and probabilities can
+never be negative, then this is a must. To really summarize,
+on the left, you have a PDF which is written as a function f(x), let's say. It's a function that's
+always positive and has a total area of one
+underneath the curve. The CDF has a left
+endpoint of zero, our right endpoint of one, and it's always positive, and it's always increasing. Sometimes you're going
+to be using the PDF, and some other times you're
+going to be using the CDF depending on which one's more
+convenient at the moment, but it's good to know
+both really well.

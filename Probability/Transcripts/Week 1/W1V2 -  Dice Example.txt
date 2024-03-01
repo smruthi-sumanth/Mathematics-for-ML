@@ -1,0 +1,13 @@
+Now let's reinforce a
+constant probability, but this time around, we're going to use the
+experiment of rolling a fair six-sided dice. Here's a question for you. What is the probability
+that if you roll this dice you obtain a six? Well, given the fact that
+six things can happen, and all of them are
+equally likely, that's the sample space, and one of these
+outcomes is favorable, so that's the event, then the probability P of six is one divided by six or one-sixth. Now, what if we roll two dice? What is the probability
+of obtaining 6, 6? That's the next quiz for you. Well, let's look at the
+entire sample space. For each roll of the first die, we can have six possibilities
+for the second die, and we get 36 in total, 1,1, 1,2, 1,3, etc. all the way to 6,6. That's the sample
+space of size 36. The event is just
+this one over here, that's the only
+favorable outcomes. The probability of 6,6 is 1/36. That's the answer.

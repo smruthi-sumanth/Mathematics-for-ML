@@ -1,0 +1,91 @@
+Let's start with one of
+the simplest distributions out there, the
+binomial distribution. I like to imagine it
+with coin tosses. Let's say I toss
+a coin 10 times. How many heads can I obtain? Well, it could be 0, 1, 2, 3, all the way up to 10. Each one comes with its own
+corresponding probability, so we draw the histogram
+of probabilities, and that's the
+binomial distribution. The binomial distribution
+is an example of a discrete distributions, which are the simplest
+ones that we'll see first. Later in the course, we'll learn the continuous ones too. But let's get to the
+binomial distribution now. What is the
+probability to obtain two heads when you
+flip five coins? For each flip, there's a 1/2 chance to get
+heads or tails. If you multiply these
+together, you get 1/32, which is the probability
+of this specific outcome. But there are more ways to
+obtain two heads out of five, for example, this one here. This one has exactly
+the same probability to be obtained as
+the one on top. It turns out that
+there are actually 10 possibilities to get
+two heads out of five. If you look at the ways you can order two heads
+and three tails, you will see that there are
+actually 10 ways to do that. Each of these sequences
+of heads and tails has the same probability; 1/32. Now, there are some
+general way to find the number of
+possible combinations. This is just ordering a sequence on two heads and three tails. Five factorial is the number of ways you can order five coins. But this is over kill because these five coins
+have repeated numbers, so you need to account for that. Divide five factorial
+by two factorial to remove all the cases
+where you have simply swapped the two heads, and now also divide it
+by three factorial to remove all the cases
+where you have simply swapped the three tails. This is called the
+binomial coefficient, and it counts the
+number of ways you can order two heads and three tails. In general, the coefficient
+n choose k counts all the combinations
+in which you can have k heads in n coin tosses. One common property is
+that n choose k is the same as n choose n-k. The reason for this
+is because obtaining k heads is the same thing
+as obtaining n-k tails. This is why the PMF of a fair coin has a
+symmetrical shape. Now, can you find a
+general way to write the PMF for the number of
+heads in five coin tosses? Well, for more generality, suppose that the
+probability of heads is p. Consider the event, X= x, where X is a random variable, and x is the number of
+heads in five tosses, which can be 0, 1, 2, 3, 4, or 5. What is the probability
+of this event? Well, you will need
+to have x heads, so that's probability p^x. This is a probability of
+one particular order. The remaining 5-x tails
+are probability (1-p)^5-x. However, this is just
+the probability for one particular ordering, so you need to take into account
+all the possible orders, which is 5 choose x. You're missing just one thing. This expression is, of course, valid for x= 0, 1, 2, 3, 4, and 5 since you can't have more than five heads
+in five coin flips. This is the PMF for x, and we say that x follows
+a binomial distribution. We denote it as
+binomial of 5 and p, where 5 is the
+number of flips and p is the probability of heads. In general, this tilde symbol
+means that the variable X follows the distribution to
+the right of the expression. If p is 0.5 and n = 5, then you get the following PMF. Remember that here,
+you're flipping five coins and the
+probability of heads is 1/2. The graph is here. Notice that since p is 1/2, then the PMF is symmetrical. In the case where we
+have a different p, so we have a biased
+coin, for example, p= 0.3, then you have greater chances of seeing
+a small number of heads, and this is reflected
+in the PMF. Now, in the example, you
+were tossing five coins, but if you were tossing the
+coin any number of times, then the model
+should be the same. You're simply
+changing a parameter. In the case that
+we tossed n coins, then we have a PDF like this, where the probability
+mass function is n choose x, p^x(1-p)^n-x. We call that
+binomial of n and p, where n and p are the parameters of the binomial distribution, n is the number of tosses, and p is the probability
+of obtaining heads. Now, try to answer
+this question. What is the probability
+of throwing a dice five times and
+getting three ones? The order doesn't matter. Well, when you throw a dice, you can get a one or not a one, which is not that
+different from a coin. In a coin, you can
+get heads or tails, and you can think of the die as a biased coin where you get
+heads if you throw a one, and tails if you
+throw anything else, so it's a biased coin. Now, for a dice, the probability of
+each value is 1/6. Now, this coin will have a
+probability of heads of 1/6, and tails of 5/6, because that's all
+the remaining values. You can draw a similar
+histogram like before for a different p, but the same n. This time
+you have n= 5, and p= 1/6. In other words, we
+can look at a dice as a biased coin for
+this experiment. Now, let's look at another case. Let's throw the dice 10 times, and just like before we
+record the number of 1s. Is again a binomial
+probability distribution. Can you tell me what are the parameters of
+this distribution? Well, the above problem
+can be represented with a binomial distribution
+where n= 10, and 10 represents the
+number of dice throws, and p represents the
+probability of obtaining a 1, and that is 1/6. Therefore, the parameters
+are 10 and 0.1666

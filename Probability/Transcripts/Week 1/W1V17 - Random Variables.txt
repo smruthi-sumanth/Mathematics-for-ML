@@ -1,0 +1,97 @@
+Welcome to lesson two. Now we get to one of the most
+important concepts in probability, which is the concept of a random variable. And it's not something that new,
+you've seen variables before. For example, in algebra you may have
+learned the variable x equals 3, it always has the same value. Random variables are different,
+they can take many values. For example, the temperature is a random
+variable that can take many values. Another random variable is the number of
+heads I obtain if I toss a coin 10 times. That is another random variable. So in this video I'm going to show
+you all about random variables. So let's go back to the coin
+flipping experiment. When you flip a coin,
+let's say you can obtain heads or tails. And let's say that you can obtain them
+both with a probability of one-half, like before. Now, let's change this
+around a little bit. Let's take a variable X and
+call it the number of heads. So what happens now when you flip a coin,
+how many heads can we obtain? Well, if we obtain heads, then we
+obtain 1 heads, and if we obtain tails, then we obtain 0 heads. If we look at X, then X can be
+1 if we obtain heads once, and X can be 0 if we obtain heads 0 times. And the probability of X = 1 is the same
+probability of obtaining heads, which is 0.5. And the probability of X = 0 is the same
+probability of obtaining tails, which is 0.5. X is called a random variable and is one of the most important concepts
+in probability and statistics. You can think of X as a variable
+that not always has the same value. Half of the times it
+takes a value of 1 and half of the time it takes
+a value of 0 roughly. Now let's look at another random variable. Let's look at the number of heads
+we obtain in 10 coin tosses. So let's say we flip it ten times and
+all of them are heads, so X = 10. Or we flip them and one of them is tails,
+so we obtain X = 9. And we can obtain X = 9
+in many different ways. And let's say we stick to
+probability of heads equals 0.5. So what are the probabilities
+of these events? Well, since all of them are independent,
+all of them have probability one-half, then this is one-half to the 10th. What about the second one? Well, it's also one-half to the 10th. But we can write it as one-half to the 9
+for all the heads and one-half for the remaining tail, and
+the same thing for the next one. However, a harder problem is to actually
+ask what's the probability that we obtain 0 heads in total? P(X = 0) or P(X = 1) or
+all the values until P(X = 10) because on the left we have a particular scenario,
+a particular way to obtain the heads and tails, but
+on the right we're grouping them all. As you can see, the first one is the same. P(X = 0) is the same as obtaining all
+the heads, which is 0.5 to the 10. But the others are a little harder. So when I want to calculate things,
+the first thing I do is run an experiment. So let's run an experiment. So let's say we run this experiment
+many times and we obtain X = 5, X = 6, X = 5 again, and
+we run it many, many times. And what are the possible outcomes? Well, the possible outcomes are 0 all the
+way to 10, because you can obtain 0 heads, 1, heads all the way to 10. And if we stick to probability
+of heads equals 0.5, and let's say we're going to repeat this
+500 times and let's see what we obtain. The histogram we obtain
+is this one over here. Notice this is just a histogram,
+it's not the actual probabilities. But it gives us a good estimate of the
+probabilities because we ran it a bunch of times. Notice that the probability of X = 0 or
+X = 10 are the smallest ones, because it's not likely that we're
+going to obtain 10 heads or 10 tails. The highest one is over here, P(X = 5),
+because it's likely we're going to get roughly half-half, and
+we can see all the other ones. For example, here's P(X = 8), that's
+when you obtain 8 heads and 2 tails. So this is a random variable. Why do we care about random variables? Because they allow us to model
+the entire experiment at once. And most problems in probability can
+be expressed as random variables. So for example, if you flip
+a bunch of coins, as we saw, and X is the number of heads,
+that's a random variable. You can roll a bunch of dice and define
+X as the number of times you obtain a 1. Or you can see a bunch of patients and
+say that X is the number of sick patients. Or you can just define random variables. Let's say I define one that is 1 with
+probability one-half, but it's also -7 with probability 0.2, and it's also
+3.14159 with a probability of 0.3. I can come up with any random variable
+I want that takes any values. As long as the probabilities add to 1,
+I'm good. Now, here are other random variables. For example, if you are waiting for
+the bus, the wait time until the next bus arrives is a random variable,
+it could take many different numbers. The height of a gymnast's jump is also
+a random variable that has some range of values. The number of defective products in
+a shipment is also a random variable. And let's say the number of millimeters of rain in November is
+also a random variable. You may be noticing that they
+behave in different ways, and that's because there's two big
+types of random variables. There's discrete and
+continuous random variables. Discrete ones are the ones we've been
+seeing so far, the number of 1s or 6s if I roll the dice, the number of heads
+if I flip coins, the number of kids in a specific group with a particular
+height or a particular age. And the continuous ones could be,
+for example, the amount of time till the next bus
+arrives, the height of a gymnast's jump, the number of millimeters of
+rain in a particular month. Why are they different? I encourage you to take a look and
+tell me why you think they are different. And one thing that happens is that the one
+on the left can take a finite number of values. I can flip a coin ten times and
+I could obtain 0 all the way to 10 heads. On the other hand, the ones on the right
+can take an infinite number of values. Because the time can be 1 minute, but it can also be 1.01 minute or
+1.001, 2, 3 minutes. There's an infinite number
+of values they can take. But actually this is not true, the discrete ones can also take
+an infinite number of values. I'll give you an example. If I start flipping a coin until I
+obtain heads, I could do it one time, or two times, or three times, or four. I could do it 500 or a million and
+perhaps not obtain heads. The probability is very small, but
+I have an infinite range of values. So what really happens is that the
+discrete ones can only take a countable number of values, whereas the continuous
+ones take values on an entire interval. So the values that a discrete random
+variable can take can be put in a list 1, 2, 3, 4, 5, etc. Whereas the values that a continuous
+random variable take cannot be put in a list because it's an entire interval. Now you may be thinking, what's the
+difference between these random variables and the ones that you see in algebra and
+calculus? And the difference is that
+the ones you see in algebra and calculus are deterministic and
+the ones we see here are random. What is deterministic? For example, x = 2 or for example, the input of the function f(x) = x
+squared, they always take the same value. Once it's defined, it's like that forever. However, the random
+variable's not like that. It can take, for example, many values. They're associated with
+an uncertain outcome. So deterministic variables
+are associated with a fixed outcome and random variables with
+an uncertain outcome. And that's the main difference.
