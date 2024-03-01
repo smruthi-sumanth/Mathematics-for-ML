@@ -1,0 +1,55 @@
+In the previous
+video, you learned the sigmoid function and how it's super useful
+in machine learning and the reason is
+because it takes the entire number line and crunches into the interval zero, one, which is what we
+want for the output. The formula is 1/1
+plus e^minus z. Here is the graph. The graph is this one over here. Notice that the input is the number line and the output is the
+interval zero, one. The input is the horizontal axis and the output is
+the vertical axis. Notice that it has
+asymptotes at zero and one, which means it never
+really touches the numbers zero and one but every number has
+an output strictly between zero and one
+and for example, sigmoid of zero is 1/2, because if you plug in a
+zero and 1/1 plus e^minus 0, you get 1/1 plus
+1, which is 1/2. If a number is very large
+positive like 1,000, then sigmoid of 1,000
+is very close to one. If it's a very large negative
+number like minus 1,000, then sigmoid of minus 1,000
+is very close to zero. However, the sigmoid
+function has a very nice property other than the fact that it crunches the entire number line
+into the interval zero, one and is that its
+derivative is really nice. Now we're going to
+calculate the derivative. Why is it important that
+it's a nice derivative? Because in machine learning, we're going to use
+derivatives a lot. It's very important that our function is easy
+to differentiate. Let's take the derivative
+in great detail. Sigmoid of z is 1/1
+plus e^negative z, which can be written like this, 1 plus e^negative z^negative 1. Now we're going to take
+the derivative of this. We're going to use
+the chain rule. For the chain rule
+we have d/dz of something to the minus 1 is minus 1 times
+something to the minus 2. Then we take the derivative
+of the something inside, that's exactly chain rule. Let's rewrite it as negative 1, 1 plus e^negative z to
+the negative 2 times, now, d/dz of 1 plus e^negative z is d/dz of 1 plus the
+d/dz of e^negative z. That's going to be rewritten as zero because the derivative of a constant that's one is zero, and here we have the
+derivative of e^negative z, which is e^negative z derivative of negative
+z by the chain rule, and that last part is
+going to be minus one. We're about halfway there. Notice that this negative one gets canceled with
+this negative one, and we have 1 plus e^negative
+z^negative 2 times e^negative z, which is this. Now this can be
+rewritten even nicer. Let's write it as
+e^negative z over 1 plus e^negative z squared. This is where we are. Now, notice that we can
+add and subtract one. Why do we want to add
+and subtract one? You'll see, but let's
+write it like this. Now let's split it as the
+first 1 plus e^negative z over the denominator minus 1
+over the denominator. Now this cancels with one
+of these two and we get 1/1 plus e^negative z minus 1/1 plus
+e^negative z squared. That can be written as this minus 1/1 plus
+e^negative z times itself. Now we're just
+going to factor the 1/1 plus e^negative z times 1 minus 1/1
+plus e^negative z. Why do we want to do that? Well, recall that this
+is exactly the sigmoid. The first term is sigmoid, and the second term is 1 minus sigmoid.
+Isn't that beautiful? The derivative of sigmoid is sigmoid times 1 minus sigmoid. The fact that this
+derivative is so easy to calculate means that it's going to be really useful
+in machine learning.

@@ -1,0 +1,79 @@
+Now that you know
+what a perceptron is, you're just one step from knowing what a
+neural network is. A neural network is just
+a bunch of perceptrons organized in layers where the information of
+these perceptions is passed to the next layer. How to train these
+neural networks using gradient descent,
+just like before. Except now we have
+many derivatives. We have to take
+the derivative of the log loss with respect to each one of the weights and biases of the neural network.
+Let me show you how. Remember in the previous
+lesson you worked a binary classification
+problem where you had to do sentiment analysis. Use this perceptron shown here, where z was the summation of the previous variables time
+multiplied by the weights and then Sigmoid set was the
+activation function that got you to find the
+prediction y hat. Now, turns out that
+these models are pretty simple and they
+can only do so well. If you remember, what
+this thing does, is it builds a linear boundary, a line between the
+happy and sad sentence. But maybe language is much
+more complicated than that. Maybe it needs
+boundaries that are much more complex and
+not just a line. For that, we use, not just one perceptron, but several perceptrons
+put together. That's called a neural network. Here we have one perceptron, the red perceptron
+on top and then we put a green perceptron
+on the bottom. Now we have two perceptions that perhaps do
+different things. What do we do with the outputs
+of these two preceptons? We plug them into
+another perceptron, the purple perception. That is a neural network. You can imagine that a very complex neural
+network, we have many, many perceptrons
+plugged into others, and the outputs of
+those are plugged into others and then you have
+many, many, many layers. You'll be able to solve
+very complex problems. For now, we're going to
+do it with two layers, the one of the red-green, and the purple one, so that we can actually
+handle the math properly. Here is the math. We're going to have weights. Here we're going to
+have weights w11, w21, and the bias b1 that goes
+into the red perceptron, and the sum, as usual, is z_1 and then you apply Sigmoid z_1 and you're
+going to call that a_1. A_1 is what comes out
+of the red preceptron. Now, what comes out of
+the green perceptron? Similar thing, w_12
+are the weights, w_22 the bias is b_2. Z_2 is the usual summation
+of the weights times the features plus the
+bias and when you apply Sigmoid to
+this, you get a_2. A_1 and a_2 are the inputs
+to the purple perceptron. The weights here
+are w_1 and w_2, and then z is obtained as a_1, w_1 plus a_2, w_2, and then you obtain z and you apply the
+Sigmoid function to this to obtain y hat. This is a neural
+network of depth 2 that has one input
+layer over here, one hidden layer over here, and the output layer. But as I said, you can
+imagine neural networks with lots and lots and
+lots of inputs. However, there's one
+thing missing, right? Perceptrons normally have a bias and the purple perceptron doesn't have a bias.
+That's no problem. We'll just put the bias here and we'll call the
+bias weight b. Now we have a full
+neural network. Let's study the
+inner workings of the red node in
+our hidden layer. Focusing on this node alone, we've established that a_1, its output is given by
+this Sigmoid of z_1, and z_1 is given by
+the usual combination of weights and
+inputs and the bias. So x_1, w_11 plus
+x_2, w_21 plus b1_. The same thing happens
+with the green perceptron. A_2 is given as Sigmoid
+of z_2 where z_2 is the usual summation of the weights times the
+features plus the bias. Now, let's go to the
+purple perceptron. For the purple perceptron, the output is y hat
+and it's Sigmoid of z. Z is again the summation of a_1 w_1 plus a_2, w_2 plus b. The new inputs to the
+purple perceptron are the outputs of the green and red
+perceptrons so a_1 and a_2, and that gets multiplied by
+the weights w_1 and w_2, and b gets added to that. That is the output of
+the neural network. As a reminder, here
+are all the variables. Here's a full picture of
+the neural network with the inner workings and the math behind each one of the nodes. Now since we're dealing with
+a classification problem, let's not forget that
+the error function is the log loss that we saw in our earlier problem to
+help us measure the error, that is l, y, y hat equals negative
+logarithm of y hat minus 1 minus y-hat logarithm
+of one minus y hat, where y hat is the prediction and y is the target in the training data
+that we want to hit. Now, that we know how a
+neural network works, let's get to training them.

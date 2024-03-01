@@ -1,0 +1,57 @@
+Let's conclude this week
+by learning how to apply Newton's method to optimize
+functions of many variables. And as you guessed it,
+the Hessian appears here. >> So remember that at the beginning of
+this lesson, we saw Newton's method and found an expression for literally finding
+the minimum or maximum out of a function. For one variable, the updated equation
+has this expression that depended on the current value, the first derivative,
+and the second derivative. We could just as easily rewrite this
+like this, where instead of dividing by f prime prime of xk you multiplied by
+the inverse of f prime prime of xk. Now, what happens in 2 variables? Well, in two variables,
+you don't have one coordinate, you have two coordinates x and y. So your kth iteration is xk, yk, and
+your k + 1 iteration is xk + 1, yk + 1. And how do you obtain the k + 1
+iteration from the kth iteration? Well, let's look at the expression above. This is the second derivative,
+turns into the Hessian. And this is the first derivative
+turns into the gradient, and notice that the second derivative is
+inverse because you're dividing by it. Well, that simply turns into
+the inverse of the Hessian matrix. So, this is the expression for
+two variables. And you can see that actually
+this works for n variables, I simply have to do a vector of n
+coordinates minus an m by n matrix, the Hessian inverse times a vector of
+n coordinates, which is the gradient. And I have to be very careful. It's tempting to write
+it like this as well. But this actually won't work. You cannot multiply the gradient
+at the left of the matrix. You have to multiply at the right. And the reason is that the matrix is two
+by two and the vector is two one, and you cannot multiply two by one
+vector to the left of the matrix. You can only multiply it at the right. So we're working with two variables and
+the order is pretty crucial. Now, it's a lot of work to
+actually prove this formula, but we're going to just take it as is and
+notice that it actually is a sensible generalization
+of the one variable case. And now that you know Newton's method for
+more variables, let's put it in practice. Here is a function that is concave up, and
+we're going to try to find the minimum. So first,
+let's take a look at the two partial derivatives with respect to x and y. And then the partial derivatives
+of those with respect to x and y, and with respect to x and y. So the Hessian is obtained with
+these four expressions at the right, and the gradient is formed by
+the two expressions in the middle. In other words, here's the gradient and
+here is the Hessian. So now, using the Hessian and
+the gradient, you're going to use Newton's method. So let's start at some point,
+let's say the point x0, y0 equals 4, 4. Here is the gradient at that point. So what we did is in
+the expression of the gradient, we simply put the numbers 4 and 4,
+and now let's find the Hessian. So now notice at this 4,
+4 is not the 0 of the function, but we're going to get closer and
+closer using Newton's method. So what's the first point? Well, the second iteration
+is going to be 4, 4, the first iteration, minus
+the Hessian inverse times the vector. And that's actually going to be 2.58,
+2.62, and that's the new point. Notice that it's much,
+much closer to the 0, 0 which is the root
+that we're looking for. Now, let's iterate again. So we have that, this is the gradient and
+that this is the Hessian and the second iteration is this point minus
+the Hessian inverse minus the gradient. So we get the 1.59, 1.67. And let's actually continue repeating it. And when you repeat it many times
+you end up in the actual zero. So it takes eight steps to get this close,
+check it out. The eighth iteration is 4.15
+times 10 to the minus 17 and minus 2.05 times 10 to the minus 17. This is an awfully small number. Is really, really, really close to 0,
+0, and 0, 0 is actually optimal point you were looking because
+that is the root of the function. So as you can see,
+just like with one variable, Newton's method in two variables is
+a really, really fast method to be able to approximate really
+closely the zero of a function.

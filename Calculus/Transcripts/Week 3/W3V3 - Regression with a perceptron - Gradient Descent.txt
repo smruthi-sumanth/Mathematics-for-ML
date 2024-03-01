@@ -1,0 +1,79 @@
+Now we know what the problem is. We want to find the prediction function with
+the best weights and bias that minimizes the loss
+function L y, y hat. In other words, we want
+to find the best model that makes the
+smallest mistakes. Now, how do we find
+this optimum values? We're going to minimize L
+using gradient descent. We're going to find
+the best w_1, w_2, and b using gradient descent. Recall that the gradient descent
+formula updates w_1 this way in order to minimize L. Recall that Alpha is
+the learning rate, and then this is how it updates w_2 and this is
+how it updates b. In other words, you have
+some w_1, w_2, and b, some starting values and then all you need
+to do is calculate these three gradients and you can update them
+and get new w_1, w_2, and b that are better model because it has
+a smaller loss function. If you do this for a long time, you can imagine that you're
+going to get it ended up with pretty good weights that have a very low loss function and
+that implies a good model. Now I'm going to tell you how to calculate these derivatives, there's going be a
+lot of chain rule. On the left we have
+the functions for reference and on the right I'm going to calculate
+the partial derivatives. First of all, what
+is dL over db? Well, take a look at L, L depends on the variable y
+hat so we need to do dL over dy hat and then y hat depends
+on b so dy hat over db. This is nothing more than the chain rule that
+we learned last week. The same thing happens
+for dL over dw_1. L depends on y hat so we
+have dL over dy hat and y hat depends on w_1 so
+times dy hat over dw_1. The same thing for dL over dw_2, dL over dy hat as L depends on y hat times dy hat over dw_2. Now we know what we have to do and all we have
+to do is calculate these four derivatives
+because notice that dL over dy hat repeats
+three times so we need to calculate
+that one and then the three partial derivatives
+of y hat respect to w_1, w_2, and b. These are much easier than actually plugging
+in the whole thing. It's breaking the problem into
+easier to solve problems. Let's calculate each one
+of these separately. Let's start with dL over dy hat. This is the
+derivative we have to calculate with respect to y hat. Using the chain rule, this is 1/2 times something squared and its derivative
+is the something, y minus y hat. But we still need something more because we have to
+take the derivative of the inside with respect to
+y hat and the derivative of y minus y hat with respect to y hat is simply negative 1. We have that minus
+one over there. The first derivative is simply
+negative y minus y hat. We could write it as
+negative y plus y hat, but we're going to
+keep it like this because it's going to make
+the math easier later. Now let's move to
+the other three, which are much easier actually. What's dy hat by db? Well, notice that this is a
+constant with respect to b, has nothing to do with b. Really, it's going to be 1 because it's
+the derivative of the remaining which is
+b by db so that's a 1. What about the next
+one? dy hat over dw_1. Well, notice that this part is a constant
+with respect to w_1. This may as well be w_1x_1 plus 7 and its derivative
+is simply x_1, which is the constant
+that accompanies w_1. Similarly, dy hat over dw_2, this part is a constant, so it's just x_2, the constant accompany w_2. Now that we have these ones, let's plug them back in. I'm going to put them here
+on the right as reference. Now let's remember the chain
+rules we already calculated dL over db is dL over dy hat, which is minus y minus y
+hat, times dy hat over db, which is 1 so that's
+the first derivative. For the second one, dL over dw_1 it's the usual minus
+y minus y hat, which is dL over dy hat times dy hat over
+dw_1, which is x_1. For the final one, dL over dw_2 it's going to
+be the usual dL over dy hat negative y
+minus y hat times dy hat over dw_2, which is x_2. These are our three derivatives. Now let's go back and
+remember our main goal. Recall that the main goal was to find the optimal
+values of w_1, w_2, and b that gives us the predictions y had with
+the smallest possible error. We're going to use a
+tool that we developed last week, gradient descent. Recall that gradient
+descent uses these updating formulas
+to get the new w_1. You start with some
+w_1 and update it as w_1 minus learning rate
+times the derivative of the loss for we want to
+minimize with respect to w_1. Now what is this? We
+already calculated it. It's going to be negative
+x_1 times y minus y hat. For w_2, again, this is the gradient
+descent step and we know this derivative we already
+calculated it we get this. For b, b is going to be updated
+as b minus Alpha dL over db which has calculated
+as minus y minus y hat. This is the gradient
+descent step. If we do this many times, we will get some
+really good weights, w_1, w_2, and b, that
+are going to have a really small error and
+therefore a really good model.

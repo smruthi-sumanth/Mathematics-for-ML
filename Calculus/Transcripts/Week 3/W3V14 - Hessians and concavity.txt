@@ -1,0 +1,86 @@
+Now let me tell you
+one information that the Hessian bring in
+terms of optimization. Remember that for
+functions of one variable, several things could happen. If the second derivative
+was positive, then you have a function
+that is concave up, in which case, there
+was a local minimum. If the second derivative
+was negative, then you had a function that was concave down and so we
+would have a local maximum. The case where the second
+derivative was zero, then it was inconclusive. You didn't know very much. The same thing happens
+for many variables, except you have to keep track
+of a couple more things. What does concave up mean
+in two or more variables? It means it looks
+like this function, 2x squared plus 3y
+squared minus xy. Visually, you can tell that the minimum is at this
+point over here which corresponds to x equals
+0 and y equals 0. By analogy, with the
+one variable case, this looks like a happy face. But can we show it numerically? Well, let's look
+into the Hessian. Remember, in one variable, if we wanted to know
+if it was concave up, we looked at the
+second derivative and checked if it was positive. But now we have a matrix. How do we check if a matrix
+is positive or negative? You actually look
+at the eigenvalues. Let's calculate the eigenvalue. If you recall from the
+linear algebra class, the way to calculate them
+is by taking a look at the equation determinant
+of Hessian minus Lambda I, which is this matrix over here, and the determinant is this, and that is this quadratic. When we find the roots
+of this quadratic, they are 6.41 and 3.59. Notice that they
+are both positive. For a matrix, this is the equivalent of being
+a positive number. It means the matrix
+is positive definite. Because all the eigenvalues of this matrix are
+positive numbers, then the function is concave up and the 0.00 is a minimum. Now, let's look at a
+very similar function. This one is minus 2x squared minus 3y squared
+minus xy plus 15. This one looks like it has
+a maximum point here at 00. Now, we're going to look
+at the Hessian matrix. Here is the gradient, and here is the Hessian at 0, 0. Now, let's look at the
+eigenvalues of the Hessian. We're going to solve the
+same equation as before. The determinant of H minus
+Lambda I, we factor it, and we get the eigenvalues
+minus 3.49 and minus 6.41. Both of them are
+negative so that is like saying that the
+matrix is negative. It's actually called
+negative definite. When a matrix has all the
+eigenvalues negative, then it's concave down, and therefore the
+0.00 is a maximum. Now, not every matrix has all the eigenvalues positive or all the eigenvalues negative, something like this can
+happen: a saddle point. This is the function
+2x squared minus 2y squared, which
+is a saddle point. It looks like a saddle
+or a potato chip. Over here, well, this point is neither a maximum
+or a minimum. Now, let's take a
+look at the Hessian. This over here is the
+gradient 4x minus 4y. The Hessian at 0,0 is
+this matrix over here. 4, 0, 0, minus 4. What are the eigenvalues here? If we solve for
+the determinant of H minus Lambda I equals 0, we get that the eigenvalues
+are minus 4 and 4. In this matrix, not all
+the eigenvalues are positive and not all the
+eigenvalues are negative. Therefore is neither positive definite nor negative definite. So we cannot conclude anything. In this case, we have that because this eigenvalue is negative and the other
+one is positive, then 0, 0 is actually
+a saddle point; a point that is neither
+a minimum nor a maximum. Here is the summary. We're going to have
+one-variable functions, two-variable functions, and
+functions in n variables. What happens with
+a local minimum? In one variable, you have
+to have a happy face. F prime prime of x
+is bigger than zero. Obviously, f prime of x has to be zero for this to happen. In two variables,
+you have to have an upper paraboloid like the concave-up function
+you saw in this video. For that to happen,
+both eigenvalues have to be positive
+of the Hessian. In the general case,
+you simply have to have a Hessian with
+n eigenvalues, all of them bigger than zero. For a local maxima, same thing, you have a sad face
+in one variable, so the second
+derivative is negative. For the two-variable case, you have a down paraboloid like the other function you
+saw in this video, and both eigenvalues
+have to be negative. In the general case,
+you simply have to have a Hessian with n eigenvalues, all of them less than zero. For anything else, we
+need more information. In one variable case, we have that the second
+derivative is zero, we don't know if it's a
+local maximum or minimum. It could be either one or none. In the two-variable case, we have a saddle point with one eigenvalue bigger than zero and one smaller than zero. In the general case, you simply have that
+some are positive, some are negative,
+some are zero, and those cases
+are inconclusive. Let me repeat, if all of
+them are strictly positive, you have a local minimum. If all of them are
+strictly negative, you have a local maximum. If anything happens, if
+one of them is zero, or if some of them are positive, some of them are negative,
+anything like that, then you don't know
+what you have, at least with this test.

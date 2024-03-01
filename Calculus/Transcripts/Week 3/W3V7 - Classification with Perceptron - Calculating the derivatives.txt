@@ -1,0 +1,98 @@
+Now we know what the
+problem is at hand. We want to calculate all those derivatives
+and be able to do a gradient descent
+step in order to find the best weights and
+bias for our dataset. Now, let's focus on
+weight w_1 for a moment. The idea is to reduce
+the function L(y, ŷ) by moving around with W1. Let's first see
+how w_1 affects L. Because if we can find in
+which direction to move w_1 in order to reduce
+L by a little bit, all we need to do is iterate this step with all the
+weights many times. Now, there are a lot of
+variables in between L and w_1. One of them is y
+Hat because y Hat affects L. We need to find the partial derivative
+of L with respect to y Hat. Now, y hat is affected by w_1, so we need to find the
+partial derivative of y hat by w_1. Finally, that tells us how
+much L is affected by w_1. The missing piece is
+the partial derivative of L with respect to w_1. That's the one we
+really want to find. Why? Because that was
+the one that tells us how much w_1 affects L
+and in what directions. This one is calculated
+using chain rule. d L by d w_1 is d L by d y Hat times d
+y Hat by d W1. All we have to do is
+calculate these two in order to calculate
+d L by d W1. The same thing happens with W2. We want to change W2 to
+around to reduce the loss. We have this hidden
+variable y Hat in between. We want to know how much y
+Hat influences the loss. We also want to know that how
+much W2 influences y Hat. Therefore, we'll be able to find this derivative over here, d L by d W2, which is calculated using the chain rule just like before. The same thing happens with B. Reduce the loss function, we use d L by d y hat, which you've already calculated. This one is influenced by
+B. d y Hat by d B. That tells us the derivative
+of L with respect to B. To find this one again
+with the usual chain rule. We have a lot of
+derivatives to calculate, and I'm going to
+put them over here. The first one is d L by d B, which we write using
+the chain rule, then d L by d W1, and d L by d W2. We only have four things to
+calculate because d L by d y Hat is there many
+times. What are these ones? Well, let's recall that
+y Hat is obtained as the sigmoid function
+of the summation obtained inside W1 X1
+plus W2, X2 plus B. That the log loss is
+this function over here. Let's start calculating things. First, let's do d
+L by d y Hat, the one that appears most often. Notice that the logarithm of y Hat has as derivative
+one over y Hat, and negative y is simply a constant with respect to y Hat. The first term is minus
+y divided by y Hat. At the end, this is what
+we're going to have. The reason is because the second one has a
+very similar derivative, one minus y over one
+minus y Hat because that y minus y Hat in the denominator comes from logarithm
+of one minus y Hat. When we expand this, these two cancel out and we get negative y minus y Hat over
+y Hat times one minus y Hat. That's d L by d y Hat. We're going to use
+this one a lot. Now, let's calculate
+the other three. How do we calculate
+that y Hat by d W1? Well, remember that
+the derivative of sigmoid is sigmoid times
+one minus sigmoid. This is going to be sigmoid of the inner part times one minus
+sigmoid up the inner part, which is the same as y Hat, times one minus y Hat times X1, which is the derivative
+of the inside by W1. For the same reason, d y Hat by d W2 is this, and d y Hat by d B is y
+Hat times one minus y Hat. Recall that this is using the fact that the
+derivative of sigmoid of something is sigmoid
+times one minus sigmoid. That's where the y Hat times
+y minus y Hat come in. Now we've calculated a
+bunch of derivatives. All we need to do
+is multiply them. What's d L by d B? Well, it's d L by d
+y Hat, which is this, times d y Hat by
+d B which is this. The same thing we do
+for d L by d W1. It's d L by d y Hat
+times d y Hat by d W1. Finally, the same
+thing goes for W2. It's the usual one d L by d y Hat times d
+y Hat by d W2. Now we need to cancel
+out a bunch of things. Notice that this two cancel out the y Hat
+one minus y Hat, cancel out on the denominator
+and the numerator. We end up with some
+really nice derivatives. Check it out. d L by d B is simply
+negative y minus y Hat. d L by d W1 is negative
+y minus y Hat times X1. d L by d W2 is negative
+y minus y Hat times X2. Notice that if y and
+y Hat are very close, these areas are very small, which means you don't
+need to make a lot of changes because you already
+have a good prediction. But if you have a
+bad prediction, y and y Hat are really
+far away from each other. Therefore, you need a large derivative to move
+things around a lot. Let's go back to where we were. Our main goal was to find
+the optimal values for W1, W2, and the bias B. We can use the partial
+derivative expression. We found our gradient descent
+expressions as follows. Here's set, here
+is sigmoid of set, and the output is something
+between one and zero. The log loss was L (y, ŷ). In order to find the
+optimal values for W1, W2, and B, we're going to use, you guessed it,
+gradient descent. This is the updating
+step for W1. Now notice that we already know the partial derivative
+of L with respect to W1, and it's exactly this. This is the similar step for W2. We can also replace the derivative by what
+we already found out. This is the step
+for replacing B. Again, we can put what we
+know to be the derivative. In other words, this
+is the updating step. You start with some W1, W2, and B, and then you iterate
+using this procedure. If you do it as many times, you're going to get to
+some pretty good W1, W2, and B values. I'll give you a
+really good model that will map your
+dataset pretty well. That is gradient descent for
+a classification preceptor.

@@ -1,0 +1,65 @@
+In the previous video, you
+learned the second derivative and how it's useful in
+optimization problems. That was all in one variable. Next I'm going to
+show you how it works in more than one variable. For multiple variables, the second derivative
+is actually a matrix full of second derivatives
+called the Hessian. Now I'm going to show
+you the Hessian, its properties, and how
+it's used in optimization. In particular, when we want to optimize a function
+of many variables, we can use multivariable
+Newton's method, and that one uses the Hessian. Let's start with a little
+comparison between functions of one and two variables. Recall that a function of one
+variable is called f of x, and it only depends
+on the variable x, whereas a function of
+two variables depends on variables x and y. The first derivative is
+simply f prime x which is the rate of change of f with respect to the only variable x. When you have two variables, you have two rates of change. The rate of change of f with
+respect to x called f_x, and the rate of change of f
+with respect to y called f_y. If you put them together, you
+get the gradient nabla f, which is a vector. Now what happens with
+the second derivative? You have x prime prime for the second derivative
+of one variable. That's the rate of
+change of the rate of change of effects. For two variables, well, let's see what we're
+going to have. This is what I'm going to
+show you in this video. To understand the second
+derivative in two variables, let's analyze this
+simple example f of x, y) equals 2x squared plus
+3y squared minus xy. We can take the
+derivative respect to x, which is 4x minus y, and with respect to y, which is 6y minus x. Now we can take the
+second derivative. We can take the derivative
+with respect to x, which is 4. We can take the derivative of 4x minus y with respect to y, and that's minus 1. For the second one, 6y minus x, we can take the derivative
+with respect to x and with respect to y, and we get minus 1 and 6. These four are the rate of
+change of the rate of change. It's the rate of change
+of f_x with respect to x, of f_x with respect to y, and then f_y with respect to x and of f_y with respect to y. Notice something peculiar. These two are the same thing. That happens almost all the time but let's summarize
+this a little bit. The first two are the rate of change with respect to x
+and then with respect to x, and also with respect to
+y and with respect to y. These work exactly
+like in one variable, because pretty much if you have f as a function of only x, you can take f prime prime of x, and the same thing with y. However, the last two
+are a bit peculiar. That's the change
+in the slope along one coordinate axis with respect to tiny changes along the
+orthogonal coordinate axis. These two are actually
+the same in most cases. You need both partial derivatives
+to be differentiable. When both partial derivatives
+are differentiable, then the derivative
+with respect to x of the derivative respect to y is the same as the
+derivative with respect to y of the derivative
+with respect to x. In Leibniz's notation,
+we can write this as d squared f over dx squared, d squared x over dy squared. For the other two,
+d squared f over dxdy and d squared f over dydx. Lagrange notation, we get f_xx, f_yy, f_xy, and f_yx. Now, let me show you what
+the Hessian matrix is. Let's go back to this
+little graph over here where we took the derivative with
+respect to x and y, and then the partial
+derivatives with respect to x and y of each one of these. When we put these four
+together in a matrix, we get the Hessian matrix. The Hessian matrix here is 4, negative 1, negative 1, 6. The Hessian matrix gives us a lot of information
+about second derivatives. It also is very useful in
+optimization as we'll see soon. In the general case, we
+have our function f, the partial derivatives
+f_x and f_y. They're partial
+derivatives f_xx, f_xy, f_yx and f_yy. When we put these
+together in a matrix, we get the Hessian
+matrix just like before. As I mentioned before,
+there's a lot of information in this
+Hessian matrix. Now let's go back to our table. In our table, we have that
+the second derivative for one variable is simply
+f prime prime of x. What is it in two variables?
+It's the Hessian. It's the matrix that keeps track of all the second
+partial derivatives.

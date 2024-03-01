@@ -1,0 +1,57 @@
+In this and the following videos
+I'm going to show you an alternate method to gradient descent
+called Newton's method. Newton's method is also very fast and
+very powerful, in principle Newton's method is used
+to find the zeros of a function. However, we can adapt it a bit
+to be used for optimization. Newton's method works in
+many variables as well, but let's start by looking at how
+it works in one variable. So let's say you have this function over
+here and your goal is to find the zero. So find this point over here, that's
+the point where F of X is equal to zero. So here's a pretty good method to
+approximate this zero really well that works similar to gradient descent. Let's start with some random point X zero,
+that's not the zero of the function, but that's okay,
+we're going to get a better one from here. Let's take the tangent at this point,
+so let's take the derivative and draw the tangent and
+see where it hits the horizontal X axis. And at this point we're
+going to call it X1, notice that X1 is much
+closer to zero than X0. So all we need to do is iterate over here,
+so let's do it one more time. Draw the derivative and
+find a new point X2, notice how close X2 is from
+the zero of the function. So we pretty much almost got there by the
+third point where very close to the zero. So we pretty much found it, we didn't
+exactly found it, but we got pretty close. And that's the point,
+to be able to approximate the zero, that function really well. Now let's add some numbers, this line
+over here has slope F prime of X0. And this height over here is F of X0 and the base is X0 minus X1. So this formula over here for
+the slope is, rise over run, now rises FX0 and
+run is X0 minus X1, so therefore F prime of X0 is
+FX0 divided by 0 minus X1. We can manipulate this to
+get that X1 is equal to X0 minus F of X0 divided by F prime of X0. And that's the iterative step,
+you have F zero, you simply calculate X1 based on X0 and
+then iterate, so how do we iterate? Well, let's go one more step, let's say that you've done it K times and
+you've got 2XK. This slope over here is F prime of XK,
+this height is F of XK and this horizontal distances
+XK minus XK plus 1. Therefore doing the same
+methods before escape plus one is equal to X K minus FXK
+divided by a prime of XK. And since you know, XK, you know F and
+you know the derivative, then you can find XK plus 1. So you iterate on the step and you get
+Newton's method, now the question is, how do you use that for optimization? Because remember gradient descent
+found the minimum of a function, Newton's method is only finding the zero
+of a function, not the minimum. Well, we simply remember that when you
+want to minimize the function G of X, you actually have to find
+the zeros of G prime of X. So if I can find the zeros of a function,
+I'm very close to minimizing it. I just have to look at all the zeros and see which ones are minimum because
+those are the candidates for minimum. So in other words, if I let F of
+X be the derivative of G of X, then by finding the zeros of F of X,
+I am minimizing G prime of X. And the derivative of F prime of X,
+is simply the derivative of G of X and the derivative of that. So in other words,
+here are the algorithms, for Newton's method we start with some X0. Now, if I wanted to find the zero of F,
+what I have to do is update and the step is XK plus 1 is XK minus
+F of XK over F prime of XK, where XK is my K iteration and
+XK plus 1 is my K plus 1 iteration. Now in Newton's method for
+optimization, I have to do the same thing except not with F, but
+with G prime, so I have XK plus 1. The K plus 1 iteration is
+XK minus G prime of XK, divided by G prime of XK prime,
+the second derivative. So that's going to be a big deal
+very soon, but before that, let's do the iterative step. The iterative step is repeat 2,
+until you find the root, on the left and on the right is repeat 2,
+until you find the minimum.

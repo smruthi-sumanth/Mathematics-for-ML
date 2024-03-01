@@ -1,0 +1,90 @@
+You've already seen how to use perceptrons as linear
+regression problems. But a perceptron can also represent a
+classification problem, particular a binary
+classification problem. All you have to do, is change
+the activation function. In this video, I show you how. Now that you know how to solve the regression problem with a perceptron and with
+gradient descent, classification is
+actually very similar. It's only has one
+little complication, but it's not that bad. Let's look at an example that you've already seen
+earlier in the class. You made an alien
+civilization and you started listening
+to the way of speaking. You take note of
+four sentences in their language that
+are these four. They only have two words
+in their language, so it's pretty simple. But what you want
+to do is be able to tell the mood of
+the each sentence. Now when the aliens said
+the first sentence, you can notice that
+they were happy. For the second sentence,
+they were sad. For the third one,
+they were sad and for the fourth one, they were happy. The idea is to be able to infer from new sentences the mood, if they're happy or sad. We're going to make a
+model that will predict the mood based on the sentence. Now, since we want numbers, because models take
+numbers and not words, then we're going to make
+the following table where the number of times the word aack and
+the number of times the word beep are recorded. The first sentence has three times the word aack and
+zero times the word beep. So it's 3, 0, for
+the second one is 0, 2, for the third is 1, 3, and the fourth one is 2, 1. That's the dataset for the sentiment analysis
+classification problem that we're going to
+solve in this lesson. The first thing we do
+is plot the points. Here are the points. As you can see, the happy
+points tends to be on the bottom right and the
+sad points on the top-left. That's probably what the
+model is going to tell us. But let's turn it
+into a perceptron. For the perceptron,
+we have our inputs labeled x_1 and x_2, and x_1 is the number of
+times a word aack appears and x_2 is the number
+of times beep appears. Again, this is going to go through a prediction
+function just like before with a summation
+and a bias, etc. The prediction y hat
+is going to tell us if the model thinks the
+sentence is happy or sad. Now what goes in the
+center node of the highlighted in red indicates
+the placement of this line. That's going to classify
+different sentences are happy or sad based on the number of times a particular word appears. Decenter is the one that
+divides the happy zone in the bottom right from the
+sad zone in the top-left. Let's explore this center
+node more carefully and the entire classification
+perceptron further, it's going to be very similar to the regression perceptron, but with a little addition. Again, we're going
+to have weights W_1 and W_2 and determining how important any
+other features are. Say, the word aack is really
+correlated with happiness, then W_1 is going to
+be a large number. If beep is very irrelevant, then the W_2 is going
+to be a small number. However, if beep happens to be inversely correlated
+with happiness, say it's a very sad word, then W_2 is going to
+be a negative weight. Again, we're going to
+have a bias input b. What's going to happen
+inside the node? We're going to have a summation. The summation is again
+going to be x_1, W_1 plus x_2, W_2. The features times the weights
+added plus the bias b. That's just like before. This produces a
+continuous number that's going to be called set. As I said, that's a
+continuous number, that can be anywhere
+in the number line. This number can be
+minus a million, it could be plus 7,000, it could be zero, could be one, it
+could be whatever. However, that's not
+the output we want. That's the output we
+want in any regression because we want any
+number to be the price. But now we want a number
+between one and zero because we want it to
+tell if it's happy, that's a one or if it's
+sad, that's a zero. How do we turn the
+entire number line into the numbers 1, 0 or at least some
+number in between 1, 0. We're going to use what's
+called the activation function, denoted by the
+letter sigmoid of z. The activation function,
+it's actually very useful, is going to take all the
+numbers in the number line and crunch them into
+the interval 0, 1. Now you can still get numbers in between
+0, 1. That's okay. If you get a 0.5 can be that the model doesn't know if the
+sentence is happy or sad. If you get 0.9 means
+the model things, the sentence is happy. If you get 0.01, then it means that
+the model of things, the sentence, it's pretty sad. The sigmoid function is a huge component of
+this perceptron. Now, let me explore the sigmoid function a
+little more in detail. The sigmoid function is
+given by the formula 1 over 1 plus e to the z and that's going to
+give us a number 0 and 1. In the next video,
+we're going to get into the sigmoid
+function in more detail. But for now, just know that it's a very important piece of the perceptron and
+the summation in the left gets passed through
+the sigmoid function in order for our output to be something
+between zero and one, which is exactly what our
+dataset is asking for.

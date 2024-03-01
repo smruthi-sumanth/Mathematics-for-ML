@@ -1,0 +1,55 @@
+In the previous video, you
+saw a dataset with a bunch of houses and their prices and also their sizes
+in square feet. The idea was to fit the best possible line
+through these points. The line that passes the
+closest possible to this point, and that would be what
+makes a good prediction. This line over here is precisely
+the model and we need to find a way to evaluate the model to see how
+well it's doing, and based on that,
+to see how can we improve it to get a better one. First, let's see what
+the model predicts. The model predicts
+this column, how? Well, the point corresponding to the first house is at
+height 15,000 and the one corresponding for
+the second house at high 30,000 and for the
+first one is at 45,000. This looks like a
+pretty good model. We may be able to do better, but this so far it looks
+like a pretty good model, at least you can
+see it correctly predicted the price
+of the second house, and it was not so far from
+the first and the third. But let's quantify
+how far it was. By that, we need to subtract the predictions from
+the actual value, and we're going to
+call that the error. That error is indicated by these vertical broken
+lines over here. Clearly, the shorter the
+line, the better the model, because that means
+that predictions are close to the actual values. However, there's a
+small problem with y minus y-hat and the
+point is above the line, then this is positive
+and if the point is below the line, then
+this is negative. A negative error is also bad as well as
+the positive error. But if we add them, we can
+get zero or small numbers. This can get confusing,
+so for that, we square the error. y minus y-hat squared is the
+actual measure that we want. In machine learning, we
+actually multiply it by a half. The reason is really more
+cosmetic because in reality, when you take the derivative
+of y minus y-hat squared, then you get a lingering two. We put a 1/2 there
+to cancel with that two and then we have less
+numbers to keep track on. But at the end of the
+day, you can multiply zero by any constant you want, and you still don't change
+anything at the end. Now we have a prediction
+function that outputs some prediction y and
+is given by this formula. The loss function
+we're going to call L, and for every point is 1/2
+times 1 minus y-hat squared. Here's the distance
+between the prediction and the value squared
+multiplied by half, and we're going to call
+that L of y, y-hat. Our goal now is
+to minimize this. To find the w_1, w_2, and b, that gives y-hat with
+the least error. In the last week, you learned a lot about
+minimizing functions, including methods like
+gradient descent. As you can imagine, this is
+what we're going to use next. We're going to use gradient
+descent to minimize L, the loss, and thus
+find the best w_1, w_2, and b. That implies we found the
+best model for the dataset.

@@ -1,0 +1,71 @@
+Now that you know
+all there is to know about the sigmoid function, let's go back to the perceptron. Let's take for example
+the sentence Aack, beep, beep, beep as an example. This one has the word
+Aack one time so x_1 is one and the word beep three
+times so x_2 is three. Let's say that
+we're in the middle of training the algorithm and the weight that we
+have are 4.5 for w_1, 1.5 for w_2, and the bias of two. What the perceptron does
+is it takes this input, multiplies them by
+the weight functions and applies the sum and then the sigmoid function in order
+to get a prediction y-hat. The idea is that
+we're going to use y-hat together with
+a loss function that tells us how far
+y-hat is from what it should be in order to
+update the weights. Let's say that y is zero, so the sentence is set. Then we're going to use
+that to update w_1, w_2, and b. Basically, we're
+going to measure how far y-hat is from y
+and that's the error. Now you may think y-hat
+minus y works really well, y-hat minus y squared, or one-half times
+one-half minus y squared. All the other functions we've
+seen before, those work. But for classification, the one that works best
+is called the log loss. Next, I'm going to show you how the log loss is calculated. Log loss is going to
+be called now L of y, y-hat and we're going
+to use that error to update the three weights
+and bring the error down. Let's recap. We have a prediction function
+y-hat with an activation of sigmoid that is applied on
+the summation coming out of the perceptron and we have a loss function that
+is the log loss. Now the log loss is something
+you've already seen before. Do you remember that
+example we saw in the previous section where
+we were trying to find the ideal coin to be able
+to fit some dataset? It was a coin that
+you need to flip 10 times and you
+needed to obtain heads seven times
+and tails three times and you need to find
+the perfect coin for that. The perfect coin was obtained by minimizing some loss
+function with a logarithm. It's precisely this. This is actually the
+loss function for this problem and
+you can see that if y is zero then this is small when y-hat is small and
+large when y-hat is large. If y is one then the
+opposite happens. When y-hat is close to one
+this function is small and when y-hat is close to zero
+this function is large. In other words this L of y, y-hat is a large number if y
+and y-hat are far away from each other and small number if they are close to each other. There are many reasons why I want to use log loss
+for this function. One is that the math works
+out really nicely but the other one is that
+this function has a probabilistic nature
+to it and the reason is the same reason that he came out of that example
+with the coins. Classification problems are
+highly probabilistic because you can think of the output
+y-hat as a probability. Let's say that y-hat
+is 80 percent or 0.8, that means that the model gives the sentence an 80 percent
+probability of being happy. Let's go back to the main goal. The main goal is to find
+the perfect weights w_1, w_2, and b. That will give us y-hat with the least amount of log
+loss L(y, y-hat) error. In order to be able to do this, we need to go back
+to gradient descent. We call the gradient
+descent formula that updates the weights w_1 as the old w_1 minus
+a learning rate times the derivative of the log
+loss with respect to w_1 and w_2 as w_2 minus
+learning rate times derivative of log
+loss by w_2 and the same thing for
+b bias equals bias minus Alpha derivative of
+log loss by derivative of b. Now in order to start the
+algorithm we simply start with some arbitrary values
+for the weights and biases and we're going
+to start the design process. We start with random
+variables then we calculate the partial derivatives
+and then we update. In the next video, I'm
+going to show you how to find these partial
+derivatives and you're going to see that the
+sigmoid and the log loss actually conspire really nicely to get some very
+nice derivatives.

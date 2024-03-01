@@ -1,0 +1,64 @@
+So now that you know how to calculate the
+derivative of the log loss with respect to all the weights and
+biases of the neural network. I'm going to show you how to use this and grading descent to train
+your neural network. So let's start building
+our bigger neural network, this one is going to have three layers. An input layer with inputs x1 and
+x2, then it's going to have a first layer with some
+perceptrons and a bias and then this feed into a second layer
+with more perceptrons and a bias. And this will feed into a final output layer from which a output of
+y hats going to come out. Now we need to find some notation for
+the weights, so let's add a superscript of 1 for
+the first layer and these ones will feed into summations,
+superscript 1 and set 2 superscript 1. So everything with superscript
+1 is in the first layer and now these are the a's that
+are obtained after the sigmoid. Any weight and
+bias of the second layer is going to have a superscript 2 as well as the sets and the a's which are obtained by
+applying sigmoid on the sets. And finally anything on the third layer
+is going to have a superscript of 3 and you can imagine that if I continue
+adding layers we're going to keep having superscripts of 4, 5, 6 etc. And so
+that's a pretty consistent notation for all the weights in a neural network and
+as usual l of y,y hat is the log loss function given by this formula and
+that's the one we want to minimize. So now for the purpose of this network,
+let's clean up the neural network as bit and let's actually only
+worry about a few of the weights. And by symmetry everything's
+going to be worked out the same for the other weights, so we're only going to
+care about these ones over here. And so the goal of back propagation, back propagation is the method that we're
+going to use to train neural networks. And it's just going to consist on
+calculating a lot of derivatives using chain rule and using them to update our
+grading the same step just like before except that now we have to
+keep track of more variables. So as usual, here is the log loss and we have to see how the log loss changes
+with respect to all these weights I'm only circling a few of them
+it's really a bunch of them. But everything can get calculated
+using these green ones over here, so what do we need to calculate,
+we need to calculate DL over DY hat and all the DL over D anything else. Because that's what tells us how
+to move each one of the weights so let's go to this part of the neural
+network, the part of the end. And as usual we need to build
+a chain because we need distributive over here DL
+over Dw superscript 3. And that's going to be obtained
+as the product of these 3 because that's the chain of command, that's the chain of variables that
+are in between w superscript 3 and l. So once we calculate this ones we can
+do the exact same thing for the bias. So these ones we know
+how to calculate now, let's move a little further and
+it's the same thing. We need to calculate the DL
+by Dw superscript 2 and these are all the variables
+that are in between. So we need to do a long,
+long chain rule of variables, each one depending on the previous one. But as usual these are either linear
+functions of sigmoid so they're all easy to calculate and the same thing
+happens for DL over Db superscript 2. It's just a chain of variables and we need to multiply them in
+order to get the chain rule. Now this over here have
+already been calculated so we don't need to calculate it anymore. So there's a lot of reuse of variables so
+we can just store them over here and continue calculating new ones, otherwise
+we would have to recalculate many things. So it's good to store the ones we've
+already calculated and finally for DL over Dw superscript 2 we
+just have the product of all of these ones over here that can be
+already calculated from before. In our repository of already
+calculated derivatives times some new ones over here,
+And as usual, these are easily calculated, so basically
+there's a lot of work involved here but you know what the basic steps are. The basic steps are, long chain rule and
+calculated separately and these neural networks are built in such a way
+that each derivative of the simple ones is either a sigmoid or a linear function
+so they're very easy to calculate. The good news is if you're a machine
+learning practitioner, you don't need to actually do this, there's some great
+packages that do it very well. But my philosophy, I always like to see
+it done carefully at least once and then you can use the packages and
+do things very fast.

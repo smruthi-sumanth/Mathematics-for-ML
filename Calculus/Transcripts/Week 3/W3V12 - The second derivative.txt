@@ -1,0 +1,111 @@
+In the previous video, you learned how
+the derivative of a derivative can appear naturally in Newton's method. This derivative of a derivative
+actually has a name. The second derivative, in this video, I'm
+going to show you the second derivative some of its properties and how it can be
+really useful in optimization problems. So previously you learn how to use
+Newton's method for optimization and remember that this was the iterative
+step in order to find the minimum or the maximum of the function. You need to find the zeros
+of the derivative, at some point you use this thing,
+the derivative of the derivative. So that's new, that's the second
+derivative and it's very, very useful. It gives us a lot of
+information about the function, Leibniz notation that can be written
+as d squared f over dx squared or as d by dx df(x)/dx
+Lagrange is much simpler. If f prime is the derivative, then the
+second derivative is f prime prime of x. Now, I like to understand
+things in real life and remember that to understand the first
+derivative, we use velocity because if x is the distance traveled
+by a car, then v is velocity. And v is the rate of change of distance
+with respect to time or dx/dt. Well, in this case, what's the rate of
+change of velocity with respect to time? It's simply the acceleration,
+acceleration is dv /dt or d square x over dt squared
+acceleration tells us how much the velocity is changing
+with respect to time. So if your acceleration is positive means
+your velocity is increasing with respect to time. And if the acceleration is negative
+means the velocity is decreasing with respect to time. And if you have zero acceleration
+means you have constant velocity. So now let's do some plots,
+imagine that you're driving your car and this is the plot. So in the horizontal
+axis you have time and in the vertical axis you have distance. And let's say that the plot
+is this one over here. So let's analyze it bit by bit and let's see how it translates
+in terms of velocity. So at the start of your trip, your car
+is stopped and you need to start it and increase your velocity until
+you reach a constant speed. So the slope keeps getting
+bigger as time goes by. Now imagine that this piece of function
+can be modeled as 750t squared. And let's say that this behavior
+goes on for 2 minutes or 2/60 hours. Now the derivatives for these first
+minutes is the line 1500 t, why? Because the derivative of
+750 t squared is 1500 t. Now let's say that for the next couple of
+minutes you keep going at a steady pace, so you have the same rate of change. Now let's say that this can be modeled
+by the equation 50t- 5/6, that's a line. A linear equation. Now, since the distance is linear, then you've reached a constant
+velocity of 50 kilometers per hours. Why, because the derivative 50t- 5/6
+with respect to t is simply 50. Now, let's say that you keep going for
+5 minutes until you realize that you forgot your water home and
+you actually need to go back. So at this point you start
+pressing the brakes and the brakes make you slow
+down until you stop. And when you stop, you have a derivative
+of zero and notice that you've reached the maximum because this is as far as you
+got after this, you start going back. So you start turning around and
+going at a negative speed. And I noticed that the slope starts
+positive, but keeps getting smaller and smaller until the richest zero at
+the peak value of the distance. And finally it gets negative when you
+start going in the opposite direction. So this one over here is the graph
+of the speed, you started positive, then you reach zero when you stopped and
+then you started going negative because you started going in
+the opposite direction as before. Let's say that the expression for the distance was this one minus 1500
+t squared plus 300 t minus 11.26. So, what's the equation for the line? Well, is the derivative of this,
+which is 300- 3000 t. It's a linear equation. Now, let's say that after
+2 minutes of going back, you finally set at a constant speed
+until you reach the starting point. So what happens is that over
+here you have a constant speed. And let's say the distance
+function is 55/6- 50 t. Therefore the velocity is -50. So now that we have the graph of
+velocity based on the graph of distance, let's find the graph of acceleration
+based on the graph of velocity. So for your first 2 minutes your speed
+is aligned that means your derivative is a constant which is a value 1500
+because you have a constant acceleration. Then your speed increases
+linearly now between two and five minutes when you travel at constant
+speed, the acceleration is simply zero. When you're traveling constant
+speed you're not accelerating. There's no change in velocity
+now between 5 and 7 minutes, your speed is again in line. But now with negative slope because
+your deceleration is -3000 or in other words your acceleration is
+-3000 because you're decelerating. And finally for the final stretch
+you have an acceleration of zero again because you're going
+at a constant speed of -50. So when we put the first graph and
+the third graph together we go from x to a from distance
+all the way to acceleration. And as you can see for the first 2
+minutes, when the distance increases at an increasing rate, you have
+a positive acceleration between 2 and 5 minutes when you travel at a constant
+pace, the acceleration is zero. After six minutes to keep going
+forward but slower and slower and between seven minutes you're going back. So for these transitions you
+experience a negative acceleration. Notice that at the maximum distance travel
+you had a negative acceleration meaning a negative secondary. This is very important. And finally, until the end of your trip, your acceleration become zero since
+you're again going at a steady pace. So as you can see, the second derivative
+gives a measure of the amount by which a curve deviates from
+being a straight line. This is called the curvature. Let me get a bit more into the curvature
+when you have a positive second derivative, as in the first piece of the
+distance you have a concave up function. This is also a convex function, in this function as you can see
+the second derivative is positive and the function is increasing
+at an increasing rate. You're increasing the speed and therefore your distance increases more and
+more each time. Over here you have the opposite. Your function is concave down and that happens when the second derivative
+is negative for the other two, the second derivative is zero for
+this, it's inconclusive. So you have no curvature. Now let me get a bit more into curvature. This over here is a concave up function, it looks like a happy face and
+this one over here, it's a concave down function,
+it looks like a sad face. And the way to tell is when
+the second derivative is positive, you have a concave up convex function. And when the second
+derivative is negative, you have a concave down function. And how is this useful for optimization? Well, the second derivative tells you
+if something is a maximum or a minimum. Remember that the points of derivative
+zero are the candidates for maximum or minimum, but
+we don't know if their maximum minimum. So the second derivative tells us,
+take a look at the first one. This one over here has
+a derivative of zero and the second derivative is positive and
+it's a local minimum. However, this one over here
+is a local maximum and the second derivative is negative. However, for the other two, it's
+inconclusive when the second derivative zero, we don't know if we're at
+the presence of a maximum or a minimum. Now there's something very
+interesting that happens. And is that the first derivative
+tells us one thing, and the second derivative tells us another
+thing, when the first derivative is positive, we have an increasing function and when it's
+negative, we have a decreasing function. However, when the second derivative
+is positive, we have concave up and when the secondary is negative,
+we have concave down. And as you can see when you
+have a concave up point, the point with derivative,
+zero is a local minimum. Whereas when you have a concave down, the point where the derivative
+is zero is a local maximum.

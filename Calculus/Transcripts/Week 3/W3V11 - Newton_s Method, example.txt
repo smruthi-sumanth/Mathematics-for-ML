@@ -1,0 +1,33 @@
+So now that you know Newton's method,
+let's put it in action. I want to recall this function you saw
+in Week 2 when you learn about gradient descent. The function was e to the x
+minus logarithm of x. And its derivative was
+e to the x -1 over x. Recall that the minimum for this function
+was the omega constant, 0.5671 etc. And so let's approximate this minimum. Recall that in order to use
+Newton's method for a minimum, you actually have to use it to
+find the zeros of the derivative. So we're going to try to find
+the 0 of this function which is the derivative of e to the x -1 over x. Now what's the derivative
+of the derivative? Well, if we take the derivative of
+e to the x is again into the x. And the derivative of 1 of x
+is minus 1 over x squared. So the derivative of the derivative
+is e to the x plus 1 over x squared. That's going to be our f prime of x when
+we're taking f of x equals g prime of x. In other words,
+our new function to find the 0 is f of x. And we're going to use f prime of
+x to help us with Newton's method. So let's start, let's do a few iterations. We start with the iteration,
+with the first value x0 equals 0.05. That's the first iteration. Now let's take the derivative and
+see where it hits the 0. So it's at a point x1 not too far from it. x1 is given by this formula using
+Newton's method we evaluate the derivative at e to
+the 0.05 minus 1 over 0.05. That's the derivative divided
+by e to the 0.5 plus 1 over 0.05 squared, and we get 0.97. So that's our new point x1. So with x1 we're going to iterate again. We draw the tangent see where it hits and
+that's at a point x2. How do we calculate x2? By plugging in these values. So x2 is going to be 0.183. And again we take the derivative, see
+where it hits 0 and that's our point x3. How do we calculate x3? Using the derivative again. And the value for x3 is 0.320. We're getting closer,
+let's do it one more time. With x3 we draw the derivative. We see where it hits the axis and
+we get x4. And to calculate x4 we use the iterative
+formula again to get 0.477. Notice how close we're getting
+as to one more iteration with x4 we draw the derivative,
+we see where it hits. That's at a point x5. And x5 is going to be calculated like
+this and the value is going to be 0.558. And let's just do one more. We draw the derivative again,
+we see where it hits and it's at x6. And at x6 is going to be 0.567. And notice that with only six iterations, we actually got really close to
+the minimum, which is 0.567. Newton's method is actually really,
+really fast, and this example shows it. And as you can see, it's just a simple
+step that we can iterate many times.
