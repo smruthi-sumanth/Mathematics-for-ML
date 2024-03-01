@@ -1,0 +1,86 @@
+So far, you learn to
+make decisions based on the p-value of the
+observed statistic. If the p-value is smaller than the significant
+level Alpha, then you reject the
+null hypothesis and accept the alternative
+hypothesis is true. One thing you can ask
+yourself is what is the most extreme
+sample you could get so that you would
+still reject H_0. This is a sample that has the
+p-value of exactly Alpha. Anything less extreme
+than that sample wouldn't satisfy the condition of the
+p-value less than Alpha. This is called a critical value. Notice that it depends on the value that you
+choose for Alpha. Different Alpha's determined
+different critical values. The critical value is
+usually referred to as K Alpha to emphasize
+this dependency. One cool thing about
+critical values is that any observed statistic which is more extreme than
+your critical value, will always achieve a
+p-value of Alpha or less. You can create a decision rule based on the critical value. Let's go back once again to the right-tail test example about the mean height
+of 18 year old. The hypothesis being H_0 that
+the population mean is 66.7 and H_1 is that the population
+mean is greater than 66.7. For this example, you
+were working with a sample size of n equals 10 and a population
+standard deviation of sigma equals three. Consider that you're interested
+in an Alpha of 0.05. You need to find the value of K, 0.05 which has a p-value of exactly how
+Alpha equals 0.05. But this is nothing more
+than the value that leaves an area of 0.05 to the right, which means that the
+critical value is nothing more than the quantile 1-0.05. Now, when the population
+mean has a value of 66.7 which corresponds
+to the null hypothesis, the sample mean falls a
+gaussian distribution of means 66.7 and a standard deviation of three divided by root 10. For this distribution, the
+critical value is 68.26. Now that you have
+the critical value, you can make a decision rule. You can reject H_0 if the observed sample mean
+is greater than 68.26. One cool thing about critical values is
+that you can define your decision rule before
+having to collect any data. Once you do have your data, you can calculate the
+observed statistic and make a decision from that. In our example, the
+observed sample mean is 68.442 which is greater than
+the critical value 68.26. In this example, you will reject the null hypothesis when a
+significance level of 0.05. This is exactly the
+same conclusion you reach when using
+the p-value method. Now, what will happen if you
+change your Alpha for 0.01? Well, since 0.01 is
+smaller than 0.05, then K, 0.01 will definitely
+move you to the right. That means you need more
+evidence against H_0 to reject it And the critical
+value would be 68.91. Decision rule will now be to
+reject the null hypothesis if the observed sample mean
+is greater than 68.91. With your data, this means that you cannot reject
+the null hypothesis, with a significance
+level of 0.01. Now let's see what
+critical values look like for each type of test. For right-tail test, K Alpha is the value that under the null hypothesis lives an
+area of Alpha to it's right. That means that the
+critical value is the quantile, one minus Alpha of the statistic distribution
+when a zero is true. Decision rule becomes
+rejected zero if the observed statistic T is greater than the
+critical value. For left-tailed test, the critical value will be
+the one that leaves an area of Alpha to the left so that it corresponds to the
+quantile Alpha. In this case, the
+decision rule is to reject the null hypothesis if the observed statistic is smaller than the critical
+value and finally, we get the two-tailed tests. In this case, the probability
+of error needs to be divided between the two
+tails of the distribution. Which means you
+will need to find two critical values K Alpha one which leaves an area
+Alpha two to it's right, and K Alpha two which looks an area of Alpha
+two to its left. They correspond to
+the one minus Alpha over two and the Alpha over
+two quantiles respectively. You will now reject H0 if the observed statistic
+is greater than K Alpha one or smaller
+than K Alpha two. To sum up critical values, we can define the
+critical value in advance since you don't
+need the sample to get it, you only need to know the
+design conditions like the sample size and
+any information you might need about
+the distribution of the population
+you're studying. It is very important that
+the P-value method and the critical value method must always lead you to
+the same conclusion. As we mentioned, with
+critical values, you can define the decision
+criteria beforehand and then make the decision
+once you have your data. This makes it possible to determine the type 2
+error probabilities. Since you have a
+clear decision rule that does not depend
+on the observations, you can find the probability of making a type 2
+error very easily. You will learn more about
+it in the following video.

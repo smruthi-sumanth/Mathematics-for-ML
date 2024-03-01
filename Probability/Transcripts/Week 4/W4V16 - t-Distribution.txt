@@ -1,0 +1,64 @@
+Remember that you learn
+about the t-distribution in the previous lesson
+in the context of confidence intervals. Now let's review
+how t-distribution plays a role in
+hypothesis testing. Consider the example of sampling the height
+of 10 18-year-olds. As mentioned in
+the previous week, people's heights
+can be modeled as a Gaussian distribution with
+parameters Mu and Sigma. As a consequence, the
+sample mean will follow a Gaussian distribution
+of the same mean, but a smaller
+standard deviation, because now we have 10 samples. The standard deviation is Sigma divided by square root of 10. This is true if you know the parameters
+of the distribution. But what happens when you don't know the values of Mu and Sigma? Well, if Mu and Sigma are known, then you already learned that
+the sample mean minus Mu divided by the sample
+standard deviation follows a standard
+normal distribution. This is simple standardization. This statistic is
+called the Z statistic. But what if Sigma is unknown, which is the more common case? Then knowing that
+the sample mean is a Gaussian with standard
+deviation Sigma over square root of
+10 is not very useful because you don't know what
+the value of Sigma is. What you do you do in
+this case is to replace the value Sigma in the
+standardization formula by its estimate S.
+Remember that S was defined as almost the
+variance of the sample, except you divide it by
+n-1 instead of n. It was the square root of the sum of squared difference
+between the sample and the sample mean
+divided by n-1. The resulting statistic is
+called the t statistic. Now, does it follow a
+standard normal distribution? The answer is, sadly, no. It turns out that the
+t statistics follows something that we've
+already learned previously. The student t-distribution or
+simply the t-distribution. Let me remind you
+what this looks like. Notice that it's bell-shaped, similar to the Gaussian. However, if you compare the t-distribution PDF to that of the normal distribution, you can see that it
+has heavier tails. Distribution probably
+accounts for the uncertainty introduced when replacing the population
+standard deviation with this estimation. Now what are the parameters
+of the t-distribution? It only has one and it's
+called the degrees of freedom. It's usually denoted with
+the Greek letter Nu. The degrees of freedom control how heavy tails of the
+distribution will be. This notation means
+that X follows a t-distribution with
+Nu degrees of freedom. Let's see what the
+distribution looks like as the degrees of
+freedom increase. Notice that as Nu increases and gets
+closer and closer to 30, the Gaussian PDF and the TPF
+look almost exactly alike. That's a reason why we
+like to have 30 samples because on the t distribution and the Gaussian
+are very similar. Now let's go back to the example from the beginning of the video. In here you have n = 10 samples. Now you know that
+the t statistic, x bar minus Mu divided by S over square root 10 follows a t-distribution with
+Nu degrees of freedom. What should the value for Nu be? The degree of freedom
+Nu is simply 10-1. That's the number of
+sample minus one, which gives us nine
+degrees of freedom. In general, if you
+have a sample size and then the degrees
+of freedom is n-1. Notice that the
+degree of freedom is independent of the
+population mean and variance and only depends upon the number of samples
+you collected. The relationship between
+the sample size and degrees of freedom implies
+that as n increases, the distribution of
+the t-statistics looks more and more Gaussian. In conclusion, the
+t-statistic is used on the population has a
+Gaussian distribution with unknown Sigma.

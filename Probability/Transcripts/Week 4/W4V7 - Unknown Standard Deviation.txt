@@ -1,0 +1,76 @@
+In this course, we've done
+a lot of point estimates. However, for all of them, we've assumed that we know the standard deviation
+of the total population. This is not always the case. Many times we don't know it, but that's no problem. When we don't know it, all we have to do is make a small change in
+our calculations by introducing something called
+the Student t-distribution. Let me show you how. Recall that the formula to find the confidence interval
+given some point estimate, x bar, is this one over here. As you know, this only works because we actually
+know the Sigma. We know the population
+standard deviation, which gives the sampling distribution quantity
+that generates a normal distribution around the population mean as shown. This is because of this
+normal property that we're able to use the critical
+value z_Alpha/2. However, more often than not, we do not know this standard
+deviation of the population. That's a problem
+because we can't use that Sigma in the formula. What do we do in this case if we want to have a
+confidence interval? You may have guessed it. We
+have to use the actual sample standard deviation s. We can't use the population
+standard deviation, but we took a sample
+and we can use the sample standard
+deviation s. This gives us this sampling distribution
+where we simply change the Sigma into an s. However, this quantity is no longer
+a normal distribution. Now it's a different
+distribution, is called the Student's
+t-distribution. I'm using the normal
+distribution as a reference. The Student t-distribution
+looks like this. It's very similar to a
+normal distribution, but it has much fatter tails, meaning that more of
+the points can be found on these sides compared
+to the normal distribution. If you were to sample
+a point out of the Student
+t-distribution is more likely to be far from the center than if you pick it from
+the normal distribution. How do we then adjust for this variability in
+the distribution to still give us some more
+accurate confidence intervals? Well, let's do a quick recap. With a known Sigma, we have a sampling
+distribution quantity with a normal distribution. That's why it's okay
+to use the z-score in scaling to find the
+confidence interval. Now what happens with
+an unknown Sigma? Well, we can replace
+Sigma with s, the sample standard deviation, and then this quantity becomes this quantity with
+s instead of Sigma, and that's a Student
+t-distribution. If we just replace the Sigma
+in the margin of error with s without adjusting the z-score used for scaling
+to match the distribution, we would be wrong because this z-score actually depends
+on the normal distribution. The z _Alpha/2 is defined over the normal distribution.
+What do we do then? Well, since we're not using
+the normal distribution, but we're using the
+Student t-distribution, then the z changes to a
+t. That is the t-score. We don't use a z-score, we use a t-score to calculate the margin of error to
+fix the scaling issue. To recap, here are
+the two formulas for the confidence interval
+compared side-by-side. The main difference is that
+if we happen to know Sigma, then we put it here on the calculation for
+the margin of error. But if we don't know Sigma, which is most of the time, then we put an s, the sample standard deviation, the one that comes
+from our sample. On the case where we know Sigma, we use the z-score that comes from the
+normal distribution. In the case that we
+don't know Sigma, then we use the
+t-score that comes from the Student t-distribution. Now you already know the formula to find the margin of error and confidence interval
+when Sigma is unknown. We introduced the
+t-statistic and mentioned how it's related
+to the t-distribution. Now it turns out that there
+are several t-distributions defined by something we
+call the degree of freedom. The degree of freedom of a
+t-distribution is given by the number of samples
+that we used minus 1. Now what is the effect of the degree of freedom
+in the t-distribution? Well, let's use a normal
+distribution as a comparison. The degree of freedom
+defines how high and tight the t-distribution is. For a t-degree of Freedom 1, you have larger tails. When you compare this to one
+of five degrees of freedom, then you have smaller tails, and it's closer to the
+normal distribution. Here's one of 10
+degrees of freedom. Note that now it has smaller tails and it's even closer to the normal
+distribution. The larger the number
+of degrees of freedom, the closer and closer you get
+to a normal distribution. This makes sense because
+the more samples you use, the bigger n is, the closer and closer
+that your sample standard deviation s is to the population standard
+deviation Sigma. If you know Sigma, you use
+a normal distribution. The closer you get to Sigma, the closer you get to using
+a normal distribution

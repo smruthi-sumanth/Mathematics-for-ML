@@ -1,0 +1,80 @@
+So remember at the beginning of the lesson
+we defined Type I and Type II Errors. So far, we've been focusing on type I
+errors through the significance level. Consider again that you want to
+test where the population mean for the height of 18 year olds in the US. Has increased since the 70s,
+when it was 66.7 inches. A type I error happened when we rejected
+the null hypothesis that the population mean was still 66.7 when
+it was actually true. Now you're concerned about
+the other type of error, which happens when you fail to reject
+a null hypothesis when it wasn't true. Note that type I errors
+can only happen for one value of the population mean,
+in this case 66.7. However, type II errors can happen for any population mean value
+which is bigger than 66.7. For this example, remember you were
+working with a sample size of 10 and a standard deviation of 3. In the previous video you found that for a significance level of 0.05,
+the critical value was 68.26. So that the decision rule was
+to reject the null hypothesis. If the observed sample mean
+is greater than 68.26. You can ask yourself what is the
+probability of incurring in an error if the true value of
+the population mean was 70. That's the probability of a type II error. What you're looking for
+is the probability of not rejecting H0, given that true population mean is 70. With the proposed decision rule, this is
+the probability that the sample mean is smaller than 68.26 when
+the population mean is 70. So remember that if H0 is true, then the sample mean had a Gaussian
+distribution with mean 66.7. And standard deviation of 3
+divided by square root 10. However, if the true value of the sample
+mean is 70, then that is no longer true. In this case, the sample mean will
+follow a Gaussian distribution, but this time with mean 70 and
+the same standard distribution. And the probability of not rejecting
+H0 is this blue area over here. For value smaller than the critical value
+of 68.26, which has a value of 0.333. This probability of type II
+errors is usually called beta. A very interesting thing is that
+the probability does not depend on the observed sample. Only on the significance level
+that you chose for the test. Note here that you
+considered mu equals 70. But you can get the type
+II error probability for any value on mu in
+the alternative hypothesis. So you can define beta for
+as many values as you want. Now you should have a better understanding
+about type I and type II errors. But many times you want to characterize
+the chances of actually making a good decision. In particular, it is important to focus
+on this quadrant of the table where you are making the right call by
+rejecting the null hypothesis. This information is gathered
+in the power of the test. Which is a function that tells you for
+each possible value of the population. Meaning the alternative hypothesis,
+the probability of rejecting H0. Remember that the type II error
+probability is the probability of not rejecting H0 when H0 is not true,
+this was called beta. Now we have introduced the concept
+of the power of the test, which is the probability of
+making the right decision. And rejecting the null
+hypothesis when it's not true. These probabilities complement each other, so the power of the test
+can be written as 1- beta. To sum up, for each value of mu and H1, the power of the test is one 1-
+the probability of making a type II error. This is what a typical power of the test
+looks like for a right sided test. At the very left of
+the plot you have mu=66.7. And the height of
+the graph is exactly alpha, since it's the probability of rejecting
+H0 for that particular value of mu. For this plot,
+alpha equals 0.05 was considered. All other values of mu and the graph
+correspond to the alternative hypothesis that the population mean
+is greater than 66.7. Consider mu equal 68. Then the height is the power
+of the test at mu equal 68 and is exactly the probability of
+rejecting the null hypothesis. If the true value of
+the population mean was 68. The height between the graph and
+the value is the complement and that corresponds the probability
+of a type II error. If mu is actually 68 inches. Same thing happens if you consider
+that the true value of mu is 70, the height of the graph
+is the power of the test. While the difference between one and the curve is the probability
+of the type II error. This graph has an interesting pattern. As the horizontal axis values increase,
+the curve also increases, getting closer and closer to 1. This makes sense because remember that
+the value of mu determines the mean of the distribution of the sample mean. So as mu increases, so does the probability that the sample
+mean is smaller than the critical value. Let's see how the power of the test
+looks for three different alpha values. On the left you have the power
+of the test for alpha with 0.01. Next, for 0.05,
+which is the one from the previous slide. And finally you have the power of
+the test for a significance level of 0.1. From left to right you have an increasing
+alpha, which is the type I error. Now consider the value of the function for
+mu =70. It turns out that as the value
+of alpha increases, so does the power of the test for mu =70. This is true for every value in the curve. Now in contrast,
+let's take a look at the type II error. This time the behavior
+is exactly the opposite. If you get too restrictive
+with the type I error, you end up increasing your type II
+error probability for Xfix sample size. There is always a tradeoff between
+type I and type II errors. However, if you have any sample size you
+need, you can always achieve alpha and beta as small as you want.

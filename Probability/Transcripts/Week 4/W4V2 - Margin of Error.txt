@@ -1,0 +1,41 @@
+Recall this illustration
+showing some examples of the confidence interval for sampling distributions
+of size 1. Now, you'll be able to construct the confidence interval
+for a given sample mean. We need to calculate
+the margin error and the width of the intervals for the upper and lower
+limits that you'll be adding and subtracting
+from the sample mean. The concept of the
+confidence interval is heavily tied to the
+fact that we're taking multiple samples
+off a certain size to get a sampling
+distribution of sample means, where with large samples, the sampling distribution
+tends towards a Gaussian of the form x bar. If we were to standardize
+the distribution, we'd let Mu = 0 and Sigma be 1. We would have to scale this
+distribution properly. Now, recall from Week 2 that when a normal
+distribution is standardized, then 68% of the population falls one standard deviation
+away from the mean, whereas 95% falls two
+standard deviations away from the mean. These values over here
+are called the z values. Now, focusing only on
+95% of the distribution, the actual value
+here will be 1.96. Recall the 1-Alpha has
+a confidence level, and Alpha/2 here are the
+corners of the curve. We call C Alpha/2
+the critical value. And thus for a 95%
+confidence level, C Alpha/2 is 1.96. This is the first part of the margin of error calculation. Obtain your limits to
+define how many of the samples fall within some percentage of
+the distribution. Next one is to scale the
+distribution to take into account the variability in
+the original distribution. We need the standard
+deviation of the original
+distribution to do that. And so as you already know, this is given by the formula
+Sigma over square root n, and it's called a
+standard error. Now, multiplying
+the standard error with the critical value, you get the margin
+of error as you're essentially scaling
+the distribution with a standard deviation while using the critical
+values to capture the upper and lower limits where 95% of the
+distribution will lie. The center of this
+distribution is the population mean for the
+sampling distributions, and the distribution
+looks like this. You then have these margins that indicate an interval where 95% of the time the interval captures
+the population mean.

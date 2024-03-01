@@ -1,0 +1,101 @@
+So far, all the
+hypothesis testing we've done has been with one
+sample in one population. But what happens
+if we want to take different samples in
+different populations? For example, let's say I have
+two countries and I believe that the people in
+this country are taller than those
+in this country, but I can only take samples. Two sample hypothesis
+testing is going to tell us how to compare samples
+on different populations. In the following videos,
+you're going to learn about comparing two populations. Consider for this example that you're interested in
+comparing the heights of 18 year olds in the US with the heights of 18
+year olds in Argentina. The first group, you have
+10 samples x_1 upto x_10, which with the
+values shown above, have an observed sample mean of 68.442 inches and a sample
+standard deviation of 3.113. For the Argentinian group, you have only nine samples, y_ 1 upto y_9 with
+an observed mean of 65.949 inches and a sample standard
+deviation of 3.106 inches. Your goal is to determine if the population mean from the US is different than the
+population mean from Argentina. Just as with sample tests, you can define three
+types of hypothesis. In all three cases,
+you will consider the null hypothesis that both population
+means are the same. First, you can consider the alternative hypothesis
+that the population mean of 18 year olds in the US is bigger than
+that in Argentina. You could also consider the
+alternative hypothesis that the population mean in the US is smaller than
+that in Argentina. Finally, there's an
+alternative hypothesis that both population means
+are simply different. Writing this hypothesis in
+terms of the difference, US minus mu Argentina. You get a right tail test, a left tail test,
+and a two tail test. Now let's use the
+following assumptions. The first one is
+that all people in the sample from the two
+groups are different. That means that
+there's no one measure that belongs to both groups. The second one is that
+each height measurement from each person is independent
+from the other ones. The third one is that
+the populations for the height in both countries
+are normally distributed. This means that
+all measurements X coming from the US have a
+Gaussian distribution with mean new US and a
+standard deviation sigma US and the same goes for the samples
+coming from Argentina, which have a mean new Argentina and standard deviation
+sigma Argentina. You can then define the
+sample means for each group. X bar will be the sample
+mean for the US population, and Y bar the one for Argentina. Now the same question is, how does the difference between both sample means distribute? Since it's a linear combination
+of Gaussian variables, then it will also be a Gaussian, but with which parameters? The mean will be the difference of the population means and the standard deviation will be the square root of the
+variances of each sample mean. If you don't quite
+remember the result, you can go back to week 2, lesson 1, where this
+result was explained. Of course, you can standardize the difference between X bar and Y bar to get a statistic that has a standard
+normal distribution. However, since we don't know the population
+standard deviation from any of the two groups, then the best we can do is to replace sigma US and
+sigma Argentina with the sample standard
+deviation from each group so that you
+have the statistics given by x bar minus Y R minus US
+minus Argentina divided by the square root of s_x squared over 10 plus
+s_y squared over 9. This statistic also has a t distribution
+because it corresponds to a statistic for the mean of a Gaussian population
+with an unknown Sigma. Unfortunately, the
+formula for finding the degrees of freedom
+is very cumbersome, but don't worry about it. A bunch of software packages
+will do this for you. Replacing n_x, n_y, s_x and x_y by the
+observed values, you actually get that
+degree of freedom of 16.8 Now after all that math, let's briefly refresh
+the problem statement. You have two groups of samples. In this case, we correspond to 10 samples of heights of
+18 year olds in the US and the other one to nine
+samples of height of 18 year olds from Argentina. From the US sample, you observed a mean of 68.442 inches and a sample standard
+deviation of 3.113. While the Argentine sample
+has an observed mean of 65.949 inches and a sample
+standardiation of 3.106. Let's begin with a
+right tailed test with null hypothesis S minus mu Argentina equals zero
+and alternative hypothesis that mu US minus mu
+Argentina is positive. This means that the
+population mean from the US, is greater than the
+one from Argentina. Also, let's consider a
+significant value of 0.05. From last slide you know
+that if H_0 is true, then the statistic T equals
+X bar minus Y bar divided by the square root of s_x squared divided by 10 plus s_y
+squared divided by 10. Where these are the
+sample variances, has a t distribution with
+16.8 degrees of freedom. Replacing the observed
+values in the statistic, you get that the observed
+statistic is 1.7 459. But what's the P value
+for this sample? Well, because it's a
+right tailed test, the P value is a probability
+under the null hypothesis, that the statistic T is greater than the
+observed statistic. This corresponds
+to this area under the PDF and has a
+value of 0.0495. Since the P value
+is smaller than the significance level of
+0.05 then the decision is to reject the null
+hypothesis and to accept the population mean in the US is bigger than the
+one in Argentina. Now let's see what you can
+say about the two tail tests. All sample values are the same, as is the significance level
+and the test statistic. What changes now is how
+you calculate the P value. In this case, you want the
+probability under H zero that the statistic is in absolute value greater than
+the observed statistic, which is the sum of
+these two areas, and has a value of 0.0991. In this case, since the P value is greater than
+the significance level, you don't have enough
+evidence to reject the null hypothesis that the population
+means are the same.

@@ -1,0 +1,48 @@
+All right, welcome to lesson two. In this lesson, you're going to
+learn about hypothesis testing. Hypothesis testing is a way to
+tell if some belief you have of the population is likely to be true or
+false. And then we're going to learn a very
+important application of hypothesis testing called A/B testing. So first,
+let's start with a simple example. So, to understand hypothesis testing,
+I like to look at this example. Let's say you have
+an email spam detector and what it does is it determines
+if a given email is Ham or Spam. And remember that ham is
+when an email is not spam. And by default, we're going to
+assume that all the emails are ham. And the reason for this is that it's
+much worse to delete a good email than to accidentally put
+a spam email on our inbox. So our base assumption is going
+to be that an email is ham. That's going to be called
+the null hypothesis. It's the base assumption when we assume
+safely that nothing is happening, This null hypothesis is called H0. And then we have an alternative
+hypothesis called H1. And that's the special one,
+that's the one we are trying to identify. One important characteristic
+of the null and alternative hypothesis is that
+they are mutually exclusive. Because the email can't be ham and
+spam at the same time. Also, these questions have
+to have a true false answer. And the key is to designing
+a good set of hypothesis and notice something really important. There's a lot of evidence that
+shows that the email is spam. Then the null hypothesis is rejected and the alternative hypothesis that
+the email is spam is accepted as true. But this doesn't work
+the other way around. If the evidence gathered is not enough
+to show that the email is spam, then you can reject the null hypothesis. However, that does not mean
+that the email is ham, only that we don't have enough evidence
+to show that the email is spam. So in general,
+you will need to propose your hypothesis. The null hypothesis is the baseline and the alternative hypothesis
+represents the competing statement. And given the asymmetry and
+the conclusions, this is usually the one
+you're interested in proving. And the goal of hypothesis testing is
+deciding between two hypotheses based on data and evidence. In the case of the spam example. Then this evidence comes in the form
+of the sender, the attachments, the size of the email,
+certain keywords, etc. Anything you can use to show
+that the email is spam. Intuitively, when performing
+hypothesis testing, if your sample gives plenty
+of evidence against H0. Then you will reject
+the null hypothesis and consequently accept
+the alternative hypothesis. In this case, your evidence based
+on data will be different words or phrases in the email. And so, suppose that you get an email
+that has phrases like earn extra cash, risk free, dear friend,
+act immediately, apply now. And winner these are all trigger
+phrases for detecting spam. In fact, these phrases are very likely
+to happen if the email is not spam. Which is the null hypothesis under the
+hypothesis that this is a regular email. In this case, you would reject H0 and
+send the email to spam.

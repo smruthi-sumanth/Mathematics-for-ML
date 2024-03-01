@@ -1,0 +1,41 @@
+The last example, we had a
+population of 6,000 adults. I wanted to calculate
+a 95% confidence interval for a sample of 49 adults with a mean height of 170 cm and a standard
+deviation of 25, we got a margin of error telling
+us that 95% of the time, the population mean was between x-bar + or -7 Centimeters. That gave us a confidence
+interval of 163 Centimeters on one end and 177
+cm on the other end. But let's say that we're not happy with that 7
+cm is too much. We want to have a margin of
+error that is much smaller. We want for example 3 Centimeters because
+we were going to have a more exact estimate
+of the population mean. All of a sudden 49 is too small, so we need a bigger
+number of people. We need a bigger sample in order to give
+us more confident. The question is, what is the smallest sample
+size that will help us obtain the
+desired margin of error. We're going to do
+similar math as in the previous example,
+except backwards. Recall that the formula
+for the margin of error is this one over here. Now, we know the value for
+everything here except for n. Let's go ahead and substitute the margin of error
+into the equation. Now we have that three is equal to set alpha over two times a sigma divided by root n. But since we want a
+margin of error of three, that means that getting anything less than
+three is even better. If you have a margin of error of two or one, then
+that's much better. We can substitute the
+equal by a greater than or equal and keep
+the right hind the same. Now we get three bigger than or equal than z alpha
+over two times Sigma divided by n. Three is a maximum margin of error
+that we're allowed to have. Now replacing all the values
+we know into our inequality, we get the three is
+bigger than 1.96 times 25 divided by root n, from which we can solve
+for n and get that n is bigger than or =1.96*25/3^2. That's going to be the
+value that we want. What is that value?
+That value is 266.78. Since we're talking about people then we can round it to 267, that means that we need a sample of at least
+267 adults from the population in order
+to get a margin of error of 3 Centimeters. Now let's generalize the formula we just used to calculate the sample size for a particular margin of
+error here called MOE. We want the sample to be
+at least z Alpha over two, where alpha is the
+confidence interval times the standard
+deviation Sigma divided by the margin
+of error, square. You can plug in any
+margin of error into this equation and
+get the desired n

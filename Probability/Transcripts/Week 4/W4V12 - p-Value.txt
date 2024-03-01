@@ -1,0 +1,131 @@
+So far, the intuition is that if your sample mean falls too far away from the
+null hypothesis, then you reject H_0. But what does too far mean? Remember that H_0 is that the population mean
+is 66.7 inches. Suppose now that the
+variance for the height is three and that there was no
+change throughout the years. Remember also that you
+had a sample size of 10. In that case, if H_0 is true, then the sample mean, has a Gaussian distribution with parameters Mu=66.7 and
+standard deviation 3 divided by square root 10. This is because we have
+a sample size of 10. Right now, we're assuming
+that the value of standard deviation
+Sigma is known. I know that it is not usually
+the case, but don't worry, later on you will
+learn how to deal with an unknown
+standard deviation. Now that you have a
+distribution for the statistic, now you can answer the question, how likely was your
+sample if H_0, the null hypothesis is true? If your answer is very unlileky, then this is grounds
+to reject H_0. Consider now the right-tailed
+test for the mean of a population with the
+Gaussian distribution. Remember also that the
+sample mean was of 68.442, which is bigger than 67. But is this
+difference big enough to be statistically significant? Remember that your goal is
+to make a decision with a Type 1 error probability of no more than the
+significance level Alpha, which in this case, we're
+going to pick 0.05. Now, in this case,
+a Type 1 error happens when you determine that the population mean
+has increased when the true value of
+Mu is still 66.7. It makes sense that
+if you consider that an observed sample mean of 68.442 is enough to reject H_0, then of course, you would
+also reject H_0 if you saw a sample mean
+greater than 68.442. What does this mean in terms of the Type 1 error probability? Well, if you reject
+H_0 every time you observe a sample mean
+greater than 68.442, then the probability of
+a Type 1 error is simply the probability that
+the sample mean is greater than 68.442, given that Mu is 66.7. The probability you're looking
+for is this shaded area, which has a value of 0.0407. Notice that this value
+is less than 0.05. With this proposed
+rejection criteria, the maximum probability of
+incurring a Type 1 error is below the 0.05 threshold you
+are willing to tolerate. It then makes sense to
+reject the null hypothesis. By the way, the probability
+use calculator is called the p-value. What's a p-value? Formerly, the p-value
+is a probability, assuming H_0 it's true that
+the test statistic takes on a value as extreme as or more extreme than
+the value of zero. This means that from
+the observed value, you move into the
+direction of H_1. In this example, since it
+was a right-tailed test, a value as extreme or more extreme than the observed
+sample mean meant that you had to consider all the
+values greater than 68.442. The p-value measures how well your sample is monitored
+under the null hypothesis. A small p-value says
+that your sample landed on the tail of the
+distribution under H_0, so they're pretty unlikely
+to happen if H_0 was true. The p-value is a good metric to create a decision
+rule for the test. This decision will ultimately depend on the significance
+value you choose. If the p-value is
+less than Alpha, you will reject H_0 and
+accept H_1 is true. If the p-value is
+bigger than Alpha, then you decide if
+the evidence is not strong enough and you
+don't reject H_0. What do p-values look
+for each type of test? For a more general case
+called T, the test statistic, you define T observed as the observed value of the
+statistics and Mu equals Mu_0, the null hypothesis, where Mu is the parameter
+you're looking to test. For right-tailed test, you just saw the p-value
+is the probability of the test statistic
+being greater than your sample under the
+assumption that H_0 is true. For two-tail tests, you want the probability of
+all points that are distance from Mu_0 greater than the observed value
+in both direction. Finally, for a left-tail test, the p-value is a probability and the test statistic is smaller
+than the observed value, always assuming
+that H_0 is true. Now let's see what the p-value is for the two-tailed test. Remember that the observed
+sample had a 68.442 mean. In this case, the Type 1
+error occurs when you accept that Mu is different from
+the baseline 66.7 inches. In this case, the p-value is a probability that
+the difference in absolute value between the sample mean and 66.7
+is greater than 1.742, given that H_0 is true. For this case, we have
+to consider both tails since we are considering
+the absolute value. This gives us a
+probability of 0.082, which is twice as much as what you had for
+the right-tail test. In this case, the p-value
+is greater than 0.05, so you conclude do
+not reject H_0. Finally, consider the
+left-tailed test. The original sample
+with sample mean 68.442 won't do because it is larger than
+the baseline value. Let's imagine the state
+that the average mean in your sample was 64.252. In the case of the
+left-tailed test, the Type 1 error happens
+when you reject that Mu equals 66.7, when
+it was actually true. The p-value is the
+probability that the sample mean is less
+than the observed value, 64.252, which is the
+shaded area over here, and it gives a
+probability of 0.00094. This is clearly smaller
+than Alpha equals 0.005, so you conclude to reject H_0
+and accept the hypothesis that the population mean has decreased over the
+last 50 years. Notice that this p-value is
+not only smaller than 0.05, but it is also
+smaller than 0.01, which is another commonly
+used significance level. It tells us that even with the more conservative
+Alpha of 0.01, you would have rejected
+the hypothesis. So far, all the tests we perform using the
+statistic H bar, which if H_0 is true, has a Gaussian distribution
+with mean Mu_0 and Sigma 3. However, there's an
+alternative way to design the test using
+the z statistic, which is simply the
+standardized version of x-bar. In this case, if H_0 is true, then the z-statistic follows a standard normal distribution. Let's see how this looks
+using the right-tailed test. Remember the example
+from before? You were looking at
+the right-tailed test for the population mean. Let's try to see how
+we can formulate the same problem in terms
+of the z-statistic. Remember that you had a population standard
+deviation of three, a sample size of 10, and an observed sample
+mean of 68.442, and the p-value was
+the probability of the sample mean
+being greater than your observed sample mean under the assumption that
+Mu equals 66.7, which had a value of 0.0047. Notice that the hypothesis and the Type 1 error interpretation
+need to remain the same. Also, your sample
+data doesn't change. Let's see what the z-statistic
+looks in this case. The observed statistic is then 68.442-66.7/3 square root
+of 10, which is 1.837. How do you transform the
+event X bar bigger than 68.442 so that the probability of Type 1 error is stated in
+terms of the z-statistic, and its observed value? First, subtract the
+population mean under H_0 from both sides, and they scale everything by
+3 divided by square root 10. The right-hand side is the
+observed statistic, 1.837. Also, since you are now
+working with the z-statistic, then you need to
+adjust the PDF so that it's the PDF of a
+standard normal distribution. Therefore, the 66.7 turns into a zero and the
+observed sample mean of 68.442 turns into the observed
+z-statistic value, 1.837. Of course, the result of the
+p-value has to be the same because you're performing the same test over the same data, and you're just
+standardizing the statistic.

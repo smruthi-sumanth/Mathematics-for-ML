@@ -1,0 +1,20 @@
+Here are the calculation steps for finding the
+confidence interval. First you find the sample mean, then you define a desired
+confidence level. You next find the critical value for this desired
+confidence level, 1 minus Alpha, which is 95%. Then you find the
+standard error. This is the standard
+deviation of the distribution
+of sample means. You multiply the
+critical value and the standard error to
+get the margin of error. Finally, you add and subtract the margin of
+error to a sample mean to obtain the desired confidence interval and there you have it. That's how you calculate
+the confidence interval. There are some
+assumptions under which computing this confidence
+interval works. The first is that the
+sample used is random. The second one is that the
+sample size is bigger than 30 or the population is
+approximately normal, so even though in
+our illustrations we use sample sizes
+less than 30, when applying the confidence
+interval in your work, be sure to follow
+these assumptions.

@@ -1,0 +1,50 @@
+In the last lesson, we
+looked at how to compute confidence intervals
+given a sample mean. We knew we were working with sample means because
+we were calculating the confidence interval for the average height
+of the population, and recall that when calculating the confidence
+interval for sample means, then this is equal
+to the sample mean plus or minus the
+margin of error, where the margin
+of error is given by this formula over here; the z value times the
+standard deviation divided by the square root of
+the sample size. But now, how do we work with confidence intervals
+for proportions? For example, consider
+this problem. You want to find out
+the proportion of adults who would own a
+car in Statistopia. You sample, let's say
+30 people so n=30, and out of the 30 people, you'll find that 24
+of them own a car. Therefore, x=24. You calculate the proportion
+of the people who own a car, and that's given by p hat, and that's 24/30, which is 80%. This is the sample proportion. Now, of course, that may not be the population
+proportion, but it's likely to
+be close to it, and the question is, how do we calculate a 95% confidence interval
+for this sample proportion? Well, similar to the confidence
+interval for the mean, the confidence interval
+for the proportions is given by the formula p hat, which is your sample proportion plus or minus some
+margin of error. Now the question is how to calculate this margin of error? This is where the
+difference lies. The margin of error
+when calculating the confidence interval for proportions is given
+by the formula, margin of error equals the critical value
+times the square root of p-hat times one minus p-hat
+divided by n. Obviously, the critical value
+will depend on the confidence interval you use. The major difference is
+in the standard error, and how it's calculated. Just as a sampling
+distribution of means, the standard deviation
+is given by Sigma divided by square root of n.
+The standard deviation of a sampling distribution of proportions is given
+by p-hat times one minus p-hat divided by the sample size n. Quick recap. The confidence interval for
+proportions is given by p-hat plus or minus
+the margin of error, where the margin of error is given by the critical value
+times the square root of p-hat times one minus p-hat divided by n. We had an example. We wanted to calculate the
+proportion of adults that own a current Statistopia
+from the sample size of 30, we found p-hat, the sample
+proportion to be 80%, and I want to calculate a
+95% confidence interval for the sample proportion. For 95% confidence level, the critical value is 1.96. That's the margin of
+error is 1.96 times the square root of
+0.8*1-0.8, which is 0.2, divided by the sample size 30, and that gives us a
+margin of error of 0.14, and therefore, the 95%
+confidence interval is p-hat, which is 0.8 plus or minus the margin of
+error, which is 0.14. That means that the confidence
+interval is between 0.66 and 0.94, that's 95% confident that the population proportion
+of how many people own a car in Statistopia
+is within 66% and 94%

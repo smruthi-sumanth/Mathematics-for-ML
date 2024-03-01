@@ -1,0 +1,59 @@
+Let's sum up the steps involved
+in hypothesis testing. First step is to state
+your hypothesis. This involves defining
+the null hypothesis, which is your baseline. For the current example,
+this is H_0 that the population mean of the height of the
+population is 66.7. You also need to define the
+alternative hypothesis, which usually corresponds to the statement you wish to prove. In the heights example
+you've been working on, this could be H_1, that mu, the mean of the height of the population
+is bigger than 66.7. The next step is
+designing the test. This means the designing on the statistic you're
+going to work with. This could be the
+sample mean and defining the significance
+level of the test. The most common value
+is Alpha equals 0.05. Remember the
+significance level is the maximum probability of making a Type 1 error and
+should always be small. Step 3 is computing the observed statistic
+based on your samples for all the previous
+examples you work with an observed statistic of 68.442. Finally, the last step
+is the decision-making. This is when you make your
+decision based on your data. One common way of
+making decisions is based on the p-value. The p-value is smaller than the significance level
+you defined in Step 2, then you can reject
+the null hypothesis and accept the alternative one. However, reaching a
+conclusion is not as simple as it seems and
+people often make mistakes. Let's take the time to
+refresh some definitions and facts about the
+errors in the test. A Type 1 error happens
+when you reject H_0, when H_0 was actually true. While Type 2 error
+is when you fail to reject the null hypothesis H_0, when the alternative
+one was true. Your design parameter is the
+significance level Alpha, and by definition corresponds to the maximum probability
+of making a Type 1 error. You want this value to
+be as small as possible. However, be mindful that
+for a fixed sample size, the Type 1 and Type 2 error
+probabilities are entangled. Be mindful when choosing
+Alpha because you might be forcing a type two error
+probability raised to too high. Now that you have the
+concepts fresh in your mind, let's look at the correct
+interpretation of the results as well as some
+common misconceptions. Let's begin with p-values. P-values are a criterion for making a decision
+based on the data. If the p-value is smaller
+than the significance level, then we reject H_0
+and accept H_1. What is the p-value represent. Is it true that
+p-values represent the probability of
+H_0 being true? Well, this is not the case. While it is true that a small p-value rejects
+the null hypothesis, it does not represent the probability that
+the hypothesis is true. The p-value represents
+the probability of seeing the observed
+data by chance. Basically, a small p-value tells you that the null
+hypothesis is not a good model for your
+data because the chances of observing it are small. Now, let's move to
+test conclusions. If you reject the
+null hypothesis, you accept the alternative
+hypothesis as true. But is it true that
+not rejecting H_0 means that the null
+hypothesis is true? This is also false. Remember the spam email example, you don't really say
+that the email is ham, the most you can guarantee
+is that there was not enough evidence to show
+that the email was spam. The same principle applies for any hypothesis test you consider

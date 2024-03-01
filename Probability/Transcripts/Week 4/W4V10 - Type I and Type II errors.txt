@@ -1,0 +1,64 @@
+So ideally you would like to
+always make the perfect decisions. Unfortunately, this is impossible to
+guarantee due to the randomness of the world and the fact that we only have
+partial information from the population under study. So what could go wrong? Well, there are two possible
+outcomes to the test. Either you send the email to the spam
+box or you send it to the regular inbox. Each of these outcomes could be wrong. In the first case, you send a regular
+email, a ham email, to the spam box. This is called a type I error or
+a false positive, and it happens when you reject H0
+when it was actually true. The other error appears when you
+incorrectly determine a spam email to be ham to be a regular email. This is called a type II error or
+a false negative and occurs when you don't reject ho and
+the hypothesis was actually false. It is important to understand that you
+can never know if you are right or wrong about your decision because
+you don't know the ground truth. However, you will try our best to
+determine a test where you keep these errors below an accepted threshold. This table sums up the possible
+outcomes of your decision. If the ground truth is that H0 is true,
+that means if the email was actually not spam and you reject H0,
+you will be committing a type I error. That means you send a perfectly
+good email to the spam box. However, if you decide not to reject H0,
+then you would have made the right call. That means you send a good email
+to the inbox like you should. If in reality H0 was true,
+that means the email was spam, then rejecting H0 will
+be the right decision, that means if you get a spam email,
+you send it correctly to the spam box. And finally, not rejecting H0
+will make a type II error, that means you took a spam email and
+sent it to the inbox. Notice that type I and type II errors
+don't have the same impact on the problem. In the case of the email assuming that an
+email is spam implies that sending a ham email to the spam box
+is more positive than sending a spam email to the inbox,
+which is true. You would much rather have an accidental
+spam email in your inbox than lose a perfectly good email and
+never be able to read it because the classifier thought
+it was going to be spam. This means that type I errors
+are more severe than type II errors. The question is then how much
+are you willing to negotiate here? What is the greatest probability of
+type I error you're willing to tolerate? Or in other words, on average,
+how many times are you willing to incorrectly send a ham email to the spam
+box in order to have a good spam detector that still sends most of
+the emails to the correct place. Well, the maximum probability of type I
+error is called the significance level and is usually denoted by
+the Greek letter alpha. Of course, since it's a probability,
+it can only take values between 0 and 1. If alpha is 0, it means that whatever evidence you get
+the email is always considered to be spam. In that case,
+you never get a type I error. On the other end,
+if the significance level is 1, that means every email is considered spam,
+and in this case, every time you get a ham email,
+you will be making a type I error. Of course, most extremes
+are terrible decision makers. What you want is something that is
+able to define if an email is spam or not, and
+has as few type I errors as possible. However, as you saw,
+this error can never be made zero, so a typical value to consider is 0.5 for
+your significance level. This means that on average, you will decide that a ham
+email is spam 5% of the time. Another value usually
+encountered is alpha equals 0.1. As we said, you want alpha to be
+as small as possible, but however, there's a small catch. If you reduce the probability
+of a type I error too much for a fixed number of samples,
+then you're increasing the type II error. This is what happens when we thought
+of the alpha equal zero scenario. To give the proper definition
+of significance level, it is the maximum probability of
+committing a type I error, which is the same as the maximum probability of
+rejecting H0 when H0 was actually true. The value of alpha is your
+design criterion for this test. This means that alpha will determine
+a threshold to decide if you should reject H0 or
+not based on your sample.

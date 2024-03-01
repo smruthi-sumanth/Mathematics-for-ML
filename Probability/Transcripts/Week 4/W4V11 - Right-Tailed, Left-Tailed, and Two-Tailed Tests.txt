@@ -1,0 +1,110 @@
+So now that you know
+about hypothesis testing, let me show you how to do it for
+a population mean. We're going to do both cases again, when you know the standard deviation
+of the population, and when you don't. When you don't,
+a familiar term will come up again, which is the student t-distribution. Furthermore, we're also going to
+learn a very important concept, which is the concept of the p value. In order to get a clear view
+of hypothesis testing and how the significant plays its role,
+let's analyze another example. Imagine you are interested on the average
+height of 18 year olds in the US, and consider a sample of the height
+of 10 people measured in inches. If you recall, this is the same dataset
+from Week 2 that we used to perform the maximum likelihood estimation for
+the mean height. For these observed values,
+the average height is 68.442 inches. Before diving into the hypothesis testing, there's one more thing you should
+consider, and that is data quality. Since your goal is to make
+a decision based on data, then the data needs to be reliable. Otherwise you'll be arriving
+to false conclusion. But what does reliable mean? Each sample has to be
+representative of the population, the data needs to be
+completely randomized. This is to avoid introducing
+bias into the decision making. For example, if you're interested in
+the height of 18 year olds in the US, and you take all your samples from the
+basketball teams of each school, you would be introducing bias in the sample because
+in general, basketball players are taller. Also, you should consider the amount
+of data you have available. Is the sample size enough
+to make a good decision? A good rule of thumb is
+considering 30 samples or more. In the examples that follow, we'll be assuming that the samples we
+have are good enough for the testing. So historical data says that
+the mean height of 18 year olds in the US in the 70s was 66.7 inches. Based on the observed data, can you confirm that the mean height of
+18 year olds in the US has increased? So the sample mean you have is 68.442,
+which is greater than 66.7. But is this enough to
+confirm the hypothesis? Let's try to formulate the null and
+alternative hypothesis. Your baseline here is that
+nothing has changed and thus that the population mean for
+18 year olds is still 66.7 inches. And the competing hypothesis is that
+the population mean is greater than 66.7 inches. Note that the hypothesis are always
+formulated in terms of the population, in this case the population mean,
+and must not involve samples at all. Now, the hypothesis are based on
+the population parameters, but the decision will be based on
+the observations that you have. In this example, you will base
+your decisions on the sample mean, which is the average of
+the random samples Xi. If your decision is made
+on the sample mean, then the sample mean will
+be your test statistic. Note that this is a random variable and
+doesn't yet depend on the particular
+observations you have. On the other hand, the value 68.442
+is called the observed statistic, and it is based on your measurements. In general, a test statistic
+will be a function of the random samples that gives information about the
+population parameter you want to study. For example, if you are testing
+the mean of the population, a good statistic is the sample mean. Same thing goes for
+testing probabilities or occurrence rates. If you wanted to test
+the variance of the population, then a good candidate is
+the s-square statistic. It's important to mention that
+the test statistics are not unique. For example, the sum of square
+difference between the Xi and the sample mean could also be used
+as a test statistic for variance. You will see an example about
+this in the following videos. In general,
+there are three types of hypothesis. Let's go back to our example. We want to compare the current population
+mean with the population mean from the 1970s. There are three sets of questions
+that arise under this scenario, each of which can be identified
+with a set of hypotheses. The first one was, has the population
+height increased in the last 50 years? The baseline here is that the mean
+height remained the same, and what you want to prove is that
+the population mean actually increases. This means your H0 is that Mu is 66.7, and H1 is that Mu is bigger than 66.7. This one is called a right-tailed test,
+because the alternative hypothesis extends to the right
+of the null hypothesis, namely because a number bigger than
+66.7 is to the right than 66.7. The second question is
+whether the population mean decreased during the last 50 years. This leads to the null
+hypothesis that Mu is 66.7, and the alternate hypothesis that
+Mu has to be less than 66.7. This kind of hypothesis is
+called a left-tailed test, because the alternative hypothesis is
+to the left of the null hypothesis, namely a number less than 66.7
+is to the left than 66.7. And the final question is whether
+the mean height has changed at all, either became bigger or became smaller? In this case, the H0 is,
+again, that Mu equals 66.7, and H1 is simply that Mu
+is different than 66.7. And the null hypothesis is the same. And this is a two-tailed test because
+it says that the Mu has changed and has either gone to the right of 66.7,
+or to the left of 66.7. So notice that for
+these cases the null hypothesis or the baseline is always the same, but the alternative hypothesis changing
+depending on what you want to prove. Now let's consider the first
+set of hypothesis. This is called a right-tailed hypothesis. Because the alternative hypothesis
+to the right of the null, here is H0, the null hypothesis, and
+here is the alternative hypothesis. Now, since you're trying to make
+a conclusion about the mean of the population, it's natural to consider
+your sample mean as a way to get close to the population mean. There is another way you
+might see right tail tests, where H0 states that Mu is less than or
+equal to 66.7. Both tests are equivalent,
+so for simplicity, let's keep the original formulation. If your sample mean is
+much greater than 66.7, which is H0, then reject H0 and accept H1. What are the two errors we can have here? Well, type I error will be determining
+that Mu is greater than 66.7 when the true value was actually 66.7. A type II error will happen when you
+determine that the population mean stayed the same, but the true value was bigger. Now let's look at the second
+set of hypothesis. Here H0 is still that
+the population mean is 66.7, and your alternative hypothesis is that the
+value actually decreased over the years. This is a left-tail hypothesis because the
+alternate hypothesis lies to the left of the null hypothesis. And again, you might see
+the stats written as follows, H0 says that Mu is greater than or
+equal to 66.7, and in this case, if your sample mean is much less
+than 66.7, then you would reject H0. In this case a type I error happens when
+there was no change in the population mean, but you accepted the hypothesis
+that Mu is less than 66.7. While a type II error happens
+when you don't reject H0, while there was actually a decrease
+in the population mean height. Finally, consider the third
+set of hypothesis. This is called a two-tailed test because
+the null hypothesis spreads to both sides of the hypothesis. Mu equals 66.7 is that hypothesis. In this case, you will reject H0 when
+the sample deviates a lot from 66.7. Since the difference can
+be in any direction, a simple way to represents this is
+simply taking the absolute value of the difference between the sample mean and
+the value in H0, 66.7. In this case, a type I error happens when
+there is no change in the population mean but you accepted the hypothesis
+that Mu was different from 66.7. While a type II error happens
+when you don't reject H0, well, there was actually a variation
+in the population mean height.

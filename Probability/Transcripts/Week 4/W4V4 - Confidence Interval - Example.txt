@@ -1,0 +1,25 @@
+So let's go back to our running example. I'm trying to estimate the average
+height of the world's population. So I take a small sample of the population
+and I take the average of their heights. So let's say that value is here. And let's say that the actual
+average of the human height is here. So, a 95% confidence
+interval is going to tell me an interval where the actual
+average is very likely to be. Let me elaborate. Now let me show you an example of
+a confidence interval calculation. Let's say we go back to
+the island of Statistopia and that there are 6000 adults there. And we want to find the average height
+of the people of Statistopia or at least have some interval where
+it's very likely that this mean lies. So, since we can't measure all the 6000
+adults, you pick 49 of them at random and you found that the mean height of
+the sample is 1 meter 70 centimeters. And the population standard
+deviation is 25 centimeters. So, let's find a 95%
+confidence interval for the average height of
+adults on Statistopia. We know that it's probably close to 170,
+but let's find an interval for which we're 95% sure that the average of the heights
+of the people in Statistopia lies within. Recall that the critical value for a 95% confidence level is 1.96,
+as we saw before. So let's start with the margin of error. We know that the formula for
+the margin of error is z alpha/2 × the standard deviation
+sigma / by the square root n. So that's 1.96 × 25 the standard
+deviation / by the root of 49, which is very conveniently 7. So this number is going to be 7. Therefore the confidence interval
+is going to be 1 meter 70 or 170 centimeters ± the margin
+of error which we know is 7. Therefore, the confidence interval
+is between 163 centimeters and 177 centimeters. That is the interval where
+we're 95% sure that the average height of the people in Statistopia lives.

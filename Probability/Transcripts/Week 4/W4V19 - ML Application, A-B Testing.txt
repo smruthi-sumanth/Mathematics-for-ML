@@ -1,0 +1,131 @@
+Now I'm going to tell
+you about A/B testing, which is a really
+cool application of two-sample
+hypothesis testing. Let's say that as
+a data scientist, you are studying a website and this website has a
+particular conversion rate. Now let's say you improve
+the website and you want to see if the conversion
+rate went up or down. For this, you can use A/B
+testing. Let me show you how. Suppose your company has
+a webpage and it wants to test two different placings
+for the buy now button. Let's call each of these
+strategies A and B and your goal is to determine switching to Strategy B leads to
+higher purchase amounts. To do this, you select
+a group of people. As customers come in, they are randomly assigned
+to Design A or Design B. The common rule of A/B testing is to send a smaller
+proportion of customers to the new design because you don't know
+how good it will be. In this case, you've
+selected 80 customers for Strategy A and
+20 for Strategy B. When you look into the
+purchase of each group, you see the Strategy A has
+an average purchase of $50 with a sample standard
+deviation of $10. While the group
+exposed to Strategy B has an average purchase of $55 with a sample standard
+deviation of $15. Now that you've designed your experiment and
+gathered the data, you can go ahead
+and use the test you've already learned
+to make a decision. Your null hypothesis would be
+that the mean purchase with Option A and the mean for
+Option B are the same. While the alternative hypothesis is that the mean purchase for Strategy B is larger than
+the one for Strategy A. This hypothesis can
+also be written in terms of the
+difference of means. You also need to set
+a value for Alpha, which in this case
+it's going to be 0.05. Now suppose for the sake of
+the example that the purchase amounts following
+Gaussian distribution. In that case, or if the number of samples is large enough, then you can make your decision using a two-sample t-Test. Notice that if H_0 is true, then according to the t-Test the statistic follows
+a t-distribution. Following the formulas
+you learned from the independent
+two-sample t-Test, the degree of freedom is 23.38, replacing the observed
+values in the statistic you get that the observed
+statistic is -1.482. What is the p-value
+for the sample? Well, in this case you have
+a left tailed hypothesis, it's the probability
+that a standard normal is smaller than -1.482 and that has
+a value of 0.076. What is the value? You won't reject H_0
+because the p-value is greater than Alpha = 0.05. What's the difference between
+A/B testing and t-Tests? Well, A/B testing is
+broader than just t-Tests. It's a methodology for
+comparing two variations while the t-Test are statistical
+tool A/B testing encompasses many more steps. This includes proposing the
+variation to test randomly splitting your sample
+subjects and presenting each group with a
+different variation, measuring the outcomes and
+determining metrics to use. This means, are
+you interested in mean behavior and
+proportions, dispersion, etc. The very last step in
+A/B testing is using statistics tools to make a decision based on
+the data gathered. This is where the
+t-Test comes in. Also in the previous example, you use the t-Test
+because you are comparing means for
+Gaussian populations, if that were not the
+case, you would use another statistical test
+to make the decision. Now imagine that you want
+to test a whole new website design for your online
+purchase platform. You have the Old Version
+A and the New Version B. You're interested
+in knowing if B has a higher conversion rate, which is simply
+the proportion of visitors that actually
+make up purchase. Once again, you need to split your sample randomly
+between the two groups. One will be exposed
+to Version A on the website and the
+other one to Version B. Suppose that you consider
+80 customer for Group A and 20 for Group B and 20 customers from Group
+A make a purchase while the number
+of Group B was 8. The hypothesis would be quite similar as the previous example. For the null hypothesis, you have the both conversion
+rates are the same. Well, the alternative
+hypothesis you have that the conversion rate and Strategy B is bigger
+than Strategy A. If this is the case, then you would like to
+deploy the new webpage. Again, let's consider
+an Alpha of 0.05. You're interested in
+conversion rates, so you're recording a number of customers that make
+purchases from each group. These variables actually follow binomial distributions
+of parameters in A and P_A for Group A and
+B and P_B for Group B. Now what is the
+statistic to use in this case? Let's look into it. By the law of large numbers, the X/n_A is similar to
+P_A as the number of samples gets big and the same
+thing happens for Y/n_B. As you learned the previous week by the central limit theorem, these quotients have a
+normal distribution. X/n_A has a mean P_A and
+a standard deviation, square root of P_A*1-P_A/n_A. Y and B will have parameters Mu = P_B and Sigma equals
+square root of P_B*1-P_B/n_B. That's because this is
+the standard deviation for the binomial distribution. These are good approximations
+for P_A and P_B. X/n_A- X/n_B will make a good
+approximation for P_A-P_B. Since X/n_A and Y/n-B are
+approximately Gaussian, then the subtraction
+of these two should be Gaussian as well. In this case, Mu will
+be the difference P_A-P_B and Sigma will be the square root of the
+sum of variances of each. If you're wondering
+how we get there, take a look at the reading item. One very common way
+to express this is by standardizing
+the distribution. Now if H_0 is true, then P_A = P_B, which you can directly
+call P. You can replace P_A and P_B by P in
+this statistics. Now, let's see if we can rewrite this expression
+into something nicer. First, notice that you
+have a common term, P*1-P in both terms. Also 1/n_A+1/n_B can be written as n_A+n_B divided by n_A*n_B. You can now replace
+it in the statistic, which still has a standard
+Gaussian distribution because you perform some
+algebraic manipulations. The problem is that while
+P_A and P_B are the same, you still don't know the
+value of P. You will need to replace it
+by an estimation. Since X and Y come from the
+same conversion rate P, the best you can do to estimate P is aggregate all
+the observations so that X+Y is now
+divided by n_A+n_B. Now replacing P*1-P
+by P hat*1-P hat, you get the test statistic. After all this math, let's go back to the problem
+we're solving. Now to the webpage Designs A and B for the Design A group, you have 80 observations with 20 conversions and for
+the Design B group, you had 20 observations with 8 conversions Remember also that X and Y follows
+binomial distributions, each with their own
+sets of parameters. You are interested
+in determining if the conversion rate for
+the new design is better. This gives you a
+left-tailed test. You also consider significance
+level of Alpha = 0.05. As you just saw from
+the previous slides, if H_0 is true, then the test statistic follows a Gaussian distribution
+with the data you have. This means that the observed
+statistic is -2.07. What is the p-value
+for the sample? Well, it will be the area under this Gaussian PDF which
+has a value of 0.019. Since this is smaller than
+the significance level, you can reject the
+null hypothesis and accept that as true, that the conversion
+rate of Design B is bigger than the
+one for Design A.

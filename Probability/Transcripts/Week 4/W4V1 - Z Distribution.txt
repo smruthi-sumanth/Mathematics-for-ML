@@ -1,0 +1,146 @@
+Welcome to week 4. In the previous week,
+you learned all about point estimates, and now you're going to
+learn interval estimates. So it's not about estimating a point, it's about estimating a point with
+some confidence interval around it. You're also going to
+learn hypothesis testing, which is a way to test if something
+you believe may be true or false. For example, if I claim that the average of the
+population is bigger than a certain value, hypothesis testing will tell me what is
+the probability that I'm right or wrong. But let's begin with the first video. I'm going to tell you about
+confidence intervals. So far, we've been trying to estimate
+an unknown population parameter. At some point we use the example
+of people in Statistopia, and we used a sample to
+estimate the mean height. We've seen techniques to make
+sure that you get better and better estimates, like random sampling,
+taking larger sampler sizes. Making sure the samplers are independently
+and identically distribute. But if you don't have the value
+you're trying to estimate, is there a way to confidently tell
+how good your point estimate is? Well, it turns out the statisticians use
+the technique to establish a degree of certainty to this point
+estimates from the samples used. This is called the confidence interval,
+and this will be the focus of this lesson. Instead of x bar, we get a lower and
+an upper limit to report a range to use the sample
+mean with some degree of certainty. For illustration's sake, imagine that
+you were taking a sample of size 1 and finding the mean of that sample to use as
+your estimate for the population mean. From the central limit theorem, you know that if you were to take
+multiple samples of this size and create a sampling distribution for
+the sample means for a sample of size 1. The sampling distribution of
+the sample means makes a gaussian with a center at mu and
+a standard deviation of sigma. Now, what if you wanted to define some
+markers, an upper limit and a lower limit where a percentage of the sample means
+from the sampling distributions lie? First, you would need to decide
+on a value called alpha. Alpha is the significance level. We will go into detail about what
+exactly alpha means in lesson 2. But in the context of confidence interval,
+know that 1 minus alpha, so that's one minus the significance level
+you select gives you a confidence level. This is essentially indicating
+the frequency with which your sample means lie within the interval given
+by those upper and lower limits. A common value of alpha often used is 0.5. So let's use that in our example. By using an alpha of 0.5, it means our
+confidence level is 1 -0.5 which is 0.95. That means our confidence level
+will be 95% if alpha is 0.5. Hence, 95% of the sample means from our sampling distribution will lie
+within this defined interval. And if the region within this interval
+contains 95% of the entire sample means in the distribution, then the area outside these two
+intervals will contain 5% of the area. That means each one of them will
+contain half of it, which is 2.5%. Notice that the lower and upper limits are
+just some standard deviation value away from the true mean,
+which we'll talk about more later. But these standard deviation intervals
+defined by the confidence level we choose, essentially is something we
+call the margin of error. And by adding the margin of errors to any
+sample mean from the sample distributions, we get the confidence interval. This is a brief insight into
+the workings of the confidence interval. But in the next couple of slides
+we'll see how we actually apply them. Now, taking only one sample each time and
+with sigma known, imagine that you've defined a confidence
+level of 95% and as a result. Determine what the margin of errors are
+and calculated the confidence interval. We will see how to interpret this
+confidence interval with this example. Let's plot some sample means and
+check to see if with the margin of error, the population mean will
+be within the interval. Take one sample, for example, this one
+over here get x 1 bar as the mean. And with our margin of error,
+let's generate an interval on each side. Does this interval contain
+a population mean? The answer is no. So let's take another sample x2 bar and generate the interval with
+the margin of errors. Does this interval contain mu? The answer is yes. And what about for a third sample? This one does not contain it. Now let's refine the illustration and make
+the intervals that contain mu green and those that do not contain mu red. And let's repeat this process
+several times, say 100 times. So each time you check to see if
+the interval generated contains the population mean. Now you'll find that with a confidence
+level of 95% of the time, the confidence interval generator
+will contain the population mean and the other 5% it will not. When we had a sample size of 1, we came up
+with a sample distribution for the sample. It means that it followed a gaussian
+distribution with population mean, mu and standard deviation sigma. This is because the population mean
+of the sample means will follow this distribution. If this experiment is
+repeated multiple times, which you know from
+the central limit theorem. And the standard deviation for
+the population of the sample means will be given by the population standard
+deviation divided by the square root of n. In this case, because we had a sample
+of only one person, then n is 1. So we got sigma. Now, what if n had size 2,
+if we were taking groups of two people? Well, with a large enough sample size, the mean of the sample means will
+eventually become the population mean. But the standard deviation for the sample
+distribution of the sample means will be given by the population mean divided
+by the square root of n to account for the variability in the samples chosen. For a sample of size 2 this
+would be sigma divided by 2. The sampling distribution of the sample
+mean is still a normal distribution or a gaussian and it still has the mean mu. But now the standard deviation is smaller. It's sigma divided by square root 2. So the curve will look like this. The sampling distribution of the sample
+means will still be normal, but it'll be a gaussian with
+population mean mu. And standard deviation
+sigma divided by root 2, which is smaller, so
+the curve will look more like this. Let's delve deeper into how the sample
+size of the samples you use affect the confidence interval. Keeping the confidence
+interval to a constant 95%, we used a sample size of 1
+in our first illustration. With that sample size we had
+a sample distribution as shown here, with a variability of sigma
+when we used a sample 2. Then will the sampling distribution
+follow the same normal distribution. We already know that this is not the case. While we get a normal distribution,
+as shown, we get a higher peak and a skinnier distribution. And this is because the normal
+distribution accounts for the variability difference
+using two samples. This is captured by
+dividing sigma by root 2. The effect of this change in variability
+is that to still capture 95% of these sample parameters,
+the interval now shortens. Our margin of error is thus slightly
+smaller and so is the confidence interval. And this will happen if we increase n. Now let's do n=10. For n=10, we have a much skinnier
+distribution because the new standard deviation is sigma divided by root 10,
+which is much smaller. And so to fit 95% of the area we
+need a much, much shorter interval. And therefore,
+this shortens focusing on n=2 and a 95% confidence level. Let's then generate some samples to see
+the effect of the confidence interval. Starting with x bar 1 over
+here with these two people. And given the margin of errors, the confidence interval does not
+contain the population main mu. What about this one over here? Well, this one does contain it. And this one over here? This one also contains it. And now let's do it for 10. We pick ten people. This is a sample x 1 bar and we have
+a much, much smaller confidence interval. So this one doesn't contain it,
+this one over here does and this one over here doesn't. So again, let's remove the people and
+only look at the samples. And if we were going to do this 100
+times on the left, even though we have smaller intervals, we still hit
+the population mean 95% of the time. Why, because we have a smaller interval. But now the sample means are going to
+be much closer to the population mean. And look at what happens with n=10. We're going to have a tiny interval,
+but when we pick samples as 10 people, we're always going to be pretty
+close to the population mean. So again, we hit this 95% of the time and that's a special property
+of the confidence interval. No matter what the sample size is, the sample size tells us
+a confidence interval. And the larger the sample size is,
+the smaller the confidence interval, but also the closer the sample means
+tend to be to the population mean. So these intervals will still contain
+the population mean 95% of the time. Now let's see some of the effects of
+the sample size more closely with this mock simulator over here. If I were to increase the confidence
+level, then the confidence interval will get bigger because I need
+to enclose more area. If I increase the sample size, then the
+confidence interval gets smaller because we're more likely to be closer
+to the population mean. If I pick a big sample and
+if I decrease the sample size, then this interval has to be wider. Because it's more likely that with
+a small sample size we're not as close to the population mean as we want. So more generally,
+as the sample size increases, the confidence interval shrinks,
+which is a good thing. It really tells us that if you
+want to estimate, let's say, the height of a population, you're better
+off picking 100 people than picking 4. Now we've seen the effect of sample
+size in the confidence interval. Now let's see the effect of the confidence
+level on the confidence interval. As such,
+we'll keep the sample size constant, keeping the sampling
+distribution constant. We will see the distribution with
+a 95% confidence interval before. Now let's repeat it here, but
+with a 70% confidence interval. So how do you capture 70%
+of the area over here? Well, you need a smaller confidence
+interval to capture 70% of the area. And now we have a smaller
+confidence interval. So now let's sample with 95%
+confidence interval on the left and with a 70% confidence
+interval on the right. So on the left, as we saw before, 95% of the time we're going to contain the
+population mean and 5% of time we won't. But on the right, well,
+we have similar points. But now there's a small
+interval around them, so it's not going to contain
+the population mean. So often, as a matter of fact, with a 70%
+confidence interval, as you may imagine, 70% of the time you hit the population
+mean and 30% of the time you don't. And now let's imagine the simulator again,
+but keep the sample size content. So let's focus on the confidence level. Notice that as we change the confidence
+level, the interval gets shorter and shorter. And as we increase the confidence level,
+the interval gets wider.

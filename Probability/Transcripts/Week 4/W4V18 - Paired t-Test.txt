@@ -1,0 +1,62 @@
+In the previous
+video, you learned about two-sample t-test, where you wanted to compare two populations
+where the two groups being compared were independent. There is another situation where you also have two groups, but they are not independent. Let's say that you want
+to test the effectiveness of a training plan
+to lose weight. The first group will be the people before the
+training program. After four weeks, you weighed
+each participant again. These two correspond to
+another person, and so on. In this case, you say that
+the samples are paired. Now, what you are
+interested here is in the difference between pairs. To determine if the
+training program was good for weight loss, you can do that by studying the mean difference between
+each member of the group. You will have the
+weight before minus the weight after the program
+for the first person, for the second one, all
+the way to the 10th. Since you're interested
+in the average behavior, you will sum all these
+difference and divide them by the number of samples in
+each group, which is 10. It is common to define
+a new variable, d, to represent difference
+between x and y. You get X_1 minus Y_1 is D_1, X_2 minus Y_2 is D_2, and so on, and so forth all the way to
+X_10 minus Y_10 is D_10. This is the number
+we're going to study. The sample mean of these variables is going
+to be called D-bar. Now, if X and Y were to come
+from a Gaussian population, then D is Gaussian as well. Standardizing D-bar, you
+get a statistic that has a standard
+Gaussian distribution. However, again, the population standard deviation is unknown. Just as you've been
+doing the previous test, the best thing to
+do is to replace the population
+standard deviation by the sample
+standard deviation. This is again the t statistic you discovered a
+few videos back. It has a t-distribution
+with 10 minus one, which is nine
+degrees of freedom. That's going to be
+your test statistic. Let's figure out what the
+observed statistic looks like. You have these 10
+weight measurements from the before group, and then these 10 measurements after the training program. If you get the x_i
+observations and subtract the y_i
+observations one by one, then you get these
+differences over here. Those are the difference
+in weights from before and after for each one of
+the 10 participants. Now with these values for the observations
+from the difference, you have an observed
+sample mean of 1.09. That's the average
+of all the Ds and a sample standard
+deviation of 1.485. That gives you an observed
+statistic of 2.321. Now, for the first
+set of hypotheses, consider the
+right-tail test with null hypothesis Mu(D)
+equals zero and, alternative hypothesis
+Mu(D) is positive. This means that on average, the training program is
+good for losing weight. Also, consider a
+significance value of 0.05. Now from this last slide, you know that if H_0 is true, then the statistic T= D-bar divided by the
+standard deviation of the sample mean has
+a t-distribution with 10-1=9 degrees of freedom. But what is the p-value
+for the sample? Well, because this is
+a right-tail test, the p-value is the
+probability under the null hypothesis that the statistic t is greater than the observed statistic 2.321, which corresponds to
+this area under the PDF, and that has a value of 0.0227. Since the p-value is smaller than the significance
+level of 0.05, then the decision is to reject
+the null hypothesis and accept that the population mean for the difference
+in weight is positive. That means that the
+training program is good for losing weight.
