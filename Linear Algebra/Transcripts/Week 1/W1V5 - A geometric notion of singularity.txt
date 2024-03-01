@@ -1,0 +1,41 @@
+Now that you learned how systems of linear
+equations are represented by lines in the plane, and that non-singularity
+equates to these lines in intersecting at a unique point,
+I'm going to show you an even simpler way to visualize singularity and
+non-singularity. It involves slightly
+simplifying the system. Recall that these are the three
+systems you've been studying, where system 1 has a unique solution. So it's complete and non-singular. System 2 has infinitely many solutions
+so it's redundant and singular. And system 3 has no solution, so
+it's contradictory and singular. Now forget for a moment about the system
+being complete, redundant, or contradictory, and let's focus on
+the singularity and non-singularity. And the reason for this is that these
+are the terms we're going to be studying during the whole class. Note that system 2 and
+3, the singular ones, are very similar since both
+consists of parallel lines. Different lines in the system
+to these lines are the same, and the system 3 they're spaced apart. But both are fundamentally different from
+the non-singular system 1 since the system 1, the two lines are not parallel. So can you somehow contract systems 2 and
+3 into one in order to really separate singular and
+non-singular systems into two buckets? And the answer is yes. And the way to do this is to look at
+the constants of the systems of equations. These constants are the numbers in
+the equations that are not accompanying the variables A or B. For instance, the system 1,
+they are 10 and 12. The system 2 they're 10 and 20. And the system 3 they're the 10 and
+the 24. So let's turn all these constants for all these three systems into 0 and
+see what happens to the plots. So when you turn these constants to 0,
+the plots now become this, why? Because the new systems always
+have the 0.00 as a solution, so they must pass by the origin. Notice that if I were to set A and B to be 0 in any of these equations,
+the equations would work. So 00 is a solution to all of them. Now notice that system 1 is still
+a pair of intersecting lines, so it still has a unique solution. So it's still complete and non-singular. System 2 is still a pair
+of identical lines, so it still has infinite solutions,
+so it's redundant and singular. But notice what happened to system 3,
+it went from a pair of non-intersecting parallel
+lines to a pair of identical lines. So now it has infinitely many
+solutions instead of none. So it went from
+contradictory to redundant. However, it stayed singular as before and
+that's what matters. So in conclusion, the constants in
+the system don't matter when it comes to determine the system is singular or
+non-singular. Now for the rest of this course, singularity and non-singularity
+will be the important concept. And completeness, redundancy,
+and contradiction will be used much less. So for this reason, you can now start
+considering systems of equations where the constants are always 0,
+and these are much simpler. Furthermore, the geometric interpretation
+of these systems will be pairs of lines that go through the origin.

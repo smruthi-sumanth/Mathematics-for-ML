@@ -1,0 +1,57 @@
+Welcome to Week 1 of the
+linear algebra course. This week you will
+learn what a system of linear equations is and some
+of its representations. One of them is as a set
+of lines in the plane and another one is an array of
+numbers called a matrix. Furthermore, you will learn what singular or non-singular
+systems are and why is this so important
+in linear algebra. Linear algebra has
+applications in many fields of science
+and technology. Machine learning is
+certainly not the exception. In fact, it is not a stretch to say that
+linear algebra is the most useful and widespread math field
+in machine learning. In this video you will
+learn about some of the best applications of linear algebra in
+machine learning, starting with the most
+popular application that you may know,
+the neural network. Undoubtedly one of
+the most popular and ubiquitous machine learning
+models is a neural network. Neural networks are used for many cutting edge applications
+such as image recognition. For example, neural networks can be trained to
+take an image such as this one and be
+able to tell with very high accuracy if the
+image is a face or not. How do neural networks work? Their functioning is the
+topic of an entire class. But let me tell you in a
+nutshell how they work. Say you have an image
+which is the input. The neural network takes
+the image pixels as input and performs many
+arithmetic operations on these values in order to get a final value which
+indicates that the neural network thinks
+the image is a face or not. How do we decide
+which parameters go into the mathematical
+operations to use? The data helps us as we
+pick the parameters that make the best predictions
+for the existing data. But here's where linear
+algebra comes into play. You see these dots
+organized in layers? Those are the nodes of the
+neural network and they're meant to loosely mimic the
+behavior of the brain. It turns out that
+these layers can be expressed as rectangular
+arrays of numbers, which are also called matrices. Matrices are one
+of the fundamental building blocks of
+linear algebra. In order to perform
+all the vector or matrix operations to go from the image in the left to the prediction on the right, one uses linear
+algebra and calculus. Detecting objects
+in images has been a long-term challenge
+for machine learning that has seen huge advancement
+in the recent years. As you can see in this picture, the neural network is
+successful in detecting people, traffic lights, cars, trucks, and even small personal
+items such as a handbag. Remember, the image pixels are simply values that
+serve as an input where the algorithm performs mathematical operations
+to determine the output. Aside from image recognition, we can get computers to see
+and recognize what's on them. Neural networks have a numerous other cutting-edge applications. As you can see, linear algebra is used all over the place in machine learning and that is a great reason for
+you to master it. In the remainder of this course, you will be learning some
+very important concepts and techniques in linear
+algebra involving matrices, linear equations,
+linear transformations, and much more.
+Ready? Let's begin.
