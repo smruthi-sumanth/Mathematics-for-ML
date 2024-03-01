@@ -1,0 +1,35 @@
+So let's go back to our example where we
+had some evidence which was popcorn in the floor and three possible scenarios. And we're trying to investigate
+which scenario happened. The first one is movies, which creates
+the popcorn with a high probability. The second one is board games, which
+creates popcorn with a medium probability. And the third one is a nap that creates
+popcorn with a very low probability. So we went for movies, which is the one that generated
+the evidence with the highest probability. But however, that's not the whole story. Imagine that now we have
+two different candidates. One is that we were watching movies, and the other one that there was
+a popcorn throwing contest. So movies create popcorn in the floor with
+high probability, but a popcorn throwing contest would create popcorn in the floor
+with a very, very, very high probability. It's almost for sure that if you
+have a popcorn throwing contest, that you ended up with
+popcorn in the floor. So that's the winner. However, something tells us that movies
+should be the winner and not popcorn, why? Well, one reason is that it's likely that
+you could have been watching movies. A popcorn throwing contest
+is not very likely. It's a very unlikely event. So even though it's more likely
+to have generated the evidence, it's less likely to have happened
+on its own, and that should matter. And that should mean that
+we want to pick movies. But let's put some math here,
+before what we did is maximize the probability
+P(popcorn/scenario). So we figure out that P(popcorn/movies)
+was higher than P(popcorn/contest). However, the probability that you're
+watching a movie by itself is actually higher than the probability that
+there was a popcorn contest. It's actually much higher. And so
+we should factor this into the equation. So we should actually multiply them. And when we have the product, then the
+inequality goes in the other direction. And it turns out that it's more
+likely to have watched a movie. Now, notice that this looks familiar. P(popcorn/movies)P(movies) resembles
+P(A/B)P(B), which, as we know,
+is the probability of A intersection B, the probability of A and
+B happening at the same time. So therefore, we're trying to maximize
+the probability that there's popcorn and a movie and the probability that
+there's popcorn and a contest. That's really what we care about. And that makes more sense because that's
+actually what we want to maximize. Not just a conditional probability, but we want to maximize the probability
+that those two things happen. Now, what does this have
+to do with regularization? Let me tell you in the next video.

@@ -1,0 +1,47 @@
+So first let me tell you
+about regularization. Imagine that this
+is our data-set and we have three models that could have generated that
+data set or that could fit that data-set however
+you want to think about it. One is linear, the other one is a quadratic polynomial
+and the other one is a polynomial of degree ten. And in order to find
+out which one was more likely to generate it, or which one is the best fit, we look at loss, which could be the
+squared error. Now, let's imagine that
+the losses here are 10, 2 and 0.1. Because as you can see, the first model didn't
+fit the data really well. The second model fitted a little better and the third one
+fitted really, really well. The third one is
+the one that wins. However, something tells us that it's not the third one that
+wins is more the second one. What we're going to do is we're going to apply regularization to help us not pick
+that model three, which is a little chaotic, even though it fits
+the data pretty well. So let's look at the equation and I'm going to throw
+in some numbers. Let's say that the first
+one is the line y= 4x+3. The second one is the quadratic two x^2-4x+5 and the third one is this polynomial
+of degree ten. So what we are going to do
+is we're going to apply a penalty to each
+one of these models. And the more
+complicated the model, the higher the penalty. And in that way, we're trying to penalize model three a lot
+in order to not use it. Because as you can see, Model three is so chaotic that it fits the
+data really well, but it doesn't really
+generalize well, it doesn't really get
+the point of the data, which is a quadratic
+that points upwards. So what's the penalty? Well, we're going to
+call it the L_2 penalty. L_2 regularization is
+what we're using here. It's going to be the sum of the squares of all the
+coefficients of the polynomial, except for the constant one. So this one is 4^2, that's 16. This one over here is 2^2
+plus minus 4^2, which is 20. This one over here is the
+sum of all these squares, which is going to be 262. Now the new loss is going to be the sum of the old
+loss and the penalty. So here's 26, here it's 22, and here it's 262.1. So now the winner is model two. So what we did here is we modify the loss and we penalize the
+models that are too complex. In that way, we're
+sort of trying to find the simplest model that
+fits the data well. In general, if the
+model has this equation of a polynomial and
+the log loss is e.g. LL, then the L_2
+regularization error is sum of the squares of the coefficients that
+are not the last one, that are not the constant one. We're going to have
+something called a regularization parameter, because sometimes we don't want to apply the full penalty, we want to multiply it by a small number in order to
+not be too drastic here. The regularized error
+is simply the log loss plus the regularization
+parameter times the L_2
+regularization error. So that is, in a nutshell,
+what regularization is. But what does this have to
+do with probability and maximum likelihood?
+Let me show you soon.

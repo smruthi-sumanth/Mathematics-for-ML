@@ -1,0 +1,107 @@
+Hello and welcome back to Course 3 of the Math for Machine Learning and Data
+Science Specialization. This is the first lesson in the third week of the Probability
+and Statistics course. We're going to be focusing on statistics for the second
+half of the course. To get us started, we're
+going to talk about two key concepts that are essential to
+understanding statistics; the concept of a population
+and the concept of a sample. A population is the entire group of individuals or items
+that we want to study. A sample is a smaller subset that we actually
+observe or measure. For example, if I'm trying to measure the height
+of all the humans, well, all the humans
+are the population, but obviously, I'm not
+going to measure everybody. I'm going to take a
+sample of 100 of them, for example, that's our sample. In machine learning
+and data science, we often use samples to
+train models and make predictions because we can't look at the entire
+universe of data. It's important to understand
+the difference between the two and how they're
+relevant to the work we do. Let's dive in and
+explore these together. Welcome to the beautiful
+island of Statistopia, where you've been hired as
+a data scientist to help them with all their
+statistics problems. The first task is to find the average height of the
+people living in Statistopia. You're saying to yourself,
+easy peasy lemon squeezy, I know how to
+calculate averages. I'm going to ask everyone on
+the island for their height and then divide by the
+total number of people. You check how many people
+live on the island and you're told that
+it's 10,000 people. That's a lot of people. Not so easy peasy
+lemon squeezy anymore. How do you calculate the average of the heights
+if there are so many people? You have to change strategies
+and only ask a few people living on the island in order
+to estimate the average. All the subjects of
+interest in the study, the people living in Statistopia,
+are your population. If you randomly select a
+subset of the population, say of size 100, then that subset is the sample. In this example, the
+population size is 10,000, denoted by N, and the sample size could
+be anything smaller, from 1-9,999, that's denoted by n. We're going to try to pick a number that is small
+enough to be manageable, but also large enough
+to be significant. For simplicity and
+illustration's sake, let's assume that there's only
+10 people on Statistopia, meaning the population
+size is 10. Now, you want to take
+four for your study. Let me show you
+two ways to do it. The first one is to pick
+four random people, and the second one is to put them on a line from shorter to taller and pick the
+first four people. Which one do you think is good and which one
+do you think is bad? If you thought that the
+first one was better, that is correct because you always want to take
+random samples. The second way to do it
+would probably get you a smaller average because you're taking the shorter
+people in the line. Now, let me show you
+another example. Let's say you pick
+four random people. Let's say you want to run
+the experiment again, so you take another four people. Well, that's not good. Why not? Because you took the
+first sample set at random. But the second one depends on the first one because you
+couldn't repeat the people, and that's not good. You can't do it. Why is the sample, set
+two, not a good sample? Because it is dependent
+on the first one. You have to start
+all over every time. People are allowed to be repeated and that
+is very important. Otherwise, the second
+sample set depends on the first one and that
+ruins your experiment. Another thing that you
+need to make sure is that the samples are
+identically distributed. Whatever rule you use to pick
+the first one needs to be the same rule you use
+to pick the second one. If you were to go to
+a particular part of town where people are
+taller or shorter, then you're not going
+to get a good sample. You have to make sure
+your samples are all independent and
+identically distributed. Let's test your
+knowledge of populations and samples with this example. The example is the
+avocado toast trend. A popular trend that
+involves spreading mashed or sliced avocados
+on top of your toast. Trends can have a
+significant impact on the economic value of goods. After the avocado toast trend, you decide to study the
+price of avocados in the US. You simply can't check
+every single purchase of avocados in the US, so you randomly pick four stores and record the prices
+for each avocado sale. What do you think is the
+population in this example? The population of the study is all the avocados sold in the US. Now, what is the sample? The sample is the avocados sold by the four
+stores you selected. All right, so let's check
+some implications of populations and samples
+in machine learning. In machine learning, every
+data set you work with is actually a sample
+and not the population, no matter how big
+the data set is. For example, when working with classification of
+cat images from all the infinite possible
+images of cats and not cats, your data set is
+simply a sample. It is important to have
+a representative data set though as you also saw
+in the height example, in the population
+of Statistopia. Having a representative data set means the distribution of your data set is the same as
+the one for the population. For example, if you're working in a classification model for cats and all your cat
+photos are cats and grass, then when you show a cow standing in the grass
+it might learn to say it's a cat because it learns to associate
+it with grass, or if you see a cat on a couch, it won't recognize it because
+it doesn't see grass. It's essential to
+have a variety of cat images and a variety
+of non-cat images. Now let's end the
+session with a recap of the formal definitions of
+the terms you have learned. Population is the entire
+set of individuals or elements that you want to study that share
+common behavior. A sample is a subset
+of the population that you use to draw conclusions about the population as a whole. N is used to denote
+population sign, and n is used to denote
+the sample size.

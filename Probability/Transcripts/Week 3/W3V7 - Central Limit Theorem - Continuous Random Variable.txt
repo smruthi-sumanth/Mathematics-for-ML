@@ -1,0 +1,103 @@
+So let's see the central limit theorem
+in the context of another experiment. This time you will consider
+a continuous random variable, let's go back to the tech support line
+example you saw in week one lesson two. Once you call the line, the operators
+can answer any time between zero and 15 minutes,
+after which the call gets disconnected. You can define a random variable x
+that represents the wait time for a call to be answered. And in the example you saw on week one the
+variable follows a uniform distribution with parameters zero and 15. Remember that a uniform distribution
+model situations where every interval of the same length has the same
+chance of occurring. Which leads to a constant
+probability density function. Now you're interested in the mean
+wait time, to try to approximate it, you will average the waiting time
+of different number of calls. This means that if you
+use just one sample, then that sample is the one
+used to approximate the mean. If you use two samples, you will average
+the waiting times for the two calls, for three samples,
+you will average the length. Of three calls and so on. In general, if you record the waiting
+time on N calls, you can define the variable Yn, as the average of
+the wait time for all the n calls. Can you say anything about
+the distribution of Yn? Well, let's start with n = 1,
+where you're just averaging one wait time. Let's repeat this experiment of
+averaging one wait time many times to get a nice histogram and
+see the distribution. So the histogram looks like this, it kind of looks like a uniform
+density from far away. because each sample of Y1 comes from
+a uniform zero to 15 distribution. Of course, there are ups and downs. Now, what happens for n=2? Well, now again you are averaging
+the wait time for two calls. Again, repeat this experiment of averaging
+two wait times many, many times, and you get a nice histogram
+to see the distribution. Now the density looks like a triangle,
+note that it's almost symmetric around 7.5, which is the population
+mean of the wait times. Now let's move on to n = 3, in this
+case you're averaging the wait time for three calls. And repeat this experiment many times, until you get a nice histogram
+to see the distribution. Notice that it's starting to look more and
+more bell shaped and is still symmetric around 7.5. Here it is for n=4,
+the population mean of four calls, and for five it's more bell shaped and
+it also has lower dispersion. You can even draw the curves
+fitting this histogram. The green lines correspond
+to the kernel density estimation that you learned at
+the end of the previous lesson. As you can see as n increases,
+these curves look more and more like the gaussian
+probability density function. You could also ask yourself, what are the
+mean and variance of these variables Yn. Well, let's start with the mean. The mean of Yn is by definition, the expectation of the average
+of n variables Xi. By linearity of the expectation,
+this is the same as 1/n times the sum of the expectations
+of each of the n variables. But since all variables
+are identically distributed, this is 1/n times n times the mean of X,
+which is simply the mean of X. For the uniform distribution with
+parameters zero and 15, this is 7.5. Now let's do the variance. For the variance, note that the constant
+1/n comes out of the variance, but it comes out squared. Also, because the variables
+are independent and the variance of the sum becomes
+the sum of the variances. This is not the general case and
+it's only valid due to independence here. And again, since all the Xi
+are identically distributed, this is 1/n squared times,
+n times the variance of X, which is simply the variance
+of X divided by n. For the uniform distribution,
+with parameters zero and 15, you can look up the variance,
+which is 18.75. It is super interesting to
+know that as n grows, so does the variance of the average. This is exactly what you were
+seeing in the histograms. Now let's plot the probability
+density function for a Gaussian with the same mean and
+variance Yn. The plots over here confirm our suspicion,
+these are the orange plots. Look how the green and orange lines fit
+together more closely as n increases. They're not so close for n = 1 or
+2, but by the time we get to 4 and 5 they're almost indistinguishable. It is pretty cool to see that we
+started with a uniform distribution for n=1 where the density of
+each point is the same. And ended up with an almost Gaussian
+distribution with center 7.5 after n is larger. If we were to increase n, then
+the distribution would get narrower and narrower around 7.5. When you average a large
+enough number of variables, the distribution will approximately
+follow a normal distribution. It is worth mentioning at this point, that
+while in this example it seems that even averaging three or four samples is enough
+to start seeing the normal distribution. This is not usually the case in general. A safe rule is that you usually need
+about 30 variables before the bell shaped distribution comes in. It all depends on the original
+distribution of the data, if the original population is very skewed. Then you usually need more samples than
+if you are working with a symmetric distribution. In the case of the uniform distribution
+the Gaussian PDF curve appears very quickly, as you saw in this example. Now one of the most common ways to
+visualize this is by standardizing. This is because as you can see, the mean
+is always the same as the population mean, but the variance depends on n. So it's easier to compare
+the distribution, of Yn for different values of n when
+you standardize this average. So by standardizing you
+see that as n increases, the distribution of the average is close
+to a standard normal distribution. There is also one benefit in standardizing
+that will become very useful in the next week of content. If you don't actually know the value
+of the population mean and variance, then you know that as n increases. The average will approximately
+have a Gaussian distribution, but you don't really know of which parameters. Now to wrap up, whenever you consider
+the average of n independent identically distributed random variables. The mean of Yn is the same as the
+population mean and the variance of Yn is the population variance divided by
+the number of variables you are averaging. So this is interesting,
+the mean stays the same, but the variance gets smaller and smaller. And this makes sense because the more
+variables you take, the more likely you're going to be closer to the population mean,
+so there is less spread and less variance. This result holds true, no matter what the distribution
+of the original population is. Now, let me give you
+the formal definition. Formally, the central limit theorem
+states that as n goes to infinity, the standardized average will follow
+a standard normal distribution. In practice, this is usually true for
+n around 30 or higher, sometimes even with smaller samples
+as the example you just saw. Another way you will sometimes see the CLT
+is in terms of sums rather than averages. You can easily arrive to
+this equation by taking the common factor 1/n and
+rearranging terms properly. So you can also say that as n approaches
+infinity, the sum of n identically independent random variables minus
+n times the population mean. And all that divided by the square root
+of n times the population standard deviation also distributes as
+standard normal distribution. And this is the central limit theorem.

@@ -1,0 +1,62 @@
+Let's go back to the coin example. Suppose that you toss a coin ten times and it lands in heads eight times and
+in tails twice. Now you have three possible coins that you
+could have flipped to get these results. Coin one has a probability
+of heads of 0.7, coin two is a fair coin,
+has a probability of heads and tails of 0.5 and coin three has
+a probability of heads of 0.3. Now, which one do you think was
+the coin used for these 10 tosses? Or at least which one would you use
+if you were aiming to generate those 10 tosses again? Well, let's take a look at
+the probability that the coin landed in eight heads and two tails for
+each one of the coins. For coin one is the product of 0.7 to
+the 8 times 0.3 squared which is 0.0051. It's quite small. But let's look at coin 2, coin 2 is 0.5
+to the 10 which is 0.0010, much smaller. And coin three is 0.3 to the 7 for
+all the heads and 0.7 squared for
+the tails which is 0.00003. That's very, very small. Actually the largest one
+is this one over here. So we conclude that if we had to
+pick one of the three coins we should probably go with coin one as the
+most likely one to have generated this. What we did here was maximum likelihood. We want to generate 8 heads, 2 tails and
+there's three possible coins that generated coin one with
+0.7 probability of heads, coin two with 0.5 probability of heads and
+coin three with 0.3 probability of heads. And each one generated the data
+with some probability. Now, what's the coin that most
+likely produce 8 heads and 2 tails? Well, is the one that maximizes
+probability of 8 heads 2 tails given coin and
+that is the first one because this conditional probability is highest for
+coin one. So therefore, that's the one we pick. But could we do better? Is there a better coin that may work? Let's say that we pick some
+coin with probability P for heads and 1- P for tails,
+what's the probability then that this coin generates
+eight heads and two tails? Well, it's P to the 8 times 1- P squared,
+which is that product. Now we want the P that maximizes
+the chances of seeing 8 heads and 2 tails. That's the likelihood. The likelihood is the probability of
+seeing this data based on the model, which is a coin with probability P. Notice that this is a function of P,
+so we have to actually maximize it. This is an example that we
+saw in the calculus class and it turns out that we don't want to
+deal with products of many things, especially when we're
+talking about small numbers. Let's take the logarithm,
+which is a pretty standard trick we use to turn products into sums and
+that turns the product P to the 8 times (1- P) squared
+into 8 log (P) + 2 log (1- P). And that's the log likelihood. So very often we're not going to
+try to maximize the likelihood, we're going to maximize
+the log likelihood. And maximizing one is the same
+as maximizing the other one but log likelihood normally
+is a nicer function. So when we take the derivative with
+respect to P of the log likelihood, we get this over here. Remember that the derivative of
+logarithm of P is one over P. And for
+the second term we have a chain rule and that minus one comes from that chain rule. If we want to make this equal to 0, then the optimal value is
+P hat equals 8 over 10. So actually the best possible coin that
+would have generated this flips is a coin where the probability
+of heads is 8 over 10 or 80%. And that makes sense, right? Because the data has 8 heads and 2 tails. For the general case, let's do some math. Let's say you have a n coins and
+k heads and each coin is a Bernoulli
+variable with parameter P. That means that it has a probability
+of P of landing in heads. And the likelihood is
+given by this formula, which is the product of P to
+the xi 1- P to the 1- xi. And that's if xi equals 1 we have P. And if xi is equals 0, then we have 1- P. Now this is the number of heads and
+this is the number of tails. And therefore,
+we can factor this expression like this. Now the log likelihood is going
+to be the logarithm of this and the exponents come down and
+we get this expression. And we want to maximize this expression, all we have to do is take
+the derivative and set it equals to 0. And that gives us
+an optimal value of P hat, which is precisely the mean
+of the population. So in other words, if we had, for example,
+k heads among this population of coins, then the optimal probability to obtain
+those k heads would be precisely k over n.

@@ -1,0 +1,87 @@
+Now let's look at
+a similar problem. Let's say that you have some observations and they
+are the numbers 1 and -1. This observation were sampled
+from some distribution, and the question is, what distribution could they
+have been sampled from? Well, let's say we
+have two candidates. In normal distribution with mean 10 and standard
+deviation 1, and a normal
+distribution with mean 2 and standard deviation 1. The question is, which one
+of these two do you think is more likely to have
+generated the observations? Well, let's take a look. Here we have the two
+observations 1 and -1, and let's put them over
+here in the graph. Now let's look at the heights at those
+points of the curve. The heights on top are very low, and the ones at the bottom
+are a little higher. Now, it turns out that these
+heights are probabilities. Well, not exactly,
+they're likelihoods. You can see that
+the bottom curve, the one with mean 2 produces both points with
+a higher likelihood. Therefore, this
+one is the winner. So we're going to pick this
+one among the two candidates. The top one generates data
+with very low likelihood, whereas the bottom one generates it with much higher likelihood. We conclude that
+among these two, it's the bottom Gaussian, the one with mean 2 and
+standard deviation 1, the one that probably
+generated them. I'm going to look
+at three Gaussians, the one with mean -1 and
+standard deviation 1, the one with mean 0, standard deviation 1, and the one with mean 1
+and standard deviation 1. Here are the three plots. Now let's test your intuition. Which one of these
+three do you think generated those two points? Well, let's take a look
+at the likelihoods. Or first let's take a
+look at the Gaussians. The first one has a Mu of -1, the second a Mu of 0, and the third one, a Mu of 1. Now, let's see
+which one was more likely to have generated
+these three points. Let's actually plot
+the likelihoods. The likelihoods are
+these vertical bars that go from the
+point to the curve, and on the top one, the heights are 0.399 and 0.054. For the middle one,
+they're both 0.242, and for the bottom one
+they're 0.054 and 0.399. Now the question is, which one
+of these three do we pick? Well, if they were
+probabilities, we wouldn't multiply
+them because these two points are
+independently generated. So because they're likelihoods, let's also multiply them. Let's take the product
+of these two numbers, 0.022, then the product
+of these two numbers, and the product of
+these two numbers. Which one is higher? The higher one is the one in
+the middle, which is 0.059. So we conclude that
+among these three, the Gaussian distribution with mean 0 and standard
+deviation 1 is more likely. This one generated the data with a higher likelihood
+than the other two, so that's the one that wins. Notice one more thing. The mean for the
+first one is -1, the mean for the
+second one is 0, and the mean for
+the third one is 1. Now, what is the mean for
+the original dataset, the dataset that was
+generated? It's 0. It's the same one as the
+one of the winning curve, and the reason is that
+the best distribution is the one where the mean of the distribution is the
+mean of the sample. Now let's go back to
+our two observations, and now that we've
+established that the best distribution
+has to have mean 0, then let's look at several
+distributions with mean 0. The first one has a
+standard deviation of 0.5, the second one a
+standard deviation of 1, and the third one
+standard deviation of 2, and this is how they look. These are their means and
+their standard deviations, and recall that all of
+them have a mean of 0 and standard deviation
+of 0.5, 1 and 2. Now here's a question
+to test your intuition. Which one of those
+three do you think was more likely to have generated
+the points 1 and -1? Well, let's do the
+same thing again. Let's plot the points
+over here and draw all these heights
+which are likelihoods, and we're going to
+look at the product of the likelihoods and
+see which one wins. This one over here on top
+has heights of 0.044, the second one has
+heights of 0.242, and the third one
+has height of 0.176. When we multiply them, the highest product is
+the one in the middle, which is 0.059, and
+that's the best one. So the Gaussian distribution with mean 0 and
+standard deviation 1 is the most likely want to
+have generated that data. Among the three, is the one that gives the
+data the highest likelihood. Now, notice something
+else that's interesting. What is the variance
+of the observations? So the variance of the
+observations is calculated as the average of the squares of the distances from the mean, and that is going to be 1. Now, what is the variance of each one of the
+distributions? Well, the top one
+has variance 0.5^2, the second 1, and the third 2^2.

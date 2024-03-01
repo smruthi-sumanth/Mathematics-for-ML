@@ -1,0 +1,34 @@
+So let's stay with the example of
+height in the human population. Let's say that you want to find a good
+estimate of the average of the height of all humans. What's a cheap way to do this? We get one person, we measure them,
+and that's an estimate. It's a bit of a noisy estimate, so we
+can just take maybe two or three people, take the average of their heights,
+and that's a slightly better estimate. I can do it with 10 people and
+get a better estimate, or 100, or 1000. The more people I get,
+the better the estimate is. And that happens with other metrics,
+not just expected value. This is the law of large numbers. Let me tell you more about it. So consider, again, this 4-sided
+dice whose possible outcomes are 1, 2, 3, and 4, and where the mean is 2.5. Now let's run an experiment, again,
+where we throw the dice twice and record the average. We get the following 16
+outcomes of all the possible pairs of values we can obtain, and the average of each possible pair is
+going to be in this table over here. The mean of all these outcomes is
+the general population mean, which is 2.5. Now let's draw samples from
+this population mean of all possible outcomes one at a time. So we start with 4,3, and
+that gives us an average of 3.5. And we're going to point out that this
+is the population average of 2.5. So the mean of the first sample
+was x 1 bar, which is over here. Now let's take 2 trials, 3,4, and 1,3, and let's take the mean of those. And now let's take 3 trials and the mean
+of those and we plot it over here. And we can continue, 4 trials, we put the mean and etc, etc. And notice that the more
+samples that we take, the closer and
+closer that we get to the population mean. For example, if we draw 9 samples,
+we get 2.56 as an average, etc, etc. And notice that over here, we're already pretty close to
+the population mean of 2.5. This is an illustration of the law
+of large numbers which says that as the sample size increases, the average
+of the sample will tend to get closer to the average of the entire population. So if n is the number of samples and
+xi is a random variable estimate of some sample of size i,
+then as n goes to infinity, then this average of the samples
+actually gets closer and closer and closer to the expected value of x,
+which is mu of x, the population mean. In other words, as n goes to infinity,
+this mean gets closer and closer to the population mean. And this happens under certain conditions. So the conditions are the following. First is that the samples must be
+drawn randomly from the population. Second, that the sample size
+must be sufficiently large, the larger the sample size, the more
+accurate the sample mean is likely to be. And third, that the individual observations in the
+sample must be independent of each other. And this is the law of large numbers.

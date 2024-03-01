@@ -1,0 +1,18 @@
+So, once again, for illustration sake, imagine that there's only ten
+people living in Statistopia. That means you have
+a population size of 10. Now, everybody has some form of
+transportation as shown, either a car or bicycle. Now, what proportion of
+the people own a bicycle? Well, to answer this question, we first
+need to identify everyone with a bicycle, those are highlighted here, and we'll
+divide by the total number of people. So, that's 4 divided by 10, or 40%. 40% is the proportion of
+the population that own a bicycle. And of course, this is assuming that everybody
+owns exactly one type of vehicle. This metric right here is called
+the population proportion, noted by p. And the population proportion is
+the number of items with a given characteristic, x,
+divided by the population n. Now, what if you don't have access
+to the population size of 10 and you have to do it with
+randomly sampled data? So we're going to take a random
+sample of 6 people and let's calculate the proportion here. What proportion of people own a bike? Well, here it's going to be
+2 divided by 6, so 33.3%. This metric is the sample
+proportion denoted by p hat. And notice that the sample
+proportion is some estimate of the population proportion p.

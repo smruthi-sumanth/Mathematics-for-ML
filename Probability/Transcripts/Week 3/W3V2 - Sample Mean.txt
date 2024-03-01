@@ -1,0 +1,46 @@
+Let's say you have the entire world population and you're looking at
+everyone's height. If you want to find the average height of the population or at
+least estimate it, you can take a small
+sample of the population, calculate the average
+of the heights here and that's an estimate for the average of the height
+of the total population. You can do this with other
+things such as proportions. However, when you try to do it with the variance,
+something fails. If I take a small
+sample of the dataset, calculate the variance here, I don't get the variance of the original dataset but I
+do get something very close. Let me show you. Let's revisit the Island of
+Statistopia again and for simplicity assume that
+the population size is 10 as shown here, and the heights are
+shown over here. Now, what is the average
+height in Statistopia? We can calculate it like this
+very easily and get 160 cm. That is the population mean and we're going
+to call it Mu. That Mu lies over here. Now, what if for some
+reason you can't record all the 10
+people's heights? As a result, you're only
+able to get six people, and you did so randomly. Let's say that your
+sample size was six. Now, what is the estimate for the average height
+in Statistopia? Well, if you pick
+this six people, then it's going to be 160.97. That is a sample mean which
+you're going to call X-bar. Because it's the first
+sample we're taking, let's label this X-bar, but actually
+underscored with a one. X_1 bar is our first estimate. Now let's take another sample of six people and let's
+calculate their heights. This one is going to
+be 156 centimeters so we're going to call that X_2 bar and that's
+going to go here. Now let's compare
+X_1 bar and X_2 bar. Both of these have a
+sample size of six but which one is the better estimate
+for the population mean? Well, X_1 is better
+and this can be attributed to the fact that
+we did more random sampling. As you can see, the
+second set is formed by the six shortest people so
+it's not a good sample. But what if instead of
+n=6, we picked n=2? What is the estimated
+average height in Statistopia using n=2? Well, let's pick two random
+people and we get 158 cm. That's going to be
+called X_3 bar. As you can imagine, X_1 bar is a better estimate
+than X_3 bar, because X_1 bar use six people
+and X_3 bar only use two. We're going to explore
+this phenomenon in more detail in
+the later lessons. But for now, it's good to know that the bigger
+the sample size, the better the estimate
+you're going to get from your sample of
+the population mean.

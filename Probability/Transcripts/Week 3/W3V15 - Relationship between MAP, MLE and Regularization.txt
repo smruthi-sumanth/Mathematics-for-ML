@@ -1,0 +1,87 @@
+In this lesson, you've learned
+several different things. You learned maximum likelihood
+estimation and maximum a posteriori estimation and you also learn regularization
+in machine learning. Now in this video, I'm going to show you
+how they combine. In this video, I'm going to
+show you how regularization and maximum likelihood
+actually match. Let's say you have
+the data and you have three models that
+could have fit that data, and each one of them generates the data with some
+probability and remember that a model can
+generate the data as we saw before by simply creating a Gaussian at every point on the line and generating points close to a
+line or to the curve. The first one generates
+the data with some probability P of
+data given Model 1. The second one
+generates data with higher probability
+and the third one, since it's the best fit, generates the data with
+the highest probability, so we're going to pick this one. But just like before, with the popcorn throwing
+contest and the movie, we also have to
+take into account the probability that the
+model has been picked. Now, the simpler the model, the more likely to have been selected and I'm going to
+show you that in a minute. But the idea is that
+a simple model like Model 1 is very likely to occur. Slightly more complex
+model like Model 2 is not that
+likely to occur and a model that's
+really complex like Model 3 is very
+unlikely to occur. What we're going to do, is
+we're going to multiply these probabilities and now the winners, not the third one. Now perhaps the winner
+is the second one and so this is the
+winning model. Now let me show you how
+maximum likelihood and regression with regularization
+actually cooperate. Now in regression
+you're going to have some loss that can be the
+square loss, for example, and in maximum likelihood
+you're going to maximize the probability that the data
+was created with the model. Now if we add base here, then we have to multiply here by the probability
+of the model. Now, if we do regularization
+and regression, then to this, we add a
+regularization term. Now how do we turn the
+left into the right? Well, what's a good way to
+turn products into sums? We take logarithms, and
+that is how we turn the argument in the left
+with probabilities into the argument in the right with a loss and regularization term. However, there's an
+elephant in the room here. I haven't yet told
+you what I mean by probability of a model so that's what I'm
+going to tell you next. What do I mean by the
+probability or more exactly, the likelihood of a model? Let's say we have
+Model 1, Model 2, and Model 3 and there's a
+high probability for Model 1, a small one for Model 2, and really small
+one for Model 3. Well, let's say that these are the equations for the models. What we're going to
+do is we're going to pick these coefficients out of a standard
+normal distribution, so a_1, a_2 and all
+those up to a_10, are going to be selected from a standard
+normal distribution. What is the likelihood
+of for example, a_i? Well, it's going to be
+1 over square root of 2Pi times e^-1/2 a_i^2. Therefore, the likelihood of this model is
+exactly that number. Now what is the likelihood
+of the second model? Well, we need to pick these two coefficients
+so it's this product and likelihood of the 10th
+model is going to be the product of all
+these numbers, the product of all
+the likelihoods. Now let's go back to trying
+to fit the best model. If these are our points, then let's say that this
+is a model that fits. We want to maximize P of Theta given model *P of
+model. What are they? Well, we established
+previously that if these distances
+are d_1 up to d_5, then P of Theta given model is going to be this
+product over here. What's P of model? Well, the equation of
+the model is this, then P of model is
+1 over square root 2Pi e^-1/2 a_1^2 times the
+same thing with a_2^2. Now, we want to maximize the product of these two and
+there's a lot of constants, so we don't really need those. We can divide by the
+constants and maximize the rest and let's take a
+logarithm like we did before. We take logarithm here. We get -1/2 times
+the sum of the i^2. We take a logarithm here, we get -1/2*a_1^2+a-2^2 and the product becomes a sum under the logarithm and now we
+have to maximize this. We can multiply by -1/2 and
+now that means we have to minimize the sum of
+squares of the distances, which is the square loss plus the regularization
+term so that's where the regularization
+term comes in. Therefore, when we try to pick
+the model out of Model 1, Model 2, and Model 3, then maximizing the
+probability of a model is the same as
+minimizing the sum of squares of the coefficients
+and maximizing the conditional probability
+of the data given the model is the same as
+minimizing the square loss. The new loss is going to be the sum of the two
+and that is how you train a model using regularization based
+on Bayesian approach.

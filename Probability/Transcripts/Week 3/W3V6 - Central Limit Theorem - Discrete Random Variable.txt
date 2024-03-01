@@ -1,0 +1,37 @@
+Remember I told you before that the normal distribution
+appears in a lot of places. Here's one that perhaps
+you didn't expect. Take a distribution,
+any distribution, it can be as skewed as you want. Now, take a few samples, always the same number, and look at the average, and do this many times and
+plot all these average. Guess what you get? Yes, you get the normal distribution no matter what distribution you started with in the first place. This is a fascinating result and is one of the
+pinnacles of statistics, is called the Central
+Limit Theorem. Let's start with an example of a discrete random
+variable that you've seen a lot of time
+in this course. The probability of heads
+and tails is the same, and the random variable
+X is the number of heads when a coin is
+flipped and times. So it's X=1 for
+the case of heads, and X=0 for the case of tails, and that's a discrete
+random variable with this probability
+distribution over here. A 1/2 for X=1 and 1/2 for X=0, where the number of heads is in the horizontal axis and the probability is in
+the vertical axis. Now what can we say about the probability
+distribution when the number of coin
+flips increases? Well, here's what
+happens with two coins. Here's what happens
+with three coins, with four and this is with 10. As you can see, this looks a lot like a Gaussian
+or normal distribution. This is an example
+of the central limit theorem that says that as you increase the
+number of observations, your distribution looks more and more like the Gaussian
+distribution. Now, recall that in here, when we're tossing n coins
+with a probability of p, then the mean Mu is np, which is n times the
+probability of heads, and the variance is np*1-p, which is n, times probability of heads times
+probability of tails. For the case n=1, we have that the mean is n*p, which is 1*0.5, and that's 0.5. That's the case when
+we have a fair coin, and the standard deviation
+is n*p*1-p which is 0.25. Let's calculate the mean
+and standard deviation for all these examples. For the first one, we
+have 0.5 and 0.25. For the second one,
+it's one and 0.5. For the third one
+is 1.5 and 0.75, then 2 and 1, and for the 10th
+one is 5 and 2.5. Now, what are these numbers? Well, has n becomes
+sufficiently large, we get a normal distribution
+where the mean is np and the standard deviation is
+np*1-p just as expected.

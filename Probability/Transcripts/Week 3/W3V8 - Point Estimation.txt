@@ -1,0 +1,18 @@
+Welcome to the second
+lesson of Week 3. In this lesson, we'll begin the journey to grasp the
+concept of estimation. Estimation is fundamental to statistics and it comes
+in different flavors. I will start with point
+estimation and introduce you to the most common point
+estimation method that's called maximum likelihood
+estimation or MLE. This one is very popular
+in machine learning. I will also show
+you how MLE can be generalized using
+Bayes theorem to a Bayesian version
+of a point estimator called the maximum a
+posteriori estimation. You will find in this lesson
+are very elegant result according to which
+MAP or maximum a posteriori estimation
+can be thought of a maximum likelihood estimate
+with regularization. Regularization being a
+commonly used method in machine learning to
+prevent overfitting. Let me show you in more detail
