@@ -1,0 +1,56 @@
+Welcome to Week 4. This week you'll continue
+learning some of the most important concepts in linear algebra through the lens of linear
+transformations. First, you'll see what
+some concepts such as determinants and
+singularity mean in terms of linear
+transformations. You'll be delighted to see
+how naturally they appear. Then you learn one of the
+most powerful applications of linear algebra in the real-world , eigenvalues and eigenvectors. They are used extensively
+in many fields including machine
+learning, in particular, in a very important
+dimensionality reduction algorithm called a principal component
+analysis or PCA. I like to imagine PCA as
+taking a picture of your data. Say you're visiting one of the most popular
+tourist attractions in San Francisco,
+the painted leaves. This attraction is mainly
+a series of old houses overlooking the sea painted with different colors,
+hence the name. You take out your camera
+and the goal is to capture as much of the
+scenery as you can. Therefore, you'd like to
+take as many buildings as possible in your picture. To achieve this,
+you try a series of different positions to
+capture the perfect shot. What's the perfect shot? Is
+the one taken from the front. You wouldn't want
+to take one from the side and miss of the beauty. Notice also that when
+you take the picture, you simplify the houses from a three-dimensional object
+into a two-dimensional one. You still managed to capture as much as you can
+on the information on them. In the same way when you have a very high dimensional data set, there's a way to turn that
+into a simpler dataset of less dimensions while
+still capturing as much information of
+the dataset as possible. That's what PCA does. It takes a picture
+of your data and tries to capture as much
+information as possible. Here's an example of
+what PCA would do. Imagine that these points form your dataset and you want to
+simplify the dataset of B. For example, even though
+the points are in space, it seems that most of them lay close to
+this line over here. Perhaps we can look at the dataset from the point
+of view of the line. That's what PCA would do. You would find the line and take a look at the dataset from the
+point of view of the line. In other words, it would project all the points to the line. That is the transform dataset. Notice that a little
+bit of information was lost, but not so much. We still got a pretty
+faithful picture of the data. Then we went from two
+dimensions to one dimension. That's why this algorithm is called dimensionality
+reduction algorithm. Now PCA is much more
+powerful than simply turning up two-dimensional picture
+into a one-dimensional. Imagine that you have
+a spreadsheet of data with lots of
+columns, say eight. PCA can recognize if perhaps
+there is redundancy in the dataset and in the columns and that maybe it can
+be summarized into say, three columns without that
+much loss of information. In that case, PCA reduce
+dimensionality of the data set from eight dimensions
+to three dimensions. That will make it
+easier to store, manipulate, and build good
+machine-learning models with. How does PCA work? It works for the eigenvalues
+and eigenvectors. In the resources, you can
+find some links to videos and material that explain
+it much more in detail.

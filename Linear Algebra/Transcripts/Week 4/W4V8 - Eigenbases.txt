@@ -1,0 +1,51 @@
+Now that you know
+what a basis is, you should know that some basis are more
+useful than others. In particular,
+there's one basis to rule them all called
+the eigenbasis. The eigenbasis is
+tremendously useful, in particular for machine
+learning applications such as principal component analysis,
+as we mentioned before. Here's how eigenbasis work. Let's look at the
+linear transformation corresponding to the
+matrix with entries 2, 1, 0, and three. We're going to see how it acts with respect to the
+fundamental basis. This basis has two vectors, the vector 1, 0, which when you
+multiply by the matrix, you see that it
+gets the vector 2, 0 and the vector 0, 1, which when you put
+it in the product, you get the vector 1, 3. This square on the left goes to this parallelogram on the right and the rest of
+the plane follows. This is also called a change of coordinates or a change of basis because that's
+exactly what you're doing. You're going from the
+square coordinates in the left to the parallelogram
+coordinates in the right. But that's something
+you've already seen. Now let's get to something
+more interesting. The choice of the square
+was very arbitrary. Let's actually pick
+a different basis and see what happens. Let's pick again the vector 1, 0 that goes to the vector 2, 0. As a second element
+of that basis, let's pick this vector 1, 1 just to see what happens. That goes to the vector 3, 3. This parallelogram goes
+to this parallelogram. What is special here? Notice that the sides of the two parallelograms
+are parallel to the corresponding
+one in the other basis. That is very special. Notice that the rest of
+the plane also follows. Because these sites
+are parallel, then what we're doing
+to the plane is we're stretching by
+two in this direction, the horizontal direction, and stretching by three in
+this diagonal direction. This is a very special basis. It only consists of
+two stretchings. That is what's called
+an eigenbasis. It's a very special way of looking at a linear
+transformation with respect to a basis that sends a parallelogram to
+another parallelogram with sides parallel
+to the original one. Why is that useful? Let's say that you want to find the image of the point 3, 2. You can multiply it by
+the matrix and get 8, 6, which is over here. But you can also
+express that point as a combination of elements in the basis. What
+does that mean? That we find a path
+to get to that point using the two directions
+that we have. Now the linear transformations
+corresponds to stretching the
+horizontal vector by two and the vertical
+vector by three. This really simplifies the
+linear transformation. It just consists of
+two stretchings. The two vectors in the
+basis are gonna be called the eigenvectors
+and the stretching factor, the two and the three, are going to be
+called eigenvalues. Eigenvalues and eigenvectors are
+tremendously important in linear algebra because they really simplify
+our calculations.

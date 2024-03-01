@@ -1,0 +1,45 @@
+Now that you know what a determinant
+means in a linear transformation, you'll be able to see that the determinant
+of a product of matrix follows a really nice rule, check it out. So here's a product of matrices
+that I encourage you to check for yourself and make sure that it works. Now, what are the determinant
+of this matrix? The first one has determinant 5,
+which is 3 times 2 minus 1 times 1. The second one has determinant 3,
+which is 1 times 1 minus 1 times minus 2. And the third one has determinant 15,
+which is 1 times 3 minus 4 times minus 3. Notice that, 5 times 3 is 15. Could that always be the case that the
+determinant of the product of matrices is equal to the product of the determinants? And you'll be happy to see
+that this is always true. The determinant of AB is equal
+to determinant of A times the determinant of B. Now, if you try to work it out with
+matrices, it can be a little messy. I like to think of it in
+a much more simple way, which is with linear transformations. So the first matrix 3 1 1 2. We've seen it already and it's
+the matrix that sends this fundamental basis to this basis over here and
+the 5 is the area of the parallelogram. That means that this transformation
+actually blows up the areas by 5. The second matrix has a determinant of 3. And if you work it out is the one
+that sends this fundamental basis here into this parallelogram here,
+that has area 3. And the 3 correspond to the determinant, that means that this transformation
+blows up the areas by 3. Now, that happens with everything. So, this parallelogram here goes to
+this parallelogram over here with area 15 because what the transformation
+does is no matter what area you have, it blows it up by a factor
+of the determinant. So if you consider the combination of
+these two linear transformations first, you're blowing up the areas by 5 and
+then you're blowing up the areas by 3. So you're blowing them up by
+5 times 3 which is 15 and that is what this transformation does. It blows up the area of the fundamental
+basis of everyone into a basis of area 15 and therefore, the determinant is 15 which
+is a product of the two determinants. So here's a quiz to test your intuition,
+what would you say about the product of a singular and
+a non singular matrix in any order? Would it be singular? Would it be non-singular? Or could it be either one? Well, let's say that A is non singular and
+B is singular. So we know that determinant of
+AB is determinant of A times determinant of B but
+determinant of B is zero because B is singular. So determinant of AB has to be 0
+because its determinant of A times 0. Therefore, AB is singular, so
+if one matrix is singular then that matrix multiplied with any other matrix
+in the world is also singular. Now, it's quite logical
+when we think of numbers, see if you have any number doesn't
+matter which number, let's say 5. When multiplied by 0, it becomes 0. So if you have any matrix when
+multiplied by a singular matrix, it becomes a singular
+matrix because whatever its determinant is when multiplied by 0,
+it becomes 0. And geometrically, doesn't make sense. If you multiply two matrix for example, this one over here which is non singular
+with this one over here which is singular. Well, the second matrix being singular
+means it sends everything into a part of a line. And that means that when you combine them
+then it sends the fundamental basis into some segments. So it has this determinant 0
+because this segment has area 0. So in other words, whatever area you
+haven't left, it gets blown up by 0.

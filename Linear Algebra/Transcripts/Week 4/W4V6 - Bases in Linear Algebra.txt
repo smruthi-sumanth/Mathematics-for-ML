@@ -1,0 +1,38 @@
+A fundamental concept of linear
+algebra is the concept of a basis. You've actually seen basis many
+times through this course in several different ways, but this week you
+learn how to identify them and use them to your advantage. So what do we mean by a basis? In the previous week, you learn that
+a matrix can be seen as a linear transformation from the plane
+to the plane, which sends this fundamental square into this
+parallelogram and both were called basis. Now, why are they called basis? Well, in reality, all that matters here
+is not the four points of the square of the parallelogram, but
+the two vectors that define it. Namely those two vectors
+coming from the origin. Those are the ones that are referred
+from now on as a basis. The main property of a basis is that
+every point in the space can be expressed as a linear combination
+of elements in the basis. What do I mean by that? Well, let's say we have
+these two vectors and I'm telling you that those
+two are a basis, why? Well, pick any point in space,
+say this one. Can we get to that point only walking in
+the two directions defined by the basis? Well, of course we do. We can do it this way or
+this way or this other way. There are many ways to do this. Actually, there's infinitely many since
+you don't have to take unit steps, you can walk in tiny
+fractions of steps and you can even walk backwards in
+that direction if you want. So this is one of the possible basis for
+the plane. Can you help me think of some more? Well, there are lots and lots,
+for example, look at this basis. I could get to any point, for example,
+this point using those two directions. Here's one way, I walk in this way,
+and then in this one. Remember that I can walk
+backwards if I want to. So those two vectors also form a basis. Do these two vectors form basis? Yes, they do, I can walk like this and
+then like this to get to the point. So as a matter of fact,
+pretty much any two vectors form a basis. Now it's almost hard to think of what's
+not a basis, what would be a non-basis. So here's an example,
+let's take the two vectors over here. These two vectors,
+I can arrive for example, to this point over here, but
+I could not arrive to this point over here by walking in those two directions
+because I only have one direction. So I really can only cover that line,
+I cannot cover the entire plane. So, anything that comprises two vectors
+that go in the same direction and they could be opposites or
+they could go in the same direction, but as long as they belong to the same line,
+the two vectors do not form a basis. So that is what a basis is and
+what a non-basis is

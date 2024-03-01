@@ -1,0 +1,55 @@
+In week 1 of this course, you'll learn what singular and
+non-singular matrices are. Since matrices correspond
+to linear transformations, then linear transformations
+can also be singular and non-singular
+and you'll be pleasantly surprised to see that there's a very nice way to identify linear
+transformations that are singular and non-singular. Even the rank of a linear
+transformation can be identified easily.
+Let me show you how. You already saw previously how the matrix with entries 3, 1, 1, and 2 corresponds to the linear transformation that sends the basis on the
+left to the basis on the right and equivalently sends this blue grid to this
+orange grid over here, this is also called
+the change of basis. This is in sense the blue
+square basis on the left into the orange
+parallelogram basis on the right but one
+special thing is this, the orange grid covers every
+single point on the plane. It turns out that this is
+precisely the trait of a non-singular
+transformation and the resulting points after
+multiplying by a matrix, cover the entire plane and the transformation is
+non-singular and vice versa. The points that are covering the right are called the
+image of the transformation. To see this, let's look an example of a singular
+matrix such as this one, the matrix with
+entries 1, 1, 2, 2. Notice that if you multiply
+the matrix by the vector 0, 0, you get 0, 0 as usual. If you multiply it by the
+vector 1, 0, you get 1, 2. Now notice what happens if I multiply it by
+the vector 0, 1, I get again 1, 2 and if I multiply it by 1, 1, I get 2, 4 which means that the square basis on the left, doesn't go to a
+parallelogram or it does, but it's a degenerate
+parallelogram, it's actually a line segment
+and there's a problem because the grid on the left doesn't get sent to
+the entire plane, it gets sent to this line because when we had
+a parallelogram, no matter how thin
+it was able to cover the entire
+plane on the right but if our parallelogram is flat and it's only
+one line segment, then that can only cover the
+orange line on the right, it cannot cover
+the entire plane. In summary, when a matrix is singular, this thing happens, you're not covering the
+entire plane on the right, you're only covering a
+small portion of it. In this case, you're
+covering a line. Now, let's look at a very singular matrix with
+entries 0, 0, 0, 0. This matrix has any vector with any coordinates into
+the vector 0, 0, which is the origin, so the entire plane gets sent to that orange
+point in the origin. That matrix is definitely very singular because the image
+is not even a plane, it's not even a line,
+it's actually a point. Here's the summary,
+the first matrix sends the whole plane
+to the whole plane, so it is non-singular. The second one sends the whole
+plane to simply a line so it's singular and the third one sends the whole
+plane to a point, so it's even more singular. Notice that the dimension of
+the image of the first one is two and that's precisely
+the rank of this matrix. The dimension of
+the image here is one because it's
+a line and that's the rank of this matrix and the dimension here of
+the point is zero, which is the rank of
+the third matrix. That's another way
+to calculate rank. The dimension of the image of
+the linear transformation.

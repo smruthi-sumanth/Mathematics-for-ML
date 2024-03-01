@@ -1,0 +1,58 @@
+Now that you know what a
+basis of the plane is, the following question arises. Can something not be a
+basis of the plane but still be a basis for
+some other space? What exactly
+constitutes a basis? For this, let me introduce
+the concept of a span. The span of a set of vectors
+is simply the set of points that can be reached
+by walking in the direction of these
+vectors in any combination. For example, you've
+seen that the span of these two vectors
+is the plane as you can get to any point in the plane by walking in
+these two directions. Likewise, the span of these two vectors is also the plane. May be a while to
+get to many points, but one can use only
+these two directions. These two vectors, however, don't span the plane
+because as you saw before, not every point can be reached by walking in these
+two directions. They're the same direction. What set do they span? Any point in this line can
+be reached by walking in the directions of the vectors. The span of these two
+vectors is that line. What about these two
+that are at an angle of 180 degree apart? The span is again the
+line that contains them because you can get
+to every point on that line by walking on
+these two directions. What about this one vector? What's the span of one vector? The span is the line that contains it and
+goes to the origin because that's the set of points that you can reach by
+walking in that direction. Here's a question.
+Do these two vectors form a basis of this line? What do you think? The
+answer is actually no. The reason is that
+a basis needs to be a minimal spanning set. Here there are too many vectors. See any one of those two
+vectors spans a line. The two are one too many. A basis is a minimal
+spanning set, so each one of them separately
+is a basis of that length. But the two of them
+are not a basis. They're a spanning set, but they're not a basis. Is this a basis of something? Yes, that is the
+basis of this line. As a matter of fact, any vector that starts at the
+origin and goes in that same direction is also
+a basis for that line. In summary, a basis is
+a minimal spanning set. The vector on the left
+forms a basis on this line. But these two vectors don't
+because they are too many. This happens also for
+higher dimensions. Let's look at this set. This set forms a basis of
+the plane because it spans the plane because we can get to any point by walking in
+those two directions. But if we remove any of them, they don't span
+the plane anymore. Now they just span one line. However, this set
+of vectors over here do not form a
+basis of the plane. They span the plane because any point in the
+plane can be reached by walking in some combination
+of these three directions, but they're too
+big to be a basis. Any subset of two of these
+three vectors is a basis, but the third one is redundant. So that's not a basis. Notice something interesting
+and is that the length of the basis is the space of
+the dimension of the plane. Notice something interesting,
+which is that the length of the basis of a space is the
+dimension of that space. On the left, the line
+has a basis of length one and it has a dimension of one because line
+has dimension one. On the right, the
+plane has a basis of length two formed by two vectors and the plane has a
+dimension of two. This implies that any
+basis of any space actually has the same number of elements in any other basis. I encourage you to take
+a look at, for example, a three-dimensional
+space and imagine how would a basis look there.

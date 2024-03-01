@@ -1,0 +1,72 @@
+Now that you know what an eigen basis is,
+you may be wondering how to find it. The process actually not too difficult. It entails solving an equation
+with a determinant. Here it is. First take a look at the matrix with
+entries two, one, zero and three. And take a look at how it acts on
+these points around the square. This should make the entire
+transformation clear. As you've seen before, the two horizontal
+vectors get stretched by two and the diagonals get stretched by three. And for the other points, this happens. Now compare this to another matrix
+one that simply stretches the entire plane by a factor of
+three in any direction. This matrix has entries three,
+zero, zero and three. And it's really three
+times the identity matrix. Notice one thing,
+these two transformations are not the same transformation, but
+they do coincide in many points. In other words,
+they act the exact same way for infinitely many points all
+the points in this line. So to be more specific, in this diagonal, the two transformations
+do the exact same thing. So they match in infinitely many points. Now that is strange. The transformation should only match
+at one point, the point zero, zero. When they match at infinitely many points,
+something non singular is happening, and what's happening? Well, let's look at their difference. If these two transformations
+match at infinitely many points, that means the difference is
+zero at infinitely many points. So if you apply the difference of
+these two matrix to any vector in any of these diagonals,
+you get the vector zero, zero. In other words, this matrix times a vector
+x y for infinity metric vectors is 0, 0. Now that is the trait of
+a singular transformation. Recall that a non singular transformation
+has a unique solution to the equation matrix times vector equals 00,
+that's the vector 00. So if you have any finitely many solutions
+to this, means your matrix is singular and you can verify that this is indeed a
+singular matrix as a determinant is zero. Now let's do something similar but for
+another transformation on the right. Our transformation does
+exactly as it did before. And now let's compare it to the
+transformation that stretches the plane by two in every direction. These two are not the same, but
+they match in this entire line. So in other words, matrix on the left
+times xy is able to matrix at the right times xy for any vector x,y on this line,
+that's infinitely many points. So we can do the same procedure,
+take the difference and that matrix times a vector,
+equals 00 for infinitely many vectors. That means that the matrix 01, 01 or
+the difference between our matrix and two times the identity
+is a singular matrix. And you can check indeed that it
+is singular matrix because its determinant is zero. So what is special about the eigenvalues? So what happened for the eigenvalue
+value two and the eigenvalue three. Let's think about it in general. If lambda was a negatve value, then
+the transformation given by our matrix and the transformation given by
+scaling the plane entirely by a factor of lambda are equal for
+infinitely many vectors x, y. That means their difference times
+a vector is equal to 0, 0 for infinitely many vectors and
+equation with infinitely many solutions. Therefore this matrix two
+minus lambda one, zero, three minus lambda has to be a singular
+matrix or it's determinant is zero. It's determinant is given by this
+equation when we expanded, and that's called
+the characteristic polynomial. So basically to find the eigenvalues
+lambda, all we need to do is look at the characteristic polynomial and
+find the roots. The place where the characteristic
+polynomial is zero are the eigenvalues. So in this case,
+they're going to be two and three. So now that you have the eigenvalues,
+let's try to find the eigenvectors. So we call that the eigenvector is the
+vector that satisfy the equation matrix times vector,
+equals eigenvalue times vector. So if we expand this, we get these
+equations over here and the solution for these are x=1, y=0 or
+any multiple of it. So here is one of the eigenvectors, the
+one corresponding to the eigenvalue two. We do the same thing with three,
+solved for these equations and get 1, 1. So the eigenvector 1, 1 is corresponding
+to the eigenvalue of three. Now you're ready for a quiz. Find the eigenvalues and
+eigenvectors of this matrix. And the solution is that for
+the eigenvalues, it's 11, 1 and for the eigenvectors is 2,
+1 corresponding to the eigenvalue 11 and minus one two corresponding
+to the eigenvalue one. Why? Well, if you look at
+the characteristic polynomial, it is the matrix with entries nine minus
+lambda 4, 4 and three minus lambda. So that expands as lambda square minus 12,
+lambda plus 11, which factors as lambda minus
+11 times lambda minus one. Therefore the eigenvalues are lambda
+equals 11 and lambda equals one. And I'll leave it as an exercise for
+you to solve the equations for the eigenvectors and verify that they
+are going to be 2, 1 and minus 1, 2 or some multiple of them, right? Because all that matters is the direction.

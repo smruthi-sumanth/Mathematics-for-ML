@@ -1,0 +1,31 @@
+And next, I'm going to show you
+a pretty interesting rule for determinants of inverses,
+one that you may all ready be suspecting. And the way you can figure
+this out is with a quiz. So please find the determinants
+of these two matrices. And the determinants are 0.2 and 0.125. Now recall that this matrix over
+here is actually the inverse of the matrix we've been using for
+mostly examples. This matrix has determinant 5, and
+as you've recently calculated, this matrix has determinant 0.2,
+which is exactly one fifth or the multiplicative inverse of 5. Now, the second matrix is
+the inverse of this one over here, which has determinant 8. And you've calculated this one
+to have determinant of 0.125, which is the multiplicative inverse of 8,
+precisely. And for the last one,
+if you recall from a few videos ago, this matrix over here
+doesn't have an inverse. And it's actually a singular
+matrix of determinant 0, and it has no inverse and
+precisely 0 has no inverse. So a nice coincidence is spot over here, which is that it seems that
+the determinant of an inverse matrix is the inverse of the determinant
+of the matrix. And that is precisely the case
+when the matrix is invertible, then the determinant of the inverse is
+one over the determinant of the matrix. And why is this? Well, let's check. We know by the product formula that
+the determinant of a product is equal to the determinant of
+A times the determinant of B. Now let B be actually A inverse. So the determinant of A times A inverse
+is equal to the determinant of A times the determinant of A inverse. Now AA inverse is
+precisely identity matrix. So the determinant of the identity
+matrix is determined of A times determinant of A inverse. Now the determinant of
+the identity matrix is always 1. And therefore that means that
+the determinant of A inverse is precisely 1 over the determinant of A. Now why is the determinant
+of the identity matrix 1? Well, let's actually calculate it. Notice that for a two by two matrix is
+1 times 1 minus 0 times 0, which is 1. And I'll leave you the exercise of taking
+a big matrix and identity matrix and actually calculating the determinant and
+verifying for yourself that it's always going to be 1.
